@@ -1,0 +1,52 @@
+<div id="page">
+    {% if page.header_first %}
+        <div id="header">
+            {% if page.header_first %}
+                <div class="header-first">
+                    <div class="container">
+                        {{ page.header_first }}
+                    </div>
+                </div>
+            {% endif %}
+        </div>
+    {% endif %}
+    {% if page.header_second %}
+        <div class="header-third sticky">
+            {{ page.header_second }}
+        </div>
+    {% endif %}
+    <div id="main-content">
+        <div class="column-second">
+            {% if page.region_top %}
+                <div class="region-top">
+                    {{ page.region_top }}
+                </div>
+            {% endif %}
+            <div class="region-center">
+                {% if page.content %}
+                    <div class="column-left">
+                        <div class="content-top">
+                            {{ page.content_top }}
+                        </div>
+                        <div class="content-center">
+                            {{ page.content }}
+                        </div>                    
+                        <div class="content-middle">
+                            {{ page.content_bottom }}
+                        </div> 
+                    </div>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+    {% if page.footer %}
+        <div id="footer">
+            <div class="container">
+                {{ page.footer }}
+            </div>
+        </div>
+    {% endif %}
+</div>
+
+
+

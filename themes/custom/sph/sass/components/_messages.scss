@@ -1,0 +1,59 @@
+#page{
+    div.message, .webform-confirmation__message {
+        background-position: 8px 8px;
+        background-repeat: no-repeat;
+        border: 1px solid;
+        margin: 6px;
+        padding: 10px 10px 10px 50px;
+    }
+    div.logo_mbp{
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    div.Status, .webform-confirmation__message {
+        background-image: url("../images/message-24-ok.png");
+        border-color: #be7;
+    }
+    div.Status, .ok, .webform-confirmation__message {
+        color: #234600;
+    }
+    div.Status, table tr.ok, .webform-confirmation__message {
+        background-color: #f8fff0;
+    }
+    div.Warning {
+        background-image: url("../images/message-24-warning.png");
+        border-color: #ed5;
+    }
+    div.Warning, .Warning {
+        color: #840;
+    }
+    div.Warning, table tr.Warning {
+        background-color: #fffce5;
+    }
+    div.Error {
+        background-image: url("../images/message-24-error.png");
+        border-color: #ed541d;
+    }
+    div.Error, .Error {
+        color: #8c2e0b;
+    }
+    div.Error, table tr.Error {
+        background-color: #fef5f1;
+    }
+    div.Error p.Error {
+        color: #333;
+    }
+    div.message ul {
+        margin: 0 0 0 1em;
+        padding: 0;
+    }
+    div.message ul li {
+        list-style-image: none;
+        font-size:14px;
+    }
+    div.webinar-message{
+        padding: 15px;
+    }
+}

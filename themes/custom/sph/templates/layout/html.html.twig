@@ -1,0 +1,94 @@
+{#
+/**
+ * @file
+ * Default theme implementation for the basic structure of a single Drupal page.
+ *
+ * Variables:
+ * - logged_in: A flag indicating if user is logged in.
+ * - root_path: The root path of the current page (e.g., node, admin, user).
+ * - node_type: The content type for the current node, if the page is a node.
+ * - head_title: List of text elements that make up the head_title variable.
+ *   May contain one or more of the following:
+ *   - title: The title of the page.
+ *   - name: The name of the site.
+ *   - slogan: The slogan of the site.
+ * - page_top: Initial rendered markup. This should be printed before 'page'.
+ * - page: The rendered page markup.
+ * - page_bottom: Closing rendered markup. This variable should be printed after
+ *   'page'.
+ * - db_offline: A flag indicating if the database is offline.
+ * - placeholder_token: The token for generating head, css, js and js-bottom
+ *   placeholders.
+ *
+ * @see template_preprocess_html()
+ *
+ * @ingroup themeable
+ */
+#}
+
+<!DOCTYPE html>
+<html{{ html_attributes }}>
+  <head>
+    <meta name="google-site-verification" content="" />
+    {% if(meta_term == true) %}
+      <meta name="title" content="{{ term_name }} - {{ head_title|safe_join(' | ') }}" />
+      <meta name="description" content="{{ term_description }}" />
+      <meta name="keywords" content="{{ term_keywords }}" />
+    {% endif %}
+
+    <meta http-equiv="refresh" content="3600">
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/sph/images/MBN_Icon_Web-32px.png" />
+    <link rel="icon" type="image/png" sizes="152x152" href="/themes/sph/images/MBN_Icon_Web-152px.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/themes/sph/images/MBI_Icons_MBN192px.png" />
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="/themes/sph/images/MBI_Icons_MBN192px.png" />
+
+    <head-placeholder token="{{ placeholder_token }}">
+    {% if(meta_term == true) %}
+    <title>{{ term_name }} {{ head_title|safe_join(' | ') }}</title>
+    {% else %}
+    <title>{{ head_title|safe_join(' | ') }}</title>
+    {% endif %}
+    <css-placeholder token="{{ placeholder_token }}">
+    <js-placeholder token="{{ placeholder_token }}">
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-xxx');</script>
+    <!-- End Google Tag Manager -->
+
+  </head>
+
+  {%
+    set body_classes = [
+      logged_in ? 'user-logged-in',
+      not root_path ? 'path-frontpage' : 'path-' ~ root_path|clean_class,
+      path_info.args ? 'path-' ~ path_info.args,
+      node_type ? 'page-node-type-' ~ node_type|clean_class,
+      db_offline ? 'db-offline',
+      not page.sidebar_first and not page.sidebar_second ? 'no-sidebars',
+      page.sidebar_first and not page.sidebar_second ? 'sidebar-first',
+      page.sidebar_second and not page.sidebar_first ? 'sidebar-second',
+      page.sidebar_first and page.sidebar_second ? 'both-sidebars'
+    ]
+  %}
+  <body{{ attributes.addClass(body_classes) }}>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-xxx"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
+    {% if(redirects == true) %}
+    <div style="display: none;">
+    {% endif %}
+      {{ page_top }}
+      {{ page }}
+      {{ page_bottom }}
+    {% if(redirects == true) %}
+    </div>
+    {% endif %}
+    <js-bottom-placeholder token="{{ placeholder_token }}">
+  </body>
+</html>

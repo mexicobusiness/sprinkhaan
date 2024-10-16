@@ -1,0 +1,48 @@
+<?php
+
+/**
+* Implements hook_theme_suggestions_HOOK_alter() for form templates.
+* @param array $suggestions
+* @param array $variables
+*/
+function sph_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+    if (isset($variables['elements']['content']['#block_content'])) {
+        array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+    }
+}
+/**
+ * Implements hook_preprocess_HOOK().
+ *
+ */
+function sph_preprocess_html(&$variables) {
+  $path = \Drupal::service('path.current')->getPath();
+  $result = \Drupal::service('path_alias.manager')->getAliasByPath($path);
+  $variables['path_taxonomia'] = false;
+  
+  $path_alias = explode('/', $result);
+
+  if (count($path_alias) > 0) {
+    for ($i=1; $i <= count($path_alias) ; $i++) { 
+      if (isset($path_alias[$i])) {
+        $variables['attributes']['class'][] = 'page-'.$path_alias[$i];
+      }
+    }
+  }
+  $path_args = explode('/', $path);
+  if (count($path_args) > 0) {
+    for ($i=1; $i <= count($path_args); $i++) { 
+      if(isset($path_args[$i])){
+         $variables['attributes']['class'][] = 'page-'.$path_args[$i];
+      }     
+    }
+  }
+
+  if (isset($path_args[1]) && isset($path_args[2]) && ($path_args[1] == 'taxonomy') && (is_numeric($path_args[3]))) {
+    $variables['attributes']['class'][] = 'path-taxonomy-' . $path_args[3];
+    $variables['path_taxonomia'] = true;
+  }
+
+  if (isset($path_args[1]) && isset($path_args[2]) && ($path_args[1] == 'node') && (is_numeric($path_args[2]))) {
+    $variables['path_taxonomia'] = true;
+  }
+}

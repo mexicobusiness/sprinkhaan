@@ -1,0 +1,27 @@
+/* This file will hold styles for the mobile version of your website (mobile first). */
+/* This also can include ANY global CSS that applies site-wide. Unless overwritten by a more specific style rule, CSS declarations in global.css will apply site-wide. */
+@import "base/base";
+
+// BASE STYLES -----------------------------------------------------------------
+@import "base/fonts";
+@import "base/zonas";
+@import "base/formalize";
+@import "base/variables";
+@import "base/mixins";
+
+// LAYOUT ----------------------------------------------------------------------
+
+// COMPONENT STYLES ------------------------------------------------------------
+@import "components/article";
+@import "components/basic-page";
+@import "components/footer";
+@import "components/forms";
+@import "components/global";
+@import "components/header";
+@import "components/homepage";
+@import "components/messages";
+@import "components/page-login";
+@import "components/search";
+
+// COMPATIBILIDAD CON IE 
+@import "compatibility/global-ie8"; 

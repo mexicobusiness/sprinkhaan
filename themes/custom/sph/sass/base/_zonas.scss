@@ -1,0 +1,15 @@
+/* Vaiables */
+$table: 768px;
+$desktop: 1200px;
+#page {
+  #main-content{
+    border: 1px solid red;
+    @include breakpoint($table) {
+      margin: 0 auto;
+      width: 768px;
+    }
+    @include breakpoint($desktop) {
+      width: 1200px;
+    }
+  }
+}
