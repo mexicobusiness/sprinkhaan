@@ -1,0 +1,21 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display the tour navigation item.
+ *
+ * Available variables:
+ * - content: The content of this navigation_tour_block.
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('toolbar-block') }}>
+  {% block content %}
+    {% include '@navigation/toolbar-button.html.twig' with {
+      attributes: create_attribute(content['#attributes'] ),
+      icon: 'help',
+      html_tag: content['#tag'],
+      text: content['#value'],
+    } only %}
+  {% endblock %}
+</div>

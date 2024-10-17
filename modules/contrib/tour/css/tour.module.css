@@ -1,0 +1,223 @@
+/**
+ * @file
+ * Styling for tour module.
+ */
+
+/* Tab appearance. */
+.toolbar .toolbar-bar .tour-toolbar-tab.toolbar-tab,
+.toolbar .toolbar-bar .tour-toolbar-tab.toolbar-tab.toolbar-tab-empty {
+  float: right; /* LTR */
+}
+
+.tour-button {
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.tour-button:focus {
+  outline: solid 1px Highlight;
+  outline: solid 1px -webkit-focus-ring-color;
+}
+
+.tour-button.toolbar-tab-empty,
+.toolbar .toolbar-bar .tour-toolbar-tab.toolbar-tab .toolbar-tab-empty,
+.admin-toolbar .toolbar-tab-empty {
+  cursor: not-allowed;
+  text-decoration: none;
+}
+
+[dir="rtl"] .toolbar .toolbar-bar .tour-toolbar-tab.toolbar-tab {
+  float: left;
+}
+
+/* Style the tour progress indicator. */
+.tour-progress {
+  position: absolute;
+  right: 20px; /* LTR */
+  bottom: 20px;
+}
+[dir="rtl"] .tour-progress {
+  right: auto;
+  left: 20px;
+}
+
+/**
+ * Following are largely Shepherd's default styles, with a few modifications.
+ */
+.shepherd-footer {
+  display: flex;
+  justify-content: flex-start;
+  padding: 0 20px 20px;
+}
+
+.shepherd-footer .shepherd-button-secondary {
+  margin-right: 1.5rem;
+}
+
+.shepherd-footer .shepherd-button:last-child {
+  margin-right: 0;
+}
+
+/* Shared styling for buttons. */
+.shepherd-header .shepherd-cancel-icon:focus,
+.shepherd-footer .shepherd-button:focus {
+  outline: 2px dotted transparent;
+  box-shadow:
+    0 0 0 2px #fff,
+    0 0 0 calc(3px + 2px) #26a769;
+}
+
+.shepherd-cancel-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  margin: 0;
+  padding: 0.25rem 0.45rem;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  line-height: 1em;
+}
+
+.shepherd-title {
+  margin: 0;
+  padding: 0;
+}
+
+.shepherd-header {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 20px 50px 0 20px;
+}
+
+.shepherd-text {
+  padding: 0 20px;
+}
+
+.shepherd-text p {
+  margin: 0 0 1.4em;
+}
+
+.shepherd-element {
+  z-index: 110;
+  width: 300px;
+  background: #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .shepherd-element {
+    left: 2.5%;
+    width: 85%;
+  }
+}
+
+.shepherd-enabled.shepherd-element {
+  min-width: 400px;
+  opacity: 1;
+}
+
+.shepherd-element[data-popper-reference-hidden]:not(.shepherd-centered) {
+  opacity: 0;
+}
+
+.shepherd-element {
+  z-index: 503;
+}
+
+.shepherd-enabled.shepherd-element {
+  border: 1px solid rgba(212, 212, 218, 0.8);
+  border-radius: 2px;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.56);
+}
+
+.shepherd-element,
+.shepherd-element *,
+.shepherd-element ::after,
+.shepherd-element ::before {
+  box-sizing: border-box;
+}
+
+.shepherd-arrow,
+.shepherd-arrow::before {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+}
+
+.shepherd-arrow::before {
+  content: "";
+  transform: rotate(45deg);
+  background: #fff;
+}
+
+.shepherd-element[data-popper-placement^="top"] > .shepherd-arrow {
+  bottom: -8px;
+}
+
+.shepherd-element[data-popper-placement^="top"] > .shepherd-arrow::before {
+  border-right: 1px solid rgba(212, 212, 218, 0.8);
+  border-bottom: 1px solid rgba(212, 212, 218, 0.8);
+  border-radius: 2px;
+  box-shadow: 3px 3px 3px -3px rgba(0, 0, 0, 0.56);
+}
+
+.shepherd-element[data-popper-placement^="bottom"] > .shepherd-arrow {
+  top: -8px;
+}
+
+.shepherd-element[data-popper-placement^="bottom"] > .shepherd-arrow::before {
+  border-top: 1px solid rgba(212, 212, 218, 0.8);
+  border-left: 1px solid rgba(212, 212, 218, 0.8);
+  border-radius: 2px;
+  box-shadow: -3px -3px 3px -3px rgba(0, 0, 0, 0.56);
+}
+
+.shepherd-element[data-popper-placement^="left"] > .shepherd-arrow {
+  right: -8px;
+}
+
+.shepherd-element[data-popper-placement^="left"] > .shepherd-arrow::before {
+  border-top: 1px solid rgba(212, 212, 218, 0.8);
+  border-right: 1px solid rgba(212, 212, 218, 0.8);
+  border-radius: 2px;
+  box-shadow: 3px -3px 3px -3px rgba(0, 0, 0, 0.56);
+}
+
+.shepherd-element[data-popper-placement^="right"] > .shepherd-arrow {
+  left: -8px;
+}
+
+.shepherd-element[data-popper-placement^="right"] > .shepherd-arrow::before {
+  border-bottom: 1px solid rgba(212, 212, 218, 0.8);
+  border-left: 1px solid rgba(212, 212, 218, 0.8);
+  border-radius: 2px;
+  box-shadow: -3px 3px 3px -3px rgba(0, 0, 0, 0.56);
+}
+
+.shepherd-target-click-disabled.shepherd-enabled.shepherd-target,
+.shepherd-target-click-disabled.shepherd-enabled.shepherd-target * {
+  pointer-events: none;
+}
+
+.shepherd-modal-overlay-container {
+  position: fixed;
+  z-index: 105;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  width: 100vw;
+  height: 0;
+  pointer-events: none;
+  opacity: 0;
+  fill-rule: evenodd;
+}
+
+.shepherd-modal-overlay-container.shepherd-modal-is-visible {
+  z-index: 502;
+  height: 100vh;
+  opacity: 0.5;
+}
+
+.shepherd-modal-overlay-container.shepherd-modal-is-visible path {
+  pointer-events: all;
+}

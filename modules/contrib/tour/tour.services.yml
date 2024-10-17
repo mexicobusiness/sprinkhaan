@@ -1,0 +1,7 @@
+services:
+  plugin.manager.tour.tip:
+    class: Drupal\tour\TipPluginManager
+    parent: default_plugin_manager
+  tour.lazy_builders:
+    class: Drupal\tour\LazyBuilders
+    arguments: [ '@plugin.manager.element_info', '@config.factory' ]

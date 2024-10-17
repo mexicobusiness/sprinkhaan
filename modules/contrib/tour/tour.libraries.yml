@@ -1,0 +1,29 @@
+tour:
+  version: VERSION
+  js:
+    js/tour.js: {}
+  dependencies:
+    - core/jquery
+    - core/once
+    - core/drupal
+    # @todo Remove this in https://www.drupal.org/project/drupal/issues/3204011
+    - core/internal.backbone
+    - tour/internal.shepherd
+    - tour/tour-styling
+
+tour-styling:
+  version: VERSION
+  css:
+    component:
+      css/tour.module.css: { media: screen }
+
+# Copied from core.
+internal.shepherd:
+  remote: https://github.com/shipshapecode/shepherd
+  version: "10.0.1"
+  license:
+    name: MIT
+    url: https://raw.githubusercontent.com/shipshapecode/shepherd/v10.0.1/LICENSE
+    gpl-compatible: true
+  js:
+    assets/shepherd/shepherd.min.js: { minified: true }
