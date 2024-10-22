@@ -9,6 +9,7 @@ use Drupal\Core\Config\Entity\ConfigEntityInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Url;
+use Drupal\navigation\Plugin\SectionStorage\NavigationSectionStorage;
 use Drupal\node\NodeInterface;
 use Drupal\node\NodeTypeInterface;
 use Drupal\taxonomy\TermInterface;
@@ -38,10 +39,6 @@ function tour_help($route_name, RouteMatchInterface $route_match) {
  */
 function tour_theme(): array {
   return [
-    'block__navigation__tour' => [
-      'render element' => 'elements',
-      'base hook' => 'block',
-    ],
     // List views.
     'tour_listing_table' => [
       'variables' => [
@@ -49,6 +46,14 @@ function tour_theme(): array {
         'rows' => NULL,
         'empty' => NULL,
         'attributes' => [],
+      ],
+    ],
+    'navigation_tour' => [
+      'variables' => [
+        'type' => NULL,
+        'tag' => NULL,
+        'value' => NULL,
+        'attributes' => NULL,
       ],
     ],
   ];
@@ -207,7 +212,7 @@ function tour_tour_update($entity): void {
 /**
  * Implements hook_tour_tips_alter().
  */
-function tour_tour_tips_alter(array &$tour_tips, EntityInterface $entity): void {
+function tour_tour_tips_alter(array $tour_tips, EntityInterface $entity): void {
   if (\Drupal::service('module_handler')->moduleExists('language')) {
     foreach ($tour_tips as $tour_tip) {
       if ($tour_tip->get('id') == 'language-overview') {
@@ -261,26 +266,43 @@ function tour_tour_tips_alter(array &$tour_tips, EntityInterface $entity): void 
 }
 
 /**
- * Implements hook_preprocess_HOOK() for navigation.html.twig.
+ * Implements hook_plugin_filter_TYPE__CONSUMER_alter().
+ *
+ * Curate the blocks available in the Layout Builder "Add Block" UI.
  */
-function tour_preprocess_navigation(&$variables): void {
-  if (isset($variables['content']['content'])) {
-    $tour_block = \Drupal::service('plugin.manager.block')->createInstance('tour_button_block', []);
-    $tour = $tour_block->build();
-    $variables['content']['content']['tour'] = [
-      '#theme' => 'block__navigation__tour',
-      '#configuration' => $tour_block->getConfiguration(),
-      '#plugin_id' => $tour_block->getPluginId(),
-      '#base_plugin_id' => $tour_block->getBaseId(),
-      '#derivative_plugin_id' => $tour_block->getDerivativeId(),
-      '#in_preview' => FALSE,
-      '#weight' => 0,
-      'content' => $tour['content'],
-      '#attached' => [
-        'library' => [
-          'tour/tour',
-        ],
-      ],
-    ];
+function tour_plugin_filter_block__layout_builder_alter(array &$definitions, array $extra): void {
+  if (($extra['section_storage'] ?? NULL) instanceof NavigationSectionStorage) {
+    if (!isset($definitions['navigation_tour'])) {
+      $definitions['navigation_tour'] = [
+        'class' => "Drupal\tour\Plugin\Block\NavigationTourBlock",
+        "provider" => "tour",
+        "id" => "navigation_tour",
+        "category" => "Navigation",
+        'admin_label' => t('Tour'),
+      ];
+    }
+  }
+}
+
+/**
+ * Implements hook_block_alter().
+ */
+function tour_block_alter(&$definitions): void {
+  if (isset($definitions['navigation_tour'])) {
+    $definitions['navigation_tour']['_block_ui_hidden'] = TRUE;
+  }
+}
+
+/**
+ * Implements hook_preprocess_HOOK().
+ */
+function tour_preprocess_navigation_tour(&$variables): void {
+  // @todo Remove when D10 support is dropped.
+  $variables['navigation_sdc'] = FALSE;
+  if (str_starts_with(\Drupal::VERSION, '11') && !str_contains(\Drupal::VERSION, '-dev') && \Drupal::VERSION > '11.0.5') {
+    $variables['navigation_sdc'] = TRUE;
+  }
+  elseif (str_starts_with(\Drupal::VERSION, '10') && \Drupal::VERSION > '10.3.6') {
+    $variables['navigation_sdc'] = TRUE;
   }
 }

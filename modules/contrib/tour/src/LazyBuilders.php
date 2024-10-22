@@ -37,11 +37,13 @@ final class LazyBuilders implements TrustedCallbackInterface {
    *
    * @param bool $noTips
    *   Indicates if the current page has any tour.
+   * @param string|null $theme
+   *   Indicates theme template used for rendering.
    *
    * @return array
    *   Render array.
    */
-  public function renderTour(bool $noTips = FALSE): array {
+  public function renderTour(bool $noTips = FALSE, ?string $theme = NULL): array {
     $classes = [
       'toolbar-icon',
       'toolbar-item',
@@ -64,6 +66,7 @@ final class LazyBuilders implements TrustedCallbackInterface {
     }
 
     return [
+      '#theme' => $theme,
       '#type' => 'html_tag',
       '#tag' => 'button',
       '#cache' => [

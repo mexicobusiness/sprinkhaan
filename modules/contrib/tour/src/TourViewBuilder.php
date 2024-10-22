@@ -4,7 +4,14 @@ namespace Drupal\tour;
 
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Cache\Cache;
+use Drupal\Core\Entity\EntityDisplayRepositoryInterface;
+use Drupal\Core\Entity\EntityRepositoryInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
 use Drupal\Core\Entity\EntityViewBuilder;
+use Drupal\Core\Language\LanguageManagerInterface;
+use Drupal\Core\Render\RendererInterface;
+use Drupal\Core\Theme\Registry;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a Tour view builder.
@@ -13,6 +20,47 @@ use Drupal\Core\Entity\EntityViewBuilder;
  * builders, the view alter hooks are run later in the process.
  */
 class TourViewBuilder extends EntityViewBuilder {
+
+  /**
+   * Constructs a new TourViewBuilder.
+   *
+   * @param \Drupal\Core\Entity\EntityTypeInterface $entity_type
+   *   The entity type definition.
+   * @param \Drupal\Core\Entity\EntityRepositoryInterface $entity_repository
+   *   The entity repository service.
+   * @param \Drupal\Core\Language\LanguageManagerInterface $language_manager
+   *   The language manager.
+   * @param \Drupal\Core\Theme\Registry $theme_registry
+   *   The theme registry.
+   * @param \Drupal\Core\Entity\EntityDisplayRepositoryInterface $entity_display_repository
+   *   The entity display repository.
+   * @param \Drupal\Core\Render\RendererInterface $renderer
+   *   The renderer.
+   */
+  public function __construct(
+    EntityTypeInterface $entity_type,
+    EntityRepositoryInterface $entity_repository,
+    LanguageManagerInterface $language_manager,
+    Registry $theme_registry,
+    EntityDisplayRepositoryInterface $entity_display_repository,
+    protected RendererInterface $renderer,
+  ) {
+    parent::__construct($entity_type, $entity_repository, $language_manager, $theme_registry, $entity_display_repository);
+  }
+
+  /**
+   * {@inheritdoc}
+   */
+  public static function createInstance(ContainerInterface $container, EntityTypeInterface $entity_type): static {
+    return new static(
+      $entity_type,
+      $container->get('entity.repository'),
+      $container->get('language_manager'),
+      $container->get('theme.registry'),
+      $container->get('entity_display.repository'),
+      $container->get('renderer'),
+    );
+  }
 
   /**
    * {@inheritdoc}
@@ -46,8 +94,7 @@ class TourViewBuilder extends EntityViewBuilder {
       $location = $tip->getLocation();
 
       $body_render_array = $tip->getBody();
-      $body = (string) \Drupal::service('renderer')
-        ->renderInIsolation($body_render_array);
+      $body = (string) $this->renderer->renderInIsolation($body_render_array);
       $output = [
         'body' => $body,
         'title' => $tip->getLabel(),

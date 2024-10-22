@@ -8,6 +8,7 @@ use Drupal\Core\Block\Attribute\Block;
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Config\ConfigFactoryInterface;
 use Drupal\Core\Entity\EntityInterface;
+use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Path\PathMatcherInterface;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
@@ -39,6 +40,8 @@ class TourButtonBlock extends BlockBase implements ContainerFactoryPluginInterfa
    *   The path matcher.
    * @param \Drupal\Core\Config\ConfigFactoryInterface $configFactory
    *   The config factory.
+   * @param \Drupal\Core\Entity\EntityTypeManagerInterface $entityTypeManager
+   *   The entity type manager.
    */
   public function __construct(
     array $configuration,
@@ -47,6 +50,7 @@ class TourButtonBlock extends BlockBase implements ContainerFactoryPluginInterfa
     protected RouteMatchInterface $currentRoute,
     protected PathMatcherInterface $pathMatcher,
     protected ConfigFactoryInterface $configFactory,
+    protected EntityTypeManagerInterface $entityTypeManager,
   ) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
   }
@@ -62,11 +66,15 @@ class TourButtonBlock extends BlockBase implements ContainerFactoryPluginInterfa
       $container->get('current_route_match'),
       $container->get('path.matcher'),
       $container->get('config.factory'),
+      $container->get('entity_type.manager'),
     );
   }
 
   /**
    * {@inheritdoc}
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
    */
   public function build(): array {
     // Load all the items and match on route name.
@@ -78,7 +86,8 @@ class TourButtonBlock extends BlockBase implements ContainerFactoryPluginInterfa
       $route_name = '<front>';
     }
 
-    $results = \Drupal::entityQuery('tour')
+    $results = $this->entityTypeManager->getStorage('tour')
+      ->getQuery()
       ->condition('routes.*.route_name', $route_name);
 
     if ($route_match->getRouteObject()) {

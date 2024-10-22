@@ -7,7 +7,7 @@ dependencies:
   - drupal:dashboard
   - drupal:tour
 
-# Information added by Drupal.org packaging script on 2024-10-02
-version: '2.0.5'
+# Information added by Drupal.org packaging script on 2024-10-19
+version: '2.0.6'
 project: 'tour'
-datestamp: 1727881430
+datestamp: 1729297642

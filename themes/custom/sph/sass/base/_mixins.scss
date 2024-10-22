@@ -13,3 +13,26 @@
   background-color: $color;
   background-repeat: $repeat;
 }
+
+@mixin transition-all-sph() {
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+}
+
+@mixin radius-sph() {
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+@mixin -sph-hoverComponent() {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
+  background-color: #0000000d;
+  @include radius-sph();
+  @include transition-all-sph();
+}

@@ -20,6 +20,6 @@
     },
     "suggest": {
         "drupal/tour_core": "*",
-        "drupal/tour_core_langauge": "*"
+        "drupal/tour_core_language": "*"
     }
 }

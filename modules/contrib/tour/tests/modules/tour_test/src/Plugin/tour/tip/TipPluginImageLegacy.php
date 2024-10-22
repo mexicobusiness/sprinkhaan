@@ -4,6 +4,7 @@ namespace Drupal\tour_test\Plugin\tour\tip;
 
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+use Drupal\Core\Render\RendererInterface;
 use Drupal\Core\StringTranslation\TranslatableMarkup;
 use Drupal\Core\Utility\Token;
 use Drupal\tour\Attribute\Tip;
@@ -46,8 +47,10 @@ class TipPluginImageLegacy extends TipPluginBase implements ContainerFactoryPlug
    *   The plugin implementation definition.
    * @param \Drupal\Core\Utility\Token $token
    *   The token service.
+   * @param \Drupal\Core\Render\RendererInterface $renderer
+   *   The renderer.
    */
-  public function __construct(array $configuration, $plugin_id, $plugin_definition, protected Token $token) {
+  public function __construct(array $configuration, $plugin_id, $plugin_definition, protected Token $token, protected RendererInterface $renderer) {
     parent::__construct($configuration, $plugin_id, $plugin_definition);
   }
 
@@ -55,7 +58,13 @@ class TipPluginImageLegacy extends TipPluginBase implements ContainerFactoryPlug
    * {@inheritdoc}
    */
   public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition): static {
-    return new static($configuration, $plugin_id, $plugin_definition, $container->get('token'));
+    return new static(
+      $configuration,
+      $plugin_id,
+      $plugin_definition,
+      $container->get('token'),
+      $container->get('renderer'),
+    );
   }
 
   /**
@@ -70,7 +79,7 @@ class TipPluginImageLegacy extends TipPluginBase implements ContainerFactoryPlug
 
     return [
       'title' => Html::escape($this->get('label')),
-      'body' => $this->token->replace(\Drupal::service('renderer')->renderInIsolation($image)),
+      'body' => $this->token->replace($this->renderer->renderInIsolation($image)),
     ];
   }
 

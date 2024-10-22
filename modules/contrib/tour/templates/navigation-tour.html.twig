@@ -1,0 +1,35 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display the tour button for navigation item.
+ *
+ * Available variables:
+ * - type: The type of navigation_tour.
+ * - tag: The tag of navigation_tour.
+ * - value: The value of navigation_tour.
+ * - attributes: The content of navigation_tour.
+ *
+ * @ingroup themeable
+ */
+#}
+
+{% block value %}
+  {% if navigation_sdc %}
+    {% include 'navigation:toolbar-button' with {
+      attributes: attributes,
+      extra_classes: ['toolbar-button--collapsible'],
+      icon: 'help',
+      html_tag: tag,
+      text: value,
+    } only %}
+  {% else %}
+    {# todo remove when D10 support is dropped #}
+    {% include '@navigation/toolbar-button.html.twig' with {
+      attributes: attributes,
+      extra_classes: 'toolbar-button--collapsible',
+      icon: 'help',
+      html_tag: tag,
+      text: value,
+    } only %}
+  {% endif %}
+{% endblock %}

@@ -9,6 +9,35 @@ use Drupal\Component\Serialization\Yaml;
 use Drupal\tour\Entity\Tour;
 
 /**
+ * Import tour to the navigation.
+ */
+function tour_install(): void {
+  import_tour_navigation_config();
+}
+
+/**
+ * Implements hook_uninstall().
+ */
+function tour_uninstall(): void {
+  $moduleHandler = \Drupal::service('module_handler');
+  if (!$moduleHandler->moduleExists('navigation')) {
+    return;
+  }
+  // Delete tour instances in the navigation.
+  $config = \Drupal::configFactory()->getEditable('navigation.block_layout');
+  $sections = $config->get('sections');
+  if (isset($sections[0])) {
+    $components = $sections[0]['components'];
+    foreach ($components as $key => $component) {
+      if ($component['configuration']['id'] == 'navigation_tour') {
+        unset($sections[0]['components'][$key]);
+      }
+    }
+  }
+  $config->set('sections', $sections)->save();
+}
+
+/**
  * Helper function to import a new tour config.
  *
  * @param string $id
@@ -28,25 +57,59 @@ function import_new_tour_config(string $id): void {
 
     $file = \Drupal::service('extension.list.module')->getPath('tour') . '/config/optional/tour.tour.' . $id . '.yml';
     $raw = file_get_contents($file);
-    $value = Yaml::decode($raw);
-    if (!is_array($value)) {
-      throw new \RuntimeException('Invalid YAML file %s', $file);
-    }
-    $type = $config_manager->getEntityTypeIdByName(basename($file));
-    $entity_manager = $config_manager->getEntityTypeManager();
-    $definition = $entity_manager->getDefinition($type);
-    $id_key = $definition->getKey('id');
-    $id = $value[$id_key];
-    /** @var \Drupal\Core\Config\Entity\ConfigEntityStorage $entity_storage */
-    $entity_storage = $entity_manager->getStorage($type);
-    $entity = $entity_storage->load($id);
-    if (!$entity) {
-      $entity = $entity_storage->createFromStorageRecord($value);
-      $entity->save();
+    if ($raw) {
+      $value = Yaml::decode($raw);
+      if (!is_array($value)) {
+        throw new \RuntimeException('Invalid YAML file %s', $file);
+      }
+      $type = $config_manager->getEntityTypeIdByName(basename($file));
+      $entity_manager = $config_manager->getEntityTypeManager();
+      $definition = $entity_manager->getDefinition($type);
+      $id_key = $definition->getKey('id');
+      $id = $value[$id_key];
+      /** @var \Drupal\Core\Config\Entity\ConfigEntityStorage $entity_storage */
+      $entity_storage = $entity_manager->getStorage($type);
+      $entity = $entity_storage->load($id);
+      if (!$entity) {
+        $entity = $entity_storage->createFromStorageRecord($value);
+        $entity->save();
+      }
     }
   }
   catch (Exception) {
     throw new \RuntimeException('Error running tour_update_10300');
+  }
+}
+
+/**
+ * Helper function to import tour to navigation config.
+ */
+function import_tour_navigation_config(): void {
+  $moduleHandler = \Drupal::service('module_handler');
+  if (!$moduleHandler->moduleExists('navigation')) {
+    return;
+  }
+  $config = \Drupal::configFactory()->getEditable('navigation.block_layout');
+  $sections = $config->get('sections');
+  if (isset($sections[0])) {
+    $components = $sections[0]['components'];
+    if (!isset($components['2c53c0b8-7140-44da-90a2-0a5befa2d8bf'])) {
+      $component = [
+        'uuid' => '2c53c0b8-7140-44da-90a2-0a5befa2d8bf',
+        'region' => 'content',
+        'configuration' => [
+          'id' => 'navigation_tour',
+          'label' => 'Tour',
+          'label_display' => '0',
+          'provider' => 'navigation',
+        ],
+        'weight' => -1,
+        'additional' => [],
+      ];
+      $components['2c53c0b8-7140-44da-90a2-0a5befa2d8bf'] = $component;
+      $sections[0]['components'] = $components;
+      $config->set('sections', $sections)->save();
+    }
   }
 }
 
@@ -185,4 +248,11 @@ function tour_update_10307(): void {
   }
   catch (Exception) {
   }
+}
+
+/**
+ * Import tour to the navigation.
+ */
+function tour_update_10308(): void {
+  import_tour_navigation_config();
 }

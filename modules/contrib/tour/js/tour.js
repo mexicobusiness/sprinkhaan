@@ -251,7 +251,7 @@
               const step = shepherdTour.addStep(tourItemOptions);
               step.on('before-show', function () {
                 const selector = step.options.attachTo.element;
-                // eslint-disable-next-line jquery/no-is
+                // eslint-disable-next-line no-jquery/no-is
                 if (selector && !$(selector).is(':visible')) {
                   const details = $(selector).parents('details');
                   if (details) {

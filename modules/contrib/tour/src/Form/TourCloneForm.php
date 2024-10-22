@@ -5,6 +5,7 @@ namespace Drupal\tour\Form;
 use Drupal\Core\Entity\EntityForm;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+use Drupal\tour\Entity\Tour;
 
 /**
  * Form controller for the tour entity clone form.
@@ -32,11 +33,13 @@ class TourCloneForm extends EntityForm {
     ];
 
     $form['new_name'] = [
-      '#title' => 'File name for new tour item.',
-      '#type' => 'textfield',
-      '#description' => $this->t('This value should start with <strong>tour.tour.</strong> and may not exist.'),
-      '#field_prefix' => 'tour.tour.',
+      '#type' => 'machine_name',
       '#default_value' => $this->entity->getOriginalId(),
+      '#machine_name' => [
+        'exists' => '\Drupal\tour\Entity\Tour::load',
+        'source' => ['settings', 'label'],
+      ],
+      '#required' => TRUE,
     ];
 
     return $form;
@@ -55,6 +58,11 @@ class TourCloneForm extends EntityForm {
 
     if ($old_name == $new_name) {
       $form_state->setError($form['new_name'], $this->t('You must change the new tour file name', ['%tip' => 'XXX']));
+    }
+
+    $tours = Tour::loadMultiple();
+    if (isset($tours[$new_name])) {
+      $form_state->setError($form['new_name'], $this->t('Tour with machine name %name already exists', ['%name' => $new_name]));
     }
   }
 

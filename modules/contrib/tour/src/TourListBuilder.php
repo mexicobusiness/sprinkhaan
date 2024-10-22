@@ -5,12 +5,50 @@ namespace Drupal\tour;
 use Drupal\Component\Utility\Html;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Entity\EntityListBuilder;
+use Drupal\Core\Entity\EntityStorageInterface;
+use Drupal\Core\Entity\EntityTypeInterface;
+use Drupal\Core\Session\AccountProxyInterface;
 use Drupal\Core\Url;
+use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Provides a listing of tours.
  */
 class TourListBuilder extends EntityListBuilder {
+
+  /**
+   * Constructs a new TourListBuilder object.
+   *
+   * @param \Drupal\Core\Entity\EntityTypeInterface $entity_type
+   *   The entity type definition.
+   * @param \Drupal\Core\Entity\EntityStorageInterface $storage
+   *   The entity storage class.
+   * @param \Drupal\Core\Session\AccountProxyInterface $currentUser
+   *   The current user.
+   */
+  public function __construct(
+    EntityTypeInterface $entity_type,
+    EntityStorageInterface $storage,
+    protected AccountProxyInterface $currentUser,
+  ) {
+    parent::__construct($entity_type, $storage);
+
+  }
+
+  /**
+   * {@inheritdoc}
+   *
+   * @throws \Drupal\Component\Plugin\Exception\InvalidPluginDefinitionException
+   * @throws \Drupal\Component\Plugin\Exception\PluginNotFoundException
+   */
+  public static function createInstance(ContainerInterface $container, EntityTypeInterface $entity_type): static {
+    $entity_type_manager = $container->get('entity_type.manager');
+    return new static(
+      $entity_type,
+      $entity_type_manager->getStorage($entity_type->id()),
+      $container->get('current_user'),
+    );
+  }
 
   /**
    * {@inheritdoc}
@@ -131,7 +169,7 @@ class TourListBuilder extends EntityListBuilder {
       'weight' => 11,
     ];
 
-    $user = \Drupal::currentUser();
+    $user = $this->currentUser;
     if ($user->hasPermission('export configuration')) {
       $operations['export-config'] = [
         'title' => $this->t('Export'),
