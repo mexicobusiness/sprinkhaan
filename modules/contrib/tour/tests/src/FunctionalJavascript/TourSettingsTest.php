@@ -58,4 +58,37 @@ class TourSettingsTest extends WebDriverTestBase {
     $this->assertTrue($page->hasButton('No tour available for this page.'));
   }
 
+  /**
+   * Test hide when tour is empty settings.
+   *
+   * @throws \Drupal\Core\Entity\EntityStorageException
+   */
+  public function testHideWhenEmptySetting(): void {
+    $this->drupalLogin($this->createUser([
+      'access toolbar',
+      'access tour',
+    ]));
+
+    $this->drupalGet('tour-test-1');
+    $page = $this->getSession()->getPage();
+    $this->assertTrue($page->hasButton('Tour'));
+
+    $this->drupalGet('tour-test-2');
+    $page = $this->getSession()->getPage();
+    $this->assertTrue($page->hasButton('No tour'));
+
+    \Drupal::configFactory()->getEditable('tour.settings')
+      ->set('hide_tour_when_empty', TRUE)
+      ->save();
+    $this->rebuildAll();
+
+    $this->drupalGet('tour-test-1');
+    $page = $this->getSession()->getPage();
+    $this->assertTrue($page->hasButton('Tour'));
+
+    $this->drupalGet('tour-test-2');
+    $page = $this->getSession()->getPage();
+    $this->assertFalse($page->hasButton('No tour'));
+  }
+
 }

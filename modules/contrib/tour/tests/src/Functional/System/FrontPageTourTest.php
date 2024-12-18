@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\Tests\system\Functional;
+namespace Drupal\Tests\tour\Functional\System;
 
 use Drupal\Tests\tour\Functional\TourTestBase;
 

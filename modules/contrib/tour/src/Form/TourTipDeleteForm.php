@@ -107,7 +107,7 @@ class TourTipDeleteForm extends ConfirmFormBase {
     $this->entity->set('tips', $tips);
     $this->entity->save();
 
-    $form_state->setRedirect('entity.tour.edit_form', ['tour' => $this->entity->id()]);
+    $form_state->setRedirect('entity.tour.edit_form_tips', ['tour' => $this->entity->id()]);
     $this->messenger()->addMessage($this->t('Deleted the %tour tour %tip tip.', [
       '%tour' => $this->entity->label(),
       '%tip' => $this->tip->get('label'),

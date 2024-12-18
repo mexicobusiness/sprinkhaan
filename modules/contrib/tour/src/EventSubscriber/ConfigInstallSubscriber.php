@@ -5,6 +5,8 @@ namespace Drupal\tour\EventSubscriber;
 use Drupal\Core\Config\ConfigCrudEvent;
 use Drupal\Core\Config\ConfigEvents;
 use Drupal\Core\Extension\ModuleHandlerInterface;
+use Drupal\Core\Messenger\MessengerTrait;
+use Drupal\Core\StringTranslation\StringTranslationTrait;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 
 /**
@@ -13,6 +15,9 @@ use Symfony\Component\EventDispatcher\EventSubscriberInterface;
  * @internal
  */
 class ConfigInstallSubscriber implements EventSubscriberInterface {
+
+  use MessengerTrait;
+  use StringTranslationTrait;
 
   /**
    * Constructs a ConfigInstallSubscriber object.
@@ -41,34 +46,7 @@ class ConfigInstallSubscriber implements EventSubscriberInterface {
     if (!$this->moduleHandler->moduleExists('navigation')) {
       return;
     }
-    $saved_config = $event->getConfig();
-    // Place the tour to the navigation.
-    if ($saved_config->getName() == 'navigation.block_layout' && empty($saved_config->getOriginal())) {
-      $sections = $saved_config->get('sections');
-      if (isset($sections[0])) {
-        $components = $sections[0]['components'];
-        if (!isset($components['2c53c0b8-7140-44da-90a2-0a5befa2d8bf'])) {
-          $component = [
-            'uuid' => '2c53c0b8-7140-44da-90a2-0a5befa2d8bf',
-            'region' => 'content',
-            'configuration' => [
-              'id' => 'navigation_tour',
-              'label' => 'Tour',
-              'label_display' => '0',
-              'provider' => 'navigation',
-              'status' => TRUE,
-              'info' => '',
-              'view_mode' => 'default',
-            ],
-            'weight' => 0,
-            'additional' => [],
-          ];
-          $components['2c53c0b8-7140-44da-90a2-0a5befa2d8bf'] = $component;
-          $sections[0]['components'] = $components;
-          $saved_config->set('sections', $sections)->save();
-        }
-      }
-    }
+    $this->messenger()->addWarning($this->t('Currently, <em>Tour</em> module does not have integration with <em>Navigation</em>, recommend following <a href="https://www.drupal.org/project/tour/issues/3489075">https://www.drupal.org/project/tour/issues/3489075</a> for when that does. For now use the Tour block.'));
   }
 
 }

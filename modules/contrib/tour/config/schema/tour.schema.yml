@@ -4,6 +4,9 @@ tour.settings:
   type: config_object
   label: 'Tour settings'
   mapping:
+    hide_tour_when_empty:
+      type: boolean
+      label: 'Hide the tour button when empty'
     display_custom_labels:
       type: boolean
       label: 'Display custom labels'

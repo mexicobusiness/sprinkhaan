@@ -42,6 +42,12 @@ class TourSettingsForm extends ConfigFormBase {
       '#title' => $this->t('Configure button label'),
       '#description' => $this->t('Default will be "Tour" and "No tour".'),
     ];
+    $form['tour']['hide_tour_when_empty'] = [
+      '#type' => 'checkbox',
+      '#title' => $this->t('Hide tour when empty'),
+      '#description' => $this->t('On pages without a tour hide the button.'),
+      '#default_value' => $config->get('hide_tour_when_empty'),
+    ];
     $form['tour']['display_custom_labels'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Display custom labels'),
@@ -84,6 +90,7 @@ class TourSettingsForm extends ConfigFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state): void {
     parent::submitForm($form, $form_state);
     $this->config('tour.settings')
+      ->set('hide_tour_when_empty', $form_state->getValue('hide_tour_when_empty'))
       ->set('display_custom_labels', $form_state->getValue('display_custom_labels'))
       ->set('tour_avail_text', $form_state->getValue('tour_avail_text'))
       ->set('tour_no_avail_text', $form_state->getValue('tour_no_avail_text'))

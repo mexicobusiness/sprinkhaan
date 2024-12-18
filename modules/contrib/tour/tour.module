@@ -9,7 +9,6 @@ use Drupal\Core\Config\Entity\ConfigEntityInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Url;
-use Drupal\navigation\Plugin\SectionStorage\NavigationSectionStorage;
 use Drupal\node\NodeInterface;
 use Drupal\node\NodeTypeInterface;
 use Drupal\taxonomy\TermInterface;
@@ -48,14 +47,6 @@ function tour_theme(): array {
         'attributes' => [],
       ],
     ],
-    'navigation_tour' => [
-      'variables' => [
-        'type' => NULL,
-        'tag' => NULL,
-        'value' => NULL,
-        'attributes' => NULL,
-      ],
-    ],
   ];
 }
 
@@ -76,64 +67,42 @@ function tour_toolbar(): array {
     return $items;
   }
 
-  // Load all the items and match on route name.
-  $route_match = \Drupal::routeMatch();
-  $route_name = $route_match->getRouteName();
-
-  // Check if the current matching path is the front page.
-  if (\Drupal::service('path.matcher')->isFrontPage()) {
-    $route_name = '<front>';
-  }
-
-  $results = \Drupal::entityQuery('tour')
-    ->condition('routes.*.route_name', $route_name);
-
-  if ($route_match->getRouteObject()) {
-    foreach ($route_match->getParameters() as $name => $parameter) {
-      if ($parameter instanceof EntityInterface && is_numeric($parameter->id())) {
-        $results->condition('routes.*.route_params.' . $name, $parameter->id());
-        break;
-      }
-      elseif ($parameter instanceof ConfigEntityInterface) {
-        $name = $name === 'dashboard' ? 'id' : $name;
-        $results->condition('routes.*.route_params.' . $name, $parameter->id());
-        break;
-      }
-    }
-  }
-
-  $results = $results->condition('status', TRUE)
-    ->accessCheck(FALSE)
-    ->execute();
+  $helper_service = \Drupal::service('tour.helper');
+  $results = $helper_service->loadTourEntities();
   $no_tips = empty($results);
 
-  $items['tour'] += [
-    '#type' => 'toolbar_item',
-    'tab' => [
-      '#lazy_builder' => [
-        'tour.lazy_builders:renderTour',
-        [$no_tips],
+  if (!$helper_service->shouldEmptyBeHidden($no_tips)) {
+    $items['tour'] += [
+      '#type' => 'toolbar_item',
+      'tab' => [
+        '#lazy_builder' => [
+          'tour.lazy_builders:renderTour',
+          [$no_tips],
+        ],
+        '#cache' => ['contexts' => ['url']],
       ],
-      '#cache' => ['contexts' => ['url']],
-    ],
-    '#wrapper_attributes' => [
-      'class' => ['tour-toolbar-tab'],
-    ],
-    '#attached' => [
-      'library' => [
-        'tour/tour',
+      '#wrapper_attributes' => [
+        'class' => ['tour-toolbar-tab'],
       ],
-    ],
-  ];
+      '#attached' => [
+        'library' => [
+          'tour/tour',
+        ],
+      ],
+    ];
 
-  // \Drupal\toolbar\Element\ToolbarItem::preRenderToolbarItem adds an
-  // #attributes property to each toolbar item's tab child automatically.
-  // Lazy builders don't support an #attributes property, so we need to
-  // add another render callback to remove the #attributes property. We start by
-  // adding the defaults, and then we append our own pre render callback.
-  $items['tour'] += \Drupal::service('plugin.manager.element_info')->getInfo('toolbar_item');
-  $items['tour']['#pre_render'][] = [RenderCallbacks::class, 'removeTabAttributes'];
-
+    // \Drupal\toolbar\Element\ToolbarItem::preRenderToolbarItem adds an
+    // #attributes property to each toolbar item's tab child automatically.
+    // Lazy builders don't support an #attributes property, so we need to
+    // add another render callback to remove the #attributes property. We start
+    // by adding the defaults, and then we append our own pre render callback.
+    $items['tour'] += \Drupal::service('plugin.manager.element_info')
+      ->getInfo('toolbar_item');
+    $items['tour']['#pre_render'][] = [
+      RenderCallbacks::class,
+      'removeTabAttributes',
+    ];
+  }
   return $items;
 }
 
@@ -262,47 +231,5 @@ function tour_tour_tips_alter(array $tour_tips, EntityInterface $entity): void {
         $tour_tip->set('body', $body);
       }
     }
-  }
-}
-
-/**
- * Implements hook_plugin_filter_TYPE__CONSUMER_alter().
- *
- * Curate the blocks available in the Layout Builder "Add Block" UI.
- */
-function tour_plugin_filter_block__layout_builder_alter(array &$definitions, array $extra): void {
-  if (($extra['section_storage'] ?? NULL) instanceof NavigationSectionStorage) {
-    if (!isset($definitions['navigation_tour'])) {
-      $definitions['navigation_tour'] = [
-        'class' => "Drupal\tour\Plugin\Block\NavigationTourBlock",
-        "provider" => "tour",
-        "id" => "navigation_tour",
-        "category" => "Navigation",
-        'admin_label' => t('Tour'),
-      ];
-    }
-  }
-}
-
-/**
- * Implements hook_block_alter().
- */
-function tour_block_alter(&$definitions): void {
-  if (isset($definitions['navigation_tour'])) {
-    $definitions['navigation_tour']['_block_ui_hidden'] = TRUE;
-  }
-}
-
-/**
- * Implements hook_preprocess_HOOK().
- */
-function tour_preprocess_navigation_tour(&$variables): void {
-  // @todo Remove when D10 support is dropped.
-  $variables['navigation_sdc'] = FALSE;
-  if (str_starts_with(\Drupal::VERSION, '11') && !str_contains(\Drupal::VERSION, '-dev') && \Drupal::VERSION > '11.0.5') {
-    $variables['navigation_sdc'] = TRUE;
-  }
-  elseif (str_starts_with(\Drupal::VERSION, '10') && \Drupal::VERSION > '10.3.6') {
-    $variables['navigation_sdc'] = TRUE;
   }
 }

@@ -36,8 +36,8 @@ class TourCloneForm extends EntityForm {
       '#type' => 'machine_name',
       '#default_value' => $this->entity->getOriginalId(),
       '#machine_name' => [
-        'exists' => '\Drupal\tour\Entity\Tour::load',
-        'source' => ['settings', 'label'],
+        'exists' => ['Drupal\tour\Entity\Tour', 'load'],
+        'source' => ['label'],
       ],
       '#required' => TRUE,
     ];

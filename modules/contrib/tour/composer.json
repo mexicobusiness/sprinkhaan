@@ -16,10 +16,16 @@
         "source": "https://git.drupalcode.org/project/tour"
     },
     "require-dev": {
-        "drupal/dashboard": "*"
+        "drupal/dashboard": "*",
+        "php-forge/foxy": "^0.1"
     },
     "suggest": {
         "drupal/tour_core": "*",
         "drupal/tour_core_language": "*"
+    },
+    "config": {
+        "allow-plugins": {
+            "php-forge/foxy": false
+        }
     }
 }

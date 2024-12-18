@@ -1,9 +1,13 @@
+/* eslint import/no-unresolved: 0 */
 /**
  * @file
  * Attaches behaviors for the Tour module's toolbar tab.
  */
 
-(($, Backbone, Drupal, settings, document, Shepherd) => {
+import Shepherd from 'shepherd.js';
+import 'shepherd.js/dist/css/shepherd.css';
+
+(($, Backbone, Drupal, settings, document, once) => {
   const queryString = decodeURI(window.location.search);
 
   /**
@@ -477,4 +481,4 @@
    */
   Drupal.theme.tourItemContent = (tourStepConfig) =>
     `${tourStepConfig.body}<div class="tour-progress">${tourStepConfig.counter}</div>`;
-})(jQuery, Backbone, Drupal, drupalSettings, document, window.Shepherd);
+})(jQuery, Backbone, Drupal, drupalSettings, document, once);

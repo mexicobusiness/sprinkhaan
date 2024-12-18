@@ -25,10 +25,13 @@ final class LazyBuilders implements TrustedCallbackInterface {
    *   Element info.
    * @param \Drupal\Core\Config\ConfigFactoryInterface $configFactory
    *   The config factory.
+   * @param mixed $tourHelper
+   *   Helper methods for the tour module.
    */
   public function __construct(
     protected ElementInfoManagerInterface $elementInfo,
     protected ConfigFactoryInterface $configFactory,
+    protected TourHelper $tourHelper,
   ) {
   }
 
@@ -37,13 +40,11 @@ final class LazyBuilders implements TrustedCallbackInterface {
    *
    * @param bool $noTips
    *   Indicates if the current page has any tour.
-   * @param string|null $theme
-   *   Indicates theme template used for rendering.
    *
    * @return array
    *   Render array.
    */
-  public function renderTour(bool $noTips = FALSE, ?string $theme = NULL): array {
+  public function renderTour(bool $noTips = FALSE): array {
     $classes = [
       'toolbar-icon',
       'toolbar-item',
@@ -55,18 +56,10 @@ final class LazyBuilders implements TrustedCallbackInterface {
       $classes = array_merge($classes, ['toolbar-tab-empty']);
     }
 
-    $config = $this->configFactory->get('tour.settings');
-    if ($config->get('display_custom_labels')) {
-      $tour_avail_text = $config->get('tour_avail_text');
-      $tour_no_avail_text = $config->get('tour_no_avail_text');
-    }
-    else {
-      $tour_avail_text = $this->t('Tour');
-      $tour_no_avail_text = $this->t('No tour');
-    }
+    $tour_avail_text = $this->tourHelper->getTourLabels()['tour_avail_text'];
+    $tour_no_avail_text = $this->tourHelper->getTourLabels()['tour_no_avail_text'];
 
     return [
-      '#theme' => $theme,
       '#type' => 'html_tag',
       '#tag' => 'button',
       '#cache' => [
