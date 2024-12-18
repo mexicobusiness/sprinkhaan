@@ -3,6 +3,7 @@ $table: 768px;
 $desktop: 1170px;
 #page {
   #main-content{
+    padding-top: 60px;
     @include breakpoint($table) {
       margin: 0 auto;
       width: 768px;

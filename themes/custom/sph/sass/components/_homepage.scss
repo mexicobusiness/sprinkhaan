@@ -1,5 +1,334 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800&display=swap");
 .path-frontpage {
-  
+    overflow-x: hidden;
+    .region-top{
+    	#block-sph-ntcdesprinkhaan{
+    		margin: 20px;
+			width: 721px;
+			margin: 0 auto;
+    		.ntc-de-sprinkhaan-black-btn{
+    			@include black-btn();
+    		}
+    		.ntc-de-sprinkhaan-title h1{
+    			@include fonts("Mukta", 40px, 600);
+    			text-align: center;
+			    margin: 20px 0px;
+			    line-height: 1;
+			    margin-bottom: 10px;
+			    span.green{
+			    	@include fonts("Mukta", 40px, 600);
+			    	color: $color-green;
+			    }
+			    span.orange{
+			    	@include fonts("Mukta", 40px, 600);
+			    	color: $color-orange;
+			    }
+    		}
+    		.ntc-de-sprinkhaan-desc{
+    			@include fonts("Mukta", 12px, 'normal');
+    			text-align: center;
+    			margin-bottom: 10px;
+    		}
+    		.ntc-de-sprinkhaan-btns{
+    			margin: auto 0;
+    			width: 100%;
+    			margin-bottom: 10px;
+				display: flex;
+			    justify-content: center;
+	    		.ntc-de-sprinkhaan-green-btn{
+	    			width: 200px;
+	    			float:left;
+	    			text-align: center;
+	    			background-color: $color-green;
+	    			color: $color-white;
+	    			border-radius: 25px;
+	    			padding: 4px;
+	    			margin-right: 20px;
+	    		}
+	    		.ntc-de-sprinkhaan-white-btn{
+	    			width: 200px;
+	    			float:left;
+	    			text-align: center;
+	    			color: $color-brown;
+	    			border: 1px solid $color-brown;
+	    			border-radius: 25px;
+	    			padding: 4px;
+	    		}
+    		}
+    	}
+    	#block-sph-videohome{
+    		width: 100%;
+    		display: inline-block;
+    		position: relative;
+    		margin-bottom: 20px;
+    		text-align: center;
+    	}
+    }
+    .region-center{
+    	width: 100%;
+    	display: inline-block;
+    	position: relative;
+    	#block-sph-views-block-testimoniales-block-1{
+    		display: inline-block;
+    		position: relative;
+    		width: 100%;
+    		margin-bottom: 50px;
+    		header{
+    			.testimonials-btn{
+    				@include black-btn();
+    			}
+    			.testimonials-tit{
+	    			@include fonts("Mukta", 40px, 600);
+	    			text-align: center;
+				    margin: 20px 0px;
+				    line-height: 1;
+				    margin-bottom: 10px;
+				    span.green{
+				    	@include fonts("Mukta", 40px, 600);
+				    	color: $color-green;
+				    }
+    			}
+    		}
+    		.slick-list .slick__slide{
+    			.testimoniales-fot{
+    				float:left;
+    				img{
+    					width: 72px;
+    					height: auto;
+    				}
+    			}
+    			.testimoniales-tit{
+    				@include fonts("Mukta", 16px, 600);
+    			}
+    			.testimoniales-est{
+    				div{
+    					float: left;
+    					color: $color-orange;
+					    font-size: 22px;
+					    margin-right: 6px;
+    				}
+    			}
+    			.testimoniales-tes{
+    				clear: both;
+    				width: 100%;
+    			}
+    		}
+    		nav{
+    			.slick-prev{
+    				width: 60px;
+    				position: absolute;
+    				left: -80px;
+    				border: 0px solid;
+    			}
+    			.slick-next{
+    				width: 60px;
+    				position: absolute;
+    				right: -80px;
+    				border: 0px solid;
+    			}
+    		}
+    	}
+    	#block-sph-sobrenosotros{
+    		margin-bottom: 20px;
+    		display: inline-block;
+    		width: 100%;
+    		position: relative;
+    		.about-us-left{
+    			width: 50%;
+    			float: left;
+    			h2{
+    				@include fonts("Mukta", 40px, 600);
+				    span.orange{
+				    	@include fonts("Mukta", 40px, 600);
+				    	color: $color-orange;
+				    }
+    			}
+    			.about-us-left-text{
+    				padding-right: 25px;
+    			}
+    		}
+    		.about-us-right{
+    			width: 50%;
+    			float: left;
+    			img{
+    				width: 100%;
+    				height: auto;
+    			}
+    		}
+    	}
+    }
+    .content-center{
+    	#block-sph-clases{
+    		margin: 20px 0;
+    		.clases-top{
+    			position: relative;
+				width: 721px;
+			    margin: 0 auto;
+    			.clases-top-btn{
+    				@include black-btn();
+    			}
+    			.clases-top-tit{
+	    			@include fonts("Mukta", 40px, 600);
+	    			text-align: center;
+				    margin: 20px 0px;
+				    line-height: 1;
+				    margin-bottom: 10px;
+				    span.green{
+				    	@include fonts("Mukta", 40px, 600);
+				    	color: $color-green;
+				    }
+    			}
+    		}
+    		.clases-button{
+				width: 100%;
+			    display: inline-block;
+			    position: relative;
+				margin: 30px 0;
+			    .clases-button-left, .clases-button-right{
+			    	width: 342px;
+			    	float: left;
+			    	margin-right: 52.5px;
+			    	border: 1px solid $color-green;
+			    	border-radius: 25px;
+			    	padding: 24px;
+			    	.clases-button-left-tex, .clases-button-right-tex{
+			    		@include fonts("Mukta", 16px, 600);
+			    	}
+			    	.clases-button-left-tit{
+			    		@include fonts("Mukta", 30px, 600);
+			    		span.green{
+					    	@include fonts("Mukta", 30px, 600);
+					    	color: $color-green;
+			    		}
+			    	}
+				    .clases-button-left-des, .clases-button-right-des{
+				    	margin-bottom: 15px;
+				    }
+				    .clases-button-left-btn{
+				    	float: left;
+				    	@include black-btn-green(130px);
+				    	margin-right: 10px;
+				    }
+				    .clases-button-left-btn2{
+				    	float: left;
+				    	a{
+				    		color: $color-green;
+				    	}
+				    }
+			    }
+			    .clases-button-middle{
+			    	width: 381px;
+			    	float: left;
+			    	border-radius: 25px;
+			    	img{
+			    		width: 100%;
+			    		height: auto;
+			    	}
+			    }
+			    .clases-button-right{
+			    	border: 1px solid $color-orange;
+			    	margin-left: 52.5px;
+			    	margin-right: 0px;
+			    	.clases-button-left-tit, .clases-button-right-tit{
+			    		@include fonts("Mukta", 30px, 600);
+			    		span.orange{
+					    	@include fonts("Mukta", 30px, 600);
+					    	color: $color-orange;
+			    		}
+			    	}			    	
+				    .clases-button-right-btn{
+				    	float: left;
+				    	@include black-btn-orange(130px);
+				    	margin-right: 10px;
+				    }
+				    .clases-button-right-btn2{
+				    	float: left;
+				    	a{
+				    		color: $color-orange;
+				    	}
+				    }
+			    }
+    		}
+    	}
+    	#block-sph-views-block-culturales-block-1{
+    		margin: 20px 0;
+			display: inline-block;
+		    position: relative;
+		    width: 100%;
+    		header{
+    			.cultura-btn{
+    				@include black-btn();
+    			}
+    			.cultura-tit{
+	    			@include fonts("Mukta", 40px, 600);
+	    			text-align: center;
+				    margin: 20px 0px;
+				    line-height: 1;
+				    margin-bottom: 10px;
+				    span.green{
+				    	@include fonts("Mukta", 40px, 600);
+				    	color: $color-green;
+				    }
+    			}
+    		}
+    		.slick-list .slick__slide{
+    			.cultura-img{
+    				display: inline-block;
+    				position: relative;
+    				img{
+	    				width: 100%;
+	    				height: auto;
+    				}
+    			}
+    			.cultura-main-row{
+					display: inline-block;
+				    position: absolute;
+				    bottom: 0;
+				    left: 0;
+				    width: 381px;
+				    height: 200px;
+				    padding: 20px;
+				    .cultura-tit{
+				    	@include fonts("Mukta", 25px, 600);
+				    	color: $color-white;
+				    }
+				    .cultura-dat{
+				    	border: 1px solid $color-white;
+				    	border-radius: 25px;
+				    	text-align: center;
+				    	width: 150px;
+				    	color: $color-white;
+				    }
+				    .cultura-sho{
+				    	color: $color-white;
+				    	height: 60px;
+				    }
+				    .cultura-reg{
+				    	@include black-btn-green('auto');
+				    	padding: 10px 20px;
+				    	text-align: left;
+				    	a{
+				    	color: $color-white;
+				    	}
+				    }
+    			}
+    		}
+    		nav{
+    			.slick-prev{
+    				width: 60px;
+    				position: absolute;
+    				left: -80px;
+    				border: 0px solid;
+    			}
+    			.slick-next{
+    				width: 60px;
+    				position: absolute;
+    				right: -80px;
+    				border: 0px solid;
+    			}
+    		}
+
+    	}
+    }
 }

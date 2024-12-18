@@ -72,6 +72,9 @@ html,
       overflow: auto;
     }
   }
+  .feed-icon{
+    display: none;
+  }
 }
 ::-webkit-scrollbar {
   width: 7px;

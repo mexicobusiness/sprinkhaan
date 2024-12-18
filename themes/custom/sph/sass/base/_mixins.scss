@@ -36,3 +36,42 @@
   @include radius-sph();
   @include transition-all-sph();
 }
+
+@mixin black-btn(){
+  width: 182px;
+  background-color: $color-black;
+  color: $color-white;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+
+@mixin black-btn-green($size){
+  width: $size;
+  background-color: $color-green;
+  color: $color-white;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  a{
+    color: $color-white;
+  }
+}
+
+@mixin black-btn-orange($size){
+  width: $size;
+  background-color: $color-orange;
+  color: $color-white;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  a{
+    color: $color-white;
+  }
+}

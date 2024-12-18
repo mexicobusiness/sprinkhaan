@@ -650,6 +650,13 @@ $settings['update_free_access'] = FALSE;
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';
 
 /**
+ * Disable CSS and JS aggregation.
+ */
+$config['system.performance']['css']['preprocess'] = FALSE;
+$config['system.performance']['js']['preprocess'] = FALSE;
+
+
+/**
  * Override the default service container class.
  *
  * This is useful for example to trace the service container for performance
