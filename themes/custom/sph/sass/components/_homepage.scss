@@ -346,6 +346,9 @@
     			position: relative;
     			margin: 0 auto;
     			width: 721px;
+    			.lang{
+    				display: none;
+    			}
     			.camp-btn{
     				@include black-btn();
     			}
@@ -400,6 +403,9 @@
     			position: relative;
     			margin: 0 auto;
     			width: 721px;
+    			.lang{
+    				display: none;
+    			}
     			.news-btn{
     				@include black-btn();
     			}
@@ -457,6 +463,9 @@
     			position: relative;
     			margin: 0 auto;
     			width: 721px;
+    			.lang{
+    				display: none;
+    			}
     			.team-btn{
     				@include black-btn();
     			}
@@ -512,6 +521,9 @@
     			position: relative;
     			margin: 0 auto;
     			width: 721px;
+    			.lang{
+    				display: none;
+    			}
     			.faq-btn{
     				@include black-btn();
     			}

@@ -1573,6 +1573,10 @@ body.is-mobile {
   width: 721px;
 }
 /* line 349, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .lang {
+  display: none;
+}
+/* line 352, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-btn {
   width: 182px;
   background-color: #000;
@@ -1583,7 +1587,7 @@ body.is-mobile {
   margin-bottom: 10px;
   margin: 0 auto;
 }
-/* line 352, ../sass/components/_homepage.scss */
+/* line 355, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-tit {
   font-family: "Mukta";
   font-size: 40px;
@@ -1593,28 +1597,28 @@ body.is-mobile {
   line-height: 1;
   margin-bottom: 10px;
 }
-/* line 358, ../sass/components/_homepage.scss */
+/* line 361, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-tit span.green {
   font-family: "Mukta";
   font-size: 40px;
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 363, ../sass/components/_homepage.scss */
+/* line 366, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-desc {
   margin-bottom: 20px;
 }
-/* line 367, ../sass/components/_homepage.scss */
+/* line 370, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide {
   margin-right: 20px;
 }
-/* line 369, ../sass/components/_homepage.scss */
+/* line 372, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide .camp-title {
   font-family: "Mukta";
   font-size: 30px;
   font-weight: 600;
 }
-/* line 372, ../sass/components/_homepage.scss */
+/* line 375, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide a .camp-btn {
   width: "auto";
   background-color: #8CC63F;
@@ -1632,34 +1636,38 @@ body.is-mobile {
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide a .camp-btn a {
   color: #fff;
 }
-/* line 380, ../sass/components/_homepage.scss */
+/* line 383, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 nav .slick-prev {
   width: 60px;
   position: absolute;
   left: -80px;
   border: 0px solid;
 }
-/* line 386, ../sass/components/_homepage.scss */
+/* line 389, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 nav .slick-next {
   width: 60px;
   position: absolute;
   right: -80px;
   border: 0px solid;
 }
-/* line 394, ../sass/components/_homepage.scss */
+/* line 397, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 {
   margin: 20px 0;
   display: inline-block;
   position: relative;
   width: 100%;
 }
-/* line 399, ../sass/components/_homepage.scss */
+/* line 402, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 header {
   position: relative;
   margin: 0 auto;
   width: 721px;
 }
-/* line 403, ../sass/components/_homepage.scss */
+/* line 406, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 header .lang {
+  display: none;
+}
+/* line 409, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-btn {
   width: 182px;
   background-color: #000;
@@ -1670,7 +1678,7 @@ body.is-mobile {
   margin-bottom: 10px;
   margin: 0 auto;
 }
-/* line 406, ../sass/components/_homepage.scss */
+/* line 412, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-tit {
   font-family: "Mukta";
   font-size: 22px;
@@ -1681,30 +1689,30 @@ body.is-mobile {
   margin-bottom: 10px;
   text-align: center;
 }
-/* line 413, ../sass/components/_homepage.scss */
+/* line 419, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-tit span.green {
   font-family: "Mukta";
   font-size: 40px;
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 418, ../sass/components/_homepage.scss */
+/* line 424, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-desc {
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 423, ../sass/components/_homepage.scss */
+/* line 429, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide {
   margin-right: 20px;
   text-align: left;
 }
-/* line 426, ../sass/components/_homepage.scss */
+/* line 432, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide .news-title {
   font-family: "Mukta";
   font-size: 30px;
   font-weight: 600;
 }
-/* line 429, ../sass/components/_homepage.scss */
+/* line 435, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide a .news-btn {
   width: "auto";
   background-color: #8CC63F;
@@ -1722,34 +1730,38 @@ body.is-mobile {
 .path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide a .news-btn a {
   color: #fff;
 }
-/* line 437, ../sass/components/_homepage.scss */
+/* line 443, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 nav .slick-prev {
   width: 60px;
   position: absolute;
   left: -80px;
   border: 0px solid;
 }
-/* line 443, ../sass/components/_homepage.scss */
+/* line 449, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 nav .slick-next {
   width: 60px;
   position: absolute;
   right: -80px;
   border: 0px solid;
 }
-/* line 451, ../sass/components/_homepage.scss */
+/* line 457, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 {
   margin: 20px 0;
   display: inline-block;
   position: relative;
   width: 100%;
 }
-/* line 456, ../sass/components/_homepage.scss */
+/* line 462, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header {
   position: relative;
   margin: 0 auto;
   width: 721px;
 }
-/* line 460, ../sass/components/_homepage.scss */
+/* line 466, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .lang {
+  display: none;
+}
+/* line 469, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn {
   width: 182px;
   background-color: #000;
@@ -1760,7 +1772,7 @@ body.is-mobile {
   margin-bottom: 10px;
   margin: 0 auto;
 }
-/* line 463, ../sass/components/_homepage.scss */
+/* line 472, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit {
   font-family: "Mukta";
   font-size: 22px;
@@ -1771,60 +1783,64 @@ body.is-mobile {
   margin-bottom: 10px;
   text-align: center;
 }
-/* line 470, ../sass/components/_homepage.scss */
+/* line 479, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit span.green {
   font-family: "Mukta";
   font-size: 40px;
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 475, ../sass/components/_homepage.scss */
+/* line 484, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-desc {
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 480, ../sass/components/_homepage.scss */
+/* line 489, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
   width: calc(94%/4);
   float: left;
   margin-right: 17px;
   text-align: center;
 }
-/* line 486, ../sass/components/_homepage.scss */
+/* line 495, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img {
   width: 154px;
   height: auto;
 }
-/* line 491, ../sass/components/_homepage.scss */
+/* line 500, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name {
   font-family: "Mukta";
   font-size: 30px;
   font-weight: 600;
   margin-bottom: 5px;
 }
-/* line 495, ../sass/components/_homepage.scss */
+/* line 504, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group {
   margin-bottom: 5px;
   color: #8CC63F;
 }
-/* line 499, ../sass/components/_homepage.scss */
+/* line 508, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc {
   margin-bottom: 5px;
 }
-/* line 506, ../sass/components/_homepage.scss */
+/* line 515, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 {
   margin: 20px 0;
   display: inline-block;
   position: relative;
   width: 100%;
 }
-/* line 511, ../sass/components/_homepage.scss */
+/* line 520, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header {
   position: relative;
   margin: 0 auto;
   width: 721px;
 }
-/* line 515, ../sass/components/_homepage.scss */
+/* line 524, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .lang {
+  display: none;
+}
+/* line 527, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-btn {
   width: 182px;
   background-color: #000;
@@ -1835,7 +1851,7 @@ body.is-mobile {
   margin-bottom: 10px;
   margin: 0 auto;
 }
-/* line 518, ../sass/components/_homepage.scss */
+/* line 530, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit {
   font-family: "Mukta";
   font-size: 22px;
@@ -1846,34 +1862,34 @@ body.is-mobile {
   margin-bottom: 10px;
   text-align: center;
 }
-/* line 525, ../sass/components/_homepage.scss */
+/* line 537, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit span.green {
   font-family: "Mukta";
   font-size: 40px;
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 530, ../sass/components/_homepage.scss */
+/* line 542, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-desc {
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 535, ../sass/components/_homepage.scss */
+/* line 547, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row {
   padding: 10px 0;
 }
-/* line 537, ../sass/components/_homepage.scss */
+/* line 549, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active {
   background-color: #8CC63F;
   color: #fff;
 }
-/* line 543, ../sass/components/_homepage.scss */
+/* line 555, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos {
   position: relative;
   margin: 0 auto;
   width: 721px;
 }
-/* line 547, ../sass/components/_homepage.scss */
+/* line 559, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-tit {
   font-family: "Mukta";
   font-size: 22px;
@@ -1884,23 +1900,23 @@ body.is-mobile {
   margin-bottom: 10px;
   text-align: center;
 }
-/* line 554, ../sass/components/_homepage.scss */
+/* line 566, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-tit span.green {
   font-family: "Mukta";
   font-size: 40px;
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 559, ../sass/components/_homepage.scss */
+/* line 571, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-desc {
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 563, ../sass/components/_homepage.scss */
+/* line 575, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn {
   text-align: center;
 }
-/* line 565, ../sass/components/_homepage.scss */
+/* line 577, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn a {
   width: "auto";
   background-color: #8CC63F;
@@ -1918,12 +1934,12 @@ body.is-mobile {
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn a a {
   color: #fff;
 }
-/* line 572, ../sass/components/_homepage.scss */
+/* line 584, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-img {
   text-align: center;
   position: relative;
 }
-/* line 575, ../sass/components/_homepage.scss */
+/* line 587, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-img img {
   width: 403px;
   height: auto;
