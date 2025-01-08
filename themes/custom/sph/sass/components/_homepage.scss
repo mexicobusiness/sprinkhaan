@@ -75,6 +75,9 @@
     		width: 100%;
     		margin-bottom: 50px;
     		header{
+    			.lang{
+    				display: none;
+    			}
     			.testimonials-btn{
     				@include black-btn();
     			}
@@ -257,6 +260,9 @@
 		    position: relative;
 		    width: 100%;
     		header{
+    			.lang{
+    				display: none;
+    			}
     			.cultura-btn{
     				@include black-btn();
     			}
@@ -329,6 +335,248 @@
     			}
     		}
 
+    	}
+
+    	#block-sph-views-block-campamento-block-1{
+    		margin: 20px 0;
+			display: inline-block;
+		    position: relative;
+		    width: 100%;
+    		header{
+    			position: relative;
+    			margin: 0 auto;
+    			width: 721px;
+    			.camp-btn{
+    				@include black-btn();
+    			}
+    			.camp-tit{
+	    			@include fonts("Mukta", 40px, 600);
+	    			text-align: center;
+				    margin: 20px 0px;
+				    line-height: 1;
+				    margin-bottom: 10px;
+				    span.green{
+				    	@include fonts("Mukta", 40px, 600);
+				    	color: $color-green;
+				    }
+    			}
+    			.camp-desc{
+    				margin-bottom: 20px;
+    			}
+    		}
+    		.slick-list .slick__slide{
+    			margin-right: 20px;
+    			.camp-title{
+    				@include fonts("Mukta", 30px, 600);
+    			}
+			    a .camp-btn{
+			    	@include black-btn-green('auto');
+			    	padding: 10px 20px;
+			    	text-align: left;
+			    	color: $color-white;
+			    }
+    		}
+    		nav{
+    			.slick-prev{
+    				width: 60px;
+    				position: absolute;
+    				left: -80px;
+    				border: 0px solid;
+    			}
+    			.slick-next{
+    				width: 60px;
+    				position: absolute;
+    				right: -80px;
+    				border: 0px solid;
+    			}
+    		}
+    	}
+    	#block-sph-views-block-news-block-1{
+    		margin: 20px 0;
+			display: inline-block;
+		    position: relative;
+		    width: 100%;
+    		header{
+    			position: relative;
+    			margin: 0 auto;
+    			width: 721px;
+    			.news-btn{
+    				@include black-btn();
+    			}
+    			.news-tit{
+	    			@include fonts("Mukta", 22px, 600);
+	    			text-align: center;
+				    margin: 20px 0px;
+				    line-height: 1;
+				    margin-bottom: 10px;
+				    text-align: center;
+				    span.green{
+				    	@include fonts("Mukta", 40px, 600);
+				    	color: $color-green;
+				    }
+    			}
+    			.news-desc{
+    				margin-bottom: 20px;
+    				text-align: center;
+    			}
+    		}
+    		.slick-list .slick__slide{
+    			margin-right: 20px;
+    			text-align: left;
+    			.news-title{
+    				@include fonts("Mukta", 30px, 600);
+    			}
+			    a .news-btn{
+			    	@include black-btn-green('auto');
+			    	padding: 10px 20px;
+			    	text-align: left;
+			    	color: $color-white;
+			    }
+    		}
+    		nav{
+    			.slick-prev{
+    				width: 60px;
+    				position: absolute;
+    				left: -80px;
+    				border: 0px solid;
+    			}
+    			.slick-next{
+    				width: 60px;
+    				position: absolute;
+    				right: -80px;
+    				border: 0px solid;
+    			}
+    		}
+    	}
+    	#block-sph-views-block-nuestro-equipo-block-1{
+    		margin: 20px 0;
+			display: inline-block;
+		    position: relative;
+		    width: 100%;
+    		header{
+    			position: relative;
+    			margin: 0 auto;
+    			width: 721px;
+    			.team-btn{
+    				@include black-btn();
+    			}
+    			.team-tit{
+	    			@include fonts("Mukta", 22px, 600);
+	    			text-align: center;
+				    margin: 20px 0px;
+				    line-height: 1;
+				    margin-bottom: 10px;
+				    text-align: center;
+				    span.green{
+				    	@include fonts("Mukta", 40px, 600);
+				    	color: $color-green;
+				    }
+    			}
+    			.team-desc{
+    				margin-bottom: 20px;
+    				text-align: center;
+    			}
+    		}
+    		.views-row{
+    			width: calc(94%/4);
+    			float: left;
+    			margin-right: 17px;
+    			text-align: center;
+    			.team-photo{
+    				img{
+					    width: 154px;
+					    height: auto;
+    				}
+    			}
+    			.team-name{
+    				@include fonts("Mukta", 30px, 600);
+    				margin-bottom: 5px;
+    			}
+    			.team-group{
+    				margin-bottom: 5px;
+    				color: #8CC63F;
+    			}
+    			.team-desc{
+    				margin-bottom: 5px;
+    			}
+    		}
+    	}
+    }
+    .content-middle{
+    	#block-sph-views-block-faq-block-1{
+    		margin: 20px 0;
+			display: inline-block;
+		    position: relative;
+		    width: 100%;
+    		header{
+    			position: relative;
+    			margin: 0 auto;
+    			width: 721px;
+    			.faq-btn{
+    				@include black-btn();
+    			}
+    			.faq-tit{
+	    			@include fonts("Mukta", 22px, 600);
+	    			text-align: center;
+				    margin: 20px 0px;
+				    line-height: 1;
+				    margin-bottom: 10px;
+				    text-align: center;
+				    span.green{
+				    	@include fonts("Mukta", 40px, 600);
+				    	color: $color-green;
+				    }
+    			}
+    			.faq-desc{
+    				margin-bottom: 20px;
+    				text-align: center;
+    			}
+    		}
+    		.views-row{
+    			padding: 10px 0;
+    			.ui-state-active{
+    				background-color: $color-green;
+    				color: $color-white;
+    			}
+    		}
+    	}
+    	#block-sph-contactanos{
+		    position: relative;
+		    margin: 0 auto;
+		    width: 721px;
+			.cont-tit{
+				@include fonts("Mukta", 22px, 600);
+				text-align: center;
+			    margin: 20px 0px;
+			    line-height: 1;
+			    margin-bottom: 10px;
+			    text-align: center;
+			    span.green{
+			    	@include fonts("Mukta", 40px, 600);
+			    	color: $color-green;
+			    }
+			}
+			.cont-desc{
+				margin-bottom: 20px;
+				text-align: center;
+			}
+			.cont-btn{
+				text-align: center;
+				a{
+			    	@include black-btn-green('auto');
+			    	padding: 10px 20px;
+			    	text-align: left;
+			    	color: $color-white;
+				}
+			}
+			.cont-img{
+				text-align: center;
+				position: relative;
+				img{
+				    width: 403px;
+				    height: auto;
+				}
+			}
     	}
     }
 }

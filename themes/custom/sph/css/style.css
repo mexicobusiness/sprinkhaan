@@ -367,6 +367,101 @@
   border: 1px solid red;
 }
 
+/* line 1, ../sass/components/_footer.scss */
+#footer {
+  width: 100%;
+  height: 300px;
+  position: relative;
+  display: inline-block;
+  padding-top: 20px;
+  background-color: #000 !important;
+}
+/* line 8, ../sass/components/_footer.scss */
+#footer .container {
+  width: 1170px;
+  margin: 0 auto;
+  background-color: #000 !important;
+}
+/* line 12, ../sass/components/_footer.scss */
+#footer .container #block-sph-footerlogo {
+  display: inline-block;
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+}
+/* line 17, ../sass/components/_footer.scss */
+#footer .container #block-sph-footerlogo img:nth-child(1) {
+  float: left;
+  width: 100px;
+  height: auto;
+}
+/* line 22, ../sass/components/_footer.scss */
+#footer .container #block-sph-footerlogo img:nth-child(2) {
+  float: right;
+  width: 225px;
+  height: auto;
+}
+/* line 28, ../sass/components/_footer.scss */
+#footer .container #block-sph-socialnetworkslink {
+  display: inline-block;
+  position: relative;
+  padding: 20px 0;
+  width: 100%;
+}
+/* line 34, ../sass/components/_footer.scss */
+#footer .container #block-sph-socialnetworkslink ul li {
+  width: 50px;
+  float: left;
+}
+/* line 37, ../sass/components/_footer.scss */
+#footer .container #block-sph-socialnetworkslink ul li a {
+  color: #8CC63F;
+}
+/* line 52, ../sass/components/_footer.scss */
+#footer .container #block-sph-piedepagina {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+  clear: both;
+}
+/* line 59, ../sass/components/_footer.scss */
+#footer .container #block-sph-piedepagina ul li {
+  width: 100px;
+  float: left;
+}
+/* line 62, ../sass/components/_footer.scss */
+#footer .container #block-sph-piedepagina ul li a {
+  color: #8CC63F;
+}
+/* line 68, ../sass/components/_footer.scss */
+#footer .container #block-sph-footerderechosreservados {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 10px 0;
+}
+/* line 73, ../sass/components/_footer.scss */
+#footer .container #block-sph-footerderechosreservados .copyright {
+  float: left;
+  color: #8CC63F;
+}
+/* line 77, ../sass/components/_footer.scss */
+#footer .container #block-sph-footerderechosreservados .terms {
+  float: right;
+  border: 1px solid #707070;
+  background: #707070 0% 0% no-repeat padding-box;
+  border-radius: 11px;
+  opacity: 1;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  padding: 10px;
+}
+/* line 86, ../sass/components/_footer.scss */
+#footer .container #block-sph-footerderechosreservados .terms a {
+  color: #fff;
+}
+
 /* line 3, ../sass/components/_global.scss */
 body,
 html,
@@ -1082,6 +1177,10 @@ body.is-mobile {
   margin-bottom: 50px;
 }
 /* line 78, ../sass/components/_homepage.scss */
+.path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .lang {
+  display: none;
+}
+/* line 81, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-btn {
   width: 182px;
   background-color: #000;
@@ -1092,7 +1191,7 @@ body.is-mobile {
   margin-bottom: 10px;
   margin: 0 auto;
 }
-/* line 81, ../sass/components/_homepage.scss */
+/* line 84, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-tit {
   font-family: "Mukta";
   font-size: 40px;
@@ -1102,104 +1201,104 @@ body.is-mobile {
   line-height: 1;
   margin-bottom: 10px;
 }
-/* line 87, ../sass/components/_homepage.scss */
+/* line 90, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-tit span.green {
   font-family: "Mukta";
   font-size: 40px;
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 94, ../sass/components/_homepage.scss */
+/* line 97, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-fot {
   float: left;
 }
-/* line 96, ../sass/components/_homepage.scss */
+/* line 99, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-fot img {
   width: 72px;
   height: auto;
 }
-/* line 101, ../sass/components/_homepage.scss */
+/* line 104, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-tit {
   font-family: "Mukta";
   font-size: 16px;
   font-weight: 600;
 }
-/* line 105, ../sass/components/_homepage.scss */
+/* line 108, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-est div {
   float: left;
   color: #F7941D;
   font-size: 22px;
   margin-right: 6px;
 }
-/* line 112, ../sass/components/_homepage.scss */
+/* line 115, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-tes {
   clear: both;
   width: 100%;
 }
-/* line 118, ../sass/components/_homepage.scss */
+/* line 121, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 nav .slick-prev {
   width: 60px;
   position: absolute;
   left: -80px;
   border: 0px solid;
 }
-/* line 124, ../sass/components/_homepage.scss */
+/* line 127, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 nav .slick-next {
   width: 60px;
   position: absolute;
   right: -80px;
   border: 0px solid;
 }
-/* line 132, ../sass/components/_homepage.scss */
+/* line 135, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros {
   margin-bottom: 20px;
   display: inline-block;
   width: 100%;
   position: relative;
 }
-/* line 137, ../sass/components/_homepage.scss */
+/* line 140, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left {
   width: 50%;
   float: left;
 }
-/* line 140, ../sass/components/_homepage.scss */
+/* line 143, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left h2 {
   font-family: "Mukta";
   font-size: 40px;
   font-weight: 600;
 }
-/* line 142, ../sass/components/_homepage.scss */
+/* line 145, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left h2 span.orange {
   font-family: "Mukta";
   font-size: 40px;
   font-weight: 600;
   color: #F7941D;
 }
-/* line 147, ../sass/components/_homepage.scss */
+/* line 150, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left .about-us-left-text {
   padding-right: 25px;
 }
-/* line 151, ../sass/components/_homepage.scss */
+/* line 154, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-right {
   width: 50%;
   float: left;
 }
-/* line 154, ../sass/components/_homepage.scss */
+/* line 157, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-right img {
   width: 100%;
   height: auto;
 }
-/* line 162, ../sass/components/_homepage.scss */
+/* line 165, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases {
   margin: 20px 0;
 }
-/* line 164, ../sass/components/_homepage.scss */
+/* line 167, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-top {
   position: relative;
   width: 721px;
   margin: 0 auto;
 }
-/* line 168, ../sass/components/_homepage.scss */
+/* line 171, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-top .clases-top-btn {
   width: 182px;
   background-color: #000;
@@ -1210,7 +1309,7 @@ body.is-mobile {
   margin-bottom: 10px;
   margin: 0 auto;
 }
-/* line 171, ../sass/components/_homepage.scss */
+/* line 174, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-top .clases-top-tit {
   font-family: "Mukta";
   font-size: 40px;
@@ -1220,21 +1319,21 @@ body.is-mobile {
   line-height: 1;
   margin-bottom: 10px;
 }
-/* line 177, ../sass/components/_homepage.scss */
+/* line 180, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-top .clases-top-tit span.green {
   font-family: "Mukta";
   font-size: 40px;
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 183, ../sass/components/_homepage.scss */
+/* line 186, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button {
   width: 100%;
   display: inline-block;
   position: relative;
   margin: 30px 0;
 }
-/* line 188, ../sass/components/_homepage.scss */
+/* line 191, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right {
   width: 342px;
   float: left;
@@ -1243,30 +1342,30 @@ body.is-mobile {
   border-radius: 25px;
   padding: 24px;
 }
-/* line 195, ../sass/components/_homepage.scss */
+/* line 198, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-tex, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-right-tex, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-left-tex, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-tex {
   font-family: "Mukta";
   font-size: 16px;
   font-weight: 600;
 }
-/* line 198, ../sass/components/_homepage.scss */
+/* line 201, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-tit, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-left-tit {
   font-family: "Mukta";
   font-size: 30px;
   font-weight: 600;
 }
-/* line 200, ../sass/components/_homepage.scss */
+/* line 203, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-tit span.green, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-left-tit span.green {
   font-family: "Mukta";
   font-size: 30px;
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 205, ../sass/components/_homepage.scss */
+/* line 208, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-des, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-right-des, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-left-des, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-des {
   margin-bottom: 15px;
 }
-/* line 208, ../sass/components/_homepage.scss */
+/* line 211, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-btn, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-left-btn {
   float: left;
   width: 130px;
@@ -1283,45 +1382,45 @@ body.is-mobile {
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-btn a, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-left-btn a {
   color: #fff;
 }
-/* line 213, ../sass/components/_homepage.scss */
+/* line 216, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-btn2, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-left-btn2 {
   float: left;
 }
-/* line 215, ../sass/components/_homepage.scss */
+/* line 218, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-btn2 a, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-left-btn2 a {
   color: #8CC63F;
 }
-/* line 220, ../sass/components/_homepage.scss */
+/* line 223, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-middle {
   width: 381px;
   float: left;
   border-radius: 25px;
 }
-/* line 224, ../sass/components/_homepage.scss */
+/* line 227, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-middle img {
   width: 100%;
   height: auto;
 }
-/* line 229, ../sass/components/_homepage.scss */
+/* line 232, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right {
   border: 1px solid #F7941D;
   margin-left: 52.5px;
   margin-right: 0px;
 }
-/* line 233, ../sass/components/_homepage.scss */
+/* line 236, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-left-tit, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-tit {
   font-family: "Mukta";
   font-size: 30px;
   font-weight: 600;
 }
-/* line 235, ../sass/components/_homepage.scss */
+/* line 238, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-left-tit span.orange, .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-tit span.orange {
   font-family: "Mukta";
   font-size: 30px;
   font-weight: 600;
   color: #F7941D;
 }
-/* line 240, ../sass/components/_homepage.scss */
+/* line 243, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-btn {
   float: left;
   width: 130px;
@@ -1338,22 +1437,26 @@ body.is-mobile {
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-btn a {
   color: #fff;
 }
-/* line 245, ../sass/components/_homepage.scss */
+/* line 248, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-btn2 {
   float: left;
 }
-/* line 247, ../sass/components/_homepage.scss */
+/* line 250, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-btn2 a {
   color: #F7941D;
 }
-/* line 254, ../sass/components/_homepage.scss */
+/* line 257, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 {
   margin: 20px 0;
   display: inline-block;
   position: relative;
   width: 100%;
 }
-/* line 260, ../sass/components/_homepage.scss */
+/* line 263, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-culturales-block-1 header .lang {
+  display: none;
+}
+/* line 266, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 header .cultura-btn {
   width: 182px;
   background-color: #000;
@@ -1364,7 +1467,7 @@ body.is-mobile {
   margin-bottom: 10px;
   margin: 0 auto;
 }
-/* line 263, ../sass/components/_homepage.scss */
+/* line 269, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 header .cultura-tit {
   font-family: "Mukta";
   font-size: 40px;
@@ -1374,24 +1477,24 @@ body.is-mobile {
   line-height: 1;
   margin-bottom: 10px;
 }
-/* line 269, ../sass/components/_homepage.scss */
+/* line 275, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 header .cultura-tit span.green {
   font-family: "Mukta";
   font-size: 40px;
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 276, ../sass/components/_homepage.scss */
+/* line 282, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-img {
   display: inline-block;
   position: relative;
 }
-/* line 279, ../sass/components/_homepage.scss */
+/* line 285, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-img img {
   width: 100%;
   height: auto;
 }
-/* line 284, ../sass/components/_homepage.scss */
+/* line 290, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row {
   display: inline-block;
   position: absolute;
@@ -1401,14 +1504,14 @@ body.is-mobile {
   height: 200px;
   padding: 20px;
 }
-/* line 292, ../sass/components/_homepage.scss */
+/* line 298, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-tit {
   font-family: "Mukta";
   font-size: 25px;
   font-weight: 600;
   color: #fff;
 }
-/* line 296, ../sass/components/_homepage.scss */
+/* line 302, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-dat {
   border: 1px solid #fff;
   border-radius: 25px;
@@ -1416,12 +1519,12 @@ body.is-mobile {
   width: 150px;
   color: #fff;
 }
-/* line 303, ../sass/components/_homepage.scss */
+/* line 309, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-sho {
   color: #fff;
   height: 60px;
 }
-/* line 307, ../sass/components/_homepage.scss */
+/* line 313, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-reg {
   width: "auto";
   background-color: #8CC63F;
@@ -1438,23 +1541,392 @@ body.is-mobile {
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-reg a {
   color: #fff;
 }
-/* line 311, ../sass/components/_homepage.scss */
+/* line 317, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-reg a {
   color: #fff;
 }
-/* line 318, ../sass/components/_homepage.scss */
+/* line 324, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 nav .slick-prev {
   width: 60px;
   position: absolute;
   left: -80px;
   border: 0px solid;
 }
-/* line 324, ../sass/components/_homepage.scss */
+/* line 330, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 nav .slick-next {
   width: 60px;
   position: absolute;
   right: -80px;
   border: 0px solid;
+}
+/* line 340, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 {
+  margin: 20px 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+/* line 345, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 header {
+  position: relative;
+  margin: 0 auto;
+  width: 721px;
+}
+/* line 349, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-btn {
+  width: 182px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+/* line 352, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-tit {
+  font-family: "Mukta";
+  font-size: 40px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0px;
+  line-height: 1;
+  margin-bottom: 10px;
+}
+/* line 358, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-tit span.green {
+  font-family: "Mukta";
+  font-size: 40px;
+  font-weight: 600;
+  color: #8CC63F;
+}
+/* line 363, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-desc {
+  margin-bottom: 20px;
+}
+/* line 367, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide {
+  margin-right: 20px;
+}
+/* line 369, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide .camp-title {
+  font-family: "Mukta";
+  font-size: 30px;
+  font-weight: 600;
+}
+/* line 372, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide a .camp-btn {
+  width: "auto";
+  background-color: #8CC63F;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  text-align: left;
+  color: #fff;
+}
+/* line 60, ../sass/base/_mixins.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide a .camp-btn a {
+  color: #fff;
+}
+/* line 380, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 nav .slick-prev {
+  width: 60px;
+  position: absolute;
+  left: -80px;
+  border: 0px solid;
+}
+/* line 386, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 nav .slick-next {
+  width: 60px;
+  position: absolute;
+  right: -80px;
+  border: 0px solid;
+}
+/* line 394, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 {
+  margin: 20px 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+/* line 399, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 header {
+  position: relative;
+  margin: 0 auto;
+  width: 721px;
+}
+/* line 403, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-btn {
+  width: 182px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+/* line 406, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-tit {
+  font-family: "Mukta";
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0px;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 413, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-tit span.green {
+  font-family: "Mukta";
+  font-size: 40px;
+  font-weight: 600;
+  color: #8CC63F;
+}
+/* line 418, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-desc {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 423, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide {
+  margin-right: 20px;
+  text-align: left;
+}
+/* line 426, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide .news-title {
+  font-family: "Mukta";
+  font-size: 30px;
+  font-weight: 600;
+}
+/* line 429, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide a .news-btn {
+  width: "auto";
+  background-color: #8CC63F;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  text-align: left;
+  color: #fff;
+}
+/* line 60, ../sass/base/_mixins.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide a .news-btn a {
+  color: #fff;
+}
+/* line 437, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 nav .slick-prev {
+  width: 60px;
+  position: absolute;
+  left: -80px;
+  border: 0px solid;
+}
+/* line 443, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 nav .slick-next {
+  width: 60px;
+  position: absolute;
+  right: -80px;
+  border: 0px solid;
+}
+/* line 451, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 {
+  margin: 20px 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+/* line 456, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header {
+  position: relative;
+  margin: 0 auto;
+  width: 721px;
+}
+/* line 460, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn {
+  width: 182px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+/* line 463, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit {
+  font-family: "Mukta";
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0px;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 470, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit span.green {
+  font-family: "Mukta";
+  font-size: 40px;
+  font-weight: 600;
+  color: #8CC63F;
+}
+/* line 475, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-desc {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 480, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
+  width: calc(94%/4);
+  float: left;
+  margin-right: 17px;
+  text-align: center;
+}
+/* line 486, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img {
+  width: 154px;
+  height: auto;
+}
+/* line 491, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name {
+  font-family: "Mukta";
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+/* line 495, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group {
+  margin-bottom: 5px;
+  color: #8CC63F;
+}
+/* line 499, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc {
+  margin-bottom: 5px;
+}
+/* line 506, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 {
+  margin: 20px 0;
+  display: inline-block;
+  position: relative;
+  width: 100%;
+}
+/* line 511, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 header {
+  position: relative;
+  margin: 0 auto;
+  width: 721px;
+}
+/* line 515, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-btn {
+  width: 182px;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+}
+/* line 518, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit {
+  font-family: "Mukta";
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0px;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 525, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit span.green {
+  font-family: "Mukta";
+  font-size: 40px;
+  font-weight: 600;
+  color: #8CC63F;
+}
+/* line 530, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-desc {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 535, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row {
+  padding: 10px 0;
+}
+/* line 537, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active {
+  background-color: #8CC63F;
+  color: #fff;
+}
+/* line 543, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos {
+  position: relative;
+  margin: 0 auto;
+  width: 721px;
+}
+/* line 547, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-tit {
+  font-family: "Mukta";
+  font-size: 22px;
+  font-weight: 600;
+  text-align: center;
+  margin: 20px 0px;
+  line-height: 1;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 554, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-tit span.green {
+  font-family: "Mukta";
+  font-size: 40px;
+  font-weight: 600;
+  color: #8CC63F;
+}
+/* line 559, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-desc {
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 563, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-btn {
+  text-align: center;
+}
+/* line 565, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-btn a {
+  width: "auto";
+  background-color: #8CC63F;
+  color: #fff;
+  text-align: center;
+  border-radius: 25px;
+  padding: 4px;
+  margin-bottom: 10px;
+  margin: 0 auto;
+  padding: 10px 20px;
+  text-align: left;
+  color: #fff;
+}
+/* line 60, ../sass/base/_mixins.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-btn a a {
+  color: #fff;
+}
+/* line 572, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-img {
+  text-align: center;
+  position: relative;
+}
+/* line 575, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-img img {
+  width: 403px;
+  height: auto;
 }
 
 /* line 2, ../sass/components/_messages.scss */
