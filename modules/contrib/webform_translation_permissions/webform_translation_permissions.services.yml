@@ -1,0 +1,6 @@
+services:
+  webform.translation_form_access:
+    class: Drupal\webform_translation_permissions\Access\WebformTranslationFormAccess
+    arguments: ['@plugin.manager.config_translation.mapper', '@language_manager']
+    tags:
+      - { name: access_check, applies_to: _webform_translation_form_access }
