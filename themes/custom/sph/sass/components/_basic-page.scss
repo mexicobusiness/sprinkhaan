@@ -1,7 +1,140 @@
-.page-node-type-page {
+.page-sponsor {
   #page {
     #main-content {
-      border: 1px solid red;
+      .content-center{
+        .header{
+          display: none;
+        }
+        section.sponsor-container-top{
+          text-align: center;
+          position: relative;
+          margin: 0 auto;
+          width: 721px;
+          .sponsor-tit{
+            @include fonts("Mukta", 22px, 600);
+            margin: 20px 0px;
+            line-height: 1;
+            margin-bottom: 10px;
+            text-align: center;
+            span.green{
+              @include fonts("Mukta", 40px, 600);
+              color: $color-green;
+            }
+          }
+          .sponsor-des{
+            @include fonts("Mukta", 16px, 600);
+          }
+          .sponsor-btn{
+            margin: 20px 0;
+            a{
+                @include black-btn-green('auto');
+                padding: 10px 20px;
+                text-align: left;
+                color: $color-white;
+            }
+         }
+         .sponsor-img{
+          img{
+            width: 300px;
+            height: auto;
+          }
+         }
+        }
+        section.sponsor-container-medium{
+          text-align: center;
+          position: relative;
+          margin: 0 auto;
+          .sponsor-tit{
+            @include fonts("Mukta", 22px, 600);
+            margin: 20px 0px;
+            line-height: 1;
+            margin-bottom: 10px;
+            text-align: center;
+            margin: 0 auto;
+            width: 721px;
+            span.green{
+              @include fonts("Mukta", 40px, 600);
+              color: $color-green;
+            }
+          }
+          .sponsor-des{
+            @include fonts("Mukta", 16px, 600);
+            margin: 0 auto;
+            width: 721px;
+          }
+         .sponsor-imgs{
+          figure{
+            float: left;
+            width: calc(100%/3);
+            position: relative;
+            .sponsor-imgs-data{
+              position: absolute;
+              bottom: 20px;
+              left: 15px;
+              width: 80%;
+              margin-left: 12px;
+              text-align: left;
+              .sponsor-imgs-tit{
+                @include fonts("Mukta", 22px, 600);
+                color: $color-white;
+              }
+              .sponsor-imgs-dat{
+                color: $color-white;
+                border: 1px solid $color-white;
+                border-radius: 25px;
+                float: left;
+                padding: 3px 24px;
+              }
+              .sponsor-imgs-des{
+                color: $color-white;
+                clear: both;
+              }
+            }
+          }
+         }
+        }
+        section.sponsor-container-bottom{
+          position: relative;
+          display: inline-block;
+          width: 100%;
+          margin: 20px 0;
+          div.sponsor-container-bottom-left, div.sponsor-container-bottom-right{
+            width: 50%;
+            float: left;
+          }
+          div.sponsor-container-bottom-left{
+            padding-right: 35px;
+            .sponsor-container-bottom-left-tit{
+              @include fonts("Mukta", 22px, 600);
+              span.green{
+                @include fonts("Mukta", 22px, 600);
+                color: $color-green;
+              }
+            }
+            .sponsor-container-bottom-left-des{
+              @include fonts("Mukta", 14px, 600);
+            }
+          }
+          div.sponsor-container-bottom-right{
+            ul{
+              margin-left: 50px;
+              li{
+                margin: 10px 0;
+              }
+            }
+            .sponsor-container-bottom-right-btn{
+              margin: 20px 0;
+              text-align: center;
+              a{
+                  @include black-btn-green('auto');
+                  padding: 10px 20px;
+                  text-align: left;
+                  color: $color-white;
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

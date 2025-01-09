@@ -1,0 +1,6 @@
+'translate any webform':
+  title: 'Translate any webform'
+  description: 'Allows translation of any webform.'
+'translate own webform':
+  title: 'Translate own webform'
+  description: 'Allows translation of webform created by the user.'

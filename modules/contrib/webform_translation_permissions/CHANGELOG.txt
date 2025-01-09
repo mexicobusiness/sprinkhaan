@@ -1,0 +1,23 @@
+
+Webform Translation Permissions 8.x-1.x, xxxx-xx-xx
+--------------------------------------
+#3155809 by himanshu_sindhwani: Coding standard issues
+#3178382 by Pooja Ganjage, JeroenT: Replace assertResponse with
+  assertSession()->statusCodeEquals
+#3178384 by Pooja Ganjage, JeroenT: Overridden test methods require void
+  return type hints
+
+
+Webform Translation Permissions 8.x-1.1, 2020-10-24
+--------------------------------------
+#3156749 by JeroenT, stefanos.petrakis, Mixologic: Create a new Drupal-9
+  compatible release
+#3128885 by mrinalini9, AndrewsizZ, Ramya Balasubramanian, Suresh Prabhu
+  Parkala, JeroenT: Drupal 9 readiness
+
+
+Webform Translation Permissions 8.x-1.0, 2019-12-06
+--------------------------------------
+#3099281 by JeroenT, stefanos.petrakis: Fix coding standards
+#3069498 by JeroenT, alonaoneill, stefanos.petrakis: Hook Help is missing
+#3098717 by JeroenT, stefanos.petrakis: Provide basic test coverage

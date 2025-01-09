@@ -1,8 +1,85 @@
-.page-user-login,
-.page-form {
+.page-contact-us {
   #page {
     #main-content {
- 
+      .content-center{
+        header{
+          display: none;
+        }
+        div.content{
+          div:nth-of-type(1){
+            float: left;
+            width: 50%;
+            .contact-us-tit{
+              width: 100%;
+              @include fonts("Mukta", 40px, 600);
+              margin: 20px 0px;
+              line-height: 1;
+              margin-bottom: 10px;
+              span.green{
+                @include fonts("Mukta", 40px, 600);
+                color: $color-green;
+              }
+            }
+            .contact-us-des{
+              width: 100%;
+              @include fonts("Mukta", 20px, 600);
+            }
+            .contact-us-dir{
+              width: 100%;
+            }
+          }
+          div:nth-of-type(2){
+            float: right;
+            width: 50%;
+            display: inline-block;
+            position: relative;
+            form{
+              width: 100%;
+              #edit-processed-text{
+                padding: 0px 0 10px 0;
+                .webform-tit{
+                  @include fonts("Mukta", 20px, 600);
+                }
+                .webform-tit-alt{
+
+                }
+              }
+              fieldset#edit-nombre--wrapper{
+                legend{
+                  display: none;
+                }
+              }
+              fieldset, div{
+                width: 100%;
+                .fieldset-wrapper{
+                  width: 100%;
+                  div{
+                    width: 100%;
+                    input[type="text"],
+                    input[type="email"],
+                    input[type="tel"] {
+                      text-transform: capitalize;
+                      border: 1px solid #e9e9ee;
+                      background-color: #fff;
+                      @include fonts("open_sansregular", 16px, "normal");
+                      color: #39364f;
+                      width: 100%;
+                      height: 45px;
+                      padding: 8px 16px;
+                      cursor: text;
+                      box-shadow: none;
+                    }
+                  }
+                }
+              }
+              input[type="submit"]{
+                width: 50%;
+              }
+
+            }
+          }
+        }
+      }
     }
   }
 }

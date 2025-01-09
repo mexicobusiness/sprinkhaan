@@ -1,0 +1,13 @@
+name: 'Webform Translation Permissions'
+type: module
+description: 'Granular permissions to translate webforms'
+package: 'Webform'
+core_version_requirement: ~9.5 || ^10 || ^11
+dependencies:
+  - drupal:config_translation
+  - webform:webform
+
+# Information added by Drupal.org packaging script on 2025-01-03
+version: '2.1.0'
+project: 'webform_translation_permissions'
+datestamp: 1735923639
