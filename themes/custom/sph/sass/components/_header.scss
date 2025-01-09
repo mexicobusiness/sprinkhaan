@@ -1,66 +1,69 @@
 #header {
   margin: 0 auto;
   width: 100%;
+  display: flex;
+  justify-content: center;
   .container {
+    background-color: rgba(255, 255, 255, 0);
     height: 50px;
-    width: 1170px;
   }
   .header-first{
     border-bottom: 1px solid #39364f05;
+    background-color: rgba(255, 255, 255, 0.774);
     display: inline-block;
-    width: 100%;
-    z-index: 10;
+    width: 90%;
+    z-index: 999;
     position: fixed;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-top: 10px;
+    @include radius-spk-10();
     @include breakpoint($desktop) {
-      border-bottom: 1px solid #39364f05;
+      background-color: rgba(255, 255, 255, 0.774);
+      border: 1px solid #e9e9ee;
       display: inline-block;
-      width: 100%;
+      width: 60%;
+      height: 60px;
       position: fixed;
-      display: flex;
-      justify-content: space-around;
+      max-width: 1120px;
+      @include radius-spk-16();
+      margin-top: 16px;
       transition: 0.7s;
       z-index: 10;
       backdrop-filter: blur(17.7px);
       -webkit-backdrop-filter: blur(17.7px);
       border-bottom: 1px solid #e0e7ef82;
       background: rgba(255, 255, 255, 0.11);
-      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.027);
       -moz-backdrop-filter: blur(17.7px);
-      -webkit-transition: 0.7s;
-      -moz-transition: 0.7s;
-      -ms-transition: 0.7s;
-      -o-transition: 0.7s;
     }
     #block-sph-svgimagelogo {
       float: left;
       display: flex;
       padding: 14px 16px 12px 14px;
-      width: 10%;
+      width: 25%;
       @include breakpoint($desktop) {
-        padding: 10px 0;
+        padding: 7px 4px 4px 16px;
       }
       img {
         width: 90px;
         height: auto;
         @include breakpoint($desktop) {
-          width: 90px;
+          width: 120px;
           height: auto;
         }
       }
     }
 
     #block-sph-navegacionprincipal {
-      width: 80%;
+      width: 60%;
       float: left;
-      @include breakpoint($desktop) {
-        margin-top: 4px;
-      }
       .contextual-region {
         color: #39364f;
       }
+      .menu{
+        display: flex;
+        height: 57px;
+        align-items: center;
+      }
       ul {
-        margin-top: 8px;
         li {
           width: 100%;
           text-align: left;
@@ -73,9 +76,10 @@
           margin-right: 0;
           @include breakpoint($desktop) {
             width: auto;
-            width: 100%;
-            display: inline-block;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 45px;
             @include transition-all-sph();
             background-color: #fff0;
             padding: 0;
@@ -89,39 +93,28 @@
             @include fonts("poppins", 16px, "normal");
             padding: 24px;
             @include breakpoint($desktop) {
-              @include fonts("poppins", 11px, "normal");
+              @include fonts("Conv_Gotham-Medium", 14px, 'normal');
               width: auto;
               padding: 8px;
               @include transition-all-sph();
             }
             @include breakpoint($table) {
-              @include fonts("poppins", 11px, "normal");
+              @include fonts("Conv_Gotham-Medium", 14px, 'normal');
               width: auto;
               @include transition-all-sph();
             }
             color: #39364f;
             text-transform: capitalize;
             text-decoration: none;
-          }
-          a:hover {
-            color: #19939f;
+          }      
+        }
+        li:hover {
             background-color: #0000000d;
             @include radius-sph();
             @include transition-all-sph();
-            padding: 24px;
-            @include breakpoint($desktop) {
-              color: #19939f;
-              background-color: #0000000d;
-              @include radius-sph();
-              @include transition-all-sph();
-              padding: 8px;
+            a{
+              color: #8CC63F;
             }
-          }
-          a:hover:after {
-            transform: scaleX(1);
-            transform-origin: bottom left;
-          }
-         
         }
         li .is-active {
           @include -sph-hoverComponent();
@@ -140,18 +133,28 @@
     #block-sph-languageswitcher{
       display: flex;
       float: right;
-      width: 10%;
+      width: 13%;
+      justify-content: center;
+      align-items: center;
+      height: 45px;
+      border: 1px solid #EEEEEE;
+      @include radius-sph();
+      margin: 6px;
       h2{
         display: none;
       }
+      .links{
+        display: flex;
+        width: 100%;
+      }
       ul{
         li{
-          width: auto;
-          display: inline-block;
-          text-align: center;
-          background-color: #fff0;
-          padding: 0;
-          margin-right: 6px;
+          width: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 45px;
+          gap: 4px;
           a{
             @include fonts("poppins", 11px, "normal");
           }
