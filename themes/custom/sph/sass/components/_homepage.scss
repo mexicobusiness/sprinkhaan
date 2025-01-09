@@ -4,30 +4,43 @@
     overflow-x: hidden;
     .region-top{
     	#block-sph-ntcdesprinkhaan{
-			width: 50%;
-			margin: 10% auto 2% auto;
+			width: 60%;
+			margin: 8% auto 2% auto;
     		.ntc-de-sprinkhaan-black-btn{
     			@include black-btn();
+				position: relative; 
     		}
+			.ntc-de-sprinkhaan-black-btn:before {
+				content: '';
+				display: inline-block;
+				width: 68px; 
+				height: 68px;
+				background-image: url("/themes/custom/sph/images/Spk-img-real.png"); 
+				background-size: cover; 
+				background-repeat: no-repeat;
+				margin-top: -32px;
+			}
     		.ntc-de-sprinkhaan-title h1{
-    			@include fonts("Mukta", 40px, 600);
+    			@include fonts("Conv_Gotham-Medium", 48px, 800);
     			text-align: center;
-			    margin: 20px 0px;
+			    margin: 24px 0px 16px 0;
 			    line-height: 1;
 			    margin-bottom: 10px;
+				color: #101828;
 			    span.green{
-			    	@include fonts("Mukta", 40px, 600);
+			    	@include fonts("Conv_Gotham-Medium", 48px, 800);
 			    	color: $color-green;
 			    }
 			    span.orange{
-			    	@include fonts("Mukta", 40px, 600);
+			    	@include fonts("Conv_Gotham-Medium", 48px, 800);
 			    	color: $color-orange;
 			    }
     		}
     		.ntc-de-sprinkhaan-desc{
-    			@include fonts("Mukta", 12px, 'normal');
+				@include fonts("poppins", 16px, "normal");
     			text-align: center;
-    			margin-bottom: 10px;
+				width: 60%;
+    			margin: 0 auto 2% auto;
     		}
     		.ntc-de-sprinkhaan-btns{
     			margin: auto 0;
@@ -35,25 +48,57 @@
     			margin-bottom: 10px;
 				display: flex;
 			    justify-content: center;
-	    		.ntc-de-sprinkhaan-green-btn{
-	    			width: 200px;
-	    			float:left;
-	    			text-align: center;
-	    			background-color: $color-green;
-	    			color: $color-white;
-	    			border-radius: 25px;
-	    			padding: 4px;
-	    			margin-right: 20px;
-	    		}
+	    		.ntc-de-sprinkhaan-green-btn {
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					width: 195px;
+					height: 45px;
+					float: left;
+					background: linear-gradient(180deg, rgba(140, 198, 63, 1) 0%, rgba(57, 93, 19, 1) 100%);
+					color: $color-white;
+					@include fonts("poppins", 16px, "normal");
+					@include radius-spk-12();
+					padding: 4px;
+					margin-right: 24px;
+					position: relative; 
+				}
+				
+				.ntc-de-sprinkhaan-green-btn::before {
+					content: '';
+					display: inline-block;
+					width: 20px; 
+					height: 20px;
+					filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(78deg) brightness(99%) contrast(103%);
+					background-image: url("/themes/custom/sph/images/Rocket-spk.svg"); 
+					background-size: cover; 
+					background-repeat: no-repeat;
+					margin-right: 8px;
+				}
+				
 	    		.ntc-de-sprinkhaan-white-btn{
-	    			width: 200px;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+	    			width: 195px;
+					height: 45px;
 	    			float:left;
-	    			text-align: center;
 	    			color: $color-brown;
 	    			border: 1px solid $color-brown;
-	    			border-radius: 25px;
-	    			padding: 4px;
-	    		}
+					@include fonts("poppins", 16px, "normal");
+	    			@include radius-spk-12();
+					position: relative; 
+	    		} .ntc-de-sprinkhaan-white-btn:before {
+					content: '';
+					display: inline-block;
+					width: 20px; 
+					height: 20px;
+					filter: invert(13%) sepia(80%) saturate(3710%) hue-rotate(12deg) brightness(94%) contrast(87%);
+					background-image: url("/themes/custom/sph/images/School-spk.svg"); 
+					background-size: cover; 
+					background-repeat: no-repeat;
+					margin-right: 8px;
+				}
     		}
     	}
     	#block-sph-videohome{

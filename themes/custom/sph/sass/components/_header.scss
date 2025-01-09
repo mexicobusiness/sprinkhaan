@@ -79,6 +79,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            min-width: 70px;
             height: 45px;
             @include transition-all-sph();
             background-color: #fff0;
@@ -96,6 +97,9 @@
               @include fonts("Conv_Gotham-Medium", 14px, 'normal');
               width: auto;
               padding: 8px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
               @include transition-all-sph();
             }
             @include breakpoint($table) {

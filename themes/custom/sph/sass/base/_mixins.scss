@@ -60,10 +60,15 @@
   color: $color-white;
   text-align: center;
   @include radius-spk-24();
-  padding: 4px;
-  margin-bottom: 10px;
   margin: 0 auto;
-  @include fonts("Conv_Gotham-Medium", 16px, 'normal');
+  @include fonts("Conv_Gotham-Medium", 15px, 'normal');
+}
+@mixin radius-spk-12(){
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
 }
 
 @mixin radius-spk-24(){
