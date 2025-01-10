@@ -1,594 +1,1016 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800&display=swap");
 .path-frontpage {
-    overflow-x: hidden;
-    .region-top{
-    	#block-sph-ntcdesprinkhaan{
-    		margin: 20px;
-			width: 721px;
-			margin: 0 auto;
-    		.ntc-de-sprinkhaan-black-btn{
-    			@include black-btn();
-    		}
-    		.ntc-de-sprinkhaan-title h1{
-    			@include fonts("Mukta", 40px, 600);
-    			text-align: center;
-			    margin: 20px 0px;
-			    line-height: 1;
-			    margin-bottom: 10px;
-			    span.green{
-			    	@include fonts("Mukta", 40px, 600);
-			    	color: $color-green;
-			    }
-			    span.orange{
-			    	@include fonts("Mukta", 40px, 600);
-			    	color: $color-orange;
-			    }
-    		}
-    		.ntc-de-sprinkhaan-desc{
-    			@include fonts("Mukta", 12px, 'normal');
-    			text-align: center;
-    			margin-bottom: 10px;
-    		}
-    		.ntc-de-sprinkhaan-btns{
-    			margin: auto 0;
-    			width: 100%;
-    			margin-bottom: 10px;
-				display: flex;
-			    justify-content: center;
-	    		.ntc-de-sprinkhaan-green-btn{
-	    			width: 200px;
-	    			float:left;
-	    			text-align: center;
-	    			background-color: $color-green;
-	    			color: $color-white;
-	    			border-radius: 25px;
-	    			padding: 4px;
-	    			margin-right: 20px;
-	    		}
-	    		.ntc-de-sprinkhaan-white-btn{
-	    			width: 200px;
-	    			float:left;
-	    			text-align: center;
-	    			color: $color-brown;
-	    			border: 1px solid $color-brown;
-	    			border-radius: 25px;
-	    			padding: 4px;
-	    		}
-    		}
-    	}
-    	#block-sph-videohome{
-    		width: 100%;
-    		display: inline-block;
-    		position: relative;
-    		margin-bottom: 20px;
-    		text-align: center;
-    	}
-    }
-    .region-center{
-    	width: 100%;
-    	display: inline-block;
-    	position: relative;
-    	#block-sph-views-block-testimoniales-block-1{
-    		display: inline-block;
-    		position: relative;
-    		width: 100%;
-    		margin-bottom: 50px;
-    		header{
-    			.lang{
-    				display: none;
-    			}
-    			.testimonials-btn{
-    				@include black-btn();
-    			}
-    			.testimonials-tit{
-	    			@include fonts("Mukta", 40px, 600);
-	    			text-align: center;
-				    margin: 20px 0px;
-				    line-height: 1;
-				    margin-bottom: 10px;
-				    span.green{
-				    	@include fonts("Mukta", 40px, 600);
-				    	color: $color-green;
-				    }
-    			}
-    		}
-    		.slick-list .slick__slide{
-    			.testimoniales-fot{
-    				float:left;
-    				img{
-    					width: 72px;
-    					height: auto;
-    				}
-    			}
-    			.testimoniales-tit{
-    				@include fonts("Mukta", 16px, 600);
-    			}
-    			.testimoniales-est{
-    				div{
-    					float: left;
-    					color: $color-orange;
-					    font-size: 22px;
-					    margin-right: 6px;
-    				}
-    			}
-    			.testimoniales-tes{
-    				clear: both;
-    				width: 100%;
-    			}
-    		}
-    		nav{
-    			.slick-prev{
-    				width: 60px;
-    				position: absolute;
-    				left: -80px;
-    				border: 0px solid;
-    			}
-    			.slick-next{
-    				width: 60px;
-    				position: absolute;
-    				right: -80px;
-    				border: 0px solid;
-    			}
-    		}
-    	}
-    	#block-sph-sobrenosotros{
-    		margin-bottom: 20px;
-    		display: inline-block;
-    		width: 100%;
-    		position: relative;
-    		.about-us-left{
-    			width: 50%;
-    			float: left;
-    			h2{
-    				@include fonts("Mukta", 40px, 600);
-				    span.orange{
-				    	@include fonts("Mukta", 40px, 600);
-				    	color: $color-orange;
-				    }
-    			}
-    			.about-us-left-text{
-    				padding-right: 25px;
-    			}
-    		}
-    		.about-us-right{
-    			width: 50%;
-    			float: left;
-    			img{
-    				width: 100%;
-    				height: auto;
-    			}
-    		}
-    	}
-    }
-    .content-center{
-    	#block-sph-clases{
-    		margin: 20px 0;
-    		.clases-top{
-    			position: relative;
-				width: 721px;
-			    margin: 0 auto;
-    			.clases-top-btn{
-    				@include black-btn();
-    			}
-    			.clases-top-tit{
-	    			@include fonts("Mukta", 40px, 600);
-	    			text-align: center;
-				    margin: 20px 0px;
-				    line-height: 1;
-				    margin-bottom: 10px;
-				    span.green{
-				    	@include fonts("Mukta", 40px, 600);
-				    	color: $color-green;
-				    }
-    			}
-    		}
-    		.clases-button{
-				width: 100%;
-			    display: inline-block;
-			    position: relative;
-				margin: 30px 0;
-			    .clases-button-left, .clases-button-right{
-			    	width: 342px;
-			    	float: left;
-			    	margin-right: 52.5px;
-			    	border: 1px solid $color-green;
-			    	border-radius: 25px;
-			    	padding: 24px;
-			    	.clases-button-left-tex, .clases-button-right-tex{
-			    		@include fonts("Mukta", 16px, 600);
-			    	}
-			    	.clases-button-left-tit{
-			    		@include fonts("Mukta", 30px, 600);
-			    		span.green{
-					    	@include fonts("Mukta", 30px, 600);
-					    	color: $color-green;
-			    		}
-			    	}
-				    .clases-button-left-des, .clases-button-right-des{
-				    	margin-bottom: 15px;
-				    }
-				    .clases-button-left-btn{
-				    	float: left;
-				    	@include black-btn-green(130px);
-				    	margin-right: 10px;
-				    }
-				    .clases-button-left-btn2{
-				    	float: left;
-				    	a{
-				    		color: $color-green;
-				    	}
-				    }
-			    }
-			    .clases-button-middle{
-			    	width: 381px;
-			    	float: left;
-			    	border-radius: 25px;
-			    	img{
-			    		width: 100%;
-			    		height: auto;
-			    	}
-			    }
-			    .clases-button-right{
-			    	border: 1px solid $color-orange;
-			    	margin-left: 52.5px;
-			    	margin-right: 0px;
-			    	.clases-button-left-tit, .clases-button-right-tit{
-			    		@include fonts("Mukta", 30px, 600);
-			    		span.orange{
-					    	@include fonts("Mukta", 30px, 600);
-					    	color: $color-orange;
-			    		}
-			    	}			    	
-				    .clases-button-right-btn{
-				    	float: left;
-				    	@include black-btn-orange(130px);
-				    	margin-right: 10px;
-				    }
-				    .clases-button-right-btn2{
-				    	float: left;
-				    	a{
-				    		color: $color-orange;
-				    	}
-				    }
-			    }
-    		}
-    	}
-    	#block-sph-views-block-culturales-block-1{
-    		margin: 20px 0;
-			display: inline-block;
-		    position: relative;
-		    width: 100%;
-    		header{
-    			.lang{
-    				display: none;
-    			}
-    			.cultura-btn{
-    				@include black-btn();
-    			}
-    			.cultura-tit{
-	    			@include fonts("Mukta", 40px, 600);
-	    			text-align: center;
-				    margin: 20px 0px;
-				    line-height: 1;
-				    margin-bottom: 10px;
-				    span.green{
-				    	@include fonts("Mukta", 40px, 600);
-				    	color: $color-green;
-				    }
-    			}
-    		}
-    		.slick-list .slick__slide{
-    			.cultura-img{
-    				display: inline-block;
-    				position: relative;
-    				img{
-	    				width: 100%;
-	    				height: auto;
-    				}
-    			}
-    			.cultura-main-row{
-					display: inline-block;
-				    position: absolute;
-				    bottom: 0;
-				    left: 0;
-				    width: 381px;
-				    height: 200px;
-				    padding: 20px;
-				    .cultura-tit{
-				    	@include fonts("Mukta", 25px, 600);
-				    	color: $color-white;
-				    }
-				    .cultura-dat{
-				    	border: 1px solid $color-white;
-				    	border-radius: 25px;
-				    	text-align: center;
-				    	width: 150px;
-				    	color: $color-white;
-				    }
-				    .cultura-sho{
-				    	color: $color-white;
-				    	height: 60px;
-				    }
-				    .cultura-reg{
-				    	@include black-btn-green('auto');
-				    	padding: 10px 20px;
-				    	text-align: left;
-				    	a{
-				    	color: $color-white;
-				    	}
-				    }
-    			}
-    		}
-    		nav{
-    			.slick-prev{
-    				width: 60px;
-    				position: absolute;
-    				left: -80px;
-    				border: 0px solid;
-    			}
-    			.slick-next{
-    				width: 60px;
-    				position: absolute;
-    				right: -80px;
-    				border: 0px solid;
-    			}
-    		}
+  overflow-x: hidden;
+  .region-top {
+    #block-sph-ntcdesprinkhaan {
+      width: 60%;
+      margin: 8% auto 2% auto;
+      position: relative;
 
-    	}
+      .ntc-de-sprinkhaan-black-btn {
+        @include black-btn();
+        position: relative;
+      }
 
-    	#block-sph-views-block-campamento-block-1{
-    		margin: 20px 0;
-			display: inline-block;
-		    position: relative;
-		    width: 100%;
-    		header{
-    			position: relative;
-    			margin: 0 auto;
-    			width: 721px;
-    			.lang{
-    				display: none;
-    			}
-    			.camp-btn{
-    				@include black-btn();
-    			}
-    			.camp-tit{
-	    			@include fonts("Mukta", 40px, 600);
-	    			text-align: center;
-				    margin: 20px 0px;
-				    line-height: 1;
-				    margin-bottom: 10px;
-				    span.green{
-				    	@include fonts("Mukta", 40px, 600);
-				    	color: $color-green;
-				    }
-    			}
-    			.camp-desc{
-    				margin-bottom: 20px;
-    			}
-    		}
-    		.slick-list .slick__slide{
-    			margin-right: 20px;
-    			.camp-title{
-    				@include fonts("Mukta", 30px, 600);
-    			}
-			    a .camp-btn{
-			    	@include black-btn-green('auto');
-			    	padding: 10px 20px;
-			    	text-align: left;
-			    	color: $color-white;
-			    }
-    		}
-    		nav{
-    			.slick-prev{
-    				width: 60px;
-    				position: absolute;
-    				left: -80px;
-    				border: 0px solid;
-    			}
-    			.slick-next{
-    				width: 60px;
-    				position: absolute;
-    				right: -80px;
-    				border: 0px solid;
-    			}
-    		}
-    	}
-    	#block-sph-views-block-news-block-1{
-    		margin: 20px 0;
-			display: inline-block;
-		    position: relative;
-		    width: 100%;
-    		header{
-    			position: relative;
-    			margin: 0 auto;
-    			width: 721px;
-    			.lang{
-    				display: none;
-    			}
-    			.news-btn{
-    				@include black-btn();
-    			}
-    			.news-tit{
-	    			@include fonts("Mukta", 22px, 600);
-	    			text-align: center;
-				    margin: 20px 0px;
-				    line-height: 1;
-				    margin-bottom: 10px;
-				    text-align: center;
-				    span.green{
-				    	@include fonts("Mukta", 40px, 600);
-				    	color: $color-green;
-				    }
-    			}
-    			.news-desc{
-    				margin-bottom: 20px;
-    				text-align: center;
-    			}
-    		}
-    		.slick-list .slick__slide{
-    			margin-right: 20px;
-    			text-align: left;
-    			.news-title{
-    				@include fonts("Mukta", 30px, 600);
-    			}
-			    a .news-btn{
-			    	@include black-btn-green('auto');
-			    	padding: 10px 20px;
-			    	text-align: left;
-			    	color: $color-white;
-			    }
-    		}
-    		nav{
-    			.slick-prev{
-    				width: 60px;
-    				position: absolute;
-    				left: -80px;
-    				border: 0px solid;
-    			}
-    			.slick-next{
-    				width: 60px;
-    				position: absolute;
-    				right: -80px;
-    				border: 0px solid;
-    			}
-    		}
-    	}
-    	#block-sph-views-block-nuestro-equipo-block-1{
-    		margin: 20px 0;
-			display: inline-block;
-		    position: relative;
-		    width: 100%;
-    		header{
-    			position: relative;
-    			margin: 0 auto;
-    			width: 721px;
-    			.lang{
-    				display: none;
-    			}
-    			.team-btn{
-    				@include black-btn();
-    			}
-    			.team-tit{
-	    			@include fonts("Mukta", 22px, 600);
-	    			text-align: center;
-				    margin: 20px 0px;
-				    line-height: 1;
-				    margin-bottom: 10px;
-				    text-align: center;
-				    span.green{
-				    	@include fonts("Mukta", 40px, 600);
-				    	color: $color-green;
-				    }
-    			}
-    			.team-desc{
-    				margin-bottom: 20px;
-    				text-align: center;
-    			}
-    		}
-    		.views-row{
-    			width: calc(94%/4);
-    			float: left;
-    			margin-right: 17px;
-    			text-align: center;
-    			.team-photo{
-    				img{
-					    width: 154px;
-					    height: auto;
-    				}
-    			}
-    			.team-name{
-    				@include fonts("Mukta", 30px, 600);
-    				margin-bottom: 5px;
-    			}
-    			.team-group{
-    				margin-bottom: 5px;
-    				color: #8CC63F;
-    			}
-    			.team-desc{
-    				margin-bottom: 5px;
-    			}
-    		}
-    	}
+      .ntc-de-sprinkhaan-black-btn:before {
+        content: "";
+        display: inline-block;
+        width: 68px;
+        height: 68px;
+        background-image: url("/themes/custom/sph/images/Spk-img-real.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-top: -32px;
+      }
+
+      .ntc-de-sprinkhaan-title h1 {
+        @include fonts("Conv_Gotham-Medium", 48px, 800);
+        text-align: center;
+        margin: 24px 0px 16px 0;
+        line-height: 1;
+        margin-bottom: 10px;
+        color: #101828;
+
+        span.green {
+          @include fonts("Conv_Gotham-Medium", 48px, 800);
+          color: $color-green;
+        }
+
+        span.orange {
+          @include fonts("Conv_Gotham-Medium", 48px, 800);
+          color: $color-orange;
+        }
+      }
+
+      .ntc-de-sprinkhaan-desc {
+        @include fonts("poppins", 16px, "normal");
+        text-align: center;
+        width: 60%;
+        margin: 0 auto 2% auto;
+      }
+
+      .ntc-de-sprinkhaan-btns {
+        margin: auto 0;
+        width: 100%;
+        margin-bottom: 10px;
+        display: flex;
+        justify-content: center;
+
+        .ntc-de-sprinkhaan-green-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 195px;
+          height: 45px;
+          float: left;
+          background: linear-gradient(
+            180deg,
+            rgba(140, 198, 63, 1) 0%,
+            rgba(57, 93, 19, 1) 100%
+          );
+          color: $color-white;
+          @include fonts("poppins", 16px, "normal");
+          @include radius-spk-12();
+          padding: 4px;
+          margin-right: 24px;
+          position: relative;
+        }
+
+        .ntc-de-sprinkhaan-green-btn::before {
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(78deg)
+            brightness(99%) contrast(103%);
+          background-image: url("/themes/custom/sph/images/Rocket-spk.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin-right: 8px;
+        }
+
+        .ntc-de-sprinkhaan-white-btn {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 195px;
+          height: 45px;
+          float: left;
+          color: $color-brown;
+          border: 1px solid $color-brown;
+          @include fonts("poppins", 16px, "normal");
+          @include radius-spk-12();
+          position: relative;
+        }
+
+        .ntc-de-sprinkhaan-white-btn:before {
+          content: "";
+          display: inline-block;
+          width: 20px;
+          height: 20px;
+          filter: invert(13%) sepia(80%) saturate(3710%) hue-rotate(12deg)
+            brightness(94%) contrast(87%);
+          background-image: url("/themes/custom/sph/images/School-spk.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin-right: 8px;
+        }
+      }
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: floatUpDown 6s infinite ease-in-out;
+      }
+
+      &:before {
+        background-image: url("/themes/custom/sph/images/AVION@2x.png");
+        top: -40px;
+        left: -40px;
+        animation-delay: 0s;
+        width: 80px;
+        height: 80px;
+      }
+
+      &:after {
+        background-image: url("/themes/custom/sph/images/copa@2x.png");
+        top: -40px;
+        right: -40px;
+        animation-delay: 0.5s;
+        width: 80px;
+        height: 80px;
+      }
+
+      .ntc-de-sprinkhaan-title {
+        &:before {
+          content: "";
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          background-image: url("/themes/custom/sph/images/cuaderno@2x.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          bottom: -40px;
+          left: -40px;
+          animation: floatUpDown 6s infinite ease-in-out;
+          animation-delay: 1s;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          background-image: url("/themes/custom/sph/images/enlace@2x.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          bottom: -40px;
+          right: -40px;
+          animation: floatUpDown 6s infinite ease-in-out;
+          animation-delay: 1.5s;
+        }
+      }
+
+      .ntc-de-sprinkhaan-desc {
+        &:before {
+          content: "";
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          background-image: url("/themes/custom/sph/images/imagen@2x.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          top: 50%;
+          left: -60px;
+          animation: floatUpDown 6s infinite ease-in-out;
+          animation-delay: 2s;
+        }
+
+        &:after {
+          content: "";
+          position: absolute;
+          width: 80px;
+          height: 80px;
+          background-image: url("/themes/custom/sph/images/pluma@2x.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          top: 50%;
+          right: -60px;
+          animation: floatUpDown 6s infinite ease-in-out;
+          animation-delay: 2.5s;
+        }
+      }
+
+      @keyframes floatUpDown {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-20px);
+        }
+      }
     }
-    .content-middle{
-    	#block-sph-views-block-faq-block-1{
-    		margin: 20px 0;
-			display: inline-block;
-		    position: relative;
-		    width: 100%;
-    		header{
-    			position: relative;
-    			margin: 0 auto;
-    			width: 721px;
-    			.lang{
-    				display: none;
-    			}
-    			.faq-btn{
-    				@include black-btn();
-    			}
-    			.faq-tit{
-	    			@include fonts("Mukta", 22px, 600);
-	    			text-align: center;
-				    margin: 20px 0px;
-				    line-height: 1;
-				    margin-bottom: 10px;
-				    text-align: center;
-				    span.green{
-				    	@include fonts("Mukta", 40px, 600);
-				    	color: $color-green;
-				    }
-    			}
-    			.faq-desc{
-    				margin-bottom: 20px;
-    				text-align: center;
-    			}
-    		}
-    		.views-row{
-    			padding: 10px 0;
-    			.ui-state-active{
-    				background-color: $color-green;
-    				color: $color-white;
-    			}
-    		}
-    	}
-    	#block-sph-contactanos{
-		    position: relative;
-		    margin: 0 auto;
-		    width: 721px;
-			.cont-tit{
-				@include fonts("Mukta", 22px, 600);
-				text-align: center;
-			    margin: 20px 0px;
-			    line-height: 1;
-			    margin-bottom: 10px;
-			    text-align: center;
-			    span.green{
-			    	@include fonts("Mukta", 40px, 600);
-			    	color: $color-green;
-			    }
-			}
-			.cont-desc{
-				margin-bottom: 20px;
-				text-align: center;
-			}
-			.cont-btn{
-				text-align: center;
-				a{
-			    	@include black-btn-green('auto');
-			    	padding: 10px 20px;
-			    	text-align: left;
-			    	color: $color-white;
-				}
-			}
-			.cont-img{
-				text-align: center;
-				position: relative;
-				img{
-				    width: 403px;
-				    height: auto;
-				}
-			}
-    	}
+
+    #block-sph-videohome {
+      width: 1001px;
+      height: 580px;
+      position: relative;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.774);
+      border: 1px solid #e9e9ee;
+      @include radius-spk-24();
+      backdrop-filter: blur(17.7px);
+      -webkit-backdrop-filter: blur(17.7px);
+      background: rgba(255, 255, 255, 0.11);
+      -moz-backdrop-filter: blur(17.7px);
+      video {
+        border: 1px solid #e9e9ee;
+        padding: 8px;
+        margin: 8px;
+        width: 98.5%;
+        height: auto;
+        @include radius-spk-16();
+      }
     }
+  }
+  .region-center {
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    #block-sph-views-block-testimoniales-block-1 {
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      margin-top: 5%;
+      header {
+        .lang {
+          display: none;
+        }
+        .testimonials-btn {
+          @include black-btn();
+        }
+        .testimonials-btn::before {
+          content: "";
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          background-image: url("/themes/custom/sph/images/jouw.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: -93px -8px -48px -32px;
+        }
+        .testimonials-tit {
+          @include fonts("Conv_Gotham-Medium", 48px, 800);
+          text-align: center;
+          margin: 24px 0px 16px 0;
+          line-height: 1;
+          color: #101828;
+          span.green {
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            color: $color-green;
+          }
+        }
+        .testimonials-tit::after {
+          content: "";
+          display: inline-block;
+          width: 47px;
+          height: 47px;
+          background-image: url("/themes/custom/sph/images/stars.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: 0 0 -4px -2px;
+        }
+      }
+      .slick-list .slick__slide {
+        border: 1px solid #e9e9ee;
+        margin: 16px;
+        @include radius-spk-16();
+        min-height: 250px;
+        padding: 32px;
+        .testimoniales-fot {
+          float: left;
+          img {
+            @include radius-spk-24();
+            width: 54px;
+            height: auto;
+          }
+        }
+        .testimoniales-tit {
+          @include fonts("poppins", 18px, 800);
+        }
+        .testimoniales-est {
+          margin-bottom: 16px;
+          div {
+            float: left;
+            color: $color-orange;
+            font-size: 22px;
+            margin-right: 6px;
+          }
+        }
+        .testimoniales-tes {
+          clear: both;
+          width: 100%;
+          p {
+            @include fonts("poppins", 16px, "normal");
+            color: #323b48;
+          }
+        }
+      }
+      nav {
+        .slick-prev {
+          width: 60px;
+          position: absolute;
+          left: -48px;
+          border: 0px solid;
+        }
+        .slick-next {
+          width: 60px;
+          position: absolute;
+          right: -48px;
+          border: 0px solid;
+        }
+      }
+    }
+    #block-sph-sobrenosotros {
+      margin-top: 4%;
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      .about-us-left {
+        width: 41%;
+        float: left;
+        margin: 7% 8% 0 0;
+        h2 {
+          position: relative;
+          @include fonts("Conv_Gotham-Medium", 48px, 800);
+          color: #101828;
+          span.orange {
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            color: $color-orange;
+          }
+        }
+        h2:before {
+          content: "";
+          display: inline-block;
+          width: 31px;
+          height: 31px;
+          background-image: url("/themes/custom/sph/images/School-spk.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: -18px;
+          left: 4px;
+          filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg)
+            brightness(95%) contrast(94%);
+        }
+        .about-us-left-text {
+          @include fonts("poppins", 16px, "normal");
+          color: #323b48;
+        }
+      }
+      .about-us-right {
+        width: 50%;
+        float: left;
+        img {
+          @include radius-spk-32();
+          width: 100%;
+          height: auto;
+        }
+      }
+    }
+  }
+  .content-center {
+    #block-sph-clases {
+      margin: 4% 0;
+      .clases-top {
+        position: relative;
+        width: 721px;
+        margin: 0 auto;
+        .clases-top-btn {
+          width: 190px !important;
+          @include black-btn();
+        }
+        .clases-top-btn::before {
+          content: "";
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          background-image: url("/themes/custom/sph/images/Spk-img-real.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: -93px -4px -48px -32px;
+        }
+        .clases-top-tit {
+          @include fonts("Conv_Gotham-Medium", 48px, 800);
+          color: #101828;
+          text-align: center;
+          margin: 20px 0px;
+          line-height: 1;
+          margin-bottom: 10px;
+          span.green {
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            color: $color-green;
+          }
+        }
+        .clases-top-desc {
+          @include fonts("poppins", 16px, "normal");
+          color: #101828;
+          text-align: center;
+        }
+      }
+      .clases-button {
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        margin: 8% 0 1% 0;
+
+        .clases-button-left {
+          width: 342px;
+          height: 364px;
+          float: left;
+          margin: 4% 4% 0 0;
+          border: 1px solid $color-green;
+          border-radius: 25px;
+          padding: 24px;
+          position: relative;
+          z-index: 2;
+          background-color: #fff;
+          .clases-button-left-tex {
+            width: 151px;
+            height: 34px;
+            @include fonts("Conv_Gotham-Medium", 14px, 800);
+            position: relative;
+            @include radius-sph();
+            border: 1px solid #e9e9ee;
+            padding: 8px;
+          }
+          .clases-button-left-tex::before {
+            content: "";
+            display: inline-block;
+            width: 13px;
+            height: 14px;
+            filter: invert(8%) sepia(32%) saturate(985%) hue-rotate(182deg)
+              brightness(92%) contrast(97%);
+            background-image: url("/themes/custom/sph/images/marc.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 8px;
+          }
+          .clases-button-left-tit {
+            @include fonts("Conv_Gotham-Medium", 31px, 800);
+            color: #101828;
+            margin-top: 8px;
+            span.green {
+              @include fonts("Conv_Gotham-Medium", 31px, 800);
+              color: $color-green;
+            }
+          }
+          .clases-button-left-des {
+            @include fonts("poppins", 16px, "normal");
+            color: #101828;
+            margin: 16px 0;
+          }
+          .clases-button-left-btn {
+            float: left;
+            @include black-btn-green(148px);
+            margin-right: 10px;
+            position: relative;
+          }
+          .clases-button-left-btn:before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 14px;
+            background-image: url("/themes/custom/sph/images/register.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 8px;
+          }
+          .clases-button-left-btn2 {
+            width: 132px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            height: 45px;
+            position: relative;
+            a {
+              color: #395d13;
+            }
+          }
+          .clases-button-left-btn2:before {
+            content: "";
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            filter: invert(28%) sepia(8%) saturate(5570%) hue-rotate(48deg)
+              brightness(97%) contrast(85%);
+            background-image: url("/themes/custom/sph/images/calendar.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 4px;
+          }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 105%;
+            left: 24%;
+            width: 224px;
+            height: 180px;
+            background-image: url("/themes/custom/sph/images/arrow-green.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translateY(-50%);
+            animation: move-up-down 2s infinite ease-in-out;
+          }
+        }
+
+        .clases-button-right {
+          width: 342px;
+          float: left;
+          height: 441px;
+          margin: 12% 0% 0% 4%;
+          @include radius-spk-24();
+          padding: 24px;
+          position: relative;
+          background-color: #fff;
+          z-index: 2;
+          border: 1px solid $color-orange;
+          .clases-button-right-tit {
+            margin: 4px 0;
+            @include fonts("Conv_Gotham-Medium", 31px, 800);
+            span.orange {
+              @include fonts("Conv_Gotham-Medium", 31px, 800);
+              color: $color-orange;
+            }
+          }
+          .clases-button-right-des {
+            @include fonts("poppins", 16px, "normal");
+            color: #101828;
+            margin: 16px 0;
+          }
+          .clases-button-right-btn {
+            float: left;
+            @include black-btn-orange(148px);
+            margin-right: 10px;
+            position: relative;
+          }
+          .clases-button-right-btn:before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 14px;
+            background-image: url("/themes/custom/sph/images/register.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 8px;
+          }
+          .clases-button-right-btn2 {
+            width: 132px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            height: 45px;
+            position: relative;
+            a {
+              color: #902B10;
+            }
+          }
+          .clases-button-right-btn2:before {
+            content: "";
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            filter: invert(20%) sepia(26%) saturate(5008%) hue-rotate(351deg) brightness(95%) contrast(97%);
+            background-image: url("/themes/custom/sph/images/calendar.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 4px;
+          }
+          .clases-button-right-tex {
+            width: 123px;
+            height: 34px;
+            @include fonts("Conv_Gotham-Medium", 14px, 800);
+            position: relative;
+            @include radius-sph();
+            border: 1px solid #e9e9ee;
+            color: #101828;
+            padding: 8px;
+          }
+          .clases-button-right-tex:before {
+            content: "";
+            display: inline-block;
+            width: 13px;
+            height: 14px;
+            filter: invert(8%) sepia(32%) saturate(985%) hue-rotate(182deg)
+              brightness(92%) contrast(97%);
+            background-image: url("/themes/custom/sph/images/world.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 8px;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            top: -34%;
+            right: 32%;
+            width: 130px;
+            height: 130px;
+            background-image: url("/themes/custom/sph/images/arrow-orange.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translateY(-50%);
+            animation: move-up-down 2s infinite ease-in-out;
+          }
+        }
+
+        .clases-button-middle {
+          width: 381px;
+          float: left;
+          @include radius-spk-24();
+          position: relative;
+
+          .clases-button-middle-img {
+            display: flex;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            @include radius-spk-24();
+            z-index: 2;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: -24px;
+            width: 116%;
+            height: 80%;
+            border-radius: 25px;
+            background: linear-gradient(to right, #8cc63f 50%, #f7941d 50%);
+            z-index: 1;
+            filter: blur(32px);
+            opacity: 0.4;
+            -webkit-filter: blur(64px);
+          }
+        }
+
+        @keyframes move-up-down {
+          0%,
+          100% {
+            transform: translateY(-10px);
+          }
+          50% {
+            transform: translateY(10px);
+          }
+        }
+      }
+    }
+    #block-sph-views-block-culturales-block-1 {
+      margin: 20px 0;
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      header {
+        .lang {
+          display: none;
+        }
+        .cultura-btn {
+          @include black-btn();
+        }
+        .cultura-tit {
+          @include fonts("Mukta", 40px, 600);
+          text-align: center;
+          margin: 20px 0px;
+          line-height: 1;
+          margin-bottom: 10px;
+          span.green {
+            @include fonts("Mukta", 40px, 600);
+            color: $color-green;
+          }
+        }
+      }
+      .slick-list .slick__slide {
+        .cultura-img {
+          display: inline-block;
+          position: relative;
+          img {
+            width: 100%;
+            height: auto;
+          }
+        }
+        .cultura-main-row {
+          display: inline-block;
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          width: 381px;
+          height: 200px;
+          padding: 20px;
+          .cultura-tit {
+            @include fonts("Mukta", 25px, 600);
+            color: $color-white;
+          }
+          .cultura-dat {
+            border: 1px solid $color-white;
+            border-radius: 25px;
+            text-align: center;
+            width: 150px;
+            color: $color-white;
+          }
+          .cultura-sho {
+            color: $color-white;
+            height: 60px;
+          }
+          .cultura-reg {
+            @include black-btn-green("auto");
+            padding: 10px 20px;
+            text-align: left;
+            a {
+              color: $color-white;
+            }
+          }
+        }
+      }
+      nav {
+        .slick-prev {
+          width: 60px;
+          position: absolute;
+          left: -80px;
+          border: 0px solid;
+        }
+        .slick-next {
+          width: 60px;
+          position: absolute;
+          right: -80px;
+          border: 0px solid;
+        }
+      }
+    }
+
+    #block-sph-views-block-campamento-block-1 {
+      margin: 20px 0;
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      header {
+        position: relative;
+        margin: 0 auto;
+        width: 721px;
+        .lang {
+          display: none;
+        }
+        .camp-btn {
+          @include black-btn();
+        }
+        .camp-tit {
+          @include fonts("Mukta", 40px, 600);
+          text-align: center;
+          margin: 20px 0px;
+          line-height: 1;
+          margin-bottom: 10px;
+          span.green {
+            @include fonts("Mukta", 40px, 600);
+            color: $color-green;
+          }
+        }
+        .camp-desc {
+          margin-bottom: 20px;
+        }
+      }
+      .slick-list .slick__slide {
+        margin-right: 20px;
+        .camp-title {
+          @include fonts("Mukta", 30px, 600);
+        }
+        a .camp-btn {
+          @include black-btn-green("auto");
+          padding: 10px 20px;
+          text-align: left;
+          color: $color-white;
+        }
+      }
+      nav {
+        .slick-prev {
+          width: 60px;
+          position: absolute;
+          left: -80px;
+          border: 0px solid;
+        }
+        .slick-next {
+          width: 60px;
+          position: absolute;
+          right: -80px;
+          border: 0px solid;
+        }
+      }
+    }
+    #block-sph-views-block-news-block-1 {
+      margin: 20px 0;
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      header {
+        position: relative;
+        margin: 0 auto;
+        width: 721px;
+        .lang {
+          display: none;
+        }
+        .news-btn {
+          @include black-btn();
+        }
+        .news-tit {
+          @include fonts("Mukta", 22px, 600);
+          text-align: center;
+          margin: 20px 0px;
+          line-height: 1;
+          margin-bottom: 10px;
+          text-align: center;
+          span.green {
+            @include fonts("Mukta", 40px, 600);
+            color: $color-green;
+          }
+        }
+        .news-desc {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      }
+      .slick-list .slick__slide {
+        margin-right: 20px;
+        text-align: left;
+        .news-title {
+          @include fonts("Mukta", 30px, 600);
+        }
+        a .news-btn {
+          @include black-btn-green("auto");
+          padding: 10px 20px;
+          text-align: left;
+          color: $color-white;
+        }
+      }
+      nav {
+        .slick-prev {
+          width: 60px;
+          position: absolute;
+          left: -80px;
+          border: 0px solid;
+        }
+        .slick-next {
+          width: 60px;
+          position: absolute;
+          right: -80px;
+          border: 0px solid;
+        }
+      }
+    }
+    #block-sph-views-block-nuestro-equipo-block-1 {
+      margin: 20px 0;
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      header {
+        position: relative;
+        margin: 0 auto;
+        width: 721px;
+        .lang {
+          display: none;
+        }
+        .team-btn {
+          @include black-btn();
+        }
+        .team-tit {
+          @include fonts("Mukta", 22px, 600);
+          text-align: center;
+          margin: 20px 0px;
+          line-height: 1;
+          margin-bottom: 10px;
+          text-align: center;
+          span.green {
+            @include fonts("Mukta", 40px, 600);
+            color: $color-green;
+          }
+        }
+        .team-desc {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      }
+      .views-row {
+        width: calc(94% / 4);
+        float: left;
+        margin-right: 17px;
+        text-align: center;
+        .team-photo {
+          img {
+            width: 154px;
+            height: auto;
+          }
+        }
+        .team-name {
+          @include fonts("Mukta", 30px, 600);
+          margin-bottom: 5px;
+        }
+        .team-group {
+          margin-bottom: 5px;
+          color: #8cc63f;
+        }
+        .team-desc {
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+  .content-middle {
+    #block-sph-views-block-faq-block-1 {
+      margin: 20px 0;
+      display: inline-block;
+      position: relative;
+      width: 100%;
+      header {
+        position: relative;
+        margin: 0 auto;
+        width: 721px;
+        .lang {
+          display: none;
+        }
+        .faq-btn {
+          @include black-btn();
+        }
+        .faq-tit {
+          @include fonts("Mukta", 22px, 600);
+          text-align: center;
+          margin: 20px 0px;
+          line-height: 1;
+          margin-bottom: 10px;
+          text-align: center;
+          span.green {
+            @include fonts("Mukta", 40px, 600);
+            color: $color-green;
+          }
+        }
+        .faq-desc {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+      }
+      .views-row {
+        padding: 10px 0;
+        .ui-state-active {
+          background-color: $color-green;
+          color: $color-white;
+        }
+      }
+    }
+    #block-sph-contactanos {
+      position: relative;
+      margin: 0 auto;
+      width: 721px;
+      .cont-tit {
+        @include fonts("Mukta", 22px, 600);
+        text-align: center;
+        margin: 20px 0px;
+        line-height: 1;
+        margin-bottom: 10px;
+        text-align: center;
+        span.green {
+          @include fonts("Mukta", 40px, 600);
+          color: $color-green;
+        }
+      }
+      .cont-desc {
+        margin-bottom: 20px;
+        text-align: center;
+      }
+      .cont-btn {
+        text-align: center;
+        a {
+          @include black-btn-green("auto");
+          padding: 10px 20px;
+          text-align: left;
+          color: $color-white;
+        }
+      }
+      .cont-img {
+        text-align: center;
+        position: relative;
+        img {
+          width: 403px;
+          height: auto;
+        }
+      }
+    }
+  }
 }

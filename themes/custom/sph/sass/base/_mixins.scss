@@ -21,7 +21,20 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-
+@mixin radius-spk-10() {
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+@mixin radius-spk-16() {
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
 @mixin radius-sph() {
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -37,41 +50,72 @@
   @include transition-all-sph();
 }
 
+
 @mixin black-btn(){
-  width: 182px;
-  background-color: $color-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 248px;
+  height: 36px;
+  background-color: #101828;
   color: $color-white;
   text-align: center;
-  border-radius: 25px;
-  padding: 4px;
-  margin-bottom: 10px;
+  @include radius-spk-24();
   margin: 0 auto;
+  @include fonts("Conv_Gotham-Medium", 15px, 'normal');
+}
+@mixin radius-spk-12(){
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+
+@mixin radius-spk-32(){ 
+  border-radius: 32px; 
+  -webkit-border-radius: 32px; 
+  -moz-border-radius: 32px; 
+  -ms-border-radius: 32px; 
+  -o-border-radius: 32px;
+}
+
+@mixin radius-spk-24(){
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
 }
 
 @mixin black-btn-green($size){
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: $size;
+  height: 45px;
   background-color: $color-green;
   color: $color-white;
   text-align: center;
-  border-radius: 25px;
-  padding: 4px;
-  margin-bottom: 10px;
-  margin: 0 auto;
+  @include radius-spk-24();
   a{
+    @include fonts("poppins", 16px, "normal");
     color: $color-white;
   }
 }
 
 @mixin black-btn-orange($size){
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: $size;
+  height: 45px;
   background-color: $color-orange;
   color: $color-white;
   text-align: center;
-  border-radius: 25px;
-  padding: 4px;
-  margin-bottom: 10px;
-  margin: 0 auto;
+  @include radius-spk-24();
   a{
+    @include fonts("poppins", 16px, "normal");
     color: $color-white;
   }
 }
