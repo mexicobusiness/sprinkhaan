@@ -289,24 +289,24 @@
         }
       }
       .slick-list .slick__slide {
-		border: 1px solid #E9E9EE;
-		margin: 16px;
-		@include radius-spk-16();
-		min-height: 250px;
-		padding: 32px;
+        border: 1px solid #e9e9ee;
+        margin: 16px;
+        @include radius-spk-16();
+        min-height: 250px;
+        padding: 32px;
         .testimoniales-fot {
           float: left;
           img {
-			@include radius-spk-24();
+            @include radius-spk-24();
             width: 54px;
             height: auto;
           }
         }
         .testimoniales-tit {
-			@include fonts("poppins", 18px, 800);
+          @include fonts("poppins", 18px, 800);
         }
         .testimoniales-est {
-			margin-bottom: 16px;
+          margin-bottom: 16px;
           div {
             float: left;
             color: $color-orange;
@@ -317,10 +317,10 @@
         .testimoniales-tes {
           clear: both;
           width: 100%;
-		  p{
-			@include fonts("poppins", 16px, 'normal');
-			color: #323B48;
-		  }
+          p {
+            @include fonts("poppins", 16px, "normal");
+            color: #323b48;
+          }
         }
       }
       nav {
@@ -346,38 +346,40 @@
       .about-us-left {
         width: 41%;
         float: left;
-		margin: 7% 8% 0 0;
+        margin: 7% 8% 0 0;
         h2 {
-			position: relative;
-			@include fonts("Conv_Gotham-Medium", 48px, 800);
-			color: #101828;
+          position: relative;
+          @include fonts("Conv_Gotham-Medium", 48px, 800);
+          color: #101828;
           span.orange {
-			@include fonts("Conv_Gotham-Medium", 48px, 800);
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
             color: $color-orange;
           }
-        } h2:before {
-			content: "";
-			display: inline-block;
-			width: 31px;
-			height: 31px;
-			background-image: url("/themes/custom/sph/images/School-spk.svg");
-			background-size: cover;
-			background-repeat: no-repeat;
-			position: absolute;
-			top: -18px;
-			left: 4px;
-			filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg) brightness(95%) contrast(94%);
-		  }
+        }
+        h2:before {
+          content: "";
+          display: inline-block;
+          width: 31px;
+          height: 31px;
+          background-image: url("/themes/custom/sph/images/School-spk.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: -18px;
+          left: 4px;
+          filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg)
+            brightness(95%) contrast(94%);
+        }
         .about-us-left-text {
-			@include fonts("poppins", 16px, 'normal');
-			color: #323B48;
+          @include fonts("poppins", 16px, "normal");
+          color: #323b48;
         }
       }
       .about-us-right {
         width: 50%;
         float: left;
         img {
-			@include radius-spk-32();
+          @include radius-spk-32();
           width: 100%;
           height: auto;
         }
@@ -392,218 +394,288 @@
         width: 721px;
         margin: 0 auto;
         .clases-top-btn {
-			width: 190px!important;
+          width: 190px !important;
           @include black-btn();
-        }.clases-top-btn::before {
-			content: "";
-			display: inline-block;
-			width: 80px;
-			height: 80px;
-			background-image: url("/themes/custom/sph/images/Spk-img-real.png");
-			background-size: cover;
-			background-repeat: no-repeat;
-			margin: -93px -4px -48px -32px;
-		  }
+        }
+        .clases-top-btn::before {
+          content: "";
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          background-image: url("/themes/custom/sph/images/Spk-img-real.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: -93px -4px -48px -32px;
+        }
         .clases-top-tit {
-			@include fonts("Conv_Gotham-Medium", 48px, 800);
-			color: #101828;
+          @include fonts("Conv_Gotham-Medium", 48px, 800);
+          color: #101828;
           text-align: center;
           margin: 20px 0px;
           line-height: 1;
           margin-bottom: 10px;
           span.green {
-			@include fonts("Conv_Gotham-Medium", 48px, 800);
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
             color: $color-green;
           }
         }
-		.clases-top-desc{
-			@include fonts("poppins", 16px, 'normal');
-			color: #101828;
-			text-align: center;
-		}
+        .clases-top-desc {
+          @include fonts("poppins", 16px, "normal");
+          color: #101828;
+          text-align: center;
+        }
       }
       .clases-button {
-		width: 100%;
-		display: inline-block;
-		position: relative;
-		margin: 8% 0 1% 0;
-		
-	  
-		.clases-button-left {
-		  width: 342px;
-		  height: 364px;
-		  float: left;
-		  margin-right: 48px;
-		  border: 1px solid $color-green;
-		  border-radius: 25px;
-		  padding: 24px;
-		  position: relative;
-		  z-index: 2;
-		  background-color: #fff;
-		
-		  .clases-button-left-tex {
-			width: 151px;
-			height: 34px;
-            @include fonts("Conv_Gotham-Medium", 16px, 800);
-			position: relative;
-			@include radius-sph();
-			border: 1px solid #E9E9EE;
-			padding: 8px;
-          }.clases-button-left-tex::before {
-			content: "";
-			display: inline-block;
-			width: 13px;
-			height: 14px;
-			filter: invert(8%) sepia(32%) saturate(985%) hue-rotate(182deg) brightness(92%) contrast(97%);
-			background-image: url("/themes/custom/sph/images/marc.svg");
-			background-size: cover;
-			background-repeat: no-repeat;
-			margin-right: 8px;
-		  }
+        width: 100%;
+        display: inline-block;
+        position: relative;
+        margin: 8% 0 1% 0;
+
+        .clases-button-left {
+          width: 342px;
+          height: 364px;
+          float: left;
+          margin: 4% 4% 0 0;
+          border: 1px solid $color-green;
+          border-radius: 25px;
+          padding: 24px;
+          position: relative;
+          z-index: 2;
+          background-color: #fff;
+          .clases-button-left-tex {
+            width: 151px;
+            height: 34px;
+            @include fonts("Conv_Gotham-Medium", 14px, 800);
+            position: relative;
+            @include radius-sph();
+            border: 1px solid #e9e9ee;
+            padding: 8px;
+          }
+          .clases-button-left-tex::before {
+            content: "";
+            display: inline-block;
+            width: 13px;
+            height: 14px;
+            filter: invert(8%) sepia(32%) saturate(985%) hue-rotate(182deg)
+              brightness(92%) contrast(97%);
+            background-image: url("/themes/custom/sph/images/marc.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 8px;
+          }
           .clases-button-left-tit {
             @include fonts("Conv_Gotham-Medium", 31px, 800);
-			color: #101828;
+            color: #101828;
+            margin-top: 8px;
             span.green {
-				@include fonts("Conv_Gotham-Medium", 31px, 800);
+              @include fonts("Conv_Gotham-Medium", 31px, 800);
               color: $color-green;
             }
           }
-		  .clases-button-left-des {
-            margin-bottom: 15px;
+          .clases-button-left-des {
+            @include fonts("poppins", 16px, "normal");
+            color: #101828;
+            margin: 16px 0;
           }
-		  .clases-button-left-btn {
+          .clases-button-left-btn {
             float: left;
-            @include black-btn-green(130px);
+            @include black-btn-green(148px);
             margin-right: 10px;
+            position: relative;
+          }
+          .clases-button-left-btn:before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 14px;
+            background-image: url("/themes/custom/sph/images/register.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 8px;
           }
           .clases-button-left-btn2 {
+            width: 132px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             float: left;
+            height: 45px;
+            position: relative;
             a {
-              color: $color-green;
+              color: #395d13;
             }
           }
-		  &::before {
-			content: "";
-			position: absolute;
-			top: 105%;
-			left: 24%; 
-			width: 224px;
-			height: 180px;
-			background-image: url("/themes/custom/sph/images/arrow-green.png"); 
-			background-size: contain;
-			background-repeat: no-repeat;
-			transform: translateY(-50%);
-			animation: move-up-down 2s infinite ease-in-out;
-		  }
-		}
-	  
-		.clases-button-right {
-		  width: 342px;
-		  float: left;
-		  margin: 16% 0% 0% 4%;
-		  border: 1px solid $color-orange;
-		  border-radius: 25px;
-		  padding: 24px;
-		  position: relative;
-		  background-color: #fff;
-		  z-index: 2;
-          .clases-button-right-tex {
-            @include fonts("Mukta", 16px, 600);
+          .clases-button-left-btn2:before {
+            content: "";
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            filter: invert(28%) sepia(8%) saturate(5570%) hue-rotate(48deg)
+              brightness(97%) contrast(85%);
+            background-image: url("/themes/custom/sph/images/calendar.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 4px;
           }
+          &::before {
+            content: "";
+            position: absolute;
+            top: 105%;
+            left: 24%;
+            width: 224px;
+            height: 180px;
+            background-image: url("/themes/custom/sph/images/arrow-green.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translateY(-50%);
+            animation: move-up-down 2s infinite ease-in-out;
+          }
+        }
+
+        .clases-button-right {
+          width: 342px;
+          float: left;
+          height: 441px;
+          margin: 12% 0% 0% 4%;
+          @include radius-spk-24();
+          padding: 24px;
+          position: relative;
+          background-color: #fff;
+          z-index: 2;
+          border: 1px solid $color-orange;
           .clases-button-right-tit {
-            @include fonts("Mukta", 30px, 600);
+            margin: 4px 0;
+            @include fonts("Conv_Gotham-Medium", 31px, 800);
             span.orange {
-              @include fonts("Mukta", 30px, 600);
-              color: $color-green;
+              @include fonts("Conv_Gotham-Medium", 31px, 800);
+              color: $color-orange;
             }
           }
-
           .clases-button-right-des {
-            margin-bottom: 15px;
+            @include fonts("poppins", 16px, "normal");
+            color: #101828;
+            margin: 16px 0;
           }
-		  .clases-button-right {
-			border: 1px solid $color-orange;
-			margin-left: 52.5px;
-			margin-right: 0px;
-			.clases-button-left-tit,
-			.clases-button-right-tit {
-			  @include fonts("Mukta", 30px, 600);
-			  span.orange {
-				@include fonts("Mukta", 30px, 600);
-				color: $color-orange;
-			  }
-			}
-			.clases-button-right-btn {
-			  float: left;
-			  @include black-btn-orange(130px);
-			  margin-right: 10px;
-			}
-			.clases-button-right-btn2 {
-			  float: left;
-			  a {
-				color: $color-orange;
-			  }
-			}
-		  }
+          .clases-button-right-btn {
+            float: left;
+            @include black-btn-orange(148px);
+            margin-right: 10px;
+            position: relative;
+          }
+          .clases-button-right-btn:before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 14px;
+            background-image: url("/themes/custom/sph/images/register.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 8px;
+          }
+          .clases-button-right-btn2 {
+            width: 132px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            float: left;
+            height: 45px;
+            position: relative;
+            a {
+              color: #902B10;
+            }
+          }
+          .clases-button-right-btn2:before {
+            content: "";
+            display: inline-block;
+            width: 19px;
+            height: 19px;
+            filter: invert(20%) sepia(26%) saturate(5008%) hue-rotate(351deg) brightness(95%) contrast(97%);
+            background-image: url("/themes/custom/sph/images/calendar.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 4px;
+          }
+          .clases-button-right-tex {
+            width: 123px;
+            height: 34px;
+            @include fonts("Conv_Gotham-Medium", 14px, 800);
+            position: relative;
+            @include radius-sph();
+            border: 1px solid #e9e9ee;
+            color: #101828;
+            padding: 8px;
+          }
+          .clases-button-right-tex:before {
+            content: "";
+            display: inline-block;
+            width: 13px;
+            height: 14px;
+            filter: invert(8%) sepia(32%) saturate(985%) hue-rotate(182deg)
+              brightness(92%) contrast(97%);
+            background-image: url("/themes/custom/sph/images/world.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 8px;
+          }
 
-		  &::after {
-			content: "";
-			position: absolute;
-			top: -57%;
-			right: 32%; 
-			width: 150px;
-			height: 150px;
-			background-image: url("/themes/custom/sph/images/arrow-orange.png"); 
-			background-size: contain;
-			background-repeat: no-repeat;
-			transform: translateY(-50%);
-			animation: move-up-down 2s infinite ease-in-out;
-		  }
-		}
-	  
-		.clases-button-middle {
-		  width: 381px;
-		  float: left;
-		  @include radius-spk-24();
-		  position: relative;
-	  
-		  .clases-button-middle-img {
-			display: flex;
-		  }
-	  
-		  img {
-			width: 100%;
-			height: auto;
-			@include radius-spk-24();
-			z-index: 2;
-		  }
-	  
-		  &::before {
-			content: "";
-			position: absolute;
-			top: -20px;
-			left: -24px;
-			width: 116%;
-			height: 104%;
-			border-radius: 25px;
-			background: linear-gradient(to right, #8CC63F 50%, #F7941D 50%);
-			z-index: 1;
-			filter: blur(32px);
-			opacity: 0.4;
-			-webkit-filter: blur(64px);
-		  }
-		}
-	  
-		@keyframes move-up-down {
-		  0%, 100% {
-			transform: translateY(-10px);
-		  }
-		  50% {
-			transform: translateY(10px);
-		  }
-		}
-	  }
-	  
+          &::after {
+            content: "";
+            position: absolute;
+            top: -34%;
+            right: 32%;
+            width: 130px;
+            height: 130px;
+            background-image: url("/themes/custom/sph/images/arrow-orange.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            transform: translateY(-50%);
+            animation: move-up-down 2s infinite ease-in-out;
+          }
+        }
+
+        .clases-button-middle {
+          width: 381px;
+          float: left;
+          @include radius-spk-24();
+          position: relative;
+
+          .clases-button-middle-img {
+            display: flex;
+          }
+
+          img {
+            width: 100%;
+            height: auto;
+            @include radius-spk-24();
+            z-index: 2;
+          }
+
+          &::before {
+            content: "";
+            position: absolute;
+            top: 10%;
+            left: -24px;
+            width: 116%;
+            height: 80%;
+            border-radius: 25px;
+            background: linear-gradient(to right, #8cc63f 50%, #f7941d 50%);
+            z-index: 1;
+            filter: blur(32px);
+            opacity: 0.4;
+            -webkit-filter: blur(64px);
+          }
+        }
+
+        @keyframes move-up-down {
+          0%,
+          100% {
+            transform: translateY(-10px);
+          }
+          50% {
+            transform: translateY(10px);
+          }
+        }
+      }
     }
     #block-sph-views-block-culturales-block-1 {
       margin: 20px 0;
