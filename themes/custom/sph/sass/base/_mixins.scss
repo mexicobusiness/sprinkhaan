@@ -50,6 +50,7 @@
   @include transition-all-sph();
 }
 
+
 @mixin black-btn(){
   display: flex;
   justify-content: center;
@@ -69,6 +70,14 @@
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
+}
+
+@mixin radius-spk-32(){ 
+  border-radius: 32px; 
+  -webkit-border-radius: 32px; 
+  -moz-border-radius: 32px; 
+  -ms-border-radius: 32px; 
+  -o-border-radius: 32px;
 }
 
 @mixin radius-spk-24(){

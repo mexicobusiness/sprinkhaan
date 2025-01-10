@@ -7,7 +7,7 @@
     background-color: rgba(255, 255, 255, 0);
     height: 50px;
   }
-  .header-first{
+  .header-first {
     border-bottom: 1px solid #39364f05;
     background-color: rgba(255, 255, 255, 0.774);
     display: inline-block;
@@ -30,9 +30,9 @@
       z-index: 10;
       backdrop-filter: blur(17.7px);
       -webkit-backdrop-filter: blur(17.7px);
-      border-bottom: 1px solid #e0e7ef82;
       background: rgba(255, 255, 255, 0.11);
       -moz-backdrop-filter: blur(17.7px);
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     }
     #block-sph-svgimagelogo {
       float: left;
@@ -58,7 +58,7 @@
       .contextual-region {
         color: #39364f;
       }
-      .menu{
+      .menu {
         display: flex;
         height: 57px;
         align-items: center;
@@ -94,7 +94,7 @@
             @include fonts("poppins", 16px, "normal");
             padding: 24px;
             @include breakpoint($desktop) {
-              @include fonts("Conv_Gotham-Medium", 14px, 'normal');
+              @include fonts("Conv_Gotham-Medium", 14px, "normal");
               width: auto;
               padding: 8px;
               display: flex;
@@ -103,22 +103,22 @@
               @include transition-all-sph();
             }
             @include breakpoint($table) {
-              @include fonts("Conv_Gotham-Medium", 14px, 'normal');
+              @include fonts("Conv_Gotham-Medium", 14px, "normal");
               width: auto;
               @include transition-all-sph();
             }
             color: #39364f;
             text-transform: capitalize;
             text-decoration: none;
-          }      
+          }
         }
         li:hover {
-            background-color: #0000000d;
-            @include radius-sph();
-            @include transition-all-sph();
-            a{
-              color: #8CC63F;
-            }
+          background-color: #0000000d;
+          @include radius-sph();
+          @include transition-all-sph();
+          a {
+            color: #8cc63f;
+          }
         }
         li .is-active {
           @include -sph-hoverComponent();
@@ -134,36 +134,65 @@
         }
       }
     }
-    #block-sph-languageswitcher{
+    #block-sph-languageswitcher {
       display: flex;
       float: right;
       width: 13%;
       justify-content: center;
       align-items: center;
       height: 45px;
-      border: 1px solid #EEEEEE;
+      border: 1px solid #eeeeee;
       @include radius-sph();
       margin: 6px;
-      h2{
+      background-color: #fff;
+      h2 {
         display: none;
       }
-      .links{
+
+      .links {
         display: flex;
         width: 100%;
       }
-      ul{
-        li{
+
+      ul {
+        display: flex;
+        width: 100%;
+        li.is-active {
+          @include radius-sph();
+          background-color: #e9e9ee;
+          width: 36%;
+          height: 37px;
+          margin: 4px 4px 4px 14px;
+        }
+        li {
           width: 50%;
           display: flex;
           align-items: center;
           justify-content: center;
           height: 45px;
-          gap: 4px;
-          a{
-            @include fonts("poppins", 11px, "normal");
+          position: relative;
+
+          a {
+            display: block;
+            width: 100%;
+            height: 100%;
+            text-indent: -9999px;
+            overflow: hidden;
+            position: relative;
           }
-          a.is-active{
-            border-bottom: 2px solid $color-black;
+
+          &:first-child a {
+            background-image: url("/themes/custom/sph/images/espana.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+
+          &:last-child a {
+            background-image: url("/themes/custom/sph/images/holanda@2x.png");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
           }
         }
       }
