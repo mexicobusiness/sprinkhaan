@@ -61,7 +61,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          width: 195px;
+          width: auto;
           height: 45px;
           float: left;
           background: linear-gradient(
@@ -72,7 +72,7 @@
           color: $color-white;
           @include fonts("poppins", 16px, "normal");
           @include radius-spk-12();
-          padding: 4px;
+          padding: 4px 16px;
           margin-right: 24px;
           position: relative;
         }
@@ -391,7 +391,7 @@
       margin: 4% 0;
       .clases-top {
         position: relative;
-        width: 721px;
+        width: 700px;
         margin: 0 auto;
         .clases-top-btn {
           width: 190px !important;
@@ -433,7 +433,7 @@
 
         .clases-button-left {
           width: 342px;
-          height: 364px;
+          height: auto;
           float: left;
           margin: 4% 4% 0 0;
           border: 1px solid $color-green;
@@ -443,7 +443,8 @@
           z-index: 2;
           background-color: #fff;
           .clases-button-left-tex {
-            width: 151px;
+            width: auto;
+            max-width: 220px;
             height: 34px;
             @include fonts("Conv_Gotham-Medium", 14px, 800);
             position: relative;
@@ -454,8 +455,8 @@
           .clases-button-left-tex::before {
             content: "";
             display: inline-block;
-            width: 13px;
-            height: 14px;
+            width: 14px;
+            height: 15px;
             filter: invert(8%) sepia(32%) saturate(985%) hue-rotate(182deg)
               brightness(92%) contrast(97%);
             background-image: url("/themes/custom/sph/images/marc.svg");
@@ -494,7 +495,7 @@
             margin-right: 8px;
           }
           .clases-button-left-btn2 {
-            width: 132px;
+            width: auto;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -535,7 +536,7 @@
         .clases-button-right {
           width: 342px;
           float: left;
-          height: 441px;
+          height: auto;
           margin: 12% 0% 0% 4%;
           @include radius-spk-24();
           padding: 24px;
@@ -596,7 +597,8 @@
             margin-right: 4px;
           }
           .clases-button-right-tex {
-            width: 123px;
+            width: auto;
+            max-width: 160px;
             height: 34px;
             @include fonts("Conv_Gotham-Medium", 14px, 800);
             position: relative;
