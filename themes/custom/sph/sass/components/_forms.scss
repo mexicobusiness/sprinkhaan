@@ -83,3 +83,167 @@
     }
   }
 }
+.page-register{
+  #page {
+    #main-content {
+      .content-center{
+        header{
+          display: none;
+        }
+        div.content{
+          div p{
+            @include black-btn();
+          }
+          div form{
+            .webform-progress{
+              margin: 20px 0;
+              ul{
+                li{
+                  .progress-step.is-active .progress-marker::before {
+                      background-color: $color-green;
+                  }
+                }
+              }
+            }
+            #edit-inscribete-en-campamentos-eventos-y-clases, 
+            #edit-informatie-over-de-student, 
+            #edit-informacion-de-los-padres, 
+            #edit-cuentanos-sobre-la-familia, 
+            #edit-aprendizaje-y-desarrollo,
+            #edit-sobre-la-escuela-actual-o-anterior {
+              #edit-processed-text, 
+              #edit-processed-text-01, 
+              #edit-processed-text-02, 
+              #edit-processed-text-03,
+              #edit-processed-text-04,
+              #edit-processed-text-05 {
+                margin-bottom: 20px;
+                .form-tit{
+                  width: 721px;
+                  margin: 0 auto;
+                  @include fonts("Mukta", 40px, 600);
+                  text-align: center;
+                  line-height: 1;
+                  margin-bottom: 10px;
+                  span.green{
+                    @include fonts("Mukta", 40px, 600);
+                    color: $color-green;
+                  }
+                }
+                .form-des{
+                  width: 721px;
+                  margin: 0 auto;
+                  text-align: center;
+                }
+              }
+              fieldset{
+                text-align: center;
+                @include fonts("Mukta", 20px, 600);
+                margin-bottom: 20px;
+                span.green{
+                  @include fonts("Mukta", 20px, 600);
+                  color: $color-green;
+                }
+                .fieldset-wrapper{
+                  display: inline-block;
+                  position: relative;
+                  #edit-por-favor-seleccione-una-de-las-siguientes-opciones{
+                    div{
+                      float: left;
+                      width: calc(100%/3);
+                    }
+                  }
+                  #edit-es-esta-la-primera-vez-que-participas{
+                    div{
+                      float: left;
+                      width: 100px;
+                    }
+                  }
+                }
+              }
+              .js-form-wrapper{
+                margin-bottom: 20px;
+                > label:first-of-type{
+                  display: inline-block;
+                  @include black-btn-orange(130px);
+                  width: auto;
+                  margin-bottom: 15px;
+                }
+                div{
+                  label{
+                    display: inline-block;
+                    width: 100%;
+                    margin-bottom: 10px;
+                  }
+                  input{
+                    margin-bottom: 10px;
+                  }
+                }
+                div.form-type-webform-terms-of-service{
+                  display: inline-block;
+                  position: relative;
+                  width: 100%;
+                  input, label {
+                    float: left;
+                    margin-right: 15px;
+                    width: auto;
+                  }
+                }
+                fieldset{
+                  text-align: left;
+                  legend{
+                    display: inline-block;
+                    width: 100%;
+                    margin-bottom: 10px;
+                  }
+                  div{
+                    width: 100%;
+                    .js-form-type-radio{
+                      float: left;
+                      width: auto;
+                      margin-right: 20px;
+                    }
+                  }
+                }
+                .webform-multiple-table{
+                  border: 1px solid red;
+                  table{
+                    width: 100%;
+                  }
+                  tr th{
+                   width: calc(100%/5);
+                   text-align: left;
+                   vertical-align: top;
+                  }
+                  tr td:nth-child(1) input{
+                    width: 315px;
+                  }
+                  tr td:nth-child(2) input{
+                    width: 100px;
+                  }
+                  tr td:nth-child(3) .fieldset-wrapper{
+                    width: 100px;
+                  }
+                  tr td:nth-child(4) textarea{
+                    width: 315px;
+                  }
+                  tr td:nth-child(5) input{
+                    width: 60px;
+                  }
+                }
+              }
+            }
+            #edit-actions{
+            text-align: center;
+            margin: 20px;
+             button, input[type="reset"], input[type="submit"], input[type="button"] {
+                width: 220px;
+                height: 40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

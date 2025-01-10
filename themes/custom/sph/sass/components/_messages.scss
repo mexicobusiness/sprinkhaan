@@ -6,6 +6,37 @@
         margin: 6px;
         padding: 10px 10px 10px 50px;
     }
+    .webform-confirmation__message .complete-form-sprinkhaan{
+        text-align: center;
+        .complete-tit{
+          @include fonts("Mukta", 40px, 600);
+          margin-bottom: 10px;
+          span.green{
+            @include fonts("Mukta", 40px, 600);
+            color: $color-green;
+          }
+        }
+        .complete-des{
+            position: relative;
+            width: 721px;
+            margin: auto;
+            padding: 20px 0;
+        }
+        .complete-btn{
+            @include black-btn-green('auto');
+            padding: 10px 20px;
+            text-align: left;
+            color: $color-white;
+            width: 214px;
+            text-align: center;
+        }
+        .complete-img{
+            img{
+                width: 300px;
+                height: auto;
+            }
+        }
+    }
     div.logo_mbp{
         img{
             width: 100%;
