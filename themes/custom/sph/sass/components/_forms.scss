@@ -1,31 +1,61 @@
 .page-contact-us {
   #page {
     #main-content {
+      .messages__wrapper{
+        display: none;
+      }
       .content-center{
         header{
           display: none;
+        }
+        .content{
+          margin-top: 4%;
         }
         div.content{
           div:nth-of-type(1){
             float: left;
             width: 50%;
             .contact-us-tit{
-              width: 100%;
-              @include fonts("Mukta", 40px, 600);
-              margin: 20px 0px;
+              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              text-align: center;
               line-height: 1;
               margin-bottom: 10px;
+              margin: 24px auto;
+              color: #101828;
               span.green{
-                @include fonts("Mukta", 40px, 600);
+                @include fonts("Conv_Gotham-Medium", 48px, 800);
                 color: $color-green;
               }
             }
             .contact-us-des{
               width: 100%;
-              @include fonts("Mukta", 20px, 600);
+              display: flex;
+              @include fonts("poppins", 16px, "normal");
+              margin-bottom: 16px;
             }
             .contact-us-dir{
-              width: 100%;
+              width: 90%;
+              display: flex;
+              align-items: center;
+              @include radius-spk-16();
+              height: 70px;
+              border: 1px solid #E9E9EE;
+              @include fonts("poppins", 16px, "normal");
+              padding-left: 16px;
+            }.contact-us-dir::before {
+              content: "";
+              display: inline-block;
+              width: 18px;
+              height: 19px;
+              filter: invert(72%) sepia(36%) saturate(706%) hue-rotate(43deg) brightness(92%) contrast(92%);
+              background-image: url("/themes/custom/sph/images/marc.svg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              margin-right: 8px;
+            }.contact-us-map{
+              margin-top: 16px;
+              iframe{@include radius-spk-16();
+              width: 90%;}
             }
           }
           div:nth-of-type(2){
@@ -35,13 +65,18 @@
             position: relative;
             form{
               width: 100%;
+              @include radius-spk-16();
+              border: 1px solid #F4F4F5;
+              padding: 24px;
               #edit-processed-text{
                 padding: 0px 0 10px 0;
                 .webform-tit{
-                  @include fonts("Mukta", 20px, 600);
+                  @include fonts("Conv_Gotham-Medium", 20px, "normal");
+                  color: #303135;
                 }
                 .webform-tit-alt{
-
+                  @include fonts("poppins", 16px, "normal");
+                  color: #52525B;
                 }
               }
               fieldset#edit-nombre--wrapper{
@@ -53,17 +88,27 @@
                 width: 100%;
                 .fieldset-wrapper{
                   width: 100%;
+                  .js-form-item{
+                    border: 1px solid red;
+                  }
                   div{
+                    label{
+                      @include fonts("poppins", 16px, "normal");
+                      margin: 4px 0;
+                    }
+                    display: flex;
+                    flex-wrap: wrap;
                     width: 100%;
                     input[type="text"],
                     input[type="email"],
                     input[type="tel"] {
                       text-transform: capitalize;
-                      border: 1px solid #e9e9ee;
+                      border: 1px solid #F7941D;
                       background-color: #fff;
-                      @include fonts("open_sansregular", 16px, "normal");
-                      color: #39364f;
+                      @include fonts("poppins", 16px, "normal");
+                      color: #303135;
                       width: 100%;
+                      @include radius-spk-32();
                       height: 45px;
                       padding: 8px 16px;
                       cursor: text;

@@ -98,6 +98,7 @@
   color: $color-white;
   text-align: center;
   @include radius-spk-24();
+  max-width: 148px;
   a{
     @include fonts("poppins", 16px, "normal");
     color: $color-white;
@@ -109,6 +110,7 @@
   align-items: center;
   justify-content: center;
   width: $size;
+  max-width: 148px;
   height: 45px;
   background-color: $color-orange;
   color: $color-white;

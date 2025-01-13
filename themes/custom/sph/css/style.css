@@ -415,11 +415,12 @@
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
+  max-width: 148px;
   padding: 10px 20px;
   text-align: left;
   color: #fff;
 }
-/* line 101, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .page-sponsor #page #main-content .content-center section.sponsor-container-top .sponsor-btn a a {
   font-family: "poppins";
   font-size: 16px;
@@ -562,11 +563,12 @@
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
+  max-width: 148px;
   padding: 10px 20px;
   text-align: left;
   color: #fff;
 }
-/* line 101, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .page-sponsor #page #main-content .content-center section.sponsor-container-bottom div.sponsor-container-bottom-right .sponsor-container-bottom-right-btn a a {
   font-family: "poppins";
   font-size: 16px;
@@ -582,49 +584,50 @@
   display: inline-block;
   padding-top: 20px;
   background-color: #000 !important;
+  z-index: 3;
 }
-/* line 8, ../sass/components/_footer.scss */
+/* line 9, ../sass/components/_footer.scss */
 #footer .container {
   width: 1170px;
   margin: 0 auto;
   background-color: #000 !important;
 }
-/* line 12, ../sass/components/_footer.scss */
+/* line 13, ../sass/components/_footer.scss */
 #footer .container #block-sph-footerlogo {
   display: inline-block;
   position: relative;
   padding: 20px 0;
   width: 100%;
 }
-/* line 17, ../sass/components/_footer.scss */
+/* line 18, ../sass/components/_footer.scss */
 #footer .container #block-sph-footerlogo img:nth-child(1) {
   float: left;
   width: 100px;
   height: auto;
 }
-/* line 22, ../sass/components/_footer.scss */
+/* line 23, ../sass/components/_footer.scss */
 #footer .container #block-sph-footerlogo img:nth-child(2) {
   float: right;
   width: 225px;
   height: auto;
 }
-/* line 28, ../sass/components/_footer.scss */
+/* line 29, ../sass/components/_footer.scss */
 #footer .container #block-sph-socialnetworkslink {
   display: inline-block;
   position: relative;
   padding: 20px 0;
   width: 100%;
 }
-/* line 34, ../sass/components/_footer.scss */
+/* line 35, ../sass/components/_footer.scss */
 #footer .container #block-sph-socialnetworkslink ul li {
   width: 50px;
   float: left;
 }
-/* line 37, ../sass/components/_footer.scss */
+/* line 38, ../sass/components/_footer.scss */
 #footer .container #block-sph-socialnetworkslink ul li a {
   color: #8CC63F;
 }
-/* line 52, ../sass/components/_footer.scss */
+/* line 53, ../sass/components/_footer.scss */
 #footer .container #block-sph-piedepagina {
   display: inline-block;
   position: relative;
@@ -632,28 +635,28 @@
   padding: 10px 0;
   clear: both;
 }
-/* line 59, ../sass/components/_footer.scss */
+/* line 60, ../sass/components/_footer.scss */
 #footer .container #block-sph-piedepagina ul li {
   width: 100px;
   float: left;
 }
-/* line 62, ../sass/components/_footer.scss */
+/* line 63, ../sass/components/_footer.scss */
 #footer .container #block-sph-piedepagina ul li a {
   color: #8CC63F;
 }
-/* line 68, ../sass/components/_footer.scss */
+/* line 69, ../sass/components/_footer.scss */
 #footer .container #block-sph-footerderechosreservados {
   display: inline-block;
   position: relative;
   width: 100%;
   padding: 10px 0;
 }
-/* line 73, ../sass/components/_footer.scss */
+/* line 74, ../sass/components/_footer.scss */
 #footer .container #block-sph-footerderechosreservados .copyright {
   float: left;
   color: #8CC63F;
 }
-/* line 77, ../sass/components/_footer.scss */
+/* line 78, ../sass/components/_footer.scss */
 #footer .container #block-sph-footerderechosreservados .terms {
   float: right;
   border: 1px solid #707070;
@@ -664,133 +667,224 @@
   -webkit-backdrop-filter: blur(30px);
   padding: 10px;
 }
-/* line 86, ../sass/components/_footer.scss */
+/* line 87, ../sass/components/_footer.scss */
 #footer .container #block-sph-footerderechosreservados .terms a {
   color: #fff;
 }
 
-/* line 5, ../sass/components/_forms.scss */
+/* line 4, ../sass/components/_forms.scss */
+.page-contact-us #page #main-content .messages__wrapper {
+  display: none;
+}
+/* line 8, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center header {
   display: none;
 }
-/* line 9, ../sass/components/_forms.scss */
+/* line 11, ../sass/components/_forms.scss */
+.page-contact-us #page #main-content .content-center .content {
+  margin-top: 4%;
+}
+/* line 15, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) {
   float: left;
   width: 50%;
 }
-/* line 12, ../sass/components/_forms.scss */
+/* line 18, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-tit {
-  width: 100%;
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
-  margin: 20px 0px;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
+  text-align: center;
   line-height: 1;
   margin-bottom: 10px;
+  margin: 24px auto;
+  color: #101828;
 }
-/* line 18, ../sass/components/_forms.scss */
+/* line 25, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-tit span.green {
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   color: #8CC63F;
 }
-/* line 23, ../sass/components/_forms.scss */
+/* line 30, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-des {
   width: 100%;
-  font-family: "Mukta";
-  font-size: 20px;
-  font-weight: 600;
+  display: flex;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  margin-bottom: 16px;
 }
-/* line 27, ../sass/components/_forms.scss */
+/* line 36, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-dir {
-  width: 100%;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  height: 70px;
+  border: 1px solid #E9E9EE;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  padding-left: 16px;
 }
-/* line 31, ../sass/components/_forms.scss */
+/* line 45, ../sass/components/_forms.scss */
+.page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-dir::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 19px;
+  filter: invert(72%) sepia(36%) saturate(706%) hue-rotate(43deg) brightness(92%) contrast(92%);
+  background-image: url("/themes/custom/sph/images/marc.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+/* line 55, ../sass/components/_forms.scss */
+.page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-map {
+  margin-top: 16px;
+}
+/* line 57, ../sass/components/_forms.scss */
+.page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-map iframe {
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  width: 90%;
+}
+/* line 61, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) {
   float: right;
   width: 50%;
   display: inline-block;
   position: relative;
 }
-/* line 36, ../sass/components/_forms.scss */
+/* line 66, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form {
   width: 100%;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  border: 1px solid #F4F4F5;
+  padding: 24px;
 }
-/* line 38, ../sass/components/_forms.scss */
+/* line 71, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form #edit-processed-text {
   padding: 0px 0 10px 0;
 }
-/* line 40, ../sass/components/_forms.scss */
+/* line 73, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form #edit-processed-text .webform-tit {
-  font-family: "Mukta";
+  font-family: "Conv_Gotham-Medium";
   font-size: 20px;
-  font-weight: 600;
+  font-weight: "normal";
+  color: #303135;
 }
-/* line 48, ../sass/components/_forms.scss */
+/* line 77, ../sass/components/_forms.scss */
+.page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form #edit-processed-text .webform-tit-alt {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  color: #52525B;
+}
+/* line 83, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset#edit-nombre--wrapper legend {
   display: none;
 }
-/* line 52, ../sass/components/_forms.scss */
+/* line 87, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset, .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div {
   width: 100%;
 }
-/* line 54, ../sass/components/_forms.scss */
+/* line 89, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper, .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper {
   width: 100%;
 }
-/* line 56, ../sass/components/_forms.scss */
+/* line 91, ../sass/components/_forms.scss */
+.page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper .js-form-item, .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper .js-form-item {
+  border: 1px solid red;
+}
+/* line 94, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div, .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper div {
+  display: flex;
+  flex-wrap: wrap;
   width: 100%;
 }
-/* line 58, ../sass/components/_forms.scss */
+/* line 95, ../sass/components/_forms.scss */
+.page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div label, .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper div label {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  margin: 4px 0;
+}
+/* line 102, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="text"],
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="email"],
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="tel"], .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper div input[type="text"],
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper div input[type="email"],
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper div input[type="tel"] {
   text-transform: capitalize;
-  border: 1px solid #e9e9ee;
+  border: 1px solid #F7941D;
   background-color: #fff;
-  font-family: "open_sansregular";
+  font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
-  color: #39364f;
+  color: #303135;
   width: 100%;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
   height: 45px;
   padding: 8px 16px;
   cursor: text;
   box-shadow: none;
 }
-/* line 75, ../sass/components/_forms.scss */
+/* line 120, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form input[type="submit"] {
   width: 50%;
 }
 
-/* line 90, ../sass/components/_forms.scss */
+/* line 135, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center header {
   display: none;
 }
-/* line 94, ../sass/components/_forms.scss */
+/* line 139, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div p {
-  width: 182px;
-  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 248px;
+  height: 36px;
+  background-color: #101828;
   color: #fff;
   text-align: center;
-  border-radius: 25px;
-  padding: 4px;
-  margin-bottom: 10px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
   margin: 0 auto;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 15px;
+  font-weight: "normal";
 }
-/* line 98, ../sass/components/_forms.scss */
+/* line 143, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .webform-progress {
   margin: 20px 0;
 }
-/* line 102, ../sass/components/_forms.scss */
+/* line 147, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .webform-progress ul li .progress-step.is-active .progress-marker::before {
   background-color: #8CC63F;
 }
-/* line 114, ../sass/components/_forms.scss */
+/* line 159, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02,
@@ -829,7 +923,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior #edit-processed-text-05 {
   margin-bottom: 20px;
 }
-/* line 121, ../sass/components/_forms.scss */
+/* line 166, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text .form-tit,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01 .form-tit,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02 .form-tit,
@@ -875,7 +969,7 @@
   line-height: 1;
   margin-bottom: 10px;
 }
-/* line 128, ../sass/components/_forms.scss */
+/* line 173, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text .form-tit span.green,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01 .form-tit span.green,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02 .form-tit span.green,
@@ -917,7 +1011,7 @@
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 133, ../sass/components/_forms.scss */
+/* line 178, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text .form-des,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01 .form-des,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02 .form-des,
@@ -958,7 +1052,7 @@
   margin: 0 auto;
   text-align: center;
 }
-/* line 139, ../sass/components/_forms.scss */
+/* line 184, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset,
@@ -971,7 +1065,7 @@
   font-weight: 600;
   margin-bottom: 20px;
 }
-/* line 143, ../sass/components/_forms.scss */
+/* line 188, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset span.green,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset span.green,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset span.green,
@@ -983,7 +1077,7 @@
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 147, ../sass/components/_forms.scss */
+/* line 192, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper,
@@ -993,7 +1087,7 @@
   display: inline-block;
   position: relative;
 }
-/* line 151, ../sass/components/_forms.scss */
+/* line 196, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div,
@@ -1003,7 +1097,7 @@
   float: left;
   width: calc(100%/3);
 }
-/* line 157, ../sass/components/_forms.scss */
+/* line 202, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-es-esta-la-primera-vez-que-participas div,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-es-esta-la-primera-vez-que-participas div,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-es-esta-la-primera-vez-que-participas div,
@@ -1013,7 +1107,7 @@
   float: left;
   width: 100px;
 }
-/* line 164, ../sass/components/_forms.scss */
+/* line 209, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper,
@@ -1022,7 +1116,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper {
   margin-bottom: 20px;
 }
-/* line 166, ../sass/components/_forms.scss */
+/* line 211, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper > label:first-of-type,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper > label:first-of-type,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper > label:first-of-type,
@@ -1030,27 +1124,36 @@
 .page-register #page #main-content .content-center div.content div form #edit-aprendizaje-y-desarrollo .js-form-wrapper > label:first-of-type,
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper > label:first-of-type {
   display: inline-block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 130px;
+  max-width: 148px;
+  height: 45px;
   background-color: #F7941D;
   color: #fff;
   text-align: center;
-  border-radius: 25px;
-  padding: 4px;
-  margin-bottom: 10px;
-  margin: 0 auto;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
   width: auto;
   margin-bottom: 15px;
 }
-/* line 74, ../sass/base/_mixins.scss */
+/* line 119, ../sass/base/_mixins.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper > label:first-of-type a,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper > label:first-of-type a,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper > label:first-of-type a,
 .page-register #page #main-content .content-center div.content div form #edit-cuentanos-sobre-la-familia .js-form-wrapper > label:first-of-type a,
 .page-register #page #main-content .content-center div.content div form #edit-aprendizaje-y-desarrollo .js-form-wrapper > label:first-of-type a,
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper > label:first-of-type a {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
   color: #fff;
 }
-/* line 173, ../sass/components/_forms.scss */
+/* line 218, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div label,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div label,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper div label,
@@ -1061,7 +1164,7 @@
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 178, ../sass/components/_forms.scss */
+/* line 223, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div input,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div input,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper div input,
@@ -1070,7 +1173,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper div input {
   margin-bottom: 10px;
 }
-/* line 182, ../sass/components/_forms.scss */
+/* line 227, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div.form-type-webform-terms-of-service,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div.form-type-webform-terms-of-service,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper div.form-type-webform-terms-of-service,
@@ -1081,7 +1184,7 @@
   position: relative;
   width: 100%;
 }
-/* line 186, ../sass/components/_forms.scss */
+/* line 231, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div.form-type-webform-terms-of-service input, .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div.form-type-webform-terms-of-service label,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div.form-type-webform-terms-of-service input,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div.form-type-webform-terms-of-service label,
@@ -1097,7 +1200,7 @@
   margin-right: 15px;
   width: auto;
 }
-/* line 192, ../sass/components/_forms.scss */
+/* line 237, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset,
@@ -1106,7 +1209,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper fieldset {
   text-align: left;
 }
-/* line 194, ../sass/components/_forms.scss */
+/* line 239, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset legend,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset legend,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset legend,
@@ -1117,7 +1220,7 @@
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 199, ../sass/components/_forms.scss */
+/* line 244, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset div,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset div,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset div,
@@ -1126,7 +1229,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper fieldset div {
   width: 100%;
 }
-/* line 201, ../sass/components/_forms.scss */
+/* line 246, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset div .js-form-type-radio,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset div .js-form-type-radio,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset div .js-form-type-radio,
@@ -1137,7 +1240,7 @@
   width: auto;
   margin-right: 20px;
 }
-/* line 208, ../sass/components/_forms.scss */
+/* line 253, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table,
@@ -1146,7 +1249,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table {
   border: 1px solid red;
 }
-/* line 210, ../sass/components/_forms.scss */
+/* line 255, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table table,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table table,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table table,
@@ -1155,7 +1258,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table table {
   width: 100%;
 }
-/* line 213, ../sass/components/_forms.scss */
+/* line 258, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr th,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr th,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr th,
@@ -1166,7 +1269,7 @@
   text-align: left;
   vertical-align: top;
 }
-/* line 218, ../sass/components/_forms.scss */
+/* line 263, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr td:nth-child(1) input,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr td:nth-child(1) input,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr td:nth-child(1) input,
@@ -1175,7 +1278,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table tr td:nth-child(1) input {
   width: 315px;
 }
-/* line 221, ../sass/components/_forms.scss */
+/* line 266, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr td:nth-child(2) input,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr td:nth-child(2) input,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr td:nth-child(2) input,
@@ -1184,7 +1287,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table tr td:nth-child(2) input {
   width: 100px;
 }
-/* line 224, ../sass/components/_forms.scss */
+/* line 269, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr td:nth-child(3) .fieldset-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr td:nth-child(3) .fieldset-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr td:nth-child(3) .fieldset-wrapper,
@@ -1193,7 +1296,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table tr td:nth-child(3) .fieldset-wrapper {
   width: 100px;
 }
-/* line 227, ../sass/components/_forms.scss */
+/* line 272, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr td:nth-child(4) textarea,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr td:nth-child(4) textarea,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr td:nth-child(4) textarea,
@@ -1202,7 +1305,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table tr td:nth-child(4) textarea {
   width: 315px;
 }
-/* line 230, ../sass/components/_forms.scss */
+/* line 275, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr td:nth-child(5) input,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr td:nth-child(5) input,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr td:nth-child(5) input,
@@ -1211,12 +1314,12 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table tr td:nth-child(5) input {
   width: 60px;
 }
-/* line 236, ../sass/components/_forms.scss */
+/* line 281, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions {
   text-align: center;
   margin: 20px;
 }
-/* line 239, ../sass/components/_forms.scss */
+/* line 284, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions button, .page-register #page #main-content .content-center div.content div form #edit-actions input[type="reset"], .page-register #page #main-content .content-center div.content div form #edit-actions input[type="submit"], .page-register #page #main-content .content-center div.content div form #edit-actions input[type="button"] {
   width: 220px;
   height: 40px;
@@ -1243,41 +1346,37 @@ html input[type="numeric"],
 #page input[type="numeric"] {
   color: #39364f;
   margin-bottom: 6px;
-  margin-top: 10px;
   width: 100%;
   height: 44px;
   line-height: 28px;
   padding: 8px 16px;
   border: 1px solid #161e1e76;
   width: 100%;
-  margin-top: 20px;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
 }
-/* line 24, ../sass/components/_global.scss */
+/* line 22, ../sass/components/_global.scss */
 body input[type="email"],
 html input[type="email"],
 #page input[type="email"] {
   color: #39364f;
   margin-bottom: 6px;
-  margin-top: 10px;
   width: 100%;
   height: 44px;
   line-height: 28px;
   padding: 8px 16px;
   border: 1px solid #161e1e76;
   width: 100%;
-  margin-top: 20px;
   border-radius: 0.5rem;
   -webkit-border-radius: 0.5rem;
   -moz-border-radius: 0.5rem;
   -ms-border-radius: 0.5rem;
   -o-border-radius: 0.5rem;
 }
-/* line 41, ../sass/components/_global.scss */
+/* line 37, ../sass/components/_global.scss */
 body input[type="text"],
 html input[type="text"],
 #page input[type="text"] {
@@ -1310,32 +1409,32 @@ html input[type="text"],
   }
 }
 @media (min-width: 768px) {
-  /* line 70, ../sass/components/_global.scss */
+  /* line 66, ../sass/components/_global.scss */
   body.is-mobile,
   html.is-mobile,
   #page.is-mobile {
     overflow: auto;
   }
 }
-/* line 75, ../sass/components/_global.scss */
+/* line 71, ../sass/components/_global.scss */
 body .feed-icon,
 html .feed-icon,
 #page .feed-icon {
   display: none;
 }
 
-/* line 79, ../sass/components/_global.scss */
+/* line 75, ../sass/components/_global.scss */
 ::-webkit-scrollbar {
   width: 7px;
   transition: all 0.3s ease-in-out;
 }
 
-/* line 84, ../sass/components/_global.scss */
+/* line 80, ../sass/components/_global.scss */
 ::-webkit-scrollbar-track {
   background: #e0e7ef47;
 }
 
-/* line 88, ../sass/components/_global.scss */
+/* line 84, ../sass/components/_global.scss */
 ::-webkit-scrollbar-thumb {
   background: rgba(136, 136, 136, 0.418);
   border-radius: 4px;
@@ -1343,7 +1442,7 @@ html .feed-icon,
   transition: all 0.3s ease-out;
 }
 
-/* line 95, ../sass/components/_global.scss */
+/* line 91, ../sass/components/_global.scss */
 ::-webkit-scrollbar-thumb:hover {
   background: #555555;
   height: 7px;
@@ -1352,13 +1451,13 @@ html .feed-icon,
   transition: all 0.3s ease-out;
 }
 
-/* line 102, ../sass/components/_global.scss */
+/* line 98, ../sass/components/_global.scss */
 ::selection {
   color: #f6f7fd;
   background: #F7941D;
 }
 
-/* line 106, ../sass/components/_global.scss */
+/* line 102, ../sass/components/_global.scss */
 .container,
 .column-first,
 .column-right {
@@ -1366,18 +1465,18 @@ html .feed-icon,
 }
 
 @media (min-width: 1170px) {
-  /* line 111, ../sass/components/_global.scss */
+  /* line 107, ../sass/components/_global.scss */
   body {
     margin-top: 89px;
   }
 }
 @media (min-width: 768px) {
-  /* line 111, ../sass/components/_global.scss */
+  /* line 107, ../sass/components/_global.scss */
   body {
     margin: 0;
   }
 }
-/* line 118, ../sass/components/_global.scss */
+/* line 114, ../sass/components/_global.scss */
 body.is-mobile {
   left: 80%;
   position: fixed;
@@ -1385,7 +1484,7 @@ body.is-mobile {
   width: 100%;
 }
 @media (min-width: 768px) {
-  /* line 118, ../sass/components/_global.scss */
+  /* line 114, ../sass/components/_global.scss */
   body.is-mobile {
     left: auto;
     position: relative;
@@ -1394,7 +1493,7 @@ body.is-mobile {
   }
 }
 
-/* line 132, ../sass/components/_global.scss */
+/* line 128, ../sass/components/_global.scss */
 #page .fixed {
   top: 20px;
   left: 0;
@@ -1403,20 +1502,20 @@ body.is-mobile {
   opacity: 0.8;
 }
 @media (min-width: 1170px) {
-  /* line 132, ../sass/components/_global.scss */
+  /* line 128, ../sass/components/_global.scss */
   #page .fixed {
     position: fixed;
     top: 0px;
   }
 }
 @media (min-width: 768px) {
-  /* line 132, ../sass/components/_global.scss */
+  /* line 128, ../sass/components/_global.scss */
   #page .fixed {
     position: fixed;
     top: 0px;
   }
 }
-/* line 147, ../sass/components/_global.scss */
+/* line 143, ../sass/components/_global.scss */
 #page * {
   color: #39364f;
   border: 0;
@@ -1429,7 +1528,7 @@ body.is-mobile {
   margin: 0;
   padding: 0;
 }
-/* line 160, ../sass/components/_global.scss */
+/* line 156, ../sass/components/_global.scss */
 #page a,
 #page p,
 #page ul,
@@ -1446,7 +1545,7 @@ body.is-mobile {
   padding: 0;
   vertical-align: baseline;
 }
-/* line 176, ../sass/components/_global.scss */
+/* line 172, ../sass/components/_global.scss */
 #page a:link,
 #page a:visited,
 #page a:focus {
@@ -1454,12 +1553,12 @@ body.is-mobile {
   border: none;
   text-decoration: none;
 }
-/* line 183, ../sass/components/_global.scss */
+/* line 179, ../sass/components/_global.scss */
 #page strong,
 #page b {
   font-weight: bold;
 }
-/* line 189, ../sass/components/_global.scss */
+/* line 185, ../sass/components/_global.scss */
 #page .header-third form input[type="text"] {
   width: 100%;
   box-sizing: border-box;
@@ -1478,25 +1577,25 @@ body.is-mobile {
   height: 38px;
 }
 @media (min-width: 768px) {
-  /* line 189, ../sass/components/_global.scss */
+  /* line 185, ../sass/components/_global.scss */
   #page .header-third form input[type="text"] {
     float: right;
     width: 1px;
   }
 }
 @media (min-width: 768px) {
-  /* line 189, ../sass/components/_global.scss */
+  /* line 185, ../sass/components/_global.scss */
   #page .header-third form input[type="text"] {
     float: right;
     width: 1px;
   }
 }
-/* line 215, ../sass/components/_global.scss */
+/* line 211, ../sass/components/_global.scss */
 #page .header-third form input[type="text"]:focus {
   width: 100%;
 }
 
-/* line 222, ../sass/components/_global.scss */
+/* line 218, ../sass/components/_global.scss */
 .is-mobile .closed-menu-mobile {
   background: #000 none repeat scroll 0 0;
   height: 100%;
@@ -1508,11 +1607,11 @@ body.is-mobile {
   z-index: 10;
 }
 
-/* line 234, ../sass/components/_global.scss */
+/* line 230, ../sass/components/_global.scss */
 #block-mbe-local-tasks {
   margin-bottom: 20px;
 }
-/* line 236, ../sass/components/_global.scss */
+/* line 232, ../sass/components/_global.scss */
 #block-mbe-local-tasks ul {
   border-bottom: 1px solid #bbb;
   border-collapse: collapse;
@@ -1523,11 +1622,11 @@ body.is-mobile {
   padding: 0 0 0 1em;
   white-space: nowrap;
 }
-/* line 246, ../sass/components/_global.scss */
+/* line 242, ../sass/components/_global.scss */
 #block-mbe-local-tasks ul li {
   display: inline;
 }
-/* line 249, ../sass/components/_global.scss */
+/* line 245, ../sass/components/_global.scss */
 #block-mbe-local-tasks ul li a {
   background-color: #ddd;
   border-color: #bbb;
@@ -1538,7 +1637,7 @@ body.is-mobile {
   padding: 0 1em;
   text-decoration: none;
 }
-/* line 259, ../sass/components/_global.scss */
+/* line 255, ../sass/components/_global.scss */
 #block-mbe-local-tasks ul li a.is-active {
   -moz-border-bottom-colors: none;
   -moz-border-left-colors: none;
@@ -1550,7 +1649,7 @@ body.is-mobile {
   border-style: solid;
   border-width: 1px;
 }
-/* line 270, ../sass/components/_global.scss */
+/* line 266, ../sass/components/_global.scss */
 #block-mbe-local-tasks ul li a:hover {
   background-color: #eee;
   border-color: #ccc #ccc #eee;
@@ -1765,7 +1864,7 @@ body.is-mobile {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   padding: 24px;
-  color: #19939f;
+  color: #8cc63f;
   font-family: "poppins";
   font-size: 14px;
   font-weight: 500;
@@ -1786,21 +1885,21 @@ body.is-mobile {
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     padding: 8px;
-    color: #19939f;
+    color: #8cc63f;
+    height: 45px;
     font-family: "poppins";
-    font-size: 11px;
+    font-size: 14px;
     font-weight: 500;
   }
 }
-/* line 137, ../sass/components/_header.scss */
+/* line 138, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher {
   display: flex;
   float: right;
-  width: 13%;
+  width: 12%;
   justify-content: center;
   align-items: center;
   height: 45px;
-  border: 1px solid #eeeeee;
   border-radius: 8px;
   -webkit-border-radius: 8px;
   -moz-border-radius: 8px;
@@ -1831,9 +1930,9 @@ body.is-mobile {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   background-color: #e9e9ee;
-  width: 36%;
-  height: 37px;
-  margin: 4px 4px 4px 14px;
+  width: 45%;
+  height: 40px;
+  margin: 4px;
 }
 /* line 167, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul li {
@@ -1875,7 +1974,7 @@ body.is-mobile {
 /* line 6, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-ntcdesprinkhaan {
   width: 60%;
-  margin: 8% auto 2% auto;
+  margin: 8% auto;
   position: relative;
 }
 /* line 11, ../sass/components/_homepage.scss */
@@ -1960,6 +2059,11 @@ body.is-mobile {
   width: auto;
   height: 45px;
   float: left;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
   background: linear-gradient(180deg, #8cc63f 0%, #395d13 100%);
   color: #fff;
   font-family: "poppins";
@@ -1974,7 +2078,7 @@ body.is-mobile {
   margin-right: 24px;
   position: relative;
 }
-/* line 80, ../sass/components/_homepage.scss */
+/* line 81, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-btns .ntc-de-sprinkhaan-green-btn::before {
   content: "";
   display: inline-block;
@@ -1987,6 +2091,22 @@ body.is-mobile {
   margin-right: 8px;
 }
 /* line 93, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-btns .ntc-de-sprinkhaan-green-btn:hover {
+  box-shadow: #8cc63f52 0px 20px 25px -5px, #8cc63f52 0px 10px 10px -5px;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  transform: scale(1.1);
+  background: linear-gradient(180deg, #8cc63f 0%, #395d13 100%);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+}
+/* line 109, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-btns .ntc-de-sprinkhaan-white-btn {
   display: flex;
   justify-content: center;
@@ -2005,8 +2125,29 @@ body.is-mobile {
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
   position: relative;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
 }
-/* line 107, ../sass/components/_homepage.scss */
+/* line 123, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-btns .ntc-de-sprinkhaan-white-btn:hover {
+  color: #fff;
+  border: none;
+  background: linear-gradient(180deg, #eb4f0b 0%, #c33a0b 100%);
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+/* line 128, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-btns .ntc-de-sprinkhaan-white-btn:hover::before {
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(354deg) brightness(108%) contrast(101%);
+}
+/* line 135, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-btns .ntc-de-sprinkhaan-white-btn:before {
   content: "";
   display: inline-block;
@@ -2018,7 +2159,7 @@ body.is-mobile {
   background-repeat: no-repeat;
   margin-right: 8px;
 }
-/* line 121, ../sass/components/_homepage.scss */
+/* line 149, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-ntcdesprinkhaan:before, .path-frontpage .region-top #block-sph-ntcdesprinkhaan:after {
   content: "";
   position: absolute;
@@ -2028,53 +2169,53 @@ body.is-mobile {
   background-repeat: no-repeat;
   animation: floatUpDown 6s infinite ease-in-out;
 }
-/* line 132, ../sass/components/_homepage.scss */
+/* line 160, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-ntcdesprinkhaan:before {
-  background-image: url("/themes/custom/sph/images/AVION@2x.png");
-  top: -40px;
-  left: -40px;
-  animation-delay: 0s;
-  width: 80px;
-  height: 80px;
-}
-/* line 141, ../sass/components/_homepage.scss */
-.path-frontpage .region-top #block-sph-ntcdesprinkhaan:after {
   background-image: url("/themes/custom/sph/images/copa@2x.png");
-  top: -40px;
-  right: -40px;
-  animation-delay: 0.5s;
-  width: 80px;
-  height: 80px;
+  top: -18%;
+  left: -29%;
+  animation-delay: 0s;
+  width: 140px;
+  height: 140px;
 }
-/* line 151, ../sass/components/_homepage.scss */
+/* line 169, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-ntcdesprinkhaan:after {
+  background-image: url("/themes/custom/sph/images/cuaderno@2x.png");
+  top: -10%;
+  right: -20%;
+  animation-delay: 0.5s;
+  width: 89px;
+  height: 89px;
+}
+/* line 179, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-title:before {
   content: "";
   position: absolute;
-  width: 80px;
-  height: 80px;
-  background-image: url("/themes/custom/sph/images/cuaderno@2x.png");
+  width: 150px;
+  height: 150px;
+  background-image: url("/themes/custom/sph/images/AVION@2x.png");
   background-size: cover;
   background-repeat: no-repeat;
-  bottom: -40px;
-  left: -40px;
+  bottom: -53%;
+  left: -30%;
   animation: floatUpDown 6s infinite ease-in-out;
   animation-delay: 1s;
 }
-/* line 165, ../sass/components/_homepage.scss */
+/* line 193, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-title:after {
   content: "";
   position: absolute;
-  width: 80px;
-  height: 80px;
-  background-image: url("/themes/custom/sph/images/enlace@2x.png");
+  width: 150px;
+  height: 150px;
+  background-image: url("/themes/custom/sph/images/pluma@2x.png");
   background-size: cover;
   background-repeat: no-repeat;
-  bottom: -40px;
-  right: -40px;
+  bottom: -47%;
+  right: -27%;
   animation: floatUpDown 6s infinite ease-in-out;
   animation-delay: 1.5s;
 }
-/* line 181, ../sass/components/_homepage.scss */
+/* line 209, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-desc:before {
   content: "";
   position: absolute;
@@ -2088,13 +2229,13 @@ body.is-mobile {
   animation: floatUpDown 6s infinite ease-in-out;
   animation-delay: 2s;
 }
-/* line 195, ../sass/components/_homepage.scss */
+/* line 223, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-desc:after {
   content: "";
   position: absolute;
   width: 80px;
   height: 80px;
-  background-image: url("/themes/custom/sph/images/pluma@2x.png");
+  background-image: url("/themes/custom/sph/images/enlace@2x.png");
   background-size: cover;
   background-repeat: no-repeat;
   top: 50%;
@@ -2111,7 +2252,7 @@ body.is-mobile {
     transform: translateY(-20px);
   }
 }
-/* line 221, ../sass/components/_homepage.scss */
+/* line 249, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-videohome {
   width: 1001px;
   height: 580px;
@@ -2129,7 +2270,7 @@ body.is-mobile {
   background: rgba(255, 255, 255, 0.11);
   -moz-backdrop-filter: blur(17.7px);
 }
-/* line 233, ../sass/components/_homepage.scss */
+/* line 261, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-videohome video {
   border: 1px solid #e9e9ee;
   padding: 8px;
@@ -2142,24 +2283,24 @@ body.is-mobile {
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
 }
-/* line 243, ../sass/components/_homepage.scss */
+/* line 271, ../sass/components/_homepage.scss */
 .path-frontpage .region-center {
   width: 100%;
   display: inline-block;
   position: relative;
 }
-/* line 247, ../sass/components/_homepage.scss */
+/* line 275, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 {
   display: inline-block;
   position: relative;
   width: 100%;
   margin-top: 5%;
 }
-/* line 253, ../sass/components/_homepage.scss */
+/* line 281, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .lang {
   display: none;
 }
-/* line 256, ../sass/components/_homepage.scss */
+/* line 284, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-btn {
   display: flex;
   justify-content: center;
@@ -2179,7 +2320,7 @@ body.is-mobile {
   font-size: 15px;
   font-weight: "normal";
 }
-/* line 259, ../sass/components/_homepage.scss */
+/* line 287, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-btn::before {
   content: "";
   display: inline-block;
@@ -2190,7 +2331,7 @@ body.is-mobile {
   background-repeat: no-repeat;
   margin: -93px -8px -48px -32px;
 }
-/* line 269, ../sass/components/_homepage.scss */
+/* line 297, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-tit {
   font-family: "Conv_Gotham-Medium";
   font-size: 48px;
@@ -2200,14 +2341,14 @@ body.is-mobile {
   line-height: 1;
   color: #101828;
 }
-/* line 275, ../sass/components/_homepage.scss */
+/* line 303, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-tit span.green {
   font-family: "Conv_Gotham-Medium";
   font-size: 48px;
   font-weight: 800;
   color: #8CC63F;
 }
-/* line 280, ../sass/components/_homepage.scss */
+/* line 308, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-tit::after {
   content: "";
   display: inline-block;
@@ -2218,7 +2359,7 @@ body.is-mobile {
   background-repeat: no-repeat;
   margin: 0 0 -4px -2px;
 }
-/* line 291, ../sass/components/_homepage.scss */
+/* line 319, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide {
   border: 1px solid #e9e9ee;
   margin: 16px;
@@ -2230,11 +2371,12 @@ body.is-mobile {
   min-height: 250px;
   padding: 32px;
 }
-/* line 297, ../sass/components/_homepage.scss */
+/* line 325, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-fot {
   float: left;
+  margin: 4px;
 }
-/* line 299, ../sass/components/_homepage.scss */
+/* line 328, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-fot img {
   border-radius: 24px;
   -webkit-border-radius: 24px;
@@ -2244,63 +2386,63 @@ body.is-mobile {
   width: 54px;
   height: auto;
 }
-/* line 305, ../sass/components/_homepage.scss */
+/* line 334, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-tit {
   font-family: "poppins";
   font-size: 18px;
   font-weight: 800;
 }
-/* line 308, ../sass/components/_homepage.scss */
+/* line 337, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-est {
   margin-bottom: 16px;
 }
-/* line 310, ../sass/components/_homepage.scss */
+/* line 339, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-est div {
   float: left;
   color: #F7941D;
   font-size: 22px;
   margin-right: 6px;
 }
-/* line 317, ../sass/components/_homepage.scss */
+/* line 346, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-tes {
   clear: both;
   width: 100%;
 }
-/* line 320, ../sass/components/_homepage.scss */
+/* line 349, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-tes p {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
   color: #323b48;
 }
-/* line 327, ../sass/components/_homepage.scss */
+/* line 356, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 nav .slick-prev {
   width: 60px;
   position: absolute;
   left: -48px;
   border: 0px solid;
 }
-/* line 333, ../sass/components/_homepage.scss */
+/* line 362, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 nav .slick-next {
   width: 60px;
   position: absolute;
   right: -48px;
   border: 0px solid;
 }
-/* line 341, ../sass/components/_homepage.scss */
+/* line 370, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros {
   margin-top: 4%;
   display: inline-block;
   width: 100%;
   position: relative;
 }
-/* line 346, ../sass/components/_homepage.scss */
+/* line 375, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left {
   width: 41%;
   float: left;
   margin: 7% 8% 0 0;
 }
-/* line 350, ../sass/components/_homepage.scss */
+/* line 379, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left h2 {
   position: relative;
   font-family: "Conv_Gotham-Medium";
@@ -2308,14 +2450,14 @@ body.is-mobile {
   font-weight: 800;
   color: #101828;
 }
-/* line 354, ../sass/components/_homepage.scss */
+/* line 383, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left h2 span.orange {
   font-family: "Conv_Gotham-Medium";
   font-size: 48px;
   font-weight: 800;
   color: #F7941D;
 }
-/* line 359, ../sass/components/_homepage.scss */
+/* line 388, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left h2:before {
   content: "";
   display: inline-block;
@@ -2329,19 +2471,19 @@ body.is-mobile {
   left: 4px;
   filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg) brightness(95%) contrast(94%);
 }
-/* line 373, ../sass/components/_homepage.scss */
+/* line 402, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left .about-us-left-text {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
   color: #323b48;
 }
-/* line 378, ../sass/components/_homepage.scss */
+/* line 407, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-right {
   width: 50%;
   float: left;
 }
-/* line 381, ../sass/components/_homepage.scss */
+/* line 410, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-sobrenosotros .about-us-right img {
   border-radius: 32px;
   -webkit-border-radius: 32px;
@@ -2351,17 +2493,17 @@ body.is-mobile {
   width: 100%;
   height: auto;
 }
-/* line 390, ../sass/components/_homepage.scss */
+/* line 419, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases {
   margin: 4% 0;
 }
-/* line 392, ../sass/components/_homepage.scss */
+/* line 421, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-top {
   position: relative;
   width: 700px;
   margin: 0 auto;
 }
-/* line 396, ../sass/components/_homepage.scss */
+/* line 425, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-top .clases-top-btn {
   width: 190px !important;
   display: flex;
@@ -2382,7 +2524,7 @@ body.is-mobile {
   font-size: 15px;
   font-weight: "normal";
 }
-/* line 400, ../sass/components/_homepage.scss */
+/* line 429, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-top .clases-top-btn::before {
   content: "";
   display: inline-block;
@@ -2393,7 +2535,7 @@ body.is-mobile {
   background-repeat: no-repeat;
   margin: -93px -4px -48px -32px;
 }
-/* line 410, ../sass/components/_homepage.scss */
+/* line 439, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-top .clases-top-tit {
   font-family: "Conv_Gotham-Medium";
   font-size: 48px;
@@ -2404,14 +2546,14 @@ body.is-mobile {
   line-height: 1;
   margin-bottom: 10px;
 }
-/* line 417, ../sass/components/_homepage.scss */
+/* line 446, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-top .clases-top-tit span.green {
   font-family: "Conv_Gotham-Medium";
   font-size: 48px;
   font-weight: 800;
   color: #8CC63F;
 }
-/* line 422, ../sass/components/_homepage.scss */
+/* line 451, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-top .clases-top-desc {
   font-family: "poppins";
   font-size: 16px;
@@ -2419,16 +2561,16 @@ body.is-mobile {
   color: #101828;
   text-align: center;
 }
-/* line 428, ../sass/components/_homepage.scss */
+/* line 457, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button {
   width: 100%;
   display: inline-block;
   position: relative;
   margin: 8% 0 1% 0;
 }
-/* line 434, ../sass/components/_homepage.scss */
+/* line 463, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left {
-  width: 342px;
+  width: 348px;
   height: auto;
   float: left;
   margin: 4% 4% 0 0;
@@ -2439,10 +2581,12 @@ body.is-mobile {
   z-index: 2;
   background-color: #fff;
 }
-/* line 445, ../sass/components/_homepage.scss */
+/* line 474, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-tex {
+  display: flex;
+  align-items: center;
   width: auto;
-  max-width: 220px;
+  max-width: 232px;
   height: 34px;
   font-family: "Conv_Gotham-Medium";
   font-size: 14px;
@@ -2456,7 +2600,7 @@ body.is-mobile {
   border: 1px solid #e9e9ee;
   padding: 8px;
 }
-/* line 455, ../sass/components/_homepage.scss */
+/* line 486, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-tex::before {
   content: "";
   display: inline-block;
@@ -2466,9 +2610,9 @@ body.is-mobile {
   background-image: url("/themes/custom/sph/images/marc.svg");
   background-size: cover;
   background-repeat: no-repeat;
-  margin-right: 8px;
+  margin-right: 4px;
 }
-/* line 467, ../sass/components/_homepage.scss */
+/* line 498, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-tit {
   font-family: "Conv_Gotham-Medium";
   font-size: 31px;
@@ -2476,14 +2620,14 @@ body.is-mobile {
   color: #101828;
   margin-top: 8px;
 }
-/* line 471, ../sass/components/_homepage.scss */
+/* line 502, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-tit span.green {
   font-family: "Conv_Gotham-Medium";
   font-size: 31px;
   font-weight: 800;
   color: #8CC63F;
 }
-/* line 476, ../sass/components/_homepage.scss */
+/* line 507, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-des {
   font-family: "poppins";
   font-size: 16px;
@@ -2491,13 +2635,13 @@ body.is-mobile {
   color: #101828;
   margin: 16px 0;
 }
-/* line 481, ../sass/components/_homepage.scss */
+/* line 512, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-btn {
   float: left;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 148px;
+  width: auto;
   height: 45px;
   background-color: #8CC63F;
   color: #fff;
@@ -2507,17 +2651,19 @@ body.is-mobile {
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
+  max-width: 148px;
   margin-right: 10px;
+  padding: 16px;
   position: relative;
 }
-/* line 101, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-btn a {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
   color: #fff;
 }
-/* line 487, ../sass/components/_homepage.scss */
+/* line 519, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-btn:before {
   content: "";
   display: inline-block;
@@ -2528,7 +2674,7 @@ body.is-mobile {
   background-repeat: no-repeat;
   margin-right: 8px;
 }
-/* line 497, ../sass/components/_homepage.scss */
+/* line 529, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-btn2 {
   width: auto;
   display: flex;
@@ -2538,11 +2684,11 @@ body.is-mobile {
   height: 45px;
   position: relative;
 }
-/* line 505, ../sass/components/_homepage.scss */
+/* line 537, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-btn2 a {
   color: #395d13;
 }
-/* line 509, ../sass/components/_homepage.scss */
+/* line 541, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left .clases-button-left-btn2:before {
   content: "";
   display: inline-block;
@@ -2554,12 +2700,12 @@ body.is-mobile {
   background-repeat: no-repeat;
   margin-right: 4px;
 }
-/* line 521, ../sass/components/_homepage.scss */
+/* line 553, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-left::before {
   content: "";
   position: absolute;
-  top: 105%;
-  left: 24%;
+  top: 98%;
+  left: 20%;
   width: 224px;
   height: 180px;
   background-image: url("/themes/custom/sph/images/arrow-green.png");
@@ -2568,12 +2714,12 @@ body.is-mobile {
   transform: translateY(-50%);
   animation: move-up-down 2s infinite ease-in-out;
 }
-/* line 536, ../sass/components/_homepage.scss */
+/* line 568, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right {
-  width: 342px;
+  width: 348px;
   float: left;
   height: auto;
-  margin: 12% 0% 0% 4%;
+  margin: 12% 0% 0% 3.6%;
   border-radius: 24px;
   -webkit-border-radius: 24px;
   -moz-border-radius: 24px;
@@ -2585,21 +2731,21 @@ body.is-mobile {
   z-index: 2;
   border: 1px solid #F7941D;
 }
-/* line 547, ../sass/components/_homepage.scss */
+/* line 579, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-tit {
   margin: 4px 0;
   font-family: "Conv_Gotham-Medium";
   font-size: 31px;
   font-weight: 800;
 }
-/* line 550, ../sass/components/_homepage.scss */
+/* line 582, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-tit span.orange {
   font-family: "Conv_Gotham-Medium";
   font-size: 31px;
   font-weight: 800;
   color: #F7941D;
 }
-/* line 555, ../sass/components/_homepage.scss */
+/* line 587, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-des {
   font-family: "poppins";
   font-size: 16px;
@@ -2607,13 +2753,14 @@ body.is-mobile {
   color: #101828;
   margin: 16px 0;
 }
-/* line 560, ../sass/components/_homepage.scss */
+/* line 592, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-btn {
   float: left;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 148px;
+  width: auto;
+  max-width: 148px;
   height: 45px;
   background-color: #F7941D;
   color: #fff;
@@ -2625,15 +2772,16 @@ body.is-mobile {
   -o-border-radius: 24px;
   margin-right: 10px;
   position: relative;
+  padding: 16px;
 }
-/* line 117, ../sass/base/_mixins.scss */
+/* line 119, ../sass/base/_mixins.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-btn a {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
   color: #fff;
 }
-/* line 566, ../sass/components/_homepage.scss */
+/* line 599, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-btn:before {
   content: "";
   display: inline-block;
@@ -2644,9 +2792,9 @@ body.is-mobile {
   background-repeat: no-repeat;
   margin-right: 8px;
 }
-/* line 576, ../sass/components/_homepage.scss */
+/* line 609, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-btn2 {
-  width: 132px;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2654,11 +2802,11 @@ body.is-mobile {
   height: 45px;
   position: relative;
 }
-/* line 584, ../sass/components/_homepage.scss */
+/* line 617, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-btn2 a {
-  color: #902B10;
+  color: #902b10;
 }
-/* line 588, ../sass/components/_homepage.scss */
+/* line 621, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-btn2:before {
   content: "";
   display: inline-block;
@@ -2670,7 +2818,7 @@ body.is-mobile {
   background-repeat: no-repeat;
   margin-right: 4px;
 }
-/* line 599, ../sass/components/_homepage.scss */
+/* line 633, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-tex {
   width: auto;
   max-width: 160px;
@@ -2688,7 +2836,7 @@ body.is-mobile {
   color: #101828;
   padding: 8px;
 }
-/* line 610, ../sass/components/_homepage.scss */
+/* line 644, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right .clases-button-right-tex:before {
   content: "";
   display: inline-block;
@@ -2700,7 +2848,7 @@ body.is-mobile {
   background-repeat: no-repeat;
   margin-right: 8px;
 }
-/* line 623, ../sass/components/_homepage.scss */
+/* line 657, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-right::after {
   content: "";
   position: absolute;
@@ -2714,7 +2862,7 @@ body.is-mobile {
   transform: translateY(-50%);
   animation: move-up-down 2s infinite ease-in-out;
 }
-/* line 638, ../sass/components/_homepage.scss */
+/* line 672, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-middle {
   width: 381px;
   float: left;
@@ -2725,11 +2873,11 @@ body.is-mobile {
   -o-border-radius: 24px;
   position: relative;
 }
-/* line 644, ../sass/components/_homepage.scss */
+/* line 678, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-middle .clases-button-middle-img {
   display: flex;
 }
-/* line 648, ../sass/components/_homepage.scss */
+/* line 682, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-middle img {
   width: 100%;
   height: auto;
@@ -2740,7 +2888,7 @@ body.is-mobile {
   -o-border-radius: 24px;
   z-index: 2;
 }
-/* line 655, ../sass/components/_homepage.scss */
+/* line 689, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-button .clases-button-middle::before {
   content: "";
   position: absolute;
@@ -2764,18 +2912,18 @@ body.is-mobile {
     transform: translateY(10px);
   }
 }
-/* line 682, ../sass/components/_homepage.scss */
+/* line 716, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 {
   margin: 20px 0;
   display: inline-block;
   position: relative;
   width: 100%;
 }
-/* line 688, ../sass/components/_homepage.scss */
+/* line 722, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 header .lang {
   display: none;
 }
-/* line 691, ../sass/components/_homepage.scss */
+/* line 725, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 header .cultura-btn {
   display: flex;
   justify-content: center;
@@ -2795,69 +2943,138 @@ body.is-mobile {
   font-size: 15px;
   font-weight: "normal";
 }
-/* line 694, ../sass/components/_homepage.scss */
+/* line 728, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-culturales-block-1 header .cultura-btn::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url("/themes/custom/sph/images/Explore-spk-img.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -93px -4px -48px -20px;
+}
+/* line 738, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 header .cultura-tit {
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   text-align: center;
-  margin: 20px 0px;
   line-height: 1;
   margin-bottom: 10px;
+  margin: 24px auto 32px auto;
+  width: 816px;
+  color: #101828;
 }
-/* line 700, ../sass/components/_homepage.scss */
+/* line 746, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 header .cultura-tit span.green {
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   color: #8CC63F;
 }
-/* line 707, ../sass/components/_homepage.scss */
+/* line 753, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .slick__slide {
+  padding: 16px;
+}
+/* line 756, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-img {
   display: inline-block;
   position: relative;
 }
-/* line 710, ../sass/components/_homepage.scss */
+/* line 760, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-img img {
   width: 100%;
   height: auto;
+  display: block;
 }
-/* line 715, ../sass/components/_homepage.scss */
+/* line 766, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-img::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, #000000 100%);
+  pointer-events: none;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+/* line 783, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row {
   display: inline-block;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 381px;
-  height: 200px;
+  height: 230px;
   padding: 20px;
 }
-/* line 723, ../sass/components/_homepage.scss */
+/* line 791, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-tit {
-  font-family: "Mukta";
-  font-size: 25px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 24px;
+  font-weight: 800;
   color: #fff;
 }
-/* line 727, ../sass/components/_homepage.scss */
+/* line 795, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-dat {
-  border: 1px solid #fff;
-  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.5px);
+  -webkit-backdrop-filter: blur(8.5px);
+  border: 1px solid rgba(255, 255, 255, 0.47);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
   text-align: center;
-  width: 150px;
+  width: auto;
+  max-width: 170px;
+  height: 40px;
   color: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: "normal";
 }
-/* line 734, ../sass/components/_homepage.scss */
+/* line 814, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-dat::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("/themes/custom/sph/images/calendario.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+  filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(354deg) brightness(108%) contrast(101%);
+}
+/* line 826, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-sho {
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: "normal";
   color: #fff;
   height: 60px;
+  margin: 8px 0;
 }
-/* line 738, ../sass/components/_homepage.scss */
+/* line 832, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-reg {
+  max-width: none !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: "auto";
+  width: auto;
   height: 45px;
   background-color: #8CC63F;
   color: #fff;
@@ -2867,52 +3084,75 @@ body.is-mobile {
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
-  padding: 10px 20px;
+  max-width: 148px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   text-align: left;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  position: relative;
+  padding-left: 24px;
 }
-/* line 101, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-reg a {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
   color: #fff;
 }
-/* line 742, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-reg a {
-  color: #fff;
+/* line 843, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-reg::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 29px;
+  height: 29px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* line 749, ../sass/components/_homepage.scss */
+/* line 856, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-culturales-block-1 .slick-list .slick__slide .cultura-main-row .cultura-reg::after {
+  content: "\2197";
+  font-size: 16px;
+  color: #f7941d;
+}
+/* line 865, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 nav .slick-prev {
   width: 60px;
   position: absolute;
   left: -80px;
   border: 0px solid;
 }
-/* line 755, ../sass/components/_homepage.scss */
+/* line 871, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-culturales-block-1 nav .slick-next {
   width: 60px;
   position: absolute;
   right: -80px;
   border: 0px solid;
 }
-/* line 764, ../sass/components/_homepage.scss */
+/* line 880, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 {
   margin: 20px 0;
   display: inline-block;
   position: relative;
   width: 100%;
 }
-/* line 769, ../sass/components/_homepage.scss */
+/* line 885, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 header {
   position: relative;
   margin: 0 auto;
-  width: 721px;
+  width: 816px;
 }
-/* line 773, ../sass/components/_homepage.scss */
+/* line 889, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .lang {
   display: none;
 }
-/* line 776, ../sass/components/_homepage.scss */
+/* line 892, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-btn {
   display: flex;
   justify-content: center;
@@ -2932,43 +3172,110 @@ body.is-mobile {
   font-size: 15px;
   font-weight: "normal";
 }
-/* line 779, ../sass/components/_homepage.scss */
+/* line 895, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-btn::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url("/themes/custom/sph/images/Camp-spk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -93px -4px -48px -20px;
+}
+/* line 905, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-tit {
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   text-align: center;
-  margin: 20px 0px;
   line-height: 1;
   margin-bottom: 10px;
+  margin: 24px auto;
+  color: #101828;
 }
-/* line 785, ../sass/components/_homepage.scss */
+/* line 912, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-tit span.green {
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   color: #8CC63F;
 }
-/* line 790, ../sass/components/_homepage.scss */
+/* line 917, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 header .camp-desc {
-  margin-bottom: 20px;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  color: #101828;
+  text-align: center;
+  margin-bottom: 24px;
 }
-/* line 794, ../sass/components/_homepage.scss */
+/* line 924, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide {
-  margin-right: 20px;
+  margin-right: 24px;
+  height: 410px;
+  border: 1px solid #e9e9ee;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
-/* line 796, ../sass/components/_homepage.scss */
+/* line 929, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide .camp-title {
-  font-family: "Mukta";
-  font-size: 30px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 24px;
+  font-weight: 800;
+  color: #101828;
+  margin: 8px;
 }
-/* line 799, ../sass/components/_homepage.scss */
+/* line 934, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide .camp-date {
+  border: 1px solid #e9e9ee;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-align: center;
+  width: auto;
+  max-width: 290px;
+  height: 40px;
+  color: #101828;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: "normal";
+  margin: 8px;
+}
+/* line 949, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide .camp-date::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("/themes/custom/sph/images/calendario.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+}
+/* line 959, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide .camp-sdesc {
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: "normal";
+  padding: 4px 12px;
+}
+/* line 963, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide a .camp-btn {
+  max-width: 344px !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: "auto";
+  width: auto;
   height: 45px;
   background-color: #8CC63F;
   color: #fff;
@@ -2978,50 +3285,78 @@ body.is-mobile {
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
-  padding: 10px 20px;
+  max-width: 148px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   text-align: left;
-  color: #fff;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  position: relative;
+  padding-left: 24px;
+  margin: 8px;
 }
-/* line 101, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide a .camp-btn a {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
   color: #fff;
 }
-/* line 807, ../sass/components/_homepage.scss */
+/* line 974, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide a .camp-btn::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 29px;
+  height: 29px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 987, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-campamento-block-1 .slick-list .slick__slide a .camp-btn::after {
+  content: "\2197";
+  font-size: 16px;
+  color: #f7941d;
+}
+/* line 995, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 nav .slick-prev {
   width: 60px;
   position: absolute;
   left: -80px;
   border: 0px solid;
 }
-/* line 813, ../sass/components/_homepage.scss */
+/* line 1001, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-campamento-block-1 nav .slick-next {
   width: 60px;
   position: absolute;
   right: -80px;
   border: 0px solid;
 }
-/* line 821, ../sass/components/_homepage.scss */
+/* line 1009, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 {
-  margin: 20px 0;
+  margin: 4% 0;
   display: inline-block;
   position: relative;
   width: 100%;
 }
-/* line 826, ../sass/components/_homepage.scss */
+/* line 1014, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 header {
   position: relative;
   margin: 0 auto;
   width: 721px;
 }
-/* line 830, ../sass/components/_homepage.scss */
+/* line 1018, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 header .lang {
   display: none;
 }
-/* line 833, ../sass/components/_homepage.scss */
+/* line 1021, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-btn {
+  max-width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3040,48 +3375,133 @@ body.is-mobile {
   font-size: 15px;
   font-weight: "normal";
 }
-/* line 836, ../sass/components/_homepage.scss */
+/* line 1024, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-btn::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url("/themes/custom/sph/images/News-spk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -93px -4px -48px -20px;
+}
+/* line 1034, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-tit {
-  font-family: "Mukta";
-  font-size: 22px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   text-align: center;
-  margin: 20px 0px;
   line-height: 1;
   margin-bottom: 10px;
-  text-align: center;
+  margin: 24px auto;
+  color: #101828;
 }
-/* line 843, ../sass/components/_homepage.scss */
+/* line 1041, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-tit span.green {
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   color: #8CC63F;
 }
-/* line 848, ../sass/components/_homepage.scss */
+/* line 1046, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 header .news-desc {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
   margin-bottom: 20px;
   text-align: center;
 }
-/* line 853, ../sass/components/_homepage.scss */
+/* line 1052, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide {
-  margin-right: 20px;
-  text-align: left;
+  margin-right: 24px;
+  height: 470px;
+  border: 1px solid #e9e9ee;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
 }
-/* line 856, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide .news-title {
-  font-family: "Mukta";
-  font-size: 30px;
-  font-weight: 600;
+/* line 1057, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide .news-image {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 364px;
 }
-/* line 859, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide a .news-btn {
+/* line 1061, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide .news-image img {
+  width: 100%;
+  height: auto;
+}
+/* line 1066, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide .news-date {
+  border: 1px solid #e9e9ee;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-align: center;
+  width: auto;
+  max-width: 190px;
+  height: 40px;
+  color: #101828;
+  position: relative;
   display: flex;
-  align-items: center;
   justify-content: center;
-  width: "auto";
-  height: 45px;
-  background-color: #8CC63F;
+  align-items: center;
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: "normal";
+  margin: 16px;
+}
+/* line 1080, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide .news-date::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("/themes/custom/sph/images/calendario.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+}
+/* line 1091, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide .news-title {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 19px;
+  font-weight: "normal";
+  color: #101828;
+  line-height: 24px;
+  text-align: left;
+  margin-left: 16px;
+}
+/* line 1098, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide .news-sdesc {
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: "normal";
+  color: #101828;
+  text-align: left;
+  margin: 4px 16px 8px 16px;
+}
+/* line 1104, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide a .news-btn {
+  max-width: 344px !important;
+  text-align: left;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  position: relative;
+  margin: 8px;
+  height: 45px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 248px;
+  height: 36px;
+  background-color: #101828;
   color: #fff;
   text-align: center;
   border-radius: 24px;
@@ -3089,50 +3509,47 @@ body.is-mobile {
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
-  padding: 10px 20px;
-  text-align: left;
-  color: #fff;
-}
-/* line 101, ../sass/base/_mixins.scss */
-.path-frontpage .content-center #block-sph-views-block-news-block-1 .slick-list .slick__slide a .news-btn a {
-  font-family: "poppins";
-  font-size: 16px;
+  margin: 0 auto;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 15px;
   font-weight: "normal";
-  color: #fff;
+  width: auto !important;
+  background-color: #0077FF !important;
 }
-/* line 867, ../sass/components/_homepage.scss */
+/* line 1117, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 nav .slick-prev {
   width: 60px;
   position: absolute;
   left: -80px;
   border: 0px solid;
 }
-/* line 873, ../sass/components/_homepage.scss */
+/* line 1123, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-news-block-1 nav .slick-next {
   width: 60px;
   position: absolute;
   right: -80px;
   border: 0px solid;
 }
-/* line 881, ../sass/components/_homepage.scss */
+/* line 1131, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 {
   margin: 20px 0;
   display: inline-block;
   position: relative;
   width: 100%;
 }
-/* line 886, ../sass/components/_homepage.scss */
+/* line 1136, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header {
   position: relative;
   margin: 0 auto;
   width: 721px;
 }
-/* line 890, ../sass/components/_homepage.scss */
+/* line 1140, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .lang {
   display: none;
 }
-/* line 893, ../sass/components/_homepage.scss */
+/* line 1143, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn {
+  max-width: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -3151,75 +3568,96 @@ body.is-mobile {
   font-size: 15px;
   font-weight: "normal";
 }
-/* line 896, ../sass/components/_homepage.scss */
+/* line 1146, ../sass/components/_homepage.scss */
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url("/themes/custom/sph/images/Team-spk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -93px -4px -48px -20px;
+}
+/* line 1156, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit {
-  font-family: "Mukta";
-  font-size: 22px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   text-align: center;
-  margin: 20px 0px;
   line-height: 1;
   margin-bottom: 10px;
-  text-align: center;
+  margin: 24px auto;
+  color: #101828;
 }
-/* line 903, ../sass/components/_homepage.scss */
+/* line 1163, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit span.green {
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   color: #8CC63F;
 }
-/* line 908, ../sass/components/_homepage.scss */
+/* line 1168, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-desc {
-  margin-bottom: 20px;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  margin-bottom: 40px;
   text-align: center;
 }
-/* line 913, ../sass/components/_homepage.scss */
+/* line 1174, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
-  width: calc(94% / 4);
+  width: calc(91% / 4);
   float: left;
-  margin-right: 17px;
+  margin-right: 24px;
   text-align: center;
 }
-/* line 919, ../sass/components/_homepage.scss */
+/* line 1180, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img {
   width: 154px;
   height: auto;
 }
-/* line 924, ../sass/components/_homepage.scss */
+/* line 1185, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name {
-  font-family: "Mukta";
-  font-size: 30px;
-  font-weight: 600;
-  margin-bottom: 5px;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 32px;
+  font-weight: "normal";
+  margin-bottom: 4px;
+  color: #101828;
 }
-/* line 928, ../sass/components/_homepage.scss */
+/* line 1190, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group {
-  margin-bottom: 5px;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  margin-bottom: 8px;
   color: #8cc63f;
 }
-/* line 932, ../sass/components/_homepage.scss */
+/* line 1195, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc {
-  margin-bottom: 5px;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  color: #101828;
 }
-/* line 939, ../sass/components/_homepage.scss */
+/* line 1203, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 {
-  margin: 20px 0;
+  margin: 5% 0;
   display: inline-block;
   position: relative;
   width: 100%;
 }
-/* line 944, ../sass/components/_homepage.scss */
+/* line 1208, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header {
   position: relative;
   margin: 0 auto;
   width: 721px;
 }
-/* line 948, ../sass/components/_homepage.scss */
+/* line 1212, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .lang {
   display: none;
 }
-/* line 951, ../sass/components/_homepage.scss */
+/* line 1215, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-btn {
   display: flex;
   justify-content: center;
@@ -3239,77 +3677,142 @@ body.is-mobile {
   font-size: 15px;
   font-weight: "normal";
 }
-/* line 954, ../sass/components/_homepage.scss */
+/* line 1217, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-btn::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url("/themes/custom/sph/images/Cuestions-spk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -93px -4px -48px -20px;
+}
+/* line 1227, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit {
-  font-family: "Mukta";
-  font-size: 22px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   text-align: center;
-  margin: 20px 0px;
   line-height: 1;
   margin-bottom: 10px;
-  text-align: center;
+  margin: 24px auto;
+  color: #101828;
 }
-/* line 961, ../sass/components/_homepage.scss */
+/* line 1234, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit span.green {
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   color: #8CC63F;
 }
-/* line 966, ../sass/components/_homepage.scss */
+/* line 1239, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-desc {
-  margin-bottom: 20px;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  margin-bottom: 40px;
   text-align: center;
 }
-/* line 971, ../sass/components/_homepage.scss */
+/* line 1245, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row {
-  padding: 10px 0;
+  margin: 10px 0;
 }
-/* line 973, ../sass/components/_homepage.scss */
+/* line 1247, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-default {
+  border: 1px solid #E9E9EE;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  padding-left: 16px;
+}
+/* line 1254, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-default span {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  color: #101828;
+}
+/* line 1259, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-accordion-content-active {
+  height: 48px;
+  display: flex;
+  align-items: center;
+  margin: 8px;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+  background-color: #E9E9EE;
+  justify-content: center;
+}
+/* line 1267, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-accordion-content-active p {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+}
+/* line 1271, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active {
   background-color: #8CC63F;
   color: #fff;
 }
-/* line 979, ../sass/components/_homepage.scss */
+/* line 1274, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active span {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  color: #fff;
+}
+/* line 1281, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos {
   position: relative;
   margin: 0 auto;
   width: 721px;
 }
-/* line 983, ../sass/components/_homepage.scss */
+/* line 1285, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-tit {
-  font-family: "Mukta";
-  font-size: 22px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   text-align: center;
-  margin: 20px 0px;
   line-height: 1;
   margin-bottom: 10px;
-  text-align: center;
+  margin: 24px auto;
+  color: #101828;
 }
-/* line 990, ../sass/components/_homepage.scss */
+/* line 1292, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-tit span.green {
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   color: #8CC63F;
 }
-/* line 995, ../sass/components/_homepage.scss */
+/* line 1297, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-desc {
-  margin-bottom: 20px;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  margin-bottom: 40px;
   text-align: center;
 }
-/* line 999, ../sass/components/_homepage.scss */
+/* line 1302, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn {
-  text-align: center;
+  margin: 0 auto;
 }
-/* line 1001, ../sass/components/_homepage.scss */
+/* line 1304, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn a {
+  max-width: 330px !important;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: "auto";
+  width: auto;
   height: 45px;
   background-color: #8CC63F;
   color: #fff;
@@ -3319,26 +3822,76 @@ body.is-mobile {
   -moz-border-radius: 24px;
   -ms-border-radius: 24px;
   -o-border-radius: 24px;
-  padding: 10px 20px;
+  max-width: 148px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   text-align: left;
-  color: #fff;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  position: relative;
+  padding-left: 24px;
+  margin-left: 26%;
 }
-/* line 101, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn a a {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
   color: #fff;
 }
-/* line 1008, ../sass/components/_homepage.scss */
-.path-frontpage .content-middle #block-sph-contactanos .cont-img {
-  text-align: center;
-  position: relative;
+/* line 1315, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-btn a::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  width: 29px;
+  height: 29px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* line 1011, ../sass/components/_homepage.scss */
+/* line 1328, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-btn a::after {
+  content: "\2197";
+  font-size: 16px;
+  color: #f7941d;
+}
+/* line 1335, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-img {
+  width: 690px;
+  float: left;
+  position: relative;
+  display: flex;
+}
+/* line 1340, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-img img {
-  width: 403px;
+  width: 100%;
   height: auto;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  z-index: 2;
+}
+/* line 1347, ../sass/components/_homepage.scss */
+.path-frontpage .content-middle #block-sph-contactanos .cont-img::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 116%;
+  height: 80%;
+  border-radius: 25px;
+  background: linear-gradient(to right, #8cc63f 50%, #f7941d 50%);
+  z-index: 1;
+  filter: blur(32px);
+  opacity: 0.4;
+  -webkit-filter: blur(64px);
 }
 
 /* line 2, ../sass/components/_messages.scss */
@@ -3376,22 +3929,31 @@ body.is-mobile {
 }
 /* line 25, ../sass/components/_messages.scss */
 #page .webform-confirmation__message .complete-form-sprinkhaan .complete-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: "auto";
+  height: 45px;
   background-color: #8CC63F;
   color: #fff;
   text-align: center;
-  border-radius: 25px;
-  padding: 4px;
-  margin-bottom: 10px;
-  margin: 0 auto;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  max-width: 148px;
   padding: 10px 20px;
   text-align: left;
   color: #fff;
   width: 214px;
   text-align: center;
 }
-/* line 60, ../sass/base/_mixins.scss */
+/* line 102, ../sass/base/_mixins.scss */
 #page .webform-confirmation__message .complete-form-sprinkhaan .complete-btn a {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
   color: #fff;
 }
 /* line 34, ../sass/components/_messages.scss */
