@@ -144,7 +144,7 @@
               fieldset,
               div {
                 #edit-como-te-gustaria-ser-contactado--wrapper-legend{
-                  padding-top: 4%;
+                  padding: 16px 0 8px 0;
                   span{
                   @include fonts("poppins", 16px, "normal");
                   color: #303135;
@@ -219,8 +219,8 @@
                 }
               }
               input[type="submit"] {
-                max-width: 344px !important;
-                @include black-btn-green(auto);
+                max-width: 524px !important;
+                @include black-btn-green(524px);
                 display: flex;
                 justify-content: flex-start;
                 align-items: center;
@@ -228,7 +228,6 @@
                 @include fonts("poppins", 16px, "normal");
                 position: relative;
                 padding-left: 24px;
-                margin: 8px;
                 &::after {
                   content: "";
                   position: absolute;
