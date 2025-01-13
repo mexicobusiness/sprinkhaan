@@ -6,31 +6,57 @@
           display: none;
         }
         section.sponsor-container-top{
-          text-align: center;
           position: relative;
           margin: 0 auto;
-          width: 721px;
           .sponsor-tit{
-            @include fonts("Mukta", 22px, 600);
-            margin: 20px 0px;
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            text-align: center;
+            margin: 8% 0px 2% 0;
             line-height: 1;
             margin-bottom: 10px;
-            text-align: center;
+            color: #101828;
             span.green{
-              @include fonts("Mukta", 40px, 600);
+              @include fonts("Conv_Gotham-Medium", 48px, 800);
               color: $color-green;
             }
           }
           .sponsor-des{
-            @include fonts("Mukta", 16px, 600);
+            @include fonts("poppins", 16px, "normal");
+            text-align: center;
+            width: 60%;
+            margin: 0 auto 2% auto;
           }
           .sponsor-btn{
-            margin: 20px 0;
+            margin: 0 auto;
             a{
-                @include black-btn-green('auto');
-                padding: 10px 20px;
-                text-align: left;
-                color: $color-white;
+              max-width: 330px !important;
+              @include black-btn-green(auto);
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              text-align: left;
+              @include fonts("poppins", 16px, "normal");
+              position: relative;
+              padding-left: 24px;
+              margin-left: 36%;
+              &::after {
+                content: "";
+                position: absolute;
+                right: 10px;
+                width: 29px;
+                height: 29px;
+                background-color: #fff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+    
+              &::after {
+                content: "\2197";
+                font-size: 16px;
+                color: #f7941d;
+              }
             }
          }
          .sponsor-img{
@@ -43,24 +69,24 @@
         section.sponsor-container-medium{
           text-align: center;
           position: relative;
-          margin: 0 auto;
+          margin: 16% auto;
           .sponsor-tit{
-            @include fonts("Mukta", 22px, 600);
-            margin: 20px 0px;
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            text-align: center;
+            margin: 8% 0px 2% 0;
             line-height: 1;
             margin-bottom: 10px;
-            text-align: center;
-            margin: 0 auto;
-            width: 721px;
+            color: #101828;
             span.green{
-              @include fonts("Mukta", 40px, 600);
+              @include fonts("Conv_Gotham-Medium", 48px, 800);
               color: $color-green;
             }
           }
           .sponsor-des{
-            @include fonts("Mukta", 16px, 600);
-            margin: 0 auto;
-            width: 721px;
+            @include fonts("poppins", 16px, "normal");
+            text-align: center;
+            width: 60%;
+            margin: 0 auto 2% auto;
           }
          .sponsor-imgs{
           figure{
@@ -98,38 +124,88 @@
           display: inline-block;
           width: 100%;
           margin: 20px 0;
-          div.sponsor-container-bottom-left, div.sponsor-container-bottom-right{
-            width: 50%;
+          div.sponsor-container-bottom-left{
+            width: 60%;
+            float: left;
+          }
+          div.sponsor-container-bottom-right{
+            width: 40%;
             float: left;
           }
           div.sponsor-container-bottom-left{
             padding-right: 35px;
             .sponsor-container-bottom-left-tit{
-              @include fonts("Mukta", 22px, 600);
+              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              margin: 8% 0px 2% 0;
+              line-height: 1;
+              margin-bottom: 10px;
+              color: #101828;
               span.green{
-                @include fonts("Mukta", 22px, 600);
+                @include fonts("Conv_Gotham-Medium", 48px, 800);
                 color: $color-green;
               }
             }
             .sponsor-container-bottom-left-des{
-              @include fonts("Mukta", 14px, 600);
+              @include fonts("poppins", 16px, "normal");
+              margin: 0 auto 2% auto;
             }
           }
           div.sponsor-container-bottom-right{
-            ul{
-              margin-left: 50px;
-              li{
+            border: 1px solid #E9E9EE;
+            @include radius-spk-16();
+            padding: 24px;
+            ul {
+              list-style: none;  
+              li {
                 margin: 10px 0;
+                position: relative;
+                @include fonts("poppins", 16px, "normal");
+            
+                &::before {
+                  content: "";
+                  display: inline-block;
+                  width: 20px;
+                  height: 20px;
+                  filter: invert(53%) sepia(91%) saturate(508%) hue-rotate(348deg) brightness(105%) contrast(94%);
+                  background-image: url("/themes/custom/sph/images/check-spk.svg");
+                  background-size: cover;
+                  background-repeat: no-repeat;
+                  margin-right: 8px; 
+                }
               }
             }
+            
             .sponsor-container-bottom-right-btn{
               margin: 20px 0;
               text-align: center;
               a{
-                  @include black-btn-green('auto');
-                  padding: 10px 20px;
-                  text-align: left;
-                  color: $color-white;
+                max-width: 400px !important;
+                @include black-btn-green(auto);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                text-align: left;
+                @include fonts("poppins", 16px, "normal");
+                position: relative;
+                padding-left: 24px;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  right: 10px;
+                  width: 29px;
+                  height: 29px;
+                  background-color: #fff;
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+      
+                &::after {
+                  content: "\2197";
+                  font-size: 16px;
+                  color: #f7941d;
+                }
               }
             }
           }

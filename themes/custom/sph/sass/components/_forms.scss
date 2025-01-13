@@ -68,6 +68,7 @@
               @include radius-spk-16();
               border: 1px solid #F4F4F5;
               padding: 24px;
+              margin-bottom: 8%;
               #edit-processed-text{
                 padding: 0px 0 10px 0;
                 .webform-tit{
@@ -84,12 +85,49 @@
                   display: none;
                 }
               }
+              div.js-form-item{
+                label{
+                  @include fonts("poppins", 16px, "normal");
+                  margin: 4px 0;
+                }
+                textarea{
+
+                  text-transform: capitalize;
+                  border: 1px solid #F7941D;
+                  background-color: #fff;
+                  @include fonts("poppins", 16px, "normal");
+                  color: #303135;
+                  width: 100%;
+                  @include radius-spk-16();
+                  height: auto;
+                  padding: 8px 16px;
+                  cursor: text;
+                  box-shadow: none;
+                }
+                input[type="text"],
+                input[type="email"],
+                input[type="tel"] {
+                  text-transform: capitalize;
+                  border: 1px solid #F7941D;
+                  background-color: #fff;
+                  @include fonts("poppins", 16px, "normal");
+                  color: #303135;
+                  width: 100%;
+                  @include radius-spk-32();
+                  height: 45px;
+                  padding: 8px 16px;
+                  cursor: text;
+                  box-shadow: none;
+                }
+              }
               fieldset, div{
                 width: 100%;
                 .fieldset-wrapper{
                   width: 100%;
-                  .js-form-item{
-                    border: 1px solid red;
+                  .edit-como-te-gustaria-ser-contactado{
+                    display: flex;
+                    border: 1px solid #F7941D;
+                    @include radius-spk-16();
                   }
                   div{
                     label{
