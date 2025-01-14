@@ -6,15 +6,12 @@
 	{{ content.field_image }}
 </div>
 <div class="author">
-    <div class="article-contact-info-f1">
-      {% if node.Owner.user_picture.entity.fileuri %}
-        <img src="{{ file_url(node.Owner.user_picture.entity.fileuri) }}" alt="{{ node.Owner.field_name.value }}">
-      {% endif %} 
-      {% if node.Owner.field_name.value %}
-        By {{ node.Owner.field_name.value }} | {{ node.Owner.field_position_profile.value }} - 
-      {% endif %} 
-      {{ node.getCreatedTime|format_date('medium') }} 
-    </div> 
+	{% if node.Owner.user_picture.entity.fileuri %}
+	  <img src="{{ file_url(node.Owner.user_picture.entity.fileuri) }}" alt="{{ node.Owner.field_name.value }}">
+	{% endif %}
+	<div class="author-name">{{ node.Owner.field_name.value }}</div>
+	<div class="author-date"> {{ node.getCreatedTime|format_date('medium') }} </div> 
+
 </div>
 <div class="descrption">
 	{{ content.body | raw }}
@@ -23,5 +20,13 @@
   <span>TAGS</span> 
 	{{ content.field_tags | raw }}
 </div>
+
+<div class="last-news">
+	<div class="last-news-tit">YOU MAY <span class="orange">LIKE</span></div>
+	<div class="last-news-view">
+		{{ drupal_view("news", "block_1") }}
+	</div>
+</div>
+
 
 
