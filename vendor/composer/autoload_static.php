@@ -125,9 +125,11 @@ class ComposerStaticInit4b6344e297196cc4b3da3288d1693c52
             'Drupal\\Component\\' => 17,
             'DrupalFinder\\' => 13,
             'DrupalCodeGenerator\\' => 20,
+            'Doctrine\\Persistence\\' => 21,
             'Doctrine\\Deprecations\\' => 22,
             'Doctrine\\Common\\Lexer\\' => 22,
             'Doctrine\\Common\\Annotations\\' => 28,
+            'Doctrine\\Common\\' => 16,
             'Dflydev\\DotAccessData\\' => 22,
         ),
         'C' => 
@@ -406,6 +408,10 @@ class ComposerStaticInit4b6344e297196cc4b3da3288d1693c52
         array (
             0 => __DIR__ . '/..' . '/chi-teck/drupal-code-generator/src',
         ),
+        'Doctrine\\Persistence\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/persistence/src/Persistence',
+        ),
         'Doctrine\\Deprecations\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/deprecations/src',
@@ -417,6 +423,11 @@ class ComposerStaticInit4b6344e297196cc4b3da3288d1693c52
         'Doctrine\\Common\\Annotations\\' => 
         array (
             0 => __DIR__ . '/..' . '/doctrine/annotations/lib/Doctrine/Common/Annotations',
+        ),
+        'Doctrine\\Common\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/doctrine/common/src',
+            1 => __DIR__ . '/..' . '/doctrine/event-manager/src',
         ),
         'Dflydev\\DotAccessData\\' => 
         array (

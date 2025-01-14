@@ -1,0 +1,57 @@
+.page-calendar{
+  #page {
+    #main-content {
+      .content-center{
+      	.views-element-container{
+      		margin: 30px 0;
+      		header{
+      			text-align: center;
+      			margin: 20px 0;
+      			.cal-btn{
+      				@include black-btn();
+      				margin-bottom: 10px;
+      			}
+      			.cal-tit{
+                  width: 721px;
+                  margin: 0 auto;
+                  @include fonts("Mukta", 40px, 600);
+                  text-align: center;
+                  line-height: 1;
+                  margin-bottom: 10px;
+                  span.green{
+                    @include fonts("Mukta", 40px, 600);
+                    color: $color-green;
+                  }      				
+      			}
+      			.cal-des{
+                  width: 721px;
+                  margin: 0 auto;
+      			}
+      			.cal-colors{
+      				display: inline-flex;
+      				div.circle{
+					  height: 15px;
+					  width: 15px;
+					  background-color: $color-black;
+					  border-radius: 50%;
+					  display: inline-block;
+					  margin-left: 15px;
+					  margin-right: 15px;
+      				}
+      				div.circle.cultural-color{background-color: #FC9A0A;}
+      				div.circle.camp-color{background-color: #1F978D;}
+      			}
+      		}
+      		.js-drupal-fullcalendar{
+      			.fc-view-container{
+      				.fc-title{
+      					color: $color-white;
+      					font-size: 12px;
+      				}
+      			}
+      		}
+      	}
+      }
+    }
+  }
+}

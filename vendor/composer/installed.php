@@ -3,7 +3,11 @@
         'name' => 'drupal/legacy-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
+<<<<<<< HEAD
         'reference' => 'c8d71be608a64fa2996d45824d04415feecc788f',
+=======
+        'reference' => 'da4e3f52d065f2effc760099fdb0662faa868f30',
+>>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -145,6 +149,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'doctrine/common' => array(
+            'pretty_version' => '3.5.0',
+            'version' => '3.5.0.0',
+            'reference' => 'd9ea4a54ca2586db781f0265d36bea731ac66ec5',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../doctrine/common',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'doctrine/deprecations' => array(
             'pretty_version' => '1.1.4',
             'version' => '1.1.4.0',
@@ -154,12 +167,30 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'doctrine/event-manager' => array(
+            'pretty_version' => '2.0.1',
+            'version' => '2.0.1.0',
+            'reference' => 'b680156fa328f1dfd874fd48c7026c41570b9c6e',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../doctrine/event-manager',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'doctrine/lexer' => array(
             'pretty_version' => '2.1.1',
             'version' => '2.1.1.0',
             'reference' => '861c870e8b75f7c8f69c146c7f89cc1c0f1b49b6',
             'type' => 'library',
             'install_path' => __DIR__ . '/../doctrine/lexer',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'doctrine/persistence' => array(
+            'pretty_version' => '4.0.0',
+            'version' => '4.0.0.0',
+            'reference' => '45004aca79189474f113cbe3a53847c2115a55fa',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../doctrine/persistence',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -388,6 +419,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/devel' => array(
+            'pretty_version' => '5.3.1',
+            'version' => '5.3.1.0',
+            'reference' => '5.3.1',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/devel',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/entity_browser' => array(
             'pretty_version' => '2.12.0',
             'version' => '2.12.0.0',
@@ -406,6 +446,7 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+<<<<<<< HEAD
         'drupal/gin' => array(
             'pretty_version' => '4.0.2',
             'version' => '4.0.2.0',
@@ -421,6 +462,14 @@
             'reference' => '2.0.0',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../modules/contrib/gin_toolbar',
+=======
+        'drupal/fullcalendar_view' => array(
+            'pretty_version' => '5.2.4',
+            'version' => '5.2.4.0',
+            'reference' => '5.2.4',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/fullcalendar_view',
+>>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -454,7 +503,11 @@
         'drupal/legacy-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
+<<<<<<< HEAD
             'reference' => 'c8d71be608a64fa2996d45824d04415feecc788f',
+=======
+            'reference' => 'da4e3f52d065f2effc760099fdb0662faa868f30',
+>>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -547,6 +600,15 @@
             'reference' => '2.0.7',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../modules/contrib/tour',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/twig_tweak' => array(
+            'pretty_version' => '3.4.0',
+            'version' => '3.4.0.0',
+            'reference' => '3.4.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/twig_tweak',
             'aliases' => array(),
             'dev_requirement' => false,
         ),
