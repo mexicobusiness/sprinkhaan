@@ -3,7 +3,7 @@
         'name' => 'drupal/legacy-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '24c23147daf0a413f91395026f076a3a3c9174f7',
+        'reference' => 'ec86c06b4507cab6f5b619de27e963af628a0689',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -406,6 +406,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/fullcalendar_view' => array(
+            'pretty_version' => '5.2.4',
+            'version' => '5.2.4.0',
+            'reference' => '5.2.4',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/fullcalendar_view',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/jquery_ui' => array(
             'pretty_version' => '1.7.0',
             'version' => '1.7.0.0',
@@ -436,7 +445,7 @@
         'drupal/legacy-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '24c23147daf0a413f91395026f076a3a3c9174f7',
+            'reference' => 'ec86c06b4507cab6f5b619de27e963af628a0689',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

@@ -326,3 +326,39 @@
     }
   }
 }
+.page-terms-and-conditions{
+  #page {
+    #main-content {
+      .header{
+        text-align: center;
+        @include black-btn();
+        margin-top: 20px;
+        .title{
+          h1{
+            color: $color-white;
+          }
+        }
+      }
+      .descrption{
+        .terms-desc{
+          @include fonts("Conv_Gotham-Medium", 48px, 800);
+          color: #101828;
+          text-align: center;
+          margin: 20px 0px;
+          line-height: 1;
+          margin-bottom: 10px;
+          span.green {
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            color: $color-green;
+          }
+        }
+        p{
+          margin: 2px 0 15px 0;
+          strong{
+            @include fonts("Conv_Gotham-Medium", 18px, 600);
+          }
+        }
+      }
+    }
+  }
+}
