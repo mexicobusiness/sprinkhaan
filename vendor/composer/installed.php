@@ -3,7 +3,7 @@
         'name' => 'drupal/legacy-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '24c23147daf0a413f91395026f076a3a3c9174f7',
+        'reference' => 'c8d71be608a64fa2996d45824d04415feecc788f',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -406,6 +406,24 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
+        'drupal/gin' => array(
+            'pretty_version' => '4.0.2',
+            'version' => '4.0.2.0',
+            'reference' => '4.0.2',
+            'type' => 'drupal-theme',
+            'install_path' => __DIR__ . '/../../themes/contrib/gin',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
+        'drupal/gin_toolbar' => array(
+            'pretty_version' => '2.0.0',
+            'version' => '2.0.0.0',
+            'reference' => '2.0.0',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/gin_toolbar',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/jquery_ui' => array(
             'pretty_version' => '1.7.0',
             'version' => '1.7.0.0',
@@ -436,7 +454,7 @@
         'drupal/legacy-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '24c23147daf0a413f91395026f076a3a3c9174f7',
+            'reference' => 'c8d71be608a64fa2996d45824d04415feecc788f',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -784,8 +802,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '1.1|2.0',
-                1 => '^1.0',
+                0 => '^1.0',
+                1 => '1.1|2.0',
             ),
         ),
         'psr/event-dispatcher' => array(

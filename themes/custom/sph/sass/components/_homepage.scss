@@ -155,28 +155,29 @@
         background-size: cover;
         background-repeat: no-repeat;
         opacity: 0;
-          transform: translateY(200%) scale(0.5) rotate(-45deg);
-          animation: initAnimation 1.5s ease-out forwards, floatUpDown 6s infinite ease-in-out;
+        transform: translateY(200%) scale(0.5) rotate(-45deg);
+        animation: initAnimation 1.5s ease-out forwards,
+          floatUpDown 6s infinite ease-in-out;
       }
-      
+
       &:before {
         background-image: url("/themes/custom/sph/images/copa@2x.png");
         top: -18%;
         left: -29%;
-        animation-delay: 0.5s, 2s; 
+        animation-delay: 0.5s, 2s;
         width: 140px;
         height: 140px;
       }
-      
+
       &:after {
         background-image: url("/themes/custom/sph/images/cuaderno@2x.png");
         top: -10%;
         right: -20%;
-        animation-delay: 0.5s, 2s; 
+        animation-delay: 0.5s, 2s;
         width: 89px;
         height: 89px;
       }
-      
+
       @keyframes initAnimation {
         0% {
           opacity: 0;
@@ -187,16 +188,16 @@
           transform: translateY(0) scale(1) rotate(0deg);
         }
       }
-      
+
       @keyframes floatUpDown {
-        0%, 100% {
-          transform: translateY(0) scale(1) rotate(0deg); 
+        0%,
+        100% {
+          transform: translateY(0) scale(1) rotate(0deg);
         }
         50% {
-          transform: translateY(-20px) scale(1.1) rotate(5deg); 
+          transform: translateY(-20px) scale(1.1) rotate(5deg);
         }
       }
-      
 
       .ntc-de-sprinkhaan-title {
         &:before {
@@ -209,9 +210,10 @@
           background-repeat: no-repeat;
           bottom: -53%;
           left: -30%;
-           opacity: 0;
+          opacity: 0;
           transform: translateY(200%) scale(0.5) rotate(-45deg);
-          animation: initAnimation 1.5s ease-out forwards, floatUpDown 6s infinite ease-in-out;
+          animation: initAnimation 1.5s ease-out forwards,
+            floatUpDown 6s infinite ease-in-out;
           animation-delay: 1s;
         }
 
@@ -227,34 +229,36 @@
           right: -27%;
           opacity: 0;
           transform: translateY(200%) scale(0.5) rotate(-45deg);
-          animation: initAnimation 1.5s ease-out forwards, floatUpDown 6s infinite ease-in-out;
+          animation: initAnimation 1.5s ease-out forwards,
+            floatUpDown 6s infinite ease-in-out;
           animation-delay: 1.5s;
         }
       }
 
       .ntc-de-sprinkhaan-desc {
         position: relative;
-      
+
         &:before,
         &:after {
           content: "";
           position: absolute;
           width: 100px;
-          height:100px;
+          height: 100px;
           background-size: cover;
           background-repeat: no-repeat;
           opacity: 0;
           transform: translateY(200%) scale(0.5) rotate(-45deg);
-          animation: initAnimation 1.5s ease-out forwards, floatUpDown 6s infinite ease-in-out;
+          animation: initAnimation 1.5s ease-out forwards,
+            floatUpDown 6s infinite ease-in-out;
         }
-      
+
         &:before {
           background-image: url("/themes/custom/sph/images/imagen@2x.png");
           top: -16%;
           left: -54%;
           animation-delay: 0.5s, 2s;
         }
-      
+
         &:after {
           background-image: url("/themes/custom/sph/images/enlace@2x.png");
           top: -16%;
@@ -262,7 +266,7 @@
           animation-delay: 0.8s, 2.5s;
         }
       }
-      
+
       @keyframes initAnimation {
         0% {
           opacity: 0;
@@ -273,7 +277,7 @@
           transform: translateY(0) scale(1) rotate(0deg);
         }
       }
-      
+
       @keyframes floatUpDown {
         0%,
         100% {
@@ -283,7 +287,6 @@
           transform: translateY(-20px) scale(1.1) rotate(5deg);
         }
       }
-      
     }
 
     #block-sph-videohome {
@@ -298,11 +301,12 @@
       -webkit-backdrop-filter: blur(17.7px);
       background: rgba(255, 255, 255, 0.11);
       -moz-backdrop-filter: blur(17.7px);
-      transform: translateY(100vh) scale(0.7); 
+      transform: translateY(100vh) scale(0.7);
       opacity: 0;
-      animation: slide-up-bounce 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; 
+      animation: slide-up-bounce 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+        forwards;
       animation-delay: 2.1s;
-    
+
       video {
         border: 1px solid #e9e9ee;
         padding: 8px;
@@ -312,27 +316,25 @@
         @include radius-spk-16();
       }
     }
-    
+
     @keyframes slide-up-bounce {
       0% {
-        transform: translateY(100vh) scale(0.7); 
+        transform: translateY(100vh) scale(0.7);
         opacity: 0;
       }
       50% {
-        transform: translateY(-20px) scale(1.05); 
+        transform: translateY(-20px) scale(1.05);
         opacity: 0.8;
       }
       75% {
-        transform: translateY(10px) scale(0.95); 
+        transform: translateY(10px) scale(0.95);
         opacity: 1;
       }
       100% {
-        transform: translateY(0) scale(1); 
+        transform: translateY(0) scale(1);
         opacity: 1;
       }
     }
-    
-    
   }
   .region-center {
     width: 100%;
@@ -1369,6 +1371,8 @@
         text-align: center;
       }
       .cont-btn {
+        position: relative;
+        z-index: 3;
         margin: 0 auto;
         a {
           max-width: 330px !important;
@@ -1406,6 +1410,7 @@
         float: left;
         position: relative;
         display: flex;
+        margin-top: -20%;
         img {
           width: 100%;
           height: auto;
@@ -1416,7 +1421,7 @@
         &::before {
           content: "";
           position: absolute;
-          top: 50%;
+          top: 72%;
           left: 0;
           width: 116%;
           height: 80%;

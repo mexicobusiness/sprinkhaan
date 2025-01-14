@@ -90,7 +90,7 @@
                   display: none;
                 }
               }
-              
+
               div.js-form-item {
                 margin: 8px 0;
                 label {
@@ -143,28 +143,29 @@
               }
               fieldset,
               div {
-                #edit-como-te-gustaria-ser-contactado--wrapper-legend{
+                #edit-como-te-gustaria-ser-contactado--wrapper-legend {
                   padding: 16px 0 8px 0;
-                  span{
-                  @include fonts("poppins", 16px, "normal");
-                  color: #303135;
+                  span {
+                    @include fonts("poppins", 16px, "normal");
+                    color: #303135;
                   }
-                }.fieldset-wrapper{
-                  #edit-como-te-gustaria-ser-contactado{
+                }
+                .fieldset-wrapper {
+                  #edit-como-te-gustaria-ser-contactado {
                     display: flex;
                     flex-wrap: nowrap;
-                    .js-form-item-como-te-gustaria-ser-contactado{
+                    .js-form-item-como-te-gustaria-ser-contactado {
                       border: 1px solid #f7941d;
                       @include radius-sph();
                       padding: 8px 12px;
                       display: flex;
                       justify-content: center;
                       align-items: baseline;
-                      cursor: pointer;
                       margin-right: 8px;
-                      label{
+                      label {
                         width: 80%;
                         margin-left: 8px;
+                        cursor: pointer;
                       }
                       @include transition-all-sph();
                       &:hover {
@@ -240,7 +241,7 @@
                   justify-content: center;
                   align-items: center;
                 }
-      
+
                 &::after {
                   content: "\2197";
                   font-size: 16px;
@@ -262,8 +263,20 @@
           display: none;
         }
         div.content {
+          margin: 4% 0;
           div p {
             @include black-btn();
+            position: relative;
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 68px;
+              height: 68px;
+              background-image: url("/themes/custom/sph/images/Spk-img-real.png");
+              background-size: cover;
+              background-repeat: no-repeat;
+              margin-top: -32px;
+            }
           }
           div form {
             .webform-progress {
@@ -290,21 +303,23 @@
               #edit-processed-text-05 {
                 margin-bottom: 20px;
                 .form-tit {
-                  width: 721px;
-                  margin: 0 auto;
-                  @include fonts("Mukta", 40px, 600);
+                  @include fonts("Conv_Gotham-Medium", 48px, 800);
                   text-align: center;
                   line-height: 1;
                   margin-bottom: 10px;
+                  margin: 24px auto 32px auto;
+                  width: 816px;
+                  color: #101828;
                   span.green {
-                    @include fonts("Mukta", 40px, 600);
+                    @include fonts("Conv_Gotham-Medium", 48px, 800);
                     color: $color-green;
                   }
                 }
                 .form-des {
-                  width: 721px;
-                  margin: 0 auto;
+                  @include fonts("poppins", 16px, "normal");
                   text-align: center;
+                  width: 60%;
+                  margin: 0 auto 2% auto;
                 }
               }
               fieldset {
@@ -320,9 +335,45 @@
                   position: relative;
                   #edit-por-favor-seleccione-una-de-las-siguientes-opciones {
                     div {
+                      display: flex;
+                      justify-content: center;
+                      align-items: center;
                       float: left;
-                      width: calc(100% / 3);
+                      cursor: pointer;
+                      border: 1px solid #e9e9ee;
+                      @include radius-spk-16;
+                      margin: 16px;
+                      width: calc(91% / 3);
+                      height: 95px;
+                      padding: 24px;
                     }
+                    label {
+                      display: flex;
+                      align-items: flex-start;
+                      gap: 10px;
+                      color: #323B48;
+                      @include fonts("poppins", 18px, 600);
+                      text-align: left;
+                    }
+                    
+                    label img {
+                      width: 50px;
+                      height: auto;
+                    }
+                    
+                    label span {
+                      display: block;
+                      line-height: 24px;
+                    }
+                    
+                    label span.green {
+                      color: #57C757;
+                      font-weight: 400;
+                    }
+                    
+                    
+                    
+                    
                   }
                   #edit-es-esta-la-primera-vez-que-participas {
                     div {
@@ -334,6 +385,16 @@
               }
               .js-form-wrapper {
                 margin-bottom: 20px;
+                #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend{
+                  span{
+                    @include fonts("poppins", 18px, 600);
+                    color: #1C2635;
+                    .green{
+                      @include fonts("poppins", 18px, 600);
+                      color: $color-green;
+                    }
+                  }
+                }
                 > label:first-of-type {
                   display: inline-block;
                   @include black-btn-orange(130px);
