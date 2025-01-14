@@ -163,7 +163,7 @@
         background-image: url("/themes/custom/sph/images/copa@2x.png");
         top: -18%;
         left: -29%;
-        animation-delay: 0.5s, 2s; /* floatUpDown primero, luego initAnimation */
+        animation-delay: 0.5s, 2s; 
         width: 140px;
         height: 140px;
       }
@@ -172,7 +172,7 @@
         background-image: url("/themes/custom/sph/images/cuaderno@2x.png");
         top: -10%;
         right: -20%;
-        animation-delay: 0.5s, 2s; /* floatUpDown primero, luego initAnimation */
+        animation-delay: 0.5s, 2s; 
         width: 89px;
         height: 89px;
       }
@@ -190,10 +190,10 @@
       
       @keyframes floatUpDown {
         0%, 100% {
-          transform: translateY(0) scale(1) rotate(0deg); /* Estado final */
+          transform: translateY(0) scale(1) rotate(0deg); 
         }
         50% {
-          transform: translateY(-20px) scale(1.1) rotate(5deg); /* Movimiento hacia arriba */
+          transform: translateY(-20px) scale(1.1) rotate(5deg); 
         }
       }
       
@@ -301,6 +301,7 @@
       transform: translateY(100vh) scale(0.7); 
       opacity: 0;
       animation: slide-up-bounce 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards; 
+      animation-delay: 2.1s;
     
       video {
         border: 1px solid #e9e9ee;
