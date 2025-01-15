@@ -69,6 +69,11 @@
             }
           }
           .js-drupal-fullcalendar {
+            .fc-toolbar{
+              .fc-right{
+                display: none;
+              }
+            }
             .fc-view-container {
               .fc-title {
                 color: $color-white;
