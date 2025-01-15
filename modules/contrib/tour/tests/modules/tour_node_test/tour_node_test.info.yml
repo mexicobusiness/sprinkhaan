@@ -1,10 +1,11 @@
-name: Tour module tests
+name: Tour Node tests
 type: module
 core_version_requirement: ^10.3 || ^11
-description: Tests module for tour module.
+description: Tour tests with node module.
 package: Testing
 dependencies:
   - drupal:tour
+  - drupal:node
 
 # Information added by Drupal.org packaging script on 2025-01-10
 version: '2.0.8'

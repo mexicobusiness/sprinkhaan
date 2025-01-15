@@ -2417,7 +2417,62 @@
             "install-path": "../../modules/contrib/faq"
         },
         {
-<<<<<<< HEAD
+            "name": "drupal/fullcalendar_view",
+            "version": "5.2.4",
+            "version_normalized": "5.2.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fullcalendar_view.git",
+                "reference": "5.2.4"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fullcalendar_view-5.2.4.zip",
+                "reference": "5.2.4",
+                "shasum": "cb13b70d38c7f9b299b8661d3e8e03624d5079db"
+            },
+            "require": {
+                "drupal/core": "^9.2.0 || ^10 || ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "5.2.4",
+                    "datestamp": "1734475570",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "installation-source": "dist",
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "karing",
+                    "homepage": "https://www.drupal.org/user/787114"
+                },
+                {
+                    "name": "mingsong",
+                    "homepage": "https://www.drupal.org/user/2986445"
+                }
+            ],
+            "description": "This is a lightweight View plugin module that provides a calendar view format powered by FullCalendar JavaScript.",
+            "homepage": "http://drupal.org/project/fullcalendar_view",
+            "keywords": [
+                "Drupal",
+                "fullcalendar_view"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/fullcalendar_view",
+                "issues": "http://drupal.org/project/issues/fullcalendar_view"
+            },
+            "install-path": "../../modules/contrib/fullcalendar_view"
+        },
+        {
             "name": "drupal/gin",
             "version": "4.0.2",
             "version_normalized": "4.0.2.0",
@@ -2503,35 +2558,12 @@
             },
             "require": {
                 "drupal/core": "^9 || ^10 || ^11"
-=======
-            "name": "drupal/fullcalendar_view",
-            "version": "5.2.4",
-            "version_normalized": "5.2.4.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/fullcalendar_view.git",
-                "reference": "5.2.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/fullcalendar_view-5.2.4.zip",
-                "reference": "5.2.4",
-                "shasum": "cb13b70d38c7f9b299b8661d3e8e03624d5079db"
-            },
-            "require": {
-                "drupal/core": "^9.2.0 || ^10 || ^11"
->>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-<<<<<<< HEAD
                     "version": "2.0.0",
                     "datestamp": "1734698921",
-=======
-                    "version": "5.2.4",
-                    "datestamp": "1734475570",
->>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2545,7 +2577,6 @@
             ],
             "authors": [
                 {
-<<<<<<< HEAD
                     "name": "Sascha Eggenberger (saschaeggi)",
                     "homepage": "https://www.drupal.org/u/saschaeggi",
                     "role": "Maintainer"
@@ -2575,27 +2606,6 @@
                 }
             ],
             "install-path": "../../modules/contrib/gin_toolbar"
-=======
-                    "name": "karing",
-                    "homepage": "https://www.drupal.org/user/787114"
-                },
-                {
-                    "name": "mingsong",
-                    "homepage": "https://www.drupal.org/user/2986445"
-                }
-            ],
-            "description": "This is a lightweight View plugin module that provides a calendar view format powered by FullCalendar JavaScript.",
-            "homepage": "http://drupal.org/project/fullcalendar_view",
-            "keywords": [
-                "Drupal",
-                "fullcalendar_view"
-            ],
-            "support": {
-                "source": "http://cgit.drupalcode.org/fullcalendar_view",
-                "issues": "http://drupal.org/project/issues/fullcalendar_view"
-            },
-            "install-path": "../../modules/contrib/fullcalendar_view"
->>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
         },
         {
             "name": "drupal/jquery_ui",
@@ -2973,11 +2983,11 @@
             ],
             "authors": [
                 {
-                    "name": "Berdir",
+                    "name": "berdir",
                     "homepage": "https://www.drupal.org/user/214652"
                 },
                 {
-                    "name": "Dave Reid",
+                    "name": "dave reid",
                     "homepage": "https://www.drupal.org/user/53892"
                 },
                 {
@@ -3287,18 +3297,18 @@
         },
         {
             "name": "drupal/svg_image",
-            "version": "3.2.0",
-            "version_normalized": "3.2.0.0",
+            "version": "3.2.1",
+            "version_normalized": "3.2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/svg_image.git",
-                "reference": "3.2.0"
+                "reference": "3.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/svg_image-3.2.0.zip",
-                "reference": "3.2.0",
-                "shasum": "d55ef2bc3b751b8ce3f33485216c38cfbfb076b2"
+                "url": "https://ftp.drupal.org/files/projects/svg_image-3.2.1.zip",
+                "reference": "3.2.1",
+                "shasum": "4623b9d0de4c624857df10daaa8c68793942ad87"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11",
@@ -3307,8 +3317,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "3.2.0",
-                    "datestamp": "1733298643",
+                    "version": "3.2.1",
+                    "datestamp": "1736865227",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3428,18 +3438,18 @@
         },
         {
             "name": "drupal/tour",
-            "version": "2.0.7",
-            "version_normalized": "2.0.7.0",
+            "version": "2.0.8",
+            "version_normalized": "2.0.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/tour.git",
-                "reference": "2.0.7"
+                "reference": "2.0.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/tour-2.0.7.zip",
-                "reference": "2.0.7",
-                "shasum": "b8075057a648e135a0d8c00a8c36616e2d69cc26"
+                "url": "https://ftp.drupal.org/files/projects/tour-2.0.8.zip",
+                "reference": "2.0.8",
+                "shasum": "87ac2b273d3154b08334ed9f4afeefdca1b2fef0"
             },
             "require": {
                 "drupal/core": "^10.3 || ^11"
@@ -3455,8 +3465,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.7",
-                    "datestamp": "1732580739",
+                    "version": "2.0.8",
+                    "datestamp": "1736542201",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -3897,23 +3907,23 @@
                     "sut/libraries/{$name}": [
                         "type:drupal-library"
                     ],
+                    "sut/themes/unish/{$name}": [
+                        "drupal/empty_theme"
+                    ],
+                    "sut/drush/contrib/{$name}": [
+                        "type:drupal-drush"
+                    ],
                     "sut/modules/unish/{$name}": [
                         "drupal/devel"
                     ],
-                    "sut/themes/unish/{$name}": [
-                        "drupal/empty_theme"
+                    "sut/themes/contrib/{$name}": [
+                        "type:drupal-theme"
                     ],
                     "sut/modules/contrib/{$name}": [
                         "type:drupal-module"
                     ],
                     "sut/profiles/contrib/{$name}": [
                         "type:drupal-profile"
-                    ],
-                    "sut/themes/contrib/{$name}": [
-                        "type:drupal-theme"
-                    ],
-                    "sut/drush/contrib/{$name}": [
-                        "type:drupal-drush"
                     ]
                 }
             },
@@ -4050,17 +4060,17 @@
         },
         {
             "name": "enshrined/svg-sanitize",
-            "version": "0.20.0",
-            "version_normalized": "0.20.0.0",
+            "version": "0.21.0",
+            "version_normalized": "0.21.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/darylldoyle/svg-sanitizer.git",
-                "reference": "068d9fcf912c88a0471d101d95a2caa87c50aee7"
+                "reference": "5e477468fac5c5ce933dce53af3e8e4e58dcccc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/068d9fcf912c88a0471d101d95a2caa87c50aee7",
-                "reference": "068d9fcf912c88a0471d101d95a2caa87c50aee7",
+                "url": "https://api.github.com/repos/darylldoyle/svg-sanitizer/zipball/5e477468fac5c5ce933dce53af3e8e4e58dcccc9",
+                "reference": "5e477468fac5c5ce933dce53af3e8e4e58dcccc9",
                 "shasum": ""
             },
             "require": {
@@ -4071,7 +4081,7 @@
             "require-dev": {
                 "phpunit/phpunit": "^6.5 || ^8.5"
             },
-            "time": "2024-09-05T10:18:12+00:00",
+            "time": "2025-01-13T09:32:25+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -4092,7 +4102,7 @@
             "description": "An SVG sanitizer for PHP",
             "support": {
                 "issues": "https://github.com/darylldoyle/svg-sanitizer/issues",
-                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.20.0"
+                "source": "https://github.com/darylldoyle/svg-sanitizer/tree/0.21.0"
             },
             "install-path": "../enshrined/svg-sanitize"
         },
@@ -6140,12 +6150,12 @@
             "time": "2024-09-25T14:20:29+00:00",
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "installation-source": "dist",
@@ -6372,12 +6382,12 @@
             "time": "2024-09-25T14:20:29+00:00",
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "installation-source": "dist",
@@ -7454,8 +7464,8 @@
             "type": "library",
             "extra": {
                 "thanks": {
-                    "name": "symfony/polyfill",
-                    "url": "https://github.com/symfony/polyfill"
+                    "url": "https://github.com/symfony/polyfill",
+                    "name": "symfony/polyfill"
                 }
             },
             "installation-source": "dist",
@@ -7953,12 +7963,12 @@
             "time": "2024-09-25T14:20:29+00:00",
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "installation-source": "dist",
@@ -8123,12 +8133,12 @@
             "time": "2024-09-25T14:20:29+00:00",
             "type": "library",
             "extra": {
+                "thanks": {
+                    "url": "https://github.com/symfony/contracts",
+                    "name": "symfony/contracts"
+                },
                 "branch-alias": {
                     "dev-main": "3.5-dev"
-                },
-                "thanks": {
-                    "name": "symfony/contracts",
-                    "url": "https://github.com/symfony/contracts"
                 }
             },
             "installation-source": "dist",

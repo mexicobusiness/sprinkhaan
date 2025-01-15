@@ -74,7 +74,7 @@ class SvgResponsiveImageFormatter extends ResponsiveImageFormatter {
     if ($responsiveImageStyle) {
       $imageStylesToLoad = $responsiveImageStyle->getImageStyleIds();
       $imageStyles = $this->imageStyleStorage->loadMultiple($imageStylesToLoad);
-      $imageStyle = $imageStyles[$responsiveImageStyle->getFallbackImageStyle()];
+      $imageStyle = $imageStyles[$responsiveImageStyle->getFallbackImageStyle()] ?? NULL;
     }
 
     foreach ($files as $delta => $file) {

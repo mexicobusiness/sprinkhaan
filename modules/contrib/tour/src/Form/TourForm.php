@@ -111,7 +111,7 @@ class TourForm extends EntityForm {
       '#title' => $this->t('Routes'),
       '#default_value' => implode("\n", $default_routes),
       '#rows' => 5,
-      '#description' => $this->t('Provide a list of routes that this tour will be displayed on. Add route_name first then optionally route parameters. For example: <pre>entity.node.canonical<br/>- node:2</pre> will only show on the <em>node/2</em> page. <pre>entity.dashboard.canonical<br/>- id:secondary_dashboard</pre> will only show on the <em>admin/dashboard/secondary_dashboard</em> page.<br><br>NOTE: route parameters are <strong>not validated yet</strong>.'),
+      '#description' => $this->t('Provide a list of routes that this tour will be displayed on. Add route_name first then optionally route parameters. For example:<pre>entity.node.canonical<br>- node:2</pre> will only show on the <em>node/2</em> page.<pre>entity.dashboard.canonical<br/>- id:secondary_dashboard</pre> will only show on the<em>admin/dashboard/secondary_dashboard</em> page.<br><p>Other supported param keys are <em>taxonomy_term</em>, <em>bundle/node_type</em>, <em>taxonomy_vocabulary</em></p><br>NOTE: route parameters are <strong>not validated yet</strong>.'),
     ];
 
     $form['find-routes'] = [

@@ -5,14 +5,9 @@
  * Main functions of the module.
  */
 
-use Drupal\Core\Config\Entity\ConfigEntityInterface;
 use Drupal\Core\Entity\EntityInterface;
 use Drupal\Core\Routing\RouteMatchInterface;
 use Drupal\Core\Url;
-use Drupal\node\NodeInterface;
-use Drupal\node\NodeTypeInterface;
-use Drupal\taxonomy\TermInterface;
-use Drupal\taxonomy\VocabularyInterface;
 use Drupal\tour\Entity\Tour;
 use Drupal\tour\RenderCallbacks;
 
@@ -114,48 +109,12 @@ function tour_page_bottom(array &$page_bottom): void {
     return;
   }
 
-  // Load all the items and match on route name.
-  $route_match = \Drupal::routeMatch();
-  $route_name = $route_match->getRouteName();
+  $helper_service = \Drupal::service('tour.helper');
+  $results = $helper_service->loadTourEntities();
 
-  // Check if the current matching path is the front page.
-  if (\Drupal::service('path.matcher')->isFrontPage()) {
-    $route_name = '<front>';
-  }
+  if (!empty($results)) {
+    $tours = Tour::loadMultiple($results);
 
-  $results = \Drupal::entityQuery('tour')
-    ->condition('routes.*.route_name', $route_name)
-    ->condition('status', TRUE)
-    ->execute();
-  if (!empty($results) && $tours = Tour::loadMultiple(array_keys($results))) {
-    foreach ($tours as $id => $tour) {
-      // Get the parameters.
-      $params = $route_match->getRawParameters()->all();
-      // Include 'bundle' as parameter to use as match.
-      // You could also add additional if (example a node has a specific field).
-      if (($node = $route_match->getParameter('node')) && ($node instanceof NodeInterface)) {
-        $params['bundle'] = $node->bundle();
-      }
-      if (($node_type = $route_match->getParameter('node_type')) && ($node_type instanceof NodeTypeInterface)) {
-        $params['bundle'] = $node_type->get('type');
-      }
-      // Get the Taxonomy Vocabulary.
-      if (($vocab = $route_match->getParameter('taxonomy_vocabulary')) && ($vocab instanceof VocabularyInterface)) {
-        $params['bundle'] = $vocab->id();
-      }
-      // Get the Taxonomy Vocabulary from a term.
-      if (($term = $route_match->getParameter('taxonomy_term')) && ($term instanceof TermInterface)) {
-        $params['bundle'] = $term->bundle();
-      }
-      // Get the id of dashboard from dashboard config entity.
-      if (($dashboard = $route_match->getParameter('dashboard')) && $dashboard instanceof ConfigEntityInterface) {
-        $params['id'] = $dashboard->id();
-      }
-      // Match on the parameters.
-      if (!$tour->hasMatchingRoute($route_name, $params)) {
-        unset($tours[$id]);
-      }
-    }
     if (!empty($tours)) {
       $page_bottom['tour'] = \Drupal::entityTypeManager()
         ->getViewBuilder('tour')

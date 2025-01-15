@@ -3,11 +3,7 @@
         'name' => 'drupal/legacy-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-<<<<<<< HEAD
-        'reference' => 'c8d71be608a64fa2996d45824d04415feecc788f',
-=======
-        'reference' => 'da4e3f52d065f2effc760099fdb0662faa868f30',
->>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
+        'reference' => '6d890f258439e64f57dce4e1e050f5c1dd19a377',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -446,7 +442,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-<<<<<<< HEAD
+        'drupal/fullcalendar_view' => array(
+            'pretty_version' => '5.2.4',
+            'version' => '5.2.4.0',
+            'reference' => '5.2.4',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/fullcalendar_view',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/gin' => array(
             'pretty_version' => '4.0.2',
             'version' => '4.0.2.0',
@@ -462,14 +466,6 @@
             'reference' => '2.0.0',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../modules/contrib/gin_toolbar',
-=======
-        'drupal/fullcalendar_view' => array(
-            'pretty_version' => '5.2.4',
-            'version' => '5.2.4.0',
-            'reference' => '5.2.4',
-            'type' => 'drupal-module',
-            'install_path' => __DIR__ . '/../../modules/contrib/fullcalendar_view',
->>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -503,11 +499,7 @@
         'drupal/legacy-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-<<<<<<< HEAD
-            'reference' => 'c8d71be608a64fa2996d45824d04415feecc788f',
-=======
-            'reference' => 'da4e3f52d065f2effc760099fdb0662faa868f30',
->>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
+            'reference' => '6d890f258439e64f57dce4e1e050f5c1dd19a377',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -577,9 +569,9 @@
             'dev_requirement' => false,
         ),
         'drupal/svg_image' => array(
-            'pretty_version' => '3.2.0',
-            'version' => '3.2.0.0',
-            'reference' => '3.2.0',
+            'pretty_version' => '3.2.1',
+            'version' => '3.2.1.0',
+            'reference' => '3.2.1',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../modules/contrib/svg_image',
             'aliases' => array(),
@@ -595,9 +587,9 @@
             'dev_requirement' => false,
         ),
         'drupal/tour' => array(
-            'pretty_version' => '2.0.7',
-            'version' => '2.0.7.0',
-            'reference' => '2.0.7',
+            'pretty_version' => '2.0.8',
+            'version' => '2.0.8.0',
+            'reference' => '2.0.8',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../modules/contrib/tour',
             'aliases' => array(),
@@ -667,9 +659,9 @@
             'dev_requirement' => false,
         ),
         'enshrined/svg-sanitize' => array(
-            'pretty_version' => '0.20.0',
-            'version' => '0.20.0.0',
-            'reference' => '068d9fcf912c88a0471d101d95a2caa87c50aee7',
+            'pretty_version' => '0.21.0',
+            'version' => '0.21.0.0',
+            'reference' => '5e477468fac5c5ce933dce53af3e8e4e58dcccc9',
             'type' => 'library',
             'install_path' => __DIR__ . '/../enshrined/svg-sanitize',
             'aliases' => array(),
@@ -864,8 +856,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '^1.0',
-                1 => '1.1|2.0',
+                0 => '1.1|2.0',
+                1 => '^1.0',
             ),
         ),
         'psr/event-dispatcher' => array(
