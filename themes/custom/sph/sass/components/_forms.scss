@@ -346,6 +346,16 @@
                       width: calc(91% / 3);
                       height: 95px;
                       padding: 24px;
+                      @include transition-all-sph();
+                      &:hover{
+                        border: 1px solid #f7941d;
+                        cursor: pointer;
+                        @include transition-all-sph();
+                        box-shadow: #fbd28c 0px 0px 0px 1px,
+                          #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px,
+                          #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px,
+                          #fde9c8 0px 24px 24px -12px;
+                      }
                     }
                     label{
                       display: flex;
@@ -354,6 +364,7 @@
                       @include fonts("poppins", 18px, 600);
                       color: #323B48;
                       text-align: left;
+                      line-height: 20px;
                       span.green{
                         @include fonts("poppins", 18px, 600);
                       }
