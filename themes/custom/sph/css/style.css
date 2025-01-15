@@ -3011,12 +3011,13 @@ body.is-mobile {
 }
 /* line 169, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li {
-  width: 50%;
+  width: 45%;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 45px;
   position: relative;
+  padding-top: 4px;
 }
 /* line 177, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li a {
@@ -5460,7 +5461,7 @@ body.is-mobile {
 /* line 7, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header {
   text-align: center;
-  margin: 20px 0;
+  margin: 6% 0 4% 0;
 }
 /* line 10, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-btn {
@@ -5483,52 +5484,84 @@ body.is-mobile {
   font-weight: "normal";
   margin-bottom: 10px;
 }
-/* line 14, ../sass/components/_calendar.scss */
+/* line 13, ../sass/components/_calendar.scss */
+.page-calendar #page #main-content .content-center .views-element-container header .cal-btn::before {
+  content: "";
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  background-image: url("/themes/custom/sph/images/Camp-spk.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: -93px -4px -48px -20px;
+}
+/* line 24, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-tit {
-  width: 721px;
-  margin: 0 auto;
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   text-align: center;
   line-height: 1;
   margin-bottom: 10px;
+  margin: 24px auto;
+  color: #101828;
 }
-/* line 21, ../sass/components/_calendar.scss */
+/* line 31, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-tit span.green {
-  font-family: "Mukta";
-  font-size: 40px;
-  font-weight: 600;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 48px;
+  font-weight: 800;
   color: #8CC63F;
 }
-/* line 26, ../sass/components/_calendar.scss */
+/* line 36, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-des {
-  width: 721px;
-  margin: 0 auto;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  color: #101828;
+  text-align: center;
+  margin: 8px auto 24px auto;
+  width: 70%;
 }
-/* line 30, ../sass/components/_calendar.scss */
+/* line 43, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors {
   display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #e9e9ee;
+  height: 45px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  padding: 16px;
 }
-/* line 32, ../sass/components/_calendar.scss */
+/* line 51, ../sass/components/_calendar.scss */
+.page-calendar #page #main-content .content-center .views-element-container header .cal-colors div {
+  font-family: "poppins";
+  font-size: 13px;
+  font-weight: "normal";
+  color: #1c2635;
+}
+/* line 55, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle {
   height: 15px;
   width: 15px;
   background-color: #000;
   border-radius: 50%;
   display: inline-block;
-  margin-left: 15px;
-  margin-right: 15px;
+  margin: 10px;
 }
-/* line 41, ../sass/components/_calendar.scss */
+/* line 63, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle.cultural-color {
-  background-color: #FC9A0A;
+  background-color: #fc9a0a;
 }
-/* line 42, ../sass/components/_calendar.scss */
+/* line 66, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle.camp-color {
-  background-color: #1F978D;
+  background-color: #1f978d;
 }
-/* line 47, ../sass/components/_calendar.scss */
+/* line 73, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-title {
   color: #fff;
   font-size: 12px;
