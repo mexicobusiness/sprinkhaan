@@ -347,33 +347,22 @@
                       height: 95px;
                       padding: 24px;
                     }
-                    label {
+                    label{
                       display: flex;
-                      align-items: flex-start;
-                      gap: 10px;
-                      color: #323B48;
+                      justify-content: center;
+                      align-items: center;
                       @include fonts("poppins", 18px, 600);
+                      color: #323B48;
                       text-align: left;
+                      span.green{
+                        @include fonts("poppins", 18px, 600);
+                      }
+                      img{
+                        margin-top: -14px;
+                        width: 120px;
+                        height: auto;
+                      }
                     }
-                    
-                    label img {
-                      width: 50px;
-                      height: auto;
-                    }
-                    
-                    label span {
-                      display: block;
-                      line-height: 24px;
-                    }
-                    
-                    label span.green {
-                      color: #57C757;
-                      font-weight: 400;
-                    }
-                    
-                    
-                    
-                    
                   }
                   #edit-es-esta-la-primera-vez-que-participas {
                     div {

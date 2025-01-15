@@ -421,8 +421,9 @@
 }
 /* line 36, ../sass/components/_article.scss */
 .page-news #page #main-content .views-row {
-  width: calc(96%/3);
+  width: calc(91% / 3);
   float: left;
+  margin: 16px;
   border: 1px solid #e9e9ee;
   height: 470px;
   border-radius: 16px;
@@ -431,18 +432,18 @@
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
 }
-/* line 42, ../sass/components/_article.scss */
+/* line 43, ../sass/components/_article.scss */
 .page-news #page #main-content .views-row .news-image {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
-  width: 364px;
+  width: 354px;
 }
-/* line 46, ../sass/components/_article.scss */
+/* line 47, ../sass/components/_article.scss */
 .page-news #page #main-content .views-row .news-image img {
   width: 100%;
   height: auto;
 }
-/* line 51, ../sass/components/_article.scss */
+/* line 52, ../sass/components/_article.scss */
 .page-news #page #main-content .views-row .news-date {
   border: 1px solid #e9e9ee;
   border-radius: 8px;
@@ -464,7 +465,7 @@
   font-weight: "normal";
   margin: 16px;
 }
-/* line 65, ../sass/components/_article.scss */
+/* line 66, ../sass/components/_article.scss */
 .page-news #page #main-content .views-row .news-date::before {
   content: "";
   display: inline-block;
@@ -475,7 +476,7 @@
   background-repeat: no-repeat;
   margin-right: 4px;
 }
-/* line 76, ../sass/components/_article.scss */
+/* line 77, ../sass/components/_article.scss */
 .page-news #page #main-content .views-row .news-title {
   font-family: "Conv_Gotham-Medium";
   font-size: 19px;
@@ -485,7 +486,7 @@
   text-align: left;
   margin-left: 16px;
 }
-/* line 83, ../sass/components/_article.scss */
+/* line 84, ../sass/components/_article.scss */
 .page-news #page #main-content .views-row .news-sdesc {
   font-family: "poppins";
   font-size: 14px;
@@ -494,7 +495,7 @@
   text-align: left;
   margin: 4px 16px 8px 16px;
 }
-/* line 89, ../sass/components/_article.scss */
+/* line 90, ../sass/components/_article.scss */
 .page-news #page #main-content .views-row a .news-btn {
   max-width: 344px !important;
   text-align: left;
@@ -525,84 +526,136 @@
   background-color: #0077ff !important;
 }
 
-/* line 107, ../sass/components/_article.scss */
+/* line 108, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center {
   margin: 30px 0;
 }
-/* line 109, ../sass/components/_article.scss */
+/* line 110, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .type {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 16px;
+  font-weight: 600;
   color: #F7941D;
 }
-/* line 112, ../sass/components/_article.scss */
-.page-node-type-article #page #main-content .content-center .title {
-  margin: 15px 0;
-}
 /* line 114, ../sass/components/_article.scss */
+.page-node-type-article #page #main-content .content-center .title {
+  margin: 12px 0 8px 0;
+}
+/* line 116, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .title h1 {
   font-family: "Conv_Gotham-Medium";
-  font-size: 32px;
-  font-weight: 800;
-  color: #101828;
+  font-size: 40px;
+  font-weight: 600;
+  color: #232323;
 }
-/* line 120, ../sass/components/_article.scss */
+/* line 122, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .image img {
   width: 100%;
   height: auto;
 }
-/* line 125, ../sass/components/_article.scss */
+/* line 127, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .author {
   margin: 10px 0;
-  display: inline-block;
+  display: flex;
+  align-items: center;
   position: relative;
-}
-/* line 129, ../sass/components/_article.scss */
-.page-node-type-article #page #main-content .content-center .author img {
-  width: 33px;
-  height: auto;
-  float: left;
+  border-bottom: 1px solid #e9e9ee;
+  padding-bottom: 8px;
 }
 /* line 134, ../sass/components/_article.scss */
+.page-node-type-article #page #main-content .content-center .author img {
+  width: 45px;
+  height: 45px;
+  float: left;
+  object-fit: cover;
+  border: 1px solid #e9e9ee;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  margin-right: 4px;
+}
+/* line 143, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .author .author-name {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 16px;
+  font-weight: 600;
   float: left;
   border-right: 1px solid #000;
-  padding-right: 10px;
+  padding-right: 8px;
 }
-/* line 139, ../sass/components/_article.scss */
+/* line 149, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .author .author-date {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 16px;
+  font-weight: 600;
   float: left;
   padding-left: 10px;
 }
-/* line 144, ../sass/components/_article.scss */
+/* line 155, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .descrption {
   clear: both;
   margin: 10px 0;
 }
-/* line 149, ../sass/components/_article.scss */
+/* line 156, ../sass/components/_article.scss */
+.page-node-type-article #page #main-content .content-center .descrption p {
+  color: #232323;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+}
+/* line 164, ../sass/components/_article.scss */
+.page-node-type-article #page #main-content .content-center .tags {
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e9e9ee;
+}
+/* line 167, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .tags span {
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
   color: #F7941D;
 }
-/* line 153, ../sass/components/_article.scss */
+/* line 174, ../sass/components/_article.scss */
+.page-node-type-article #page #main-content .content-center .tags span::before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  filter: invert(67%) sepia(47%) saturate(3292%) hue-rotate(348deg) brightness(103%) contrast(94%);
+  background-image: url("/themes/custom/sph/images/etiquetas.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+/* line 188, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news {
   margin: 20px 0;
 }
-/* line 155, ../sass/components/_article.scss */
+/* line 190, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-tit {
   font-family: "Conv_Gotham-Medium";
   font-size: 24px;
   font-weight: 800;
+  margin: 16px 0;
 }
-/* line 157, ../sass/components/_article.scss */
+/* line 193, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-tit span.orange {
   font-family: "Conv_Gotham-Medium";
   font-size: 24px;
   font-weight: 800;
   color: #F7941D;
 }
-/* line 163, ../sass/components/_article.scss */
+/* line 199, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-view header {
   display: none;
 }
-/* line 166, ../sass/components/_article.scss */
+/* line 202, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide {
   margin-right: 24px;
   height: 470px;
@@ -613,18 +666,18 @@
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
 }
-/* line 171, ../sass/components/_article.scss */
+/* line 207, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-image {
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
   width: 364px;
 }
-/* line 175, ../sass/components/_article.scss */
+/* line 211, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-image img {
   width: 100%;
   height: auto;
 }
-/* line 180, ../sass/components/_article.scss */
+/* line 216, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-date {
   border: 1px solid #e9e9ee;
   border-radius: 8px;
@@ -646,7 +699,7 @@
   font-weight: "normal";
   margin: 16px;
 }
-/* line 194, ../sass/components/_article.scss */
+/* line 230, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-date::before {
   content: "";
   display: inline-block;
@@ -657,7 +710,7 @@
   background-repeat: no-repeat;
   margin-right: 4px;
 }
-/* line 205, ../sass/components/_article.scss */
+/* line 241, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-title {
   font-family: "Conv_Gotham-Medium";
   font-size: 19px;
@@ -667,7 +720,7 @@
   text-align: left;
   margin-left: 16px;
 }
-/* line 212, ../sass/components/_article.scss */
+/* line 248, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-sdesc {
   font-family: "poppins";
   font-size: 14px;
@@ -676,7 +729,7 @@
   text-align: left;
   margin: 4px 16px 8px 16px;
 }
-/* line 218, ../sass/components/_article.scss */
+/* line 254, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide a .news-btn {
   max-width: 344px !important;
   text-align: left;
@@ -706,14 +759,14 @@
   width: auto !important;
   background-color: #0077ff !important;
 }
-/* line 231, ../sass/components/_article.scss */
+/* line 267, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-view nav .slick-prev {
   width: 60px;
   position: absolute;
   left: -80px;
   border: 0px solid;
 }
-/* line 237, ../sass/components/_article.scss */
+/* line 273, ../sass/components/_article.scss */
 .page-node-type-article #page #main-content .content-center .last-news .last-news-view nav .slick-next {
   width: 60px;
   position: absolute;
@@ -2059,45 +2112,37 @@
 .page-register #page #main-content .content-center div.content div form #edit-aprendizaje-y-desarrollo fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label,
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label {
   display: flex;
-  align-items: flex-start;
-  gap: 10px;
-  color: #323B48;
+  justify-content: center;
+  align-items: center;
   font-family: "poppins";
   font-size: 18px;
   font-weight: 600;
+  color: #323B48;
   text-align: left;
 }
-/* line 359, ../sass/components/_forms.scss */
-.page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
-.page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
-.page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
-.page-register #page #main-content .content-center div.content div form #edit-cuentanos-sobre-la-familia fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
-.page-register #page #main-content .content-center div.content div form #edit-aprendizaje-y-desarrollo fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
-.page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img {
-  width: 50px;
-  height: auto;
-}
-/* line 364, ../sass/components/_forms.scss */
-.page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span,
-.page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span,
-.page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span,
-.page-register #page #main-content .content-center div.content div form #edit-cuentanos-sobre-la-familia fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span,
-.page-register #page #main-content .content-center div.content div form #edit-aprendizaje-y-desarrollo fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span,
-.page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span {
-  display: block;
-  line-height: 24px;
-}
-/* line 369, ../sass/components/_forms.scss */
+/* line 357, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span.green,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span.green,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span.green,
 .page-register #page #main-content .content-center div.content div form #edit-cuentanos-sobre-la-familia fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span.green,
 .page-register #page #main-content .content-center div.content div form #edit-aprendizaje-y-desarrollo fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span.green,
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span.green {
-  color: #57C757;
-  font-weight: 400;
+  font-family: "poppins";
+  font-size: 18px;
+  font-weight: 600;
 }
-/* line 379, ../sass/components/_forms.scss */
+/* line 360, ../sass/components/_forms.scss */
+.page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
+.page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
+.page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
+.page-register #page #main-content .content-center div.content div form #edit-cuentanos-sobre-la-familia fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
+.page-register #page #main-content .content-center div.content div form #edit-aprendizaje-y-desarrollo fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
+.page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img {
+  margin-top: -14px;
+  width: 120px;
+  height: auto;
+}
+/* line 368, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-es-esta-la-primera-vez-que-participas div,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-es-esta-la-primera-vez-que-participas div,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-es-esta-la-primera-vez-que-participas div,
@@ -2107,7 +2152,7 @@
   float: left;
   width: 100px;
 }
-/* line 386, ../sass/components/_forms.scss */
+/* line 375, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper,
@@ -2116,7 +2161,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper {
   margin-bottom: 20px;
 }
-/* line 389, ../sass/components/_forms.scss */
+/* line 378, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span,
@@ -2128,7 +2173,7 @@
   font-weight: 600;
   color: #1C2635;
 }
-/* line 392, ../sass/components/_forms.scss */
+/* line 381, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span .green,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span .green,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span .green,
@@ -2140,7 +2185,7 @@
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 398, ../sass/components/_forms.scss */
+/* line 387, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper > label:first-of-type,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper > label:first-of-type,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper > label:first-of-type,
@@ -2177,7 +2222,7 @@
   font-weight: "normal";
   color: #fff;
 }
-/* line 405, ../sass/components/_forms.scss */
+/* line 394, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div label,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div label,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper div label,
@@ -2188,7 +2233,7 @@
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 410, ../sass/components/_forms.scss */
+/* line 399, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div input,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div input,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper div input,
@@ -2197,7 +2242,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper div input {
   margin-bottom: 10px;
 }
-/* line 414, ../sass/components/_forms.scss */
+/* line 403, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div.form-type-webform-terms-of-service,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div.form-type-webform-terms-of-service,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper div.form-type-webform-terms-of-service,
@@ -2208,7 +2253,7 @@
   position: relative;
   width: 100%;
 }
-/* line 418, ../sass/components/_forms.scss */
+/* line 407, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div.form-type-webform-terms-of-service input,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div.form-type-webform-terms-of-service label,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div.form-type-webform-terms-of-service input,
@@ -2225,7 +2270,7 @@
   margin-right: 15px;
   width: auto;
 }
-/* line 425, ../sass/components/_forms.scss */
+/* line 414, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset,
@@ -2234,7 +2279,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper fieldset {
   text-align: left;
 }
-/* line 427, ../sass/components/_forms.scss */
+/* line 416, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset legend,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset legend,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset legend,
@@ -2245,7 +2290,7 @@
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 432, ../sass/components/_forms.scss */
+/* line 421, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset div,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset div,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset div,
@@ -2254,7 +2299,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper fieldset div {
   width: 100%;
 }
-/* line 434, ../sass/components/_forms.scss */
+/* line 423, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset div .js-form-type-radio,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset div .js-form-type-radio,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset div .js-form-type-radio,
@@ -2265,7 +2310,7 @@
   width: auto;
   margin-right: 20px;
 }
-/* line 441, ../sass/components/_forms.scss */
+/* line 430, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table,
@@ -2274,7 +2319,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table {
   border: 1px solid red;
 }
-/* line 443, ../sass/components/_forms.scss */
+/* line 432, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table table,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table table,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table table,
@@ -2283,7 +2328,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table table {
   width: 100%;
 }
-/* line 446, ../sass/components/_forms.scss */
+/* line 435, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr th,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr th,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr th,
@@ -2294,7 +2339,7 @@
   text-align: left;
   vertical-align: top;
 }
-/* line 451, ../sass/components/_forms.scss */
+/* line 440, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr td:nth-child(1) input,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr td:nth-child(1) input,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr td:nth-child(1) input,
@@ -2303,7 +2348,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table tr td:nth-child(1) input {
   width: 315px;
 }
-/* line 454, ../sass/components/_forms.scss */
+/* line 443, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr td:nth-child(2) input,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr td:nth-child(2) input,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr td:nth-child(2) input,
@@ -2312,7 +2357,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table tr td:nth-child(2) input {
   width: 100px;
 }
-/* line 457, ../sass/components/_forms.scss */
+/* line 446, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr td:nth-child(3) .fieldset-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr td:nth-child(3) .fieldset-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr td:nth-child(3) .fieldset-wrapper,
@@ -2321,7 +2366,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table tr td:nth-child(3) .fieldset-wrapper {
   width: 100px;
 }
-/* line 460, ../sass/components/_forms.scss */
+/* line 449, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr td:nth-child(4) textarea,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr td:nth-child(4) textarea,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr td:nth-child(4) textarea,
@@ -2330,7 +2375,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table tr td:nth-child(4) textarea {
   width: 315px;
 }
-/* line 463, ../sass/components/_forms.scss */
+/* line 452, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table tr td:nth-child(5) input,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table tr td:nth-child(5) input,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table tr td:nth-child(5) input,
@@ -2339,12 +2384,12 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper .webform-multiple-table tr td:nth-child(5) input {
   width: 60px;
 }
-/* line 469, ../sass/components/_forms.scss */
+/* line 458, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions {
   text-align: center;
   margin: 20px;
 }
-/* line 472, ../sass/components/_forms.scss */
+/* line 461, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions button,
 .page-register #page #main-content .content-center div.content div form #edit-actions input[type="reset"],
 .page-register #page #main-content .content-center div.content div form #edit-actions input[type="submit"],
@@ -2740,7 +2785,7 @@ body.is-mobile {
   float: left;
   display: flex;
   padding: 14px 16px 12px 14px;
-  width: 17%;
+  width: 13%;
 }
 @media (min-width: 1170px) {
   /* line 37, ../sass/components/_header.scss */
@@ -2762,7 +2807,7 @@ body.is-mobile {
 }
 /* line 55, ../sass/components/_header.scss */
 #header .header-first #block-sph-navegacionprincipal {
-  width: auto;
+  width: 76%;
   float: left;
 }
 /* line 58, ../sass/components/_header.scss */
@@ -2774,8 +2819,9 @@ body.is-mobile {
   display: flex;
   height: 57px;
   align-items: center;
+  justify-content: center;
 }
-/* line 67, ../sass/components/_header.scss */
+/* line 68, ../sass/components/_header.scss */
 #header .header-first #block-sph-navegacionprincipal ul li {
   width: 100%;
   text-align: left;
@@ -2792,7 +2838,7 @@ body.is-mobile {
   margin-right: 0;
 }
 @media (min-width: 1170px) {
-  /* line 67, ../sass/components/_header.scss */
+  /* line 68, ../sass/components/_header.scss */
   #header .header-first #block-sph-navegacionprincipal ul li {
     width: auto;
     display: flex;
@@ -2811,12 +2857,12 @@ body.is-mobile {
   }
 }
 @media (min-width: 768px) {
-  /* line 67, ../sass/components/_header.scss */
+  /* line 68, ../sass/components/_header.scss */
   #header .header-first #block-sph-navegacionprincipal ul li {
     width: auto;
   }
 }
-/* line 92, ../sass/components/_header.scss */
+/* line 93, ../sass/components/_header.scss */
 #header .header-first #block-sph-navegacionprincipal ul li a {
   width: 100%;
   font-family: "poppins";
@@ -2828,7 +2874,7 @@ body.is-mobile {
   text-decoration: none;
 }
 @media (min-width: 1170px) {
-  /* line 92, ../sass/components/_header.scss */
+  /* line 93, ../sass/components/_header.scss */
   #header .header-first #block-sph-navegacionprincipal ul li a {
     font-family: "Conv_Gotham-Medium";
     font-size: 14px;
@@ -2846,7 +2892,7 @@ body.is-mobile {
   }
 }
 @media (min-width: 768px) {
-  /* line 92, ../sass/components/_header.scss */
+  /* line 93, ../sass/components/_header.scss */
   #header .header-first #block-sph-navegacionprincipal ul li a {
     font-family: "Conv_Gotham-Medium";
     font-size: 14px;
@@ -2859,7 +2905,7 @@ body.is-mobile {
     -o-transition: all 0.3s ease-in-out;
   }
 }
-/* line 115, ../sass/components/_header.scss */
+/* line 116, ../sass/components/_header.scss */
 #header .header-first #block-sph-navegacionprincipal ul li:hover {
   background-color: #0000000d;
   border-radius: 8px;
@@ -2873,11 +2919,11 @@ body.is-mobile {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-/* line 119, ../sass/components/_header.scss */
+/* line 120, ../sass/components/_header.scss */
 #header .header-first #block-sph-navegacionprincipal ul li:hover a {
   color: #8cc63f;
 }
-/* line 123, ../sass/components/_header.scss */
+/* line 124, ../sass/components/_header.scss */
 #header .header-first #block-sph-navegacionprincipal ul li .is-active {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
   background-color: #0000000d;
@@ -2898,7 +2944,7 @@ body.is-mobile {
   font-weight: 500;
 }
 @media (min-width: 1170px) {
-  /* line 123, ../sass/components/_header.scss */
+  /* line 124, ../sass/components/_header.scss */
   #header .header-first #block-sph-navegacionprincipal ul li .is-active {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
     background-color: #0000000d;
@@ -2920,11 +2966,11 @@ body.is-mobile {
     font-weight: 500;
   }
 }
-/* line 138, ../sass/components/_header.scss */
+/* line 139, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher {
   display: flex;
   float: right;
-  width: 12%;
+  width: 9%;
   justify-content: center;
   align-items: center;
   height: 45px;
@@ -2936,21 +2982,21 @@ body.is-mobile {
   margin: 6px;
   background-color: #fff;
 }
-/* line 148, ../sass/components/_header.scss */
+/* line 149, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher h2 {
   display: none;
 }
-/* line 152, ../sass/components/_header.scss */
+/* line 153, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher .links {
   display: flex;
   width: 100%;
 }
-/* line 157, ../sass/components/_header.scss */
+/* line 158, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links {
   display: flex;
   width: 100%;
 }
-/* line 160, ../sass/components/_header.scss */
+/* line 161, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li.is-active {
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -2958,11 +3004,12 @@ body.is-mobile {
   -ms-border-radius: 8px;
   -o-border-radius: 8px;
   background-color: #e9e9ee;
-  width: 45%;
+  width: 50%;
   height: 40px;
   margin: 4px;
+  padding: 4px;
 }
-/* line 167, ../sass/components/_header.scss */
+/* line 169, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li {
   width: 50%;
   display: flex;
@@ -2971,7 +3018,7 @@ body.is-mobile {
   height: 45px;
   position: relative;
 }
-/* line 175, ../sass/components/_header.scss */
+/* line 177, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li a {
   display: block;
   width: 100%;
@@ -2980,14 +3027,14 @@ body.is-mobile {
   overflow: hidden;
   position: relative;
 }
-/* line 184, ../sass/components/_header.scss */
+/* line 186, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li:first-child a {
   background-image: url("/themes/custom/sph/images/espana.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 191, ../sass/components/_header.scss */
+/* line 193, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li:last-child a {
   background-image: url("/themes/custom/sph/images/holanda@2x.png");
   background-size: contain;

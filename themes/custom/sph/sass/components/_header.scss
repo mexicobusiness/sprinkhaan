@@ -38,7 +38,7 @@
       float: left;
       display: flex;
       padding: 14px 16px 12px 14px;
-      width: 17%;
+      width: 13%;
       @include breakpoint($desktop) {
         padding: 7px 4px 4px 16px;
       }
@@ -53,7 +53,7 @@
     }
 
     #block-sph-navegacionprincipal {
-      width: auto;
+      width: 76%;
       float: left;
       .contextual-region {
         color: #39364f;
@@ -62,6 +62,7 @@
         display: flex;
         height: 57px;
         align-items: center;
+        justify-content: center;
       }
       ul {
         li {
@@ -138,7 +139,7 @@
     #block-sph-languageswitcher {
       display: flex;
       float: right;
-      width: 12%;
+      width: 9%;
       justify-content: center;
       align-items: center;
       height: 45px;
@@ -160,9 +161,10 @@
         li.is-active {
           @include radius-sph();
           background-color: #e9e9ee;
-          width: 45%;
+          width: 50%;
           height: 40px;
           margin: 4px;
+          padding: 4px;
         }
         li {
           width: 50%;
