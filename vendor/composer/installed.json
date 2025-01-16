@@ -2562,13 +2562,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-<<<<<<< HEAD
-                    "version": "5.2.4",
-                    "datestamp": "1734475570",
-=======
                     "version": "2.0.0",
                     "datestamp": "1734698921",
->>>>>>> 88e2770387885025e82cf8da5e185dbec4aa752a
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

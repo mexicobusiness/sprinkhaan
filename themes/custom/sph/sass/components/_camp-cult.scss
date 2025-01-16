@@ -1,74 +1,136 @@
-.page-node-type-campamento, .page-node-type-cultura{
+.page-node-type-campamento,
+.page-node-type-cultura {
   #page {
     #main-content {
       .content-center {
         margin: 30px 0;
-        .type {
-          @include fonts("Conv_Gotham-Medium", 16px, 600);
-          color: $color-orange;
-        }
-        .title {
-          margin: 12px 0 8px 0;
-          h1 {
-            @include fonts("Conv_Gotham-Medium", 40px, 600);
-            color: #232323;
-          }
-        }
+
         .image {
           float: left;
-          img {
-            width: 400px;
-            height: auto;
-          }
+          width: 360px;
+          height: 360px;
+          margin: -8% 24px 0px 1px;
+          overflow: hidden;
+          @include radius-spk-16();
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .author {
-          margin: 10px 0;
-          display: flex;
-          align-items: center;
-          position: relative;
-          border-bottom: 1px solid #e9e9ee;
-          padding-bottom: 8px;
-          img {
-            width: 45px;
-            height: 45px;
-            float: left;
-            object-fit: cover;
-            border: 1px solid #e9e9ee;
-            @include radius-spk-32();
-            margin-right: 4px;
-          }
-          .author-name {
-            @include fonts("Conv_Gotham-Medium", 16px, 600);
-            float: left;
-            border-right: 1px solid $color-black;
-            padding-right: 8px;
-          }
-          .author-date {
-            @include fonts("Conv_Gotham-Medium", 16px, 600);
-            float: left;
-            padding-left: 10px;
-          }
+        
+        .image img {
+          display: block; 
+          width: 360px;
+          height: 360px;
+          object-fit: cover; 
+          @include transition-all-sph();
+          object-position: center; 
         }
+        
+
+        .image img:hover {
+          transform: scale(1.05);
+        }
+
+        .type{
+          margin-top: 8%;
+        }
+        .type,
+        .title,
+        .author,
         .descrption {
-          p {
-            color: #232323;
-            @include fonts("poppins", 16px, "normal");
-          }
-          margin: 10px 0;
-          width: 700px;
-          float: left;
-          padding-left: 20px;
+          margin-left: 380px; 
+          display: flex;
+          flex-wrap: wrap;
         }
+
+ 
+        .type {
+          font-size: 14px;
+          color: #00adb5;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+          margin-bottom: 8px;
+          font-weight: bold;
+        }
+
+        .title h1 {
+          @include fonts("Conv_Gotham-Medium", 32px, "normal");
+          color: #101828;
+          margin: 0;
+          text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+
+        .author {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          font-size: 14px;
+          color: #393e46;
+          margin: 12px 0;
+        }
+
+        .author-date {
+          font-style: italic;
+          color: #6c757d;
+        }
+
+
+        .descrption {
+          font-size: 16px;
+          line-height: 1.6;
+          color: #393e46;
+          margin-bottom: 20px;
+        }
+
+        .descrption p {
+          margin: 0;
+        }
+
+  
         .register-btn{
-            float: right;
-            @include black-btn-green(auto);
-            margin-right: 10px;
-            padding: 16px;
-            position: relative;
+          max-width: 344px !important;
+          @include black-btn-green(auto);
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          text-align: left;
+          @include fonts("poppins", 16px, "normal");
+          position: relative;
+          padding-left: 24px;
+          margin: 8px;
+          @include transition-all-sph();
+          &::after {
+            content: "";
+            position: absolute;
+            right: 10px;
+            width: 29px;
+            height: 29px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          &::after {
+            content: "\2197";
+            font-size: 16px;
+            color: #f7941d;
+          }
         }
+
+        .register-btn:hover {
+          @include transition-all-sph();
+          background: #007b7f;
+          transform: translateY(-2px);
+        }
+
+        .register-btn:active {
+          transform: translateY(0);
+        }
+
         .last-news {
           clear: both;
-          margin: 20px 0;
+          margin: 8% 0;
           .last-news-tit {
             @include fonts("Conv_Gotham-Medium", 24px, 800);
             margin: 16px 0;

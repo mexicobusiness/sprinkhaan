@@ -267,6 +267,7 @@
           div p {
             @include black-btn();
             position: relative;
+            max-width: 200px!important;
             &::before {
               content: "";
               display: inline-block;
@@ -279,6 +280,23 @@
             }
           }
           div form {
+            #edit-es-esta-la-primera-vez-que-participas--wrapper{
+              span{
+                @include fonts("poppins", 18px, 600);
+                color: #1C2635;
+              }
+              #edit-es-esta-la-primera-vez-que-participas-si:checked {
+                background-color: orange;
+            }   
+              .js-form-item {
+                display: flex; 
+                align-items: center;   
+                label{
+                  text-align: left;
+                  @include fonts("poppins", 16px, 600);
+                }         
+            }
+            }
             .webform-progress {
               margin: 20px 0;
               ul {
@@ -365,11 +383,12 @@
                       color: #323B48;
                       text-align: left;
                       line-height: 20px;
+                      padding-top: 16px;
                       span.green{
                         @include fonts("poppins", 18px, 600);
                       }
                       img{
-                        margin-top: -14px;
+                        margin-top: -32px;
                         width: 120px;
                         height: auto;
                       }
@@ -467,11 +486,37 @@
               }
             }
             #edit-actions {
+              display: flex;
+              justify-content: center;
               text-align: center;
               margin: 20px;
+              .webform-button--next {
+                max-width: 344px !important;
+                @include black-btn-green(auto);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                text-align: left;
+                @include fonts("poppins", 16px, "normal");
+                position: relative;
+                padding-left: 24px;
+                margin: 8px;
+                padding-right: 30px; 
+
+                &::after {
+                  content: "\2197"; 
+                  font-size: 16px;
+                  color: #f7941d;
+                  position: absolute;
+                  right: 10px;
+                  top: 50%;
+                  transform: translateY(-50%); 
+                }
+              }
+              
+              
               button,
               input[type="reset"],
-              input[type="submit"],
               input[type="button"] {
                 width: 220px;
                 height: 40px;
