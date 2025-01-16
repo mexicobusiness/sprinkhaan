@@ -3,11 +3,7 @@
         'name' => 'drupal/legacy-project',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-<<<<<<< HEAD
-        'reference' => 'c8d71be608a64fa2996d45824d04415feecc788f',
-=======
-        'reference' => 'da4e3f52d065f2effc760099fdb0662faa868f30',
->>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
+        'reference' => '6d890f258439e64f57dce4e1e050f5c1dd19a377',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -446,7 +442,15 @@
             'aliases' => array(),
             'dev_requirement' => false,
         ),
-<<<<<<< HEAD
+        'drupal/fullcalendar_view' => array(
+            'pretty_version' => '5.2.4',
+            'version' => '5.2.4.0',
+            'reference' => '5.2.4',
+            'type' => 'drupal-module',
+            'install_path' => __DIR__ . '/../../modules/contrib/fullcalendar_view',
+            'aliases' => array(),
+            'dev_requirement' => false,
+        ),
         'drupal/gin' => array(
             'pretty_version' => '4.0.2',
             'version' => '4.0.2.0',
@@ -462,14 +466,6 @@
             'reference' => '2.0.0',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../modules/contrib/gin_toolbar',
-=======
-        'drupal/fullcalendar_view' => array(
-            'pretty_version' => '5.2.4',
-            'version' => '5.2.4.0',
-            'reference' => '5.2.4',
-            'type' => 'drupal-module',
-            'install_path' => __DIR__ . '/../../modules/contrib/fullcalendar_view',
->>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
             'aliases' => array(),
             'dev_requirement' => false,
         ),
@@ -503,11 +499,7 @@
         'drupal/legacy-project' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-<<<<<<< HEAD
-            'reference' => 'c8d71be608a64fa2996d45824d04415feecc788f',
-=======
-            'reference' => 'da4e3f52d065f2effc760099fdb0662faa868f30',
->>>>>>> 6584bf66bd303c8175f1a029671de3ec44e8bcda
+            'reference' => '6d890f258439e64f57dce4e1e050f5c1dd19a377',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
