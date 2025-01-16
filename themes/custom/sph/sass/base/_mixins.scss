@@ -116,6 +116,7 @@
   color: $color-white;
   text-align: center;
   @include radius-spk-24();
+  @include fonts("poppins", 16px, 500);
   a{
     @include fonts("poppins", 16px, "normal");
     color: $color-white;

@@ -70,8 +70,10 @@
             rgba(140, 198, 63, 1) 0%,
             rgba(57, 93, 19, 1) 100%
           );
-          color: $color-white;
+          a{
+             color: $color-white;
           @include fonts("poppins", 16px, "normal");
+          }
           @include radius-spk-12();
           padding: 4px 16px;
           margin-right: 24px;
@@ -113,18 +115,23 @@
           width: 195px;
           height: 45px;
           float: left;
-          color: $color-brown;
           border: 1px solid $color-brown;
-          @include fonts("poppins", 16px, "normal");
           @include radius-spk-12();
           position: relative;
           @include transition-all-sph();
+          a{ 
+            @include fonts("poppins", 16px, "normal");
+             color: $color-brown;
+          }
         }
         .ntc-de-sprinkhaan-white-btn:hover {
           color: #fff;
           border: none;
           background: linear-gradient(180deg, #eb4f0b 0%, #c33a0b 100%);
           @include transition-all-sph();
+          a{
+            color: #fff;
+          }
           &::before {
             filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(354deg)
               brightness(108%) contrast(101%);
@@ -1171,7 +1178,7 @@
           margin: 4px 16px 8px 16px;
         }
         a .news-btn {
-          max-width: 344px !important;
+          max-width: 324px !important;
           text-align: left;
           @include fonts("poppins", 16px, "normal");
           position: relative;
