@@ -5708,7 +5708,7 @@ body.is-mobile {
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button:hover .fc-icon {
   transform: scale(1.2);
 }
-/* line 192, ../sass/components/_calendar.scss */
+/* line 193, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container table {
   width: 100%;
   border-collapse: collapse;
@@ -5720,7 +5720,7 @@ body.is-mobile {
   overflow: hidden;
   transition: all 0.3s ease;
 }
-/* line 205, ../sass/components/_calendar.scss */
+/* line 206, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container th {
   text-align: center;
   color: #555555;
@@ -5731,7 +5731,7 @@ body.is-mobile {
   text-transform: uppercase;
   border-bottom: 2px solid #e0e0e0;
 }
-/* line 216, ../sass/components/_calendar.scss */
+/* line 217, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container td {
   text-align: center;
   padding: 18px;
@@ -5739,13 +5739,13 @@ body.is-mobile {
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-/* line 224, ../sass/components/_calendar.scss */
+/* line 225, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container td:hover {
   background-color: #f8f8f8;
   cursor: pointer;
   color: #007aff;
 }
-/* line 231, ../sass/components/_calendar.scss */
+/* line 232, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a {
   display: block;
   text-align: center;
@@ -5759,32 +5759,287 @@ body.is-mobile {
   transition: all 0.3s ease;
   border: 1px solid #007aff;
 }
-/* line 245, ../sass/components/_calendar.scss */
+/* line 246, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a:hover {
   background-color: #007aff;
   color: #ffffff;
   border-color: #005ac1;
 }
-/* line 251, ../sass/components/_calendar.scss */
+/* line 252, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day.fc-sat,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day.fc-sun {
   color: #999999;
 }
-/* line 256, ../sass/components/_calendar.scss */
+/* line 257, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-scroller {
   overflow-y: auto;
   max-height: 550px;
 }
-/* line 261, ../sass/components/_calendar.scss */
+/* line 262, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day {
   border-right: 1px solid #f1f1f1;
 }
-/* line 265, ../sass/components/_calendar.scss */
+/* line 266, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day:last-child {
   border-right: none;
 }
-/* line 269, ../sass/components/_calendar.scss */
+/* line 270, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-title {
   color: #fff;
   font-size: 12px;
+}
+
+/* line 4, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center, .page-node-type-cultura #page #main-content .content-center {
+  margin: 30px 0;
+}
+/* line 6, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .type, .page-node-type-cultura #page #main-content .content-center .type {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 16px;
+  font-weight: 600;
+  color: #F7941D;
+}
+/* line 10, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .title, .page-node-type-cultura #page #main-content .content-center .title {
+  margin: 12px 0 8px 0;
+}
+/* line 12, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .title h1, .page-node-type-cultura #page #main-content .content-center .title h1 {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 40px;
+  font-weight: 600;
+  color: #232323;
+}
+/* line 17, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .image, .page-node-type-cultura #page #main-content .content-center .image {
+  float: left;
+}
+/* line 19, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .image img, .page-node-type-cultura #page #main-content .content-center .image img {
+  width: 400px;
+  height: auto;
+}
+/* line 24, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .author, .page-node-type-cultura #page #main-content .content-center .author {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #e9e9ee;
+  padding-bottom: 8px;
+}
+/* line 31, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .author img, .page-node-type-cultura #page #main-content .content-center .author img {
+  width: 45px;
+  height: 45px;
+  float: left;
+  object-fit: cover;
+  border: 1px solid #e9e9ee;
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  margin-right: 4px;
+}
+/* line 40, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .author .author-name, .page-node-type-cultura #page #main-content .content-center .author .author-name {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 16px;
+  font-weight: 600;
+  float: left;
+  border-right: 1px solid #000;
+  padding-right: 8px;
+}
+/* line 46, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .author .author-date, .page-node-type-cultura #page #main-content .content-center .author .author-date {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 16px;
+  font-weight: 600;
+  float: left;
+  padding-left: 10px;
+}
+/* line 52, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .descrption, .page-node-type-cultura #page #main-content .content-center .descrption {
+  margin: 10px 0;
+  width: 700px;
+  float: left;
+  padding-left: 20px;
+}
+/* line 53, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .descrption p, .page-node-type-cultura #page #main-content .content-center .descrption p {
+  color: #232323;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+}
+/* line 62, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .register-btn, .page-node-type-cultura #page #main-content .content-center .register-btn {
+  float: right;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: auto;
+  height: 45px;
+  background-color: #8CC63F;
+  color: #fff;
+  text-align: center;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  max-width: 148px;
+  margin-right: 10px;
+  padding: 16px;
+  position: relative;
+}
+/* line 102, ../sass/base/_mixins.scss */
+.page-node-type-campamento #page #main-content .content-center .register-btn a, .page-node-type-cultura #page #main-content .content-center .register-btn a {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  color: #fff;
+}
+/* line 69, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news, .page-node-type-cultura #page #main-content .content-center .last-news {
+  clear: both;
+  margin: 20px 0;
+}
+/* line 72, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-tit, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-tit {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 24px;
+  font-weight: 800;
+  margin: 16px 0;
+}
+/* line 75, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-tit span.orange, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-tit span.orange {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 24px;
+  font-weight: 800;
+  color: #F7941D;
+}
+/* line 81, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-view header, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-view header {
+  display: none;
+}
+/* line 84, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide {
+  margin-right: 24px;
+  height: 470px;
+  border: 1px solid #e9e9ee;
+  border-radius: 16px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  -ms-border-radius: 16px;
+  -o-border-radius: 16px;
+}
+/* line 89, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-image, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-image {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  width: 364px;
+}
+/* line 93, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-image img, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-image img {
+  width: 100%;
+  height: auto;
+}
+/* line 98, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-date, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-date {
+  border: 1px solid #e9e9ee;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  text-align: center;
+  width: auto;
+  max-width: 190px;
+  height: 40px;
+  color: #101828;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: "normal";
+  margin: 16px;
+}
+/* line 112, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-date::before, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-date::before {
+  content: "";
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background-image: url("/themes/custom/sph/images/calendario.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 4px;
+}
+/* line 123, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-title, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-title {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 19px;
+  font-weight: "normal";
+  color: #101828;
+  line-height: 24px;
+  text-align: left;
+  margin-left: 16px;
+}
+/* line 130, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-sdesc, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide .news-sdesc {
+  font-family: "poppins";
+  font-size: 14px;
+  font-weight: "normal";
+  color: #101828;
+  text-align: left;
+  margin: 4px 16px 8px 16px;
+}
+/* line 136, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide a .news-btn, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-view .slick-list .slick__slide a .news-btn {
+  max-width: 344px !important;
+  text-align: left;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  position: relative;
+  margin: 8px;
+  height: 45px !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 248px;
+  height: 36px;
+  background-color: #101828;
+  color: #fff;
+  text-align: center;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  margin: 0 auto;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 15px;
+  font-weight: "normal";
+  width: auto !important;
+  background-color: #0077ff !important;
+}
+/* line 149, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-view nav .slick-prev, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-view nav .slick-prev {
+  width: 60px;
+  position: absolute;
+  left: -80px;
+  border: 0px solid;
+}
+/* line 155, ../sass/components/_camp-cult.scss */
+.page-node-type-campamento #page #main-content .content-center .last-news .last-news-view nav .slick-next, .page-node-type-cultura #page #main-content .content-center .last-news .last-news-view nav .slick-next {
+  width: 60px;
+  position: absolute;
+  right: -80px;
+  border: 0px solid;
 }

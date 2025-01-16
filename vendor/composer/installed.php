@@ -569,9 +569,9 @@
             'dev_requirement' => false,
         ),
         'drupal/svg_image' => array(
-            'pretty_version' => '3.2.0',
-            'version' => '3.2.0.0',
-            'reference' => '3.2.0',
+            'pretty_version' => '3.2.1',
+            'version' => '3.2.1.0',
+            'reference' => '3.2.1',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../modules/contrib/svg_image',
             'aliases' => array(),
@@ -587,9 +587,9 @@
             'dev_requirement' => false,
         ),
         'drupal/tour' => array(
-            'pretty_version' => '2.0.7',
-            'version' => '2.0.7.0',
-            'reference' => '2.0.7',
+            'pretty_version' => '2.0.8',
+            'version' => '2.0.8.0',
+            'reference' => '2.0.8',
             'type' => 'drupal-module',
             'install_path' => __DIR__ . '/../../modules/contrib/tour',
             'aliases' => array(),
@@ -659,9 +659,9 @@
             'dev_requirement' => false,
         ),
         'enshrined/svg-sanitize' => array(
-            'pretty_version' => '0.20.0',
-            'version' => '0.20.0.0',
-            'reference' => '068d9fcf912c88a0471d101d95a2caa87c50aee7',
+            'pretty_version' => '0.21.0',
+            'version' => '0.21.0.0',
+            'reference' => '5e477468fac5c5ce933dce53af3e8e4e58dcccc9',
             'type' => 'library',
             'install_path' => __DIR__ . '/../enshrined/svg-sanitize',
             'aliases' => array(),
@@ -856,8 +856,8 @@
         'psr/container-implementation' => array(
             'dev_requirement' => false,
             'provided' => array(
-                0 => '^1.0',
-                1 => '1.1|2.0',
+                0 => '1.1|2.0',
+                1 => '^1.0',
             ),
         ),
         'psr/event-dispatcher' => array(

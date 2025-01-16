@@ -12,6 +12,8 @@ use Drupal\Core\Entity\EntityTypeManagerInterface;
 use Drupal\Core\Path\PathMatcher;
 use Drupal\Core\Routing\CurrentRouteMatch;
 use Drupal\Core\StringTranslation\StringTranslationTrait;
+use Drupal\taxonomy\VocabularyInterface;
+use Drupal\tour\Entity\Tour;
 use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
@@ -76,30 +78,87 @@ class TourHelper implements ContainerInjectionInterface {
    *   An associative array of tour entities keyed by their entity IDs.
    */
   public function loadTourEntities(): array {
+    $tour_params = [];
     $route_match = $this->currentRouteMatch;
     $route_name = $this->checkRoute();
     try {
       $results = $this->entityTypeManager->getStorage('tour')
         ->getQuery()
-        ->condition('routes.*.route_name', $route_name);
-
-      if ($route_match->getRouteObject()) {
-        foreach ($route_match->getParameters() as $name => $parameter) {
-          if ($parameter instanceof EntityInterface && is_numeric($parameter->id())) {
-            $results->condition('routes.*.route_params.' . $name, $parameter->id());
-            break;
-          }
-          elseif ($parameter instanceof ConfigEntityInterface && !$parameter instanceof TourInterface) {
-            $name = $name === 'dashboard' ? 'id' : $name;
-            $results->condition('routes.*.route_params.' . $name, $parameter->id());
-            break;
-          }
-        }
-      }
-
-      return $results->condition('status', TRUE)
+        ->condition('routes.*.route_name', $route_name)
+        ->condition('status', TRUE)
         ->accessCheck(FALSE)
         ->execute();
+
+      if (!empty($results) && $tours = Tour::loadMultiple(array_keys($results))) {
+        // First loop get all route params.
+        foreach ($tours as $tour_id => $tour) {
+          $tour_routes = $tour->getRoutes();
+          if (!empty($tour_routes)) {
+            foreach ($tour_routes as $tour_route) {
+              if (isset($tour_route['route_params'])) {
+                $tour_params = array_merge($tour_params, $tour_route['route_params']);
+              }
+            }
+          }
+        }
+
+        $params = $route_match->getRawParameters()->all();
+        if (!empty($tour_params)) {
+          foreach ($tour_params as $key => $tour_param) {
+            switch ($key) {
+              case 'id':
+              case 'dashboard':
+                if (($entity = $route_match->getParameter('dashboard')) && ($entity instanceof ConfigEntityInterface)) {
+                  if ($entity->id() === $tour_param) {
+                    $params['id'] = $entity->id();
+                  }
+                }
+                break;
+
+              case 'node':
+              case 'taxonomy_term':
+                if (($entity = $route_match->getParameter($key)) && ($entity instanceof EntityInterface)) {
+                  if ($entity->id() === $tour_param) {
+                    $params['bundle'] = $entity->id();
+                  }
+                }
+                break;
+
+              case 'bundle':
+              case 'node_type':
+                if (($entity = $route_match->getParameter('node')) && ($entity instanceof EntityInterface)) {
+                  if ($entity->bundle() === $tour_param) {
+                    $params['bundle'] = $entity->bundle();
+                  }
+                }
+                break;
+
+              case 'taxonomy_vocabulary':
+                if (($vocab = $route_match->getParameter('taxonomy_vocabulary')) && ($vocab instanceof VocabularyInterface)) {
+                  if ($vocab->id() === $tour_param) {
+                    $params['bundle'] = $vocab->id();
+                  }
+                }
+                break;
+
+              default:
+                break;
+            }
+          }
+        }
+
+        foreach ($tours as $tour_id => $tour) {
+          // Match on the parameters.
+          if (!$tour->hasMatchingRoute($route_name, $params)) {
+            unset($results[$tour_id]);
+          }
+        }
+
+        // So none of the params matched the tour so return empty array.
+        return $results;
+      }
+
+      return $results;
     }
     catch (InvalidPluginDefinitionException | PluginNotFoundException) {
       return [];

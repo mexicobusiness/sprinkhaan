@@ -36,6 +36,7 @@
   right: 20px; /* LTR */
   bottom: 20px;
 }
+
 [dir='rtl'] .tour-progress {
   right: auto;
   left: 20px;
@@ -58,6 +59,7 @@
 .shepherd-footer .shepherd-button:last-child {
   margin-right: 0;
 }
+
 /* Shared styling for buttons. */
 .button--primary.shepherd-button:not(:disabled):hover,
 .button--primary.shepherd-button:not(:disabled):active {
@@ -107,7 +109,7 @@
 }
 
 .shepherd-element {
-  z-index: 110;
+  z-index: 503;
   width: 300px;
   background: #fff;
 }
@@ -122,20 +124,14 @@
 .shepherd-enabled.shepherd-element {
   min-width: 500px;
   opacity: 1;
+  border: 1px solid rgba(212, 212, 218, 0.8);
+  border-radius: 2px;
+  background-color: #fff;
+  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.56);
 }
 
 .shepherd-element[data-popper-reference-hidden]:not(.shepherd-centered) {
   opacity: 0;
-}
-
-.shepherd-element {
-  z-index: 503;
-}
-
-.shepherd-enabled.shepherd-element {
-  border: 1px solid rgba(212, 212, 218, 0.8);
-  border-radius: 2px;
-  box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.56);
 }
 
 .shepherd-element,
@@ -159,46 +155,54 @@
 }
 
 .shepherd-element[data-popper-placement^='top'] > .shepherd-arrow {
-  bottom: -8px;
+  bottom: -8px !important;
+  border: initial !important;
 }
 
 .shepherd-element[data-popper-placement^='top'] > .shepherd-arrow::before {
   border-right: 1px solid rgba(212, 212, 218, 0.8);
   border-bottom: 1px solid rgba(212, 212, 218, 0.8);
   border-radius: 2px;
+  background: #fff;
   box-shadow: 3px 3px 3px -3px rgba(0, 0, 0, 0.56);
 }
 
 .shepherd-element[data-popper-placement^='bottom'] > .shepherd-arrow {
-  top: -8px;
+  top: -8px !important;
+  border: initial !important;
 }
 
 .shepherd-element[data-popper-placement^='bottom'] > .shepherd-arrow::before {
   border-top: 1px solid rgba(212, 212, 218, 0.8);
   border-left: 1px solid rgba(212, 212, 218, 0.8);
   border-radius: 2px;
+  background: #fff;
   box-shadow: -3px -3px 3px -3px rgba(0, 0, 0, 0.56);
 }
 
 .shepherd-element[data-popper-placement^='left'] > .shepherd-arrow {
-  right: -8px;
+  right: -8px !important;
+  border: initial !important;
 }
 
 .shepherd-element[data-popper-placement^='left'] > .shepherd-arrow::before {
   border-top: 1px solid rgba(212, 212, 218, 0.8);
   border-right: 1px solid rgba(212, 212, 218, 0.8);
   border-radius: 2px;
+  background: #fff;
   box-shadow: 3px -3px 3px -3px rgba(0, 0, 0, 0.56);
 }
 
 .shepherd-element[data-popper-placement^='right'] > .shepherd-arrow {
-  left: -8px;
+  left: -8px !important;
+  border: initial !important;
 }
 
 .shepherd-element[data-popper-placement^='right'] > .shepherd-arrow::before {
   border-bottom: 1px solid rgba(212, 212, 218, 0.8);
   border-left: 1px solid rgba(212, 212, 218, 0.8);
   border-radius: 2px;
+  background: #fff;
   box-shadow: -3px 3px 3px -3px rgba(0, 0, 0, 0.56);
 }
 
