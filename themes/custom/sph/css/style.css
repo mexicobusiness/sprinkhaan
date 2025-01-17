@@ -3276,10 +3276,10 @@ body.is-mobile {
     background-color: rgba(255, 255, 255, 0.774);
     border: 1px solid #e9e9ee;
     display: inline-block;
-    width: 60%;
+    width: 80%;
     height: 60px;
     position: fixed;
-    max-width: 1120px;
+    max-width: 1200px;
     border-radius: 16px;
     -webkit-border-radius: 16px;
     -moz-border-radius: 16px;
