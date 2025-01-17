@@ -3350,7 +3350,6 @@ body.is-mobile {
   -moz-transition: all 0.3s ease-in-out;
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
-  margin-right: 0;
 }
 @media (min-width: 1170px) {
   /* line 68, ../sass/components/_header.scss */
@@ -3368,7 +3367,6 @@ body.is-mobile {
     -o-transition: all 0.3s ease-in-out;
     background-color: #fff0;
     padding: 0;
-    margin-right: 6px;
   }
 }
 @media (min-width: 768px) {
@@ -3377,7 +3375,7 @@ body.is-mobile {
     width: auto;
   }
 }
-/* line 93, ../sass/components/_header.scss */
+/* line 91, ../sass/components/_header.scss */
 #header .header-first #block-sph-navegacionprincipal ul li a {
   width: 100%;
   font-family: "poppins";
@@ -3389,13 +3387,13 @@ body.is-mobile {
   text-decoration: none;
 }
 @media (min-width: 1170px) {
-  /* line 93, ../sass/components/_header.scss */
+  /* line 91, ../sass/components/_header.scss */
   #header .header-first #block-sph-navegacionprincipal ul li a {
     font-family: "Conv_Gotham-Medium";
     font-size: 14px;
     font-weight: "normal";
     width: auto;
-    padding: 8px;
+    padding: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3407,7 +3405,7 @@ body.is-mobile {
   }
 }
 @media (min-width: 768px) {
-  /* line 93, ../sass/components/_header.scss */
+  /* line 91, ../sass/components/_header.scss */
   #header .header-first #block-sph-navegacionprincipal ul li a {
     font-family: "Conv_Gotham-Medium";
     font-size: 14px;
@@ -3420,7 +3418,7 @@ body.is-mobile {
     -o-transition: all 0.3s ease-in-out;
   }
 }
-/* line 116, ../sass/components/_header.scss */
+/* line 114, ../sass/components/_header.scss */
 #header .header-first #block-sph-navegacionprincipal ul li:hover {
   background-color: #0000000d;
   border-radius: 8px;
@@ -3434,11 +3432,11 @@ body.is-mobile {
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-/* line 120, ../sass/components/_header.scss */
+/* line 118, ../sass/components/_header.scss */
 #header .header-first #block-sph-navegacionprincipal ul li:hover a {
   color: #8cc63f;
 }
-/* line 124, ../sass/components/_header.scss */
+/* line 122, ../sass/components/_header.scss */
 #header .header-first #block-sph-navegacionprincipal ul li .is-active {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
   background-color: #0000000d;
@@ -3459,7 +3457,7 @@ body.is-mobile {
   font-weight: 500;
 }
 @media (min-width: 1170px) {
-  /* line 124, ../sass/components/_header.scss */
+  /* line 122, ../sass/components/_header.scss */
   #header .header-first #block-sph-navegacionprincipal ul li .is-active {
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 0px 1px;
     background-color: #0000000d;
@@ -3481,7 +3479,7 @@ body.is-mobile {
     font-weight: 500;
   }
 }
-/* line 139, ../sass/components/_header.scss */
+/* line 137, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher {
   display: flex;
   float: right;
@@ -3497,21 +3495,21 @@ body.is-mobile {
   margin: 6px;
   background-color: #fff;
 }
-/* line 149, ../sass/components/_header.scss */
+/* line 147, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher h2 {
   display: none;
 }
-/* line 153, ../sass/components/_header.scss */
+/* line 151, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher .links {
   display: flex;
   width: 100%;
 }
-/* line 158, ../sass/components/_header.scss */
+/* line 156, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links {
   display: flex;
   width: 100%;
 }
-/* line 161, ../sass/components/_header.scss */
+/* line 159, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li.is-active {
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -3524,7 +3522,7 @@ body.is-mobile {
   margin: 4px;
   padding: 4px;
 }
-/* line 169, ../sass/components/_header.scss */
+/* line 167, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li {
   width: 45%;
   display: flex;
@@ -3534,7 +3532,7 @@ body.is-mobile {
   position: relative;
   padding-top: 4px;
 }
-/* line 177, ../sass/components/_header.scss */
+/* line 175, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li a {
   display: block;
   width: 100%;
@@ -3543,14 +3541,14 @@ body.is-mobile {
   overflow: hidden;
   position: relative;
 }
-/* line 186, ../sass/components/_header.scss */
+/* line 184, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li:first-child a {
   background-image: url("/themes/custom/sph/images/mexico-flag.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
-/* line 193, ../sass/components/_header.scss */
+/* line 191, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li:last-child a {
   background-image: url("/themes/custom/sph/images/holanda@2x.png");
   background-size: contain;

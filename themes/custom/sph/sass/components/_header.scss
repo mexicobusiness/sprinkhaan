@@ -74,7 +74,6 @@
           display: flex;
           background-color: #fff;
           @include transition-all-sph();
-          margin-right: 0;
           @include breakpoint($desktop) {
             width: auto;
             display: flex;
@@ -85,7 +84,6 @@
             @include transition-all-sph();
             background-color: #fff0;
             padding: 0;
-            margin-right: 6px;
           }
           @include breakpoint($table) {
             width: auto;
@@ -97,7 +95,7 @@
             @include breakpoint($desktop) {
               @include fonts("Conv_Gotham-Medium", 14px, "normal");
               width: auto;
-              padding: 8px;
+              padding: 5px;
               display: flex;
               justify-content: center;
               align-items: center;
