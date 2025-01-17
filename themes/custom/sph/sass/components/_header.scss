@@ -18,10 +18,10 @@
     position: fixed;
     margin-top: 10px;
     @include radius-spk-10();
-    backdrop-filter: blur(17.7px); /* Aplica el blur en todos los tamaños de pantalla */
+    backdrop-filter: blur(17.7px);
     -webkit-backdrop-filter: blur(17.7px);
     -moz-backdrop-filter: blur(17.7px);
-    
+
     @include breakpoint($desktop) {
       background-color: rgba(255, 255, 255, 0.774);
       border: 1px solid #e9e9ee;
@@ -36,7 +36,7 @@
       z-index: 10;
       background: rgba(255, 255, 255, 0.11);
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }  
+    }
 
     #block-sph-svgimagelogo {
       float: left;
@@ -120,7 +120,7 @@
             -moz-transform: rotate(-45deg) translate(6px, -6px);
             -ms-transform: rotate(-45deg) translate(6px, -6px);
             -o-transform: rotate(-45deg) translate(6px, -6px);
-}
+          }
         }
       }
     }
@@ -140,18 +140,30 @@
         }
 
         .menu {
-          height: auto;
+          display: inline-block!important;
+          height: auto!important;
           flex-direction: column;
-          padding: 10px 0;
+          margin-top: 4px;
+          background-color: #fff!important;
+          @include radius-spk-16();
+          padding: 4px;
         }
 
         ul li {
           width: 100%;
-          margin: 5px 0;
           padding: 0;
-
           a {
-            padding: 15px 24px;
+            padding: 4px 23px !important;
+            @include radius-sph();
+            @include transition-all-sph();
+          }
+          &:hover {
+            border: 1px solid #e9e9ee;
+            @include radius-sph();
+            @include transition-all-sph();
+            a {
+              color: #8cc63f;
+            }
           }
         }
       }
