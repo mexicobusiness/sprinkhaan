@@ -3,12 +3,14 @@
   width: 100%;
   display: flex;
   justify-content: center;
+
   .container {
     background-color: rgba(255, 255, 255, 0);
     height: 50px;
   }
+
   .header-first {
-    border-bottom: 1px solid #39364f05;
+    border: 1px solid #e9e9ee;
     background-color: rgba(255, 255, 255, 0.774);
     display: inline-block;
     width: 90%;
@@ -16,24 +18,26 @@
     position: fixed;
     margin-top: 10px;
     @include radius-spk-10();
+    backdrop-filter: blur(17.7px); /* Aplica el blur en todos los tamaños de pantalla */
+    -webkit-backdrop-filter: blur(17.7px);
+    -moz-backdrop-filter: blur(17.7px);
+    
     @include breakpoint($desktop) {
       background-color: rgba(255, 255, 255, 0.774);
       border: 1px solid #e9e9ee;
       display: inline-block;
-      width: 80%;
+      width: 60%;
       height: 60px;
       position: fixed;
-      max-width: 1200px;
+      max-width: 1120px;
       @include radius-spk-16();
       margin-top: 16px;
       transition: 0.7s;
       z-index: 10;
-      backdrop-filter: blur(17.7px);
-      -webkit-backdrop-filter: blur(17.7px);
       background: rgba(255, 255, 255, 0.11);
-      -moz-backdrop-filter: blur(17.7px);
       box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-    }
+    }  
+
     #block-sph-svgimagelogo {
       float: left;
       display: flex;
@@ -52,18 +56,117 @@
       }
     }
 
+    #hamburger-menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 45px;
+      height: 45px;
+      cursor: pointer;
+      @include transition-all-sph();
+      position: absolute;
+      right: 16px;
+      top: 8px;
+      z-index: 1000;
+      padding: 8px;
+      @include radius-spk-16();
+      background-color: #fff;
+      border: none !important;
+      box-shadow: rgba(14, 63, 126, 0.04) 0px 0px 0px 1px,
+        rgba(42, 51, 69, 0.04) 0px 1px 1px -0.5px,
+        rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px,
+        rgba(42, 51, 70, 0.04) 0px 6px 6px -3px,
+        rgba(14, 63, 126, 0.04) 0px 12px 12px -6px,
+        rgba(14, 63, 126, 0.04) 0px 24px 24px -12px;
+      @include breakpoint($desktop) {
+        display: none;
+      }
+
+      span {
+        display: block;
+        height: 3px;
+        background-color: #2e3e4e;
+        @include radius-sph();
+        @include transition-all-sph();
+
+        &:nth-child(1) {
+          width: 100%;
+        }
+        &:nth-child(2) {
+          width: 75%;
+        }
+        &:nth-child(3) {
+          width: 50%;
+        }
+      }
+
+      &.open {
+        span {
+          &:nth-child(1) {
+            transform: rotate(45deg) translate(8px, 8px);
+            width: 100%;
+            -webkit-transform: rotate(45deg) translate(8px, 8px);
+            -moz-transform: rotate(45deg) translate(8px, 8px);
+            -ms-transform: rotate(45deg) translate(8px, 8px);
+            -o-transform: rotate(45deg) translate(8px, 8px);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+          }
+          &:nth-child(3) {
+            transform: rotate(-45deg) translate(6px, -6px);
+            width: 100%;
+            -webkit-transform: rotate(-45deg) translate(6px, -6px);
+            -moz-transform: rotate(-45deg) translate(6px, -6px);
+            -ms-transform: rotate(-45deg) translate(6px, -6px);
+            -o-transform: rotate(-45deg) translate(6px, -6px);
+}
+        }
+      }
+    }
+
     #block-sph-navegacionprincipal {
       width: 76%;
       float: left;
+
+      @media not all and (min-width: $desktop) {
+        display: none;
+        width: 100%;
+        float: none;
+
+        &.visible {
+          display: block;
+          animation: slideDown 0.3s ease forwards;
+        }
+
+        .menu {
+          height: auto;
+          flex-direction: column;
+          padding: 10px 0;
+        }
+
+        ul li {
+          width: 100%;
+          margin: 5px 0;
+          padding: 0;
+
+          a {
+            padding: 15px 24px;
+          }
+        }
+      }
+
       .contextual-region {
         color: #39364f;
       }
+
       .menu {
         display: flex;
         height: 57px;
         align-items: center;
         justify-content: center;
       }
+
       ul {
         li {
           width: 100%;
@@ -74,6 +177,8 @@
           display: flex;
           background-color: #fff;
           @include transition-all-sph();
+          margin-right: 0;
+
           @include breakpoint($desktop) {
             width: auto;
             display: flex;
@@ -84,56 +189,55 @@
             @include transition-all-sph();
             background-color: #fff0;
             padding: 0;
+            margin-right: 6px;
           }
-          @include breakpoint($table) {
-            width: auto;
-          }
+
           a {
             width: 100%;
             @include fonts("poppins", 16px, "normal");
             padding: 24px;
+            color: #39364f;
+            text-transform: capitalize;
+            text-decoration: none;
+
             @include breakpoint($desktop) {
               @include fonts("Conv_Gotham-Medium", 14px, "normal");
               width: auto;
-              padding: 5px;
+              padding: 8px;
               display: flex;
               justify-content: center;
               align-items: center;
               @include transition-all-sph();
             }
-            @include breakpoint($table) {
-              @include fonts("Conv_Gotham-Medium", 14px, "normal");
-              width: auto;
-              @include transition-all-sph();
+          }
+
+          &:hover {
+            background-color: #0000000d;
+            @include radius-sph();
+            @include transition-all-sph();
+            a {
+              color: #8cc63f;
             }
-            color: #39364f;
-            text-transform: capitalize;
-            text-decoration: none;
           }
-        }
-        li:hover {
-          background-color: #0000000d;
-          @include radius-sph();
-          @include transition-all-sph();
-          a {
-            color: #8cc63f;
-          }
-        }
-        li .is-active {
-          @include -sph-hoverComponent();
-          padding: 24px;
-          color: #8cc63f;
-          @include fonts("poppins", 14px, 500);
-          @include breakpoint($desktop) {
+
+          .is-active {
             @include -sph-hoverComponent();
-            padding: 8px;
+            padding: 24px;
             color: #8cc63f;
-            height: 45px;
             @include fonts("poppins", 14px, 500);
+
+            @include breakpoint($desktop) {
+              @include -sph-hoverComponent();
+              padding: 8px;
+              color: #8cc63f;
+              height: 45px;
+              @include fonts("poppins", 14px, 500);
+            }
           }
         }
       }
     }
+
     #block-sph-languageswitcher {
       display: flex;
       float: right;
@@ -144,6 +248,19 @@
       @include radius-sph();
       margin: 6px;
       background-color: #fff;
+
+      @media not all and (min-width: $desktop) {
+        display: none;
+        width: 100%;
+        float: none;
+        margin: 10px 0;
+
+        &.visible {
+          display: flex;
+          animation: slideDown 0.3s ease forwards;
+        }
+      }
+
       h2 {
         display: none;
       }
@@ -156,6 +273,7 @@
       ul.links {
         display: flex;
         width: 100%;
+
         li.is-active {
           @include radius-sph();
           background-color: #e9e9ee;
@@ -164,6 +282,7 @@
           margin: 4px;
           padding: 4px;
         }
+
         li {
           width: 45%;
           display: flex;
@@ -172,6 +291,7 @@
           height: 45px;
           position: relative;
           padding-top: 4px;
+
           a {
             display: block;
             width: 100%;
@@ -182,7 +302,7 @@
           }
 
           &:first-child a {
-            background-image: url("/themes/custom/sph/images/mexico-flag.png");
+            background-image: url("/themes/custom/sph/images/espana.png");
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
@@ -197,5 +317,39 @@
         }
       }
     }
+
+    #mobile-menu {
+      display: none;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.98);
+      width: 100%;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      opacity: 0;
+      transform: translateY(-10px);
+      transition: all 0.3s ease;
+
+      @include breakpoint($desktop) {
+        display: none !important;
+      }
+
+      &.open {
+        display: block;
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }

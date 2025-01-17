@@ -1,14 +1,32 @@
 <div id="page">
     {% if page.header_first %}
         <div id="header">
-            {% if page.header_first %}
-                <div class="header-first">
-                    <div class="container">
-                        {{ page.header_first }}
+    {% if page.header_first %}
+        <div class="header-first">
+            <div class="container">
+                <div class="header-content">
+                    {{ page.header_first }}
+                    <button id="hamburger-menu" class="hamburger-menu" aria-label="Menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div id="mobile-menu" class="mobile-menu">
+                    <div class="mobile-menu-content">
+                        <div id="block-sph-navegacionprincipal" class="menu-section">
+                            {{ page.navigation }}
+                        </div>
+                        <div id="block-sph-languageswitcher" class="menu-section">
+                            {{ page.language_switcher }}
+                        </div>
                     </div>
                 </div>
-            {% endif %}
+            </div>
         </div>
+    {% endif %}
+</div>
+
     {% endif %}
     {% if page.header_second %}
         <div class="header-third sticky">
