@@ -65,6 +65,7 @@
           height: 45px;
           float: left;
           @include transition-all-sph();
+          color: $color-white;
           background: linear-gradient(
             180deg,
             rgba(140, 198, 63, 1) 0%,
@@ -119,6 +120,7 @@
           @include radius-spk-12();
           position: relative;
           @include transition-all-sph();
+          color: $color-brown;
           a{ 
             @include fonts("poppins", 16px, "normal");
              color: $color-brown;
