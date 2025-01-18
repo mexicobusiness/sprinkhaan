@@ -17,7 +17,7 @@
     z-index: 999;
     position: fixed;
     margin-top: 10px;
-    @include radius-spk-10();
+    @include radius-spk-24();
     backdrop-filter: blur(17.7px);
     -webkit-backdrop-filter: blur(17.7px);
     -moz-backdrop-filter: blur(17.7px);
@@ -65,7 +65,7 @@
       cursor: pointer;
       @include transition-all-sph();
       position: absolute;
-      right: 16px;
+      right: 8px;
       top: 8px;
       z-index: 1000;
       padding: 8px;
