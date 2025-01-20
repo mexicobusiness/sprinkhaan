@@ -14,22 +14,21 @@
           @include radius-spk-16();
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
         }
-        
+
         .image img {
-          display: block; 
+          display: block;
           width: 100%;
           height: 360px;
-          object-fit: cover; 
+          object-fit: cover;
           @include transition-all-sph();
-          object-position: center; 
+          object-position: center;
         }
-        
 
         .image img:hover {
           transform: scale(1.05);
         }
 
-        .type{
+        .type {
           margin-top: 8%;
         }
         .type,
@@ -37,12 +36,11 @@
         .author,
         .descrption {
           width: 100%;
-          margin-left: 0; 
+          margin-left: 0;
           display: inline-block;
           flex-wrap: wrap;
         }
 
- 
         .type {
           font-size: 14px;
           color: #00adb5;
@@ -59,7 +57,6 @@
           text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
         }
 
-
         .author {
           display: inline-block;
           justify-content: flex-start;
@@ -74,7 +71,6 @@
           color: #6c757d;
         }
 
-
         .descrption {
           font-size: 16px;
           line-height: 1.6;
@@ -86,8 +82,7 @@
           margin: 0;
         }
 
-  
-        .register-btn{
+        .register-btn {
           max-width: 97% !important;
           @include black-btn-green(auto);
           display: flex;
@@ -149,23 +144,23 @@
                 width: auto !important;
                 display: inline-flex !important;
               }
-            
+
               .slick__slide {
                 width: 300px !important;
                 flex-shrink: 0;
                 margin-right: 16px;
               }
-            
+
               .slick-slider {
                 overflow-x: auto !important;
                 scroll-snap-type: x mandatory;
                 -webkit-overflow-scrolling: touch;
               }
-            
+
               .slick-slider::-webkit-scrollbar {
                 display: none;
               }
-            
+
               .slick__slide .views-field {
                 width: 100%;
               }
@@ -250,7 +245,7 @@
             }
           }
         }
-        @include breakpoint($desktop){
+        @include breakpoint($desktop) {
           margin: 30px 0;
 
           .image {
@@ -262,22 +257,21 @@
             @include radius-spk-16();
             box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
           }
-          
+
           .image img {
-            display: block; 
+            display: block;
             width: 360px;
             height: 360px;
-            object-fit: cover; 
+            object-fit: cover;
             @include transition-all-sph();
-            object-position: center; 
+            object-position: center;
           }
-          
-  
+
           .image img:hover {
             transform: scale(1.05);
           }
-  
-          .type{
+
+          .type {
             margin-top: 8%;
           }
           .type,
@@ -285,12 +279,11 @@
           .author,
           .descrption {
             width: auto;
-            margin-left: 380px; 
+            margin-left: 380px;
             display: flex;
             flex-wrap: wrap;
           }
-  
-   
+
           .type {
             font-size: 14px;
             color: #00adb5;
@@ -299,15 +292,14 @@
             margin-bottom: 8px;
             font-weight: bold;
           }
-  
+
           .title h1 {
             @include fonts("Conv_Gotham-Medium", 32px, "normal");
             color: #101828;
             margin: 0;
             text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
           }
-  
-  
+
           .author {
             display: flex;
             justify-content: flex-start;
@@ -316,26 +308,24 @@
             color: #393e46;
             margin: 12px 0;
           }
-  
+
           .author-date {
             font-style: italic;
             color: #6c757d;
           }
-  
-  
+
           .descrption {
             font-size: 16px;
             line-height: 1.6;
             color: #393e46;
             margin-bottom: 20px;
           }
-  
+
           .descrption p {
             margin: 0;
           }
-  
-    
-          .register-btn{
+
+          .register-btn {
             max-width: 344px !important;
             @include black-btn-green(auto);
             display: flex;
@@ -359,24 +349,24 @@
               justify-content: center;
               align-items: center;
             }
-  
+
             &::after {
               content: "\2197";
               font-size: 16px;
               color: #f7941d;
             }
           }
-  
+
           .register-btn:hover {
             @include transition-all-sph();
             background: #007b7f;
             transform: translateY(-2px);
           }
-  
+
           .register-btn:active {
             transform: translateY(0);
           }
-  
+
           .last-news {
             clear: both;
             margin: 8% 0;

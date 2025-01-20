@@ -3,6 +3,7 @@
 .path-frontpage {
   overflow-x: hidden;
   .region-top {
+    overflow: hidden;
     #block-sph-ntcdesprinkhaan {
       width: 94%;
       margin: 8% auto;
@@ -90,7 +91,7 @@
           align-items: center;
           width: 200px;
           height: 45px;
-          gap: 4px;
+          gap: 8px;
           float: left;
           position: relative;
           padding: 4px 16px;
@@ -437,7 +438,7 @@
 
     #block-sph-videohome {
       width: 100%;
-      height: 240px;
+      height: 264px;
       position: relative;
       margin: 0 auto;
       background-color: rgba(255, 255, 255, 0.774);
@@ -834,6 +835,7 @@
   .content-center {
     #block-sph-clases {
       margin: 4% 0;
+      overflow: hidden;
       .clases-top {
         position: relative;
         width: 100%;
@@ -2674,7 +2676,7 @@
           @include fonts("poppins", 16px, "normal");
           position: relative;
           padding-left: 24px;
-          margin-left: 8%;
+          margin-left: 10%;
           &::after {
             content: "";
             position: absolute;
@@ -2696,6 +2698,7 @@
         }
       }
       .cont-img {
+        overflow: hidden;
         width: 100%;
         float: left;
         position: relative;
@@ -2785,6 +2788,7 @@
           position: relative;
           display: flex;
           margin-top: -20%;
+          overflow: visible;
           img {
             width: 100%;
             height: auto;

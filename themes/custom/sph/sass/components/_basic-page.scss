@@ -238,7 +238,7 @@
             margin-right: 4%;
             .sponsor-container-bottom-left-tit {
               @include fonts("Conv_Gotham-Medium", 32px, 800);
-              margin: 30% 0px 2% 0;
+              margin: 8% 0px 2% 0;
               line-height: 1;
               margin-bottom: 10px;
               color: #101828;
@@ -260,7 +260,7 @@
               list-style: none;
               padding: 0;
               margin: 0;
-            
+
               li {
                 margin: 10px 0;
                 position: relative;
@@ -268,24 +268,24 @@
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
-                min-height: 40px; 
-                padding: 5px 0; 
-            
+                min-height: 40px;
+                padding: 5px 0;
+
                 &::before {
                   content: "";
                   display: inline-block;
                   width: 20px;
                   height: 20px;
-                  filter: invert(53%) sepia(91%) saturate(508%) hue-rotate(348deg) brightness(105%) contrast(94%);
+                  filter: invert(53%) sepia(91%) saturate(508%)
+                    hue-rotate(348deg) brightness(105%) contrast(94%);
                   background-image: url("/themes/custom/sph/images/check-spk.svg");
                   background-size: cover;
                   background-repeat: no-repeat;
                   margin-right: 8px;
-                  flex-shrink: 0; 
+                  flex-shrink: 0;
                 }
               }
             }
-            
 
             .sponsor-container-bottom-right-btn {
               margin: 20px 0;
@@ -322,7 +322,7 @@
             }
           }
         }
-        @include breakpoint($desktop){
+        @include breakpoint($desktop) {
           .header {
             display: none;
           }
@@ -372,7 +372,7 @@
                   justify-content: center;
                   align-items: center;
                 }
-  
+
                 &::after {
                   content: "\2197";
                   font-size: 16px;
@@ -401,7 +401,7 @@
                 animation: floatUpDown 6s infinite ease-in-out;
                 animation-delay: 2s;
               }
-  
+
               &:after {
                 content: "";
                 position: absolute;
@@ -416,7 +416,7 @@
                 animation-delay: 2.5s;
               }
             }
-  
+
             @keyframes floatUpDown {
               0%,
               100% {
@@ -455,13 +455,13 @@
                 margin: 16px;
                 width: calc(91% / 3);
                 position: relative;
-  
+
                 img {
                   width: 100%;
                   height: auto;
                   display: block;
                 }
-  
+
                 &::after {
                   content: "";
                   position: absolute;
@@ -478,7 +478,7 @@
                   z-index: 1;
                   @include radius-spk-16();
                 }
-  
+
                 .sponsor-imgs-data {
                   display: inline-block;
                   position: absolute;
@@ -494,7 +494,7 @@
                     text-align: left;
                     min-height: 60px;
                   }
-  
+
                   .sponsor-imgs-dat {
                     background: rgba(255, 255, 255, 0.28);
                     border-radius: 16px;
@@ -523,10 +523,10 @@
                     background-size: cover;
                     background-repeat: no-repeat;
                     margin-right: 4px;
-                    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(354deg)
-                      brightness(108%) contrast(101%);
+                    filter: invert(100%) sepia(0%) saturate(1%)
+                      hue-rotate(354deg) brightness(108%) contrast(101%);
                   }
-  
+
                   .sponsor-imgs-des {
                     @include fonts("poppins", 14px, "normal");
                     color: $color-white;
@@ -578,7 +578,7 @@
                 list-style: none;
                 padding: 0;
                 margin: 0;
-              
+
                 li {
                   margin: 10px 0;
                   position: relative;
@@ -586,25 +586,25 @@
                   display: flex;
                   align-items: center;
                   justify-content: flex-start;
-                  min-height: 40px; 
-                  padding: 5px 0; 
-              
+                  min-height: 40px;
+                  padding: 5px 0;
+
                   &::before {
                     content: "";
                     display: inline-block;
                     width: 20px;
                     height: 20px;
-                    filter: invert(53%) sepia(91%) saturate(508%) hue-rotate(348deg) brightness(105%) contrast(94%);
+                    filter: invert(53%) sepia(91%) saturate(508%)
+                      hue-rotate(348deg) brightness(105%) contrast(94%);
                     background-image: url("/themes/custom/sph/images/check-spk.svg");
                     background-size: cover;
                     background-repeat: no-repeat;
                     margin-right: 8px;
-                    flex-shrink: 0; 
+                    flex-shrink: 0;
                   }
                 }
               }
-              
-  
+
               .sponsor-container-bottom-right-btn {
                 margin: 20px 0;
                 text-align: center;
@@ -630,7 +630,7 @@
                     justify-content: center;
                     align-items: center;
                   }
-  
+
                   &::after {
                     content: "\2197";
                     font-size: 16px;
@@ -645,21 +645,21 @@
     }
   }
 }
-.page-terms-and-conditions{
+.page-terms-and-conditions {
   #page {
     #main-content {
-      .header{
+      .header {
         text-align: center;
         @include black-btn();
         margin-top: 20px;
-        .title{
-          h1{
+        .title {
+          h1 {
             color: $color-white;
           }
         }
       }
-      .descrption{
-        .terms-desc{
+      .descrption {
+        .terms-desc {
           @include fonts("Conv_Gotham-Medium", 48px, 800);
           color: #101828;
           text-align: center;
@@ -671,9 +671,9 @@
             color: $color-green;
           }
         }
-        p{
+        p {
           margin: 2px 0 15px 0;
-          strong{
+          strong {
             @include fonts("Conv_Gotham-Medium", 18px, 600);
           }
         }

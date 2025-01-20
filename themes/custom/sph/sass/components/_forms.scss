@@ -220,7 +220,7 @@
                 }
               }
               input[type="submit"] {
-                max-width: 472px !important;
+                max-width: 448px !important;
                 @include black-btn-green(524px);
                 display: flex;
                 justify-content: flex-start;
@@ -662,12 +662,12 @@
             }
             .js-form-item-terms-of-service {
               display: flex;
-              label{
-                a{
+              label {
+                a {
                   @include fonts("poppins", 16px, "normal");
                   color: #d9534f;
                   @include transition-all-sph();
-                  &:hover{
+                  &:hover {
                     text-decoration: underline;
                     @include transition-all-sph();
                     color: #902b10;
