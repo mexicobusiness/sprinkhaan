@@ -26,6 +26,7 @@
         "drupal/faq": "^1.2",
         "drupal/fullcalendar_view": "^5.2",
         "drupal/gin": "^4.0",
+        "drupal/honeypot": "^2.2",
         "drupal/jquery_ui_tabs": "^2.1",
         "drupal/memcache": "^2.7",
         "drupal/menus_attribute": "^1.3",
