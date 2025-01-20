@@ -250,7 +250,7 @@
               }
             }
           }
-          @include breakpoint($desktop){
+          @include breakpoint($desktop) {
             div:nth-of-type(1) {
               float: left;
               width: 50%;
@@ -329,7 +329,7 @@
                     display: none;
                   }
                 }
-  
+
                 div.js-form-item {
                   margin: 8px 0;
                   label {
@@ -410,8 +410,9 @@
                         &:hover {
                           @include transition-all-sph();
                           box-shadow: #fbd28c 0px 0px 0px 1px,
-                            #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px,
-                            #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px,
+                            #fbd28c 0px 1px 1px -0.5px,
+                            #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px,
+                            #fde9c8 0px 12px 12px -6px,
                             #fde9c8 0px 24px 24px -12px;
                         }
                       }
@@ -450,8 +451,9 @@
                         &:hover {
                           @include transition-all-sph();
                           box-shadow: #fbd28c 0px 0px 0px 1px,
-                            #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px,
-                            #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px,
+                            #fbd28c 0px 1px 1px -0.5px,
+                            #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px,
+                            #fde9c8 0px 12px 12px -6px,
                             #fde9c8 0px 24px 24px -12px;
                         }
                       }
@@ -480,7 +482,7 @@
                     justify-content: center;
                     align-items: center;
                   }
-  
+
                   &::after {
                     content: "\2197";
                     font-size: 16px;
@@ -504,7 +506,7 @@
         }
         div.content {
           margin: 11% 0;
-          @include breakpoint($desktop){
+          @include breakpoint($desktop) {
             margin: 4% 0;
           }
           div p {
@@ -540,14 +542,14 @@
                 }
               }
             }
-            
+
             .webform-progress {
               display: flex;
               justify-content: center;
               align-items: center;
               margin: 20px 0;
             }
-            
+
             .webform-progress-tracker {
               display: flex;
               list-style: none;
@@ -594,20 +596,20 @@
               font-weight: bold;
               z-index: 2;
               margin-right: 8px;
-              @include breakpoint($desktop){
+              @include breakpoint($desktop) {
                 width: 40px;
-              height: 40px;
-              border-radius: 50%;
-              background: #fff;
-              border: 2px solid #ddd;
-              color: #333;
-              display: flex;
-              justify-content: center;
-              align-items: center;
-              font-size: 14px;
-              font-weight: bold;
-              z-index: 2;
-              margin-right: none;
+                height: 40px;
+                border-radius: 50%;
+                background: #fff;
+                border: 2px solid #ddd;
+                color: #333;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 14px;
+                font-weight: bold;
+                z-index: 2;
+                margin-right: none;
               }
             }
             .progress-marker::before,
@@ -622,7 +624,11 @@
             }
 
             .progress-step.is-active .progress-marker {
-              background: linear-gradient(180deg, rgba(213,83,10,1) 0%, rgba(177,54,12,1) 100%);
+              background: linear-gradient(
+                180deg,
+                rgba(213, 83, 10, 1) 0%,
+                rgba(177, 54, 12, 1) 100%
+              );
               color: #fff;
               border-color: #902b10;
             }
@@ -653,8 +659,20 @@
             .progress-step.is-completed .progress-text {
               color: #4caf50;
             }
-            .js-form-item-terms-of-service{
+            .js-form-item-terms-of-service {
               display: flex;
+              label{
+                a{
+                  @include fonts("poppins", 16px, "normal");
+                  color: #d9534f;
+                  @include transition-all-sph();
+                  &:hover{
+                    text-decoration: underline;
+                    @include transition-all-sph();
+                    color: #902b10;
+                  }
+                }
+              }
             }
             #edit-container,
             #edit-container-01,
@@ -669,7 +687,7 @@
               padding: 20px;
               max-width: 98%;
               margin: 20px auto;
-              @include breakpoint($desktop){
+              @include breakpoint($desktop) {
                 border: 1px solid #d3d3d3;
                 border-radius: 16px;
                 padding: 20px;
@@ -892,7 +910,7 @@
                   width: 98%;
                   margin: 0 auto 2% auto;
                 }
-                @include breakpoint($desktop){
+                @include breakpoint($desktop) {
                   margin-bottom: 20px;
                   .form-tit {
                     @include fonts("Conv_Gotham-Medium", 48px, 800);
@@ -949,28 +967,29 @@
                           #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px,
                           #fde9c8 0px 24px 24px -12px;
                       }
-                      @include breakpoint($desktop){
+                      @include breakpoint($desktop) {
                         display: flex;
-                      justify-content: center;
-                      align-items: center;
-                      float: left;
-                      cursor: pointer;
-                      border: 1px solid #e9e9ee;
-                      @include radius-spk-16;
-                      margin: 16px;
-                      width: calc(91% / 3);
-                      height: 95px;
-                      padding: 24px;
-                      @include transition-all-sph();
-                      &:hover {
-                        border: 1px solid #f7941d;
+                        justify-content: center;
+                        align-items: center;
+                        float: left;
                         cursor: pointer;
+                        border: 1px solid #e9e9ee;
+                        @include radius-spk-16;
+                        margin: 16px;
+                        width: calc(91% / 3);
+                        height: 95px;
+                        padding: 24px;
                         @include transition-all-sph();
-                        box-shadow: #fbd28c 0px 0px 0px 1px,
-                          #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px,
-                          #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px,
-                          #fde9c8 0px 24px 24px -12px;
-                      }
+                        &:hover {
+                          border: 1px solid #f7941d;
+                          cursor: pointer;
+                          @include transition-all-sph();
+                          box-shadow: #fbd28c 0px 0px 0px 1px,
+                            #fbd28c 0px 1px 1px -0.5px,
+                            #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px,
+                            #fde9c8 0px 12px 12px -6px,
+                            #fde9c8 0px 24px 24px -12px;
+                        }
                       }
                     }
                     label {
@@ -1068,28 +1087,61 @@
                   }
                 }
                 .webform-multiple-table {
+                  width: 100%;
+                  overflow: auto;
                   table {
                     width: 100%;
+                    border-collapse: collapse;
+                    @include fonts("poppins", 16px, "normal");
+                    background-color: #ffffff;
+                    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+                    border-radius: 10px;
+                    overflow: hidden;
+                    transition: all 0.3s ease;
                   }
-                  tr th {
-                    width: calc(100% / 5);
-                    text-align: left;
-                    vertical-align: top;
+                  th,
+                  td {
+                    min-width: 350px;
+                    padding: 8px;
                   }
-                  tr td:nth-child(1) input {
-                    width: 315px;
+                  th {
+                    color: #39364f;
+                    background-color: #f8f8f8;
+                    padding: 18px;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+                    text-transform: uppercase;
+                    border-bottom: 2px solid #e0e0e0;
+                    span {
+                      @include fonts("poppins", 16px, "normal");
+                    }
                   }
-                  tr td:nth-child(2) input {
-                    width: 100px;
+
+                  td {
+                    padding: 18px;
+                    color: #39364f;
+                    position: relative;
+                    transition: background-color 0.3s ease, color 0.3s ease;
+                    input[type="number"] {
+                      width: 100%;
+                      padding: 10px;
+                      margin-bottom: 15px;
+                      border: 1px solid #f7941d;
+                      border-radius: 24px;
+                      font-size: 14px;
+                      color: #101828;
+                      box-sizing: border-box;
+                    }
+                    .js-webform-radios {
+                      display: flex;
+                      justify-content: center;
+                    }
                   }
-                  tr td:nth-child(3) .fieldset-wrapper {
-                    width: 100px;
-                  }
-                  tr td:nth-child(4) textarea {
-                    width: 315px;
-                  }
-                  tr td:nth-child(5) input {
-                    width: 60px;
+
+                  td:hover {
+                    background-color: #f8f8f8;
+                    cursor: pointer;
+                    color: #007aff;
                   }
                 }
               }
@@ -1100,12 +1152,12 @@
               text-align: center;
               margin: 20px;
               flex-wrap: wrap;
-              @include breakpoint($desktop){
+              @include breakpoint($desktop) {
                 display: flex;
-              justify-content: center;
-              text-align: center;
-              margin: 20px;
-              flex-wrap: nowrap;
+                justify-content: center;
+                text-align: center;
+                margin: 20px;
+                flex-wrap: nowrap;
               }
               .webform-button--next {
                 max-width: 344px !important;
@@ -1119,7 +1171,7 @@
                 padding-left: 24px;
                 margin: 8px;
                 padding-right: 30px;
-            
+
                 &::after {
                   content: "\2197";
                   font-size: 16px;
@@ -1130,7 +1182,7 @@
                   transform: translateY(-50%);
                 }
               }
-            
+
               .webform-button--previous {
                 max-width: 344px !important;
                 @include black-btn-green(auto);
@@ -1143,10 +1195,10 @@
                 padding-left: 24px;
                 margin: 8px;
                 padding-right: 30px;
-                background-color: #e0e0e0; 
-                border: 1px solid #ccc; 
-                color: #333; 
-            
+                background-color: #e0e0e0;
+                border: 1px solid #ccc;
+                color: #333;
+
                 &::after {
                   content: "\2190";
                   font-size: 16px;
@@ -1156,12 +1208,12 @@
                   top: 50%;
                   transform: translateY(-50%);
                 }
-            
+
                 &:hover {
                   background-color: #d6d6d6;
                 }
               }
-            
+
               .webform-button--submit {
                 max-width: 344px !important;
                 @include black-btn-green(auto);
@@ -1174,25 +1226,25 @@
                 padding-left: 24px;
                 margin: 8px;
                 padding-right: 30px;
-                background-color: #4CAF50; 
-                border: 1px solid #388E3C; 
-                color: white; 
-            
+                background-color: #4caf50;
+                border: 1px solid #388e3c;
+                color: white;
+
                 &::after {
-                  content: "\2713"; 
+                  content: "\2713";
                   font-size: 18px;
-                  color: white; 
+                  color: white;
                   position: absolute;
                   right: 10px;
                   top: 50%;
                   transform: translateY(-50%);
                 }
-            
+
                 &:hover {
-                  background-color: #45a049; 
+                  background-color: #45a049;
                 }
               }
-            
+
               button,
               input[type="reset"],
               input[type="button"] {
@@ -1200,7 +1252,6 @@
                 height: 40px;
               }
             }
-            
           }
         }
       }
