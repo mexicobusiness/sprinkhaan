@@ -1,11 +1,11 @@
-(function ($) {
-  $(document).ready(function () {
+;(function ($) {
+  $(document).ready(function() {
 
-
+    //Add link in logo
     $("#block-sph-svgimagelogo img").wrap('<a href="/"></a>');
 
-   
-    $('a[href^="#"]').on('click', function (e) {
+    //Scroll Down
+    $('a[href^="#"]').on('click', function(e) {
       e.preventDefault();
       var target = $(this.getAttribute('href'));
       if (target.length) {
@@ -16,9 +16,7 @@
     });
 
   });
-})(jQuery);
-
-
+})(jQuery)
 document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.getElementById('hamburger-menu');
   const mobileMenu = document.getElementById('mobile-menu');
