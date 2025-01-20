@@ -157,6 +157,7 @@
               font-weight: 600;
               border-radius: 8px;
               transition: all 0.3s ease;
+              display: none;
             }
 
             .fc-dayGridMonth-button.fc-button-active {
@@ -165,7 +166,7 @@
               border-color: #005ac1;
               display: none;
               @include breakpoint($desktop) {
-                display: inline-block;
+                display: none;
                 background-color: #007aff;
                 color: #ffffff;
                 border-color: #005ac1;
