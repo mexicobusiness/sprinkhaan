@@ -504,6 +504,9 @@
         }
         div.content {
           margin: 11% 0;
+          @include breakpoint($desktop){
+            margin: 4% 0;
+          }
           div p {
             @include black-btn();
             position: relative;
