@@ -12,21 +12,21 @@
           position: relative;
           margin: 0 auto;
           .sponsor-tit {
-            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            @include fonts("Conv_Gotham-Medium", 32px, 800);
             text-align: center;
             margin: 6% 0px 1% 0;
             line-height: 1;
             margin-bottom: 10px;
             color: #101828;
             span.green {
-              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              @include fonts("Conv_Gotham-Medium", 32px, 800);
               color: $color-green;
             }
           }
           .sponsor-des {
             @include fonts("poppins", 16px, "normal");
             text-align: center;
-            width: 60%;
+            width: 90%;
             margin: 0 auto 2% auto;
           }
           .sponsor-btn {
@@ -41,7 +41,7 @@
               @include fonts("poppins", 16px, "normal");
               position: relative;
               padding-left: 24px;
-              margin-left: 36%;
+              margin-left: 8%;
               &::after {
                 content: "";
                 position: absolute;
@@ -66,20 +66,20 @@
             display: flex;
             justify-content: center;
             img {
-              width: 724px;
+              width: 100%;
               height: auto;
               margin-top: -16%;
             }
             &:before {
               content: "";
               position: absolute;
-              width: 260px;
-              height: 260px;
+              width: 120px;
+              height: 120px;
               background-image: url("/themes/custom/sph/images/ciclo-spk.png");
               background-size: cover;
               background-repeat: no-repeat;
               top: 60%;
-              left: 7%;
+              left: 0%;
               animation: floatUpDown 6s infinite ease-in-out;
               animation-delay: 2s;
             }
@@ -87,13 +87,13 @@
             &:after {
               content: "";
               position: absolute;
-              width: 260px;
-              height: 260px;
+              width: 120px;
+              height: 120px;
               background-image: url("/themes/custom/sph/images/graph-spk.png");
               background-size: cover;
               background-repeat: no-repeat;
               top: 60%;
-              right: 7%;
+              right: 0%;
               animation: floatUpDown 6s infinite ease-in-out;
               animation-delay: 2.5s;
             }
@@ -113,29 +113,29 @@
           text-align: center;
           position: relative;
           .sponsor-tit {
-            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            @include fonts("Conv_Gotham-Medium", 32px, 800);
             text-align: center;
-            width: 64%;
+            width: 90%;
             margin: 4% auto;
             line-height: 1;
             margin-bottom: 10px;
             color: #101828;
             span.green {
-              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              @include fonts("Conv_Gotham-Medium", 32px, 800);
               color: $color-green;
             }
           }
           .sponsor-des {
             @include fonts("poppins", 16px, "normal");
             text-align: center;
-            width: 60%;
+            width: 90%;
             margin: 0 auto 2% auto;
           }
           .sponsor-imgs {
             figure {
               float: left;
               margin: 16px;
-              width: calc(91% / 3);
+              width: 94%;
               position: relative;
 
               img {
@@ -227,23 +227,23 @@
           width: 100%;
           margin: 20px 0;
           div.sponsor-container-bottom-left {
-            width: 56%;
+            width: 100%;
             float: left;
           }
           div.sponsor-container-bottom-right {
-            width: 40%;
+            width: 100%;
             float: left;
           }
           div.sponsor-container-bottom-left {
             margin-right: 4%;
             .sponsor-container-bottom-left-tit {
-              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              @include fonts("Conv_Gotham-Medium", 32px, 800);
               margin: 30% 0px 2% 0;
               line-height: 1;
               margin-bottom: 10px;
               color: #101828;
               span.green {
-                @include fonts("Conv_Gotham-Medium", 48px, 800);
+                @include fonts("Conv_Gotham-Medium", 32px, 800);
                 color: $color-green;
               }
             }
@@ -317,6 +317,325 @@
                   content: "\2197";
                   font-size: 16px;
                   color: #f7941d;
+                }
+              }
+            }
+          }
+        }
+        @include breakpoint($desktop){
+          .header {
+            display: none;
+          }
+          section.sponsor-container-top {
+            position: relative;
+            margin: 0 auto;
+            .sponsor-tit {
+              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              text-align: center;
+              margin: 6% 0px 1% 0;
+              line-height: 1;
+              margin-bottom: 10px;
+              color: #101828;
+              span.green {
+                @include fonts("Conv_Gotham-Medium", 48px, 800);
+                color: $color-green;
+              }
+            }
+            .sponsor-des {
+              @include fonts("poppins", 16px, "normal");
+              text-align: center;
+              width: 60%;
+              margin: 0 auto 2% auto;
+            }
+            .sponsor-btn {
+              margin: 0 auto;
+              a {
+                max-width: 330px !important;
+                @include black-btn-green(auto);
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                text-align: left;
+                @include fonts("poppins", 16px, "normal");
+                position: relative;
+                padding-left: 24px;
+                margin-left: 36%;
+                &::after {
+                  content: "";
+                  position: absolute;
+                  right: 10px;
+                  width: 29px;
+                  height: 29px;
+                  background-color: #fff;
+                  border-radius: 50%;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                }
+  
+                &::after {
+                  content: "\2197";
+                  font-size: 16px;
+                  color: #f7941d;
+                }
+              }
+            }
+            .sponsor-img {
+              display: flex;
+              justify-content: center;
+              img {
+                width: 724px;
+                height: auto;
+                margin-top: -16%;
+              }
+              &:before {
+                content: "";
+                position: absolute;
+                width: 260px;
+                height: 260px;
+                background-image: url("/themes/custom/sph/images/ciclo-spk.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                top: 60%;
+                left: 7%;
+                animation: floatUpDown 6s infinite ease-in-out;
+                animation-delay: 2s;
+              }
+  
+              &:after {
+                content: "";
+                position: absolute;
+                width: 260px;
+                height: 260px;
+                background-image: url("/themes/custom/sph/images/graph-spk.png");
+                background-size: cover;
+                background-repeat: no-repeat;
+                top: 60%;
+                right: 7%;
+                animation: floatUpDown 6s infinite ease-in-out;
+                animation-delay: 2.5s;
+              }
+            }
+  
+            @keyframes floatUpDown {
+              0%,
+              100% {
+                transform: translateY(0);
+              }
+              50% {
+                transform: translateY(-20px);
+              }
+            }
+          }
+          section.sponsor-container-medium {
+            text-align: center;
+            position: relative;
+            .sponsor-tit {
+              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              text-align: center;
+              width: 64%;
+              margin: 4% auto;
+              line-height: 1;
+              margin-bottom: 10px;
+              color: #101828;
+              span.green {
+                @include fonts("Conv_Gotham-Medium", 48px, 800);
+                color: $color-green;
+              }
+            }
+            .sponsor-des {
+              @include fonts("poppins", 16px, "normal");
+              text-align: center;
+              width: 60%;
+              margin: 0 auto 2% auto;
+            }
+            .sponsor-imgs {
+              figure {
+                float: left;
+                margin: 16px;
+                width: calc(91% / 3);
+                position: relative;
+  
+                img {
+                  width: 100%;
+                  height: auto;
+                  display: block;
+                }
+  
+                &::after {
+                  content: "";
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background: linear-gradient(
+                    to top,
+                    rgba(0, 0, 0, 1) 0%,
+                    rgba(0, 0, 0, 0) 100%
+                  );
+                  pointer-events: none;
+                  z-index: 1;
+                  @include radius-spk-16();
+                }
+  
+                .sponsor-imgs-data {
+                  display: inline-block;
+                  position: absolute;
+                  bottom: 0;
+                  left: 0;
+                  width: 354px;
+                  height: 216px;
+                  padding: 20px;
+                  z-index: 2;
+                  .sponsor-imgs-tit {
+                    @include fonts("Conv_Gotham-Medium", 24px, 800);
+                    color: $color-white;
+                    text-align: left;
+                    min-height: 60px;
+                  }
+  
+                  .sponsor-imgs-dat {
+                    background: rgba(255, 255, 255, 0.28);
+                    border-radius: 16px;
+                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                    backdrop-filter: blur(8.5px);
+                    -webkit-backdrop-filter: blur(8.5px);
+                    border: 1px solid rgba(255, 255, 255, 0.47);
+                    @include radius-sph();
+                    text-align: center;
+                    width: auto;
+                    max-width: 170px;
+                    height: 40px;
+                    color: $color-white;
+                    position: relative;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    @include fonts("poppins", 14px, "normal");
+                  }
+                  .sponsor-imgs-dat::before {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background-image: url("/themes/custom/sph/images/calendario.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    margin-right: 4px;
+                    filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(354deg)
+                      brightness(108%) contrast(101%);
+                  }
+  
+                  .sponsor-imgs-des {
+                    @include fonts("poppins", 14px, "normal");
+                    color: $color-white;
+                    height: 60px;
+                    margin: 8px 0;
+                    clear: both;
+                    text-align: left;
+                  }
+                }
+              }
+            }
+          }
+          section.sponsor-container-bottom {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            margin: 20px 0;
+            div.sponsor-container-bottom-left {
+              width: 56%;
+              float: left;
+            }
+            div.sponsor-container-bottom-right {
+              width: 40%;
+              float: left;
+            }
+            div.sponsor-container-bottom-left {
+              margin-right: 4%;
+              .sponsor-container-bottom-left-tit {
+                @include fonts("Conv_Gotham-Medium", 48px, 800);
+                margin: 30% 0px 2% 0;
+                line-height: 1;
+                margin-bottom: 10px;
+                color: #101828;
+                span.green {
+                  @include fonts("Conv_Gotham-Medium", 48px, 800);
+                  color: $color-green;
+                }
+              }
+              .sponsor-container-bottom-left-des {
+                @include fonts("poppins", 16px, "normal");
+                margin: 0 auto 2% auto;
+              }
+            }
+            div.sponsor-container-bottom-right {
+              border: 1px solid #e9e9ee;
+              @include radius-spk-16();
+              padding: 32px;
+              ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+              
+                li {
+                  margin: 10px 0;
+                  position: relative;
+                  @include fonts("poppins", 16px, "normal");
+                  display: flex;
+                  align-items: center;
+                  justify-content: flex-start;
+                  min-height: 40px; 
+                  padding: 5px 0; 
+              
+                  &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 20px;
+                    height: 20px;
+                    filter: invert(53%) sepia(91%) saturate(508%) hue-rotate(348deg) brightness(105%) contrast(94%);
+                    background-image: url("/themes/custom/sph/images/check-spk.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    margin-right: 8px;
+                    flex-shrink: 0; 
+                  }
+                }
+              }
+              
+  
+              .sponsor-container-bottom-right-btn {
+                margin: 20px 0;
+                text-align: center;
+                a {
+                  max-width: 400px !important;
+                  @include black-btn-green(auto);
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+                  text-align: left;
+                  @include fonts("poppins", 16px, "normal");
+                  position: relative;
+                  padding-left: 24px;
+                  &::after {
+                    content: "";
+                    position: absolute;
+                    right: 10px;
+                    width: 29px;
+                    height: 29px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                  }
+  
+                  &::after {
+                    content: "\2197";
+                    font-size: 16px;
+                    color: #f7941d;
+                  }
                 }
               }
             }
