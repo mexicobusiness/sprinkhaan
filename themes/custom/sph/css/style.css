@@ -5352,7 +5352,7 @@ body.is-mobile {
 }
 /* line 322, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li:last-child a {
-  background-image: url("/themes/custom/sph/images/espana.png");
+  background-image: url("/themes/custom/sph/images/mexico-flag.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -10280,8 +10280,9 @@ body.is-mobile {
   font-weight: 600;
   border-radius: 8px;
   transition: all 0.3s ease;
+  display: none;
 }
-/* line 162, ../sass/components/_calendar.scss */
+/* line 163, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button.fc-button-active {
   background-color: #007aff;
   color: #ffffff;
@@ -10289,15 +10290,15 @@ body.is-mobile {
   display: none;
 }
 @media (min-width: 1170px) {
-  /* line 162, ../sass/components/_calendar.scss */
+  /* line 163, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button.fc-button-active {
-    display: inline-block;
+    display: none;
     background-color: #007aff;
     color: #ffffff;
     border-color: #005ac1;
   }
 }
-/* line 175, ../sass/components/_calendar.scss */
+/* line 176, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button {
   background-color: #007aff;
   color: #ffffff;
@@ -10307,15 +10308,15 @@ body.is-mobile {
   border: none;
   transition: all 0.3s ease;
 }
-/* line 185, ../sass/components/_calendar.scss */
+/* line 186, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button:hover {
   background-color: #005ac1;
 }
-/* line 188, ../sass/components/_calendar.scss */
+/* line 189, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button {
   margin-right: 8px;
 }
-/* line 191, ../sass/components/_calendar.scss */
+/* line 192, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button {
   background-color: transparent;
@@ -10331,25 +10332,25 @@ body.is-mobile {
   padding: 0;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
-/* line 208, ../sass/components/_calendar.scss */
+/* line 209, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button:hover,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button:hover {
   background-color: #007aff;
   border-color: #007aff;
   color: #ffffff;
 }
-/* line 215, ../sass/components/_calendar.scss */
+/* line 216, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button .fc-icon,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button .fc-icon {
   font-size: 20px;
   transition: transform 0.3s ease;
 }
-/* line 221, ../sass/components/_calendar.scss */
+/* line 222, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button:hover .fc-icon,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button:hover .fc-icon {
   transform: scale(1.2);
 }
-/* line 227, ../sass/components/_calendar.scss */
+/* line 228, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container table {
   width: 100%;
   border-collapse: collapse;
@@ -10361,7 +10362,7 @@ body.is-mobile {
   overflow: hidden;
   transition: all 0.3s ease;
 }
-/* line 240, ../sass/components/_calendar.scss */
+/* line 241, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container th {
   text-align: center;
   color: #555555;
@@ -10372,7 +10373,7 @@ body.is-mobile {
   text-transform: uppercase;
   border-bottom: 2px solid #e0e0e0;
 }
-/* line 251, ../sass/components/_calendar.scss */
+/* line 252, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container td {
   text-align: center;
   padding: 18px;
@@ -10380,13 +10381,13 @@ body.is-mobile {
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-/* line 259, ../sass/components/_calendar.scss */
+/* line 260, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container td:hover {
   background-color: #f8f8f8;
   cursor: pointer;
   color: #007aff;
 }
-/* line 265, ../sass/components/_calendar.scss */
+/* line 266, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a {
   display: block;
   text-align: center;
@@ -10400,31 +10401,31 @@ body.is-mobile {
   transition: all 0.3s ease;
   border: 1px solid #007aff;
 }
-/* line 279, ../sass/components/_calendar.scss */
+/* line 280, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a:hover {
   background-color: #007aff;
   color: #ffffff;
   border-color: #005ac1;
 }
-/* line 285, ../sass/components/_calendar.scss */
+/* line 286, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day.fc-sat,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day.fc-sun {
   color: #999999;
 }
-/* line 290, ../sass/components/_calendar.scss */
+/* line 291, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-scroller {
   overflow-y: auto;
   max-height: 550px;
 }
-/* line 295, ../sass/components/_calendar.scss */
+/* line 296, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day {
   border-right: 1px solid #f1f1f1;
 }
-/* line 299, ../sass/components/_calendar.scss */
+/* line 300, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day:last-child {
   border-right: none;
 }
-/* line 303, ../sass/components/_calendar.scss */
+/* line 304, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-title {
   color: #fff;
   font-size: 12px;
