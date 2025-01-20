@@ -17,7 +17,7 @@
             width: 100%;
             .contact-us-tit {
               @include fonts("Conv_Gotham-Medium", 32px, 800);
-              text-align: center;
+              text-align: left;
               line-height: 1;
               margin-bottom: 10px;
               margin: 24px auto;
@@ -256,7 +256,7 @@
               width: 50%;
               .contact-us-tit {
                 @include fonts("Conv_Gotham-Medium", 48px, 800);
-                text-align: center;
+                text-align: left;
                 line-height: 1;
                 margin-bottom: 10px;
                 margin: 24px auto;
@@ -567,7 +567,7 @@
             .progress-step:not(:last-child)::after {
               content: "";
               position: absolute;
-              top: 50%;
+              top: 38%;
               right: -10%;
               width: 100%;
               height: 2px;
@@ -593,6 +593,22 @@
               font-size: 14px;
               font-weight: bold;
               z-index: 2;
+              margin-right: 8px;
+              @include breakpoint($desktop){
+                width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background: #fff;
+              border: 2px solid #ddd;
+              color: #333;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              font-size: 14px;
+              font-weight: bold;
+              z-index: 2;
+              margin-right: none;
+              }
             }
             .progress-marker::before,
             .progress-marker::after {
@@ -606,17 +622,17 @@
             }
 
             .progress-step.is-active .progress-marker {
-              background: #007bff;
+              background: linear-gradient(180deg, rgba(213,83,10,1) 0%, rgba(177,54,12,1) 100%);
               color: #fff;
-              border-color: #007bff;
+              border-color: #902b10;
             }
 
-            .progress-step.is-completed::after {
+            .progress-step .is-completed::after {
               background: #4caf50;
             }
 
             .progress-step.is-active::after {
-              background: #007bff;
+              background: #fbd28c;
             }
 
             .progress-text {
@@ -631,13 +647,15 @@
             }
 
             .progress-step.is-active .progress-text {
-              color: #007bff;
+              color: #fbd28c;
             }
 
             .progress-step.is-completed .progress-text {
               color: #4caf50;
             }
-
+            .js-form-item-terms-of-service{
+              display: flex;
+            }
             #edit-container,
             #edit-container-01,
             #edit-container-02,
@@ -917,8 +935,8 @@
                       cursor: pointer;
                       border: 1px solid #e9e9ee;
                       @include radius-spk-16;
-                      margin: 16px;
-                      width: 91%;
+                      margin: 8px;
+                      width: 94%;
                       height: 95px;
                       padding: 24px;
                       @include transition-all-sph();
@@ -966,6 +984,7 @@
                       padding-top: 16px;
                       span.green {
                         @include fonts("poppins", 18px, 600);
+                        display: contents;
                       }
                       img {
                         margin-top: -32px;
@@ -1049,7 +1068,6 @@
                   }
                 }
                 .webform-multiple-table {
-                  border: 1px solid red;
                   table {
                     width: 100%;
                   }
@@ -1081,7 +1099,14 @@
               justify-content: center;
               text-align: center;
               margin: 20px;
-            
+              flex-wrap: wrap;
+              @include breakpoint($desktop){
+                display: flex;
+              justify-content: center;
+              text-align: center;
+              margin: 20px;
+              flex-wrap: nowrap;
+              }
               .webform-button--next {
                 max-width: 344px !important;
                 @include black-btn-green(auto);

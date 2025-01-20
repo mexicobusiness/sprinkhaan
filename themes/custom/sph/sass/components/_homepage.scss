@@ -4,13 +4,13 @@
   overflow-x: hidden;
   .region-top {
     #block-sph-ntcdesprinkhaan {
-      width: 90%;
+      width: 94%;
       margin: 8% auto;
       position: relative;
-      @include breakpoint($desktop){
+      @include breakpoint($desktop) {
         width: 60%;
-      margin: 8% auto;
-      position: relative;
+        margin: 8% auto;
+        position: relative;
       }
       .ntc-de-sprinkhaan-black-btn {
         @include black-btn();
@@ -35,7 +35,7 @@
         line-height: 1;
         margin-bottom: 10px;
         color: #101828;
-        
+
         span.green {
           @include fonts("Conv_Gotham-Medium", 32px, 800);
           color: $color-green;
@@ -45,28 +45,28 @@
           @include fonts("Conv_Gotham-Medium", 32px, 800);
           color: $color-orange;
         }
-        @include breakpoint($desktop){
+        @include breakpoint($desktop) {
           @include fonts("Conv_Gotham-Medium", 48px, 800);
-        text-align: center;
-        margin: 24px 0px 16px 0;
-        line-height: 1;
-        margin-bottom: 10px;
-        color: #101828;
-        
-        span.green {
-          @include fonts("Conv_Gotham-Medium", 48px, 800);
-          color: $color-green;
-        }
+          text-align: center;
+          margin: 24px 0px 16px 0;
+          line-height: 1;
+          margin-bottom: 10px;
+          color: #101828;
 
-        span.orange {
-          @include fonts("Conv_Gotham-Medium", 48px, 800);
-          color: $color-orange;
-        }
+          span.green {
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            color: $color-green;
+          }
+
+          span.orange {
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            color: $color-orange;
+          }
         }
       }
 
       .ntc-de-sprinkhaan-desc {
-        @include breakpoint($desktop){
+        @include breakpoint($desktop) {
           @include fonts("poppins", 16px, "normal");
           text-align: center;
           width: 60%;
@@ -84,14 +84,17 @@
         margin-bottom: 10px;
         display: flex;
         justify-content: center;
-
         .ntc-de-sprinkhaan-green-btn {
           display: flex;
           justify-content: center;
           align-items: center;
           width: 200px;
           height: 45px;
+          gap: 4px;
           float: left;
+          position: relative;
+          padding: 4px 16px;
+          margin-right: 8px;
           @include transition-all-sph();
           color: $color-white;
           line-height: 16px;
@@ -101,42 +104,39 @@
             rgba(140, 198, 63, 1) 0%,
             rgba(57, 93, 19, 1) 100%
           );
-          a{
-             color: $color-white;
-          @include fonts("poppins", 16px, "normal");
-          }
           @include radius-spk-12();
-          padding: 4px 16px;
-          margin-right: 8px;
-          position: relative;
+          a {
+            color: $color-white;
+            @include fonts("poppins", 14px, "normal");
+          }
+          &:hover {
+            cursor: pointer;
+            transform: scale(1.1);
+            box-shadow: #8cc63f52 0px 20px 25px -5px,
+              #8cc63f52 0px 10px 10px -5px;
+            background: linear-gradient(
+              180deg,
+              #8cc63f 0%,
+              rgba(57, 93, 19, 1) 100%
+            );
+            @include transition-all-sph();
+          }
         }
 
         .ntc-de-sprinkhaan-green-btn::before {
           content: "";
           display: inline-block;
-          width: 42px;
-          height: 25px;
+          width: 27px;
+          height: 27px;
+          background-image: url("/themes/custom/sph/images/Rocket-spk.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+
           filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(78deg)
             brightness(99%) contrast(103%);
-          background-image: url("/themes/custom/sph/images/Rocket-spk.svg");
-          background-size: cover;
-          background-repeat: no-repeat;
+
           margin-right: 8px;
-        }
-        .ntc-de-sprinkhaan-green-btn:hover {
-          box-shadow: #8cc63f52 0px 20px 25px -5px, #8cc63f52 0px 10px 10px -5px;
-          @include transition-all-sph();
-          cursor: pointer;
-          transform: scale(1.1);
-          background: linear-gradient(
-            180deg,
-            #8cc63f 0%,
-            rgba(57, 93, 19, 1) 100%
-          );
-          -webkit-transform: scale(1.1);
-          -moz-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-          -o-transform: scale(1.1);
         }
 
         .ntc-de-sprinkhaan-white-btn {
@@ -151,9 +151,10 @@
           position: relative;
           @include transition-all-sph();
           color: $color-brown;
-          a{ 
+          background: #fff;
+          a {
             @include fonts("poppins", 16px, "normal");
-             color: $color-brown;
+            color: $color-brown;
           }
         }
         .ntc-de-sprinkhaan-white-btn:hover {
@@ -161,7 +162,7 @@
           border: none;
           background: linear-gradient(180deg, #eb4f0b 0%, #c33a0b 100%);
           @include transition-all-sph();
-          a{
+          a {
             color: #fff;
           }
           &::before {
@@ -183,110 +184,111 @@
           background-repeat: no-repeat;
           margin-right: 8px;
         }
-        @include breakpoint($desktop){
+        @include breakpoint($desktop) {
           margin: auto 0;
-        width: 100%;
-        margin-bottom: 10px;
-        display: flex;
-        justify-content: center;
-
-        .ntc-de-sprinkhaan-green-btn {
+          width: 100%;
+          margin-bottom: 10px;
           display: flex;
           justify-content: center;
-          align-items: center;
-          width: auto;
-          height: 45px;
-          float: left;
-          @include transition-all-sph();
-          color: $color-white;
-          @include fonts("poppins", 16px, "normal");
-          background: linear-gradient(
-            180deg,
-            rgba(140, 198, 63, 1) 0%,
-            rgba(57, 93, 19, 1) 100%
-          );
-          a{
-             color: $color-white;
-          @include fonts("poppins", 16px, "normal");
-          }
-          @include radius-spk-12();
-          padding: 4px 16px;
-          margin-right: 24px;
-          position: relative;
-        }
 
-        .ntc-de-sprinkhaan-green-btn::before {
-          content: "";
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(78deg)
-            brightness(99%) contrast(103%);
-          background-image: url("/themes/custom/sph/images/Rocket-spk.svg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          margin-right: 8px;
-        }
-        .ntc-de-sprinkhaan-green-btn:hover {
-          box-shadow: #8cc63f52 0px 20px 25px -5px, #8cc63f52 0px 10px 10px -5px;
-          @include transition-all-sph();
-          cursor: pointer;
-          transform: scale(1.1);
-          background: linear-gradient(
-            180deg,
-            #8cc63f 0%,
-            rgba(57, 93, 19, 1) 100%
-          );
-          -webkit-transform: scale(1.1);
-          -moz-transform: scale(1.1);
-          -ms-transform: scale(1.1);
-          -o-transform: scale(1.1);
-        }
-
-        .ntc-de-sprinkhaan-white-btn {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 195px;
-          height: 45px;
-          float: left;
-          border: 1px solid $color-brown;
-          @include radius-spk-12();
-          position: relative;
-          @include transition-all-sph();
-          color: $color-brown;
-          a{ 
+          .ntc-de-sprinkhaan-green-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
+            height: 45px;
+            float: left;
+            @include transition-all-sph();
+            color: $color-white;
             @include fonts("poppins", 16px, "normal");
-             color: $color-brown;
+            background: linear-gradient(
+              180deg,
+              rgba(140, 198, 63, 1) 0%,
+              rgba(57, 93, 19, 1) 100%
+            );
+            a {
+              color: $color-white;
+              @include fonts("poppins", 16px, "normal");
+            }
+            @include radius-spk-12();
+            padding: 4px 16px;
+            margin-right: 24px;
+            position: relative;
           }
-        }
-        .ntc-de-sprinkhaan-white-btn:hover {
-          color: #fff;
-          border: none;
-          background: linear-gradient(180deg, #eb4f0b 0%, #c33a0b 100%);
-          @include transition-all-sph();
-          a{
-            color: #fff;
-          }
-          &::before {
-            filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(354deg)
-              brightness(108%) contrast(101%);
-          }
-          cursor: pointer;
-        }
 
-        .ntc-de-sprinkhaan-white-btn:before {
-          content: "";
-          display: inline-block;
-          width: 20px;
-          height: 20px;
-          filter: invert(13%) sepia(80%) saturate(3710%) hue-rotate(12deg)
-            brightness(94%) contrast(87%);
-          background-image: url("/themes/custom/sph/images/School-spk.svg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          margin-right: 8px;
-        }
+          .ntc-de-sprinkhaan-green-btn::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(78deg)
+              brightness(99%) contrast(103%);
+            background-image: url("/themes/custom/sph/images/Rocket-spk.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 8px;
+          }
+          .ntc-de-sprinkhaan-green-btn:hover {
+            box-shadow: #8cc63f52 0px 20px 25px -5px,
+              #8cc63f52 0px 10px 10px -5px;
+            @include transition-all-sph();
+            cursor: pointer;
+            transform: scale(1.1);
+            background: linear-gradient(
+              180deg,
+              #8cc63f 0%,
+              rgba(57, 93, 19, 1) 100%
+            );
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+          }
+
+          .ntc-de-sprinkhaan-white-btn {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 195px;
+            height: 45px;
+            float: left;
+            border: 1px solid $color-brown;
+            @include radius-spk-12();
+            position: relative;
+            @include transition-all-sph();
+            color: $color-brown;
+            a {
+              @include fonts("poppins", 16px, "normal");
+              color: $color-brown;
+            }
+          }
+          .ntc-de-sprinkhaan-white-btn:hover {
+            color: #fff;
+            border: none;
+            background: linear-gradient(180deg, #eb4f0b 0%, #c33a0b 100%);
+            @include transition-all-sph();
+            a {
+              color: #fff;
+            }
+            &::before {
+              filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(354deg)
+                brightness(108%) contrast(101%);
+            }
+            cursor: pointer;
+          }
+
+          .ntc-de-sprinkhaan-white-btn:before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            filter: invert(13%) sepia(80%) saturate(3710%) hue-rotate(12deg)
+              brightness(94%) contrast(87%);
+            background-image: url("/themes/custom/sph/images/School-spk.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 8px;
+          }
         }
       }
 
@@ -459,32 +461,32 @@
         height: auto;
         @include radius-spk-16();
       }
-      @include breakpoint($desktop){
-         width: 1001px;
-      height: 580px;
-      position: relative;
-      margin: 0 auto;
-      background-color: rgba(255, 255, 255, 0.774);
-      border: 1px solid #e9e9ee;
-      @include radius-spk-24();
-      backdrop-filter: blur(17.7px);
-      -webkit-backdrop-filter: blur(17.7px);
-      background: rgba(255, 255, 255, 0.11);
-      -moz-backdrop-filter: blur(17.7px);
-      transform: translateY(100vh) scale(0.7);
-      opacity: 0;
-      animation: slide-up-bounce 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55)
-        forwards;
-      animation-delay: 2.1s;
-
-      video {
+      @include breakpoint($desktop) {
+        width: 1001px;
+        height: 580px;
+        position: relative;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.774);
         border: 1px solid #e9e9ee;
-        padding: 8px;
-        margin: 8px;
-        width: 98.5%;
-        height: auto;
-        @include radius-spk-16();
-      }
+        @include radius-spk-24();
+        backdrop-filter: blur(17.7px);
+        -webkit-backdrop-filter: blur(17.7px);
+        background: rgba(255, 255, 255, 0.11);
+        -moz-backdrop-filter: blur(17.7px);
+        transform: translateY(100vh) scale(0.7);
+        opacity: 0;
+        animation: slide-up-bounce 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55)
+          forwards;
+        animation-delay: 2.1s;
+
+        video {
+          border: 1px solid #e9e9ee;
+          padding: 8px;
+          margin: 8px;
+          width: 98.5%;
+          height: auto;
+          @include radius-spk-16();
+        }
       }
     }
 
@@ -555,34 +557,34 @@
           margin: 0 0 -4px -2px;
         }
       }
-      
+
       @media screen and (max-width: 768px) {
         .slick-track {
           width: auto !important;
           display: inline-flex !important;
         }
-      
+
         .slick__slide {
           width: 300px !important;
           flex-shrink: 0;
           margin-right: 16px;
         }
-      
+
         .slick-slider {
           overflow-x: auto !important;
           scroll-snap-type: x mandatory;
           -webkit-overflow-scrolling: touch;
         }
-      
+
         .slick-slider::-webkit-scrollbar {
           display: none;
         }
-      
+
         .slick__slide .views-field {
           width: 100%;
         }
       }
-      
+
       .slick-list .slick__slide {
         border: 1px solid #e9e9ee;
         margin: 16px;
@@ -662,7 +664,7 @@
           background-repeat: no-repeat;
           position: absolute;
           top: -12px;
-          left: 3px;
+          left: 0;
           filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg)
             brightness(95%) contrast(94%);
         }
@@ -681,7 +683,7 @@
         }
       }
     }
-    @include breakpoint($desktop){
+    @include breakpoint($desktop) {
       width: 100%;
       display: inline-block;
       position: relative;
@@ -1127,7 +1129,7 @@
           }
         }
       }
-      @include breakpoint($desktop){
+      @include breakpoint($desktop) {
         margin: 4% 0;
         .clases-top {
           position: relative;
@@ -1170,7 +1172,7 @@
           display: inline-block;
           position: relative;
           margin: 8% 0 1% 0;
-  
+
           .clases-button-left {
             width: 348px;
             height: auto;
@@ -1275,7 +1277,7 @@
               animation: move-up-down 2s infinite ease-in-out;
             }
           }
-  
+
           .clases-button-right {
             width: 348px;
             float: left;
@@ -1364,7 +1366,7 @@
               background-repeat: no-repeat;
               margin-right: 8px;
             }
-  
+
             &::after {
               content: "";
               position: absolute;
@@ -1379,24 +1381,24 @@
               animation: move-up-down 2s infinite ease-in-out;
             }
           }
-  
+
           .clases-button-middle {
             width: 381px;
             float: left;
             @include radius-spk-24();
             position: relative;
-  
+
             .clases-button-middle-img {
               display: flex;
             }
-  
+
             img {
               width: 100%;
               height: auto;
               @include radius-spk-24();
               z-index: 2;
             }
-  
+
             &::before {
               content: "";
               position: absolute;
@@ -1412,7 +1414,7 @@
               -webkit-filter: blur(64px);
             }
           }
-  
+
           @keyframes move-up-down {
             0%,
             100% {
@@ -1467,23 +1469,23 @@
           width: auto !important;
           display: inline-flex !important;
         }
-      
+
         .slick__slide {
           width: 300px !important;
           flex-shrink: 0;
           margin-right: 16px;
         }
-      
+
         .slick-slider {
           overflow-x: auto !important;
           scroll-snap-type: x mandatory;
           -webkit-overflow-scrolling: touch;
         }
-      
+
         .slick-slider::-webkit-scrollbar {
           display: none;
         }
-      
+
         .slick__slide .views-field {
           width: 100%;
         }
@@ -1614,168 +1616,168 @@
           border: 0px solid;
         }
       }
-      @include breakpoint($desktop){
+      @include breakpoint($desktop) {
         margin: 20px 0;
-      display: inline-block;
-      position: relative;
-      width: 100%;
-      header {
-        .lang {
-          display: none;
-        }
-        .cultura-btn {
-          @include black-btn();
-        }
-        .cultura-btn::before {
-          content: "";
-          display: inline-block;
-          width: 80px;
-          height: 80px;
-          background-image: url("/themes/custom/sph/images/Explore-spk-img.png");
-          background-size: cover;
-          background-repeat: no-repeat;
-          margin: -93px -4px -48px -20px;
-        }
-        .cultura-tit {
-          @include fonts("Conv_Gotham-Medium", 48px, 800);
-          text-align: center;
-          line-height: 1;
-          margin-bottom: 10px;
-          margin: 24px auto 32px auto;
-          width: 816px;
-          color: #101828;
-          span.green {
-            @include fonts("Conv_Gotham-Medium", 48px, 800);
-            color: $color-green;
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        header {
+          .lang {
+            display: none;
           }
-        }
-      }
-      .slick-list .slick__slide {
-        .slick__slide {
-          padding: 16px;
-        }
-        .cultura-img {
-          display: inline-block;
-          position: relative;
-
-          img {
-            width: 100%;
-            height: auto;
-            display: block;
+          .cultura-btn {
+            @include black-btn();
           }
-
-          &::after {
-            content: "";
-            position: absolute;
-            top: 30%;
-            left: 0;
-            width: 100%;
-            height: 70%;
-            background: linear-gradient(
-              to bottom,
-              rgba(0, 0, 0, 0) 0%,
-              rgba(0, 0, 0, 1) 100%
-            );
-            pointer-events: none;
-            @include radius-spk-16();
-          }
-        }
-
-        .cultura-main-row {
-          display: inline-block;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 381px;
-          height: 230px;
-          padding: 20px;
-          .cultura-tit {
-            @include fonts("Conv_Gotham-Medium", 24px, 800);
-            color: $color-white;
-          }
-          .cultura-dat {
-            background: rgba(255, 255, 255, 0.28);
-            border-radius: 16px;
-            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(8.5px);
-            -webkit-backdrop-filter: blur(8.5px);
-            border: 1px solid rgba(255, 255, 255, 0.47);
-            @include radius-sph();
-            text-align: center;
-            width: auto;
-            max-width: 170px;
-            height: 40px;
-            color: $color-white;
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            @include fonts("poppins", 14px, "normal");
-          }
-          .cultura-dat::before {
+          .cultura-btn::before {
             content: "";
             display: inline-block;
-            width: 18px;
-            height: 18px;
-            background-image: url("/themes/custom/sph/images/calendario.svg");
+            width: 80px;
+            height: 80px;
+            background-image: url("/themes/custom/sph/images/Explore-spk-img.png");
             background-size: cover;
             background-repeat: no-repeat;
-            margin-right: 4px;
-            filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(354deg)
-              brightness(108%) contrast(101%);
+            margin: -93px -4px -48px -20px;
           }
-          .cultura-sho {
-            @include fonts("poppins", 14px, "normal");
-            color: $color-white;
-            height: 60px;
-            margin: 8px 0;
+          .cultura-tit {
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            text-align: center;
+            line-height: 1;
+            margin-bottom: 10px;
+            margin: 24px auto 32px auto;
+            width: 816px;
+            color: #101828;
+            span.green {
+              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              color: $color-green;
+            }
           }
-          .cultura-reg {
-            max-width: none !important;
-            @include black-btn-green(auto);
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            text-align: left;
-            @include fonts("poppins", 16px, "normal");
+        }
+        .slick-list .slick__slide {
+          .slick__slide {
+            padding: 16px;
+          }
+          .cultura-img {
+            display: inline-block;
             position: relative;
-            padding-left: 24px;
+
+            img {
+              width: 100%;
+              height: auto;
+              display: block;
+            }
 
             &::after {
               content: "";
               position: absolute;
-              right: 10px;
-              width: 29px;
-              height: 29px;
-              background-color: #fff;
-              border-radius: 50%;
+              top: 30%;
+              left: 0;
+              width: 100%;
+              height: 70%;
+              background: linear-gradient(
+                to bottom,
+                rgba(0, 0, 0, 0) 0%,
+                rgba(0, 0, 0, 1) 100%
+              );
+              pointer-events: none;
+              @include radius-spk-16();
+            }
+          }
+
+          .cultura-main-row {
+            display: inline-block;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 381px;
+            height: 230px;
+            padding: 20px;
+            .cultura-tit {
+              @include fonts("Conv_Gotham-Medium", 24px, 800);
+              color: $color-white;
+            }
+            .cultura-dat {
+              background: rgba(255, 255, 255, 0.28);
+              border-radius: 16px;
+              box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+              backdrop-filter: blur(8.5px);
+              -webkit-backdrop-filter: blur(8.5px);
+              border: 1px solid rgba(255, 255, 255, 0.47);
+              @include radius-sph();
+              text-align: center;
+              width: auto;
+              max-width: 170px;
+              height: 40px;
+              color: $color-white;
+              position: relative;
               display: flex;
               justify-content: center;
               align-items: center;
+              @include fonts("poppins", 14px, "normal");
             }
+            .cultura-dat::before {
+              content: "";
+              display: inline-block;
+              width: 18px;
+              height: 18px;
+              background-image: url("/themes/custom/sph/images/calendario.svg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              margin-right: 4px;
+              filter: invert(100%) sepia(0%) saturate(1%) hue-rotate(354deg)
+                brightness(108%) contrast(101%);
+            }
+            .cultura-sho {
+              @include fonts("poppins", 14px, "normal");
+              color: $color-white;
+              height: 60px;
+              margin: 8px 0;
+            }
+            .cultura-reg {
+              max-width: none !important;
+              @include black-btn-green(auto);
+              display: flex;
+              justify-content: flex-start;
+              align-items: center;
+              text-align: left;
+              @include fonts("poppins", 16px, "normal");
+              position: relative;
+              padding-left: 24px;
 
-            &::after {
-              content: "\2197";
-              font-size: 16px;
-              color: #f7941d;
+              &::after {
+                content: "";
+                position: absolute;
+                right: 10px;
+                width: 29px;
+                height: 29px;
+                background-color: #fff;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+              }
+
+              &::after {
+                content: "\2197";
+                font-size: 16px;
+                color: #f7941d;
+              }
             }
           }
         }
-      }
-      nav {
-        .slick-prev {
-          width: 60px;
-          position: absolute;
-          left: -80px;
-          border: 0px solid;
+        nav {
+          .slick-prev {
+            width: 60px;
+            position: absolute;
+            left: -80px;
+            border: 0px solid;
+          }
+          .slick-next {
+            width: 60px;
+            position: absolute;
+            right: -80px;
+            border: 0px solid;
+          }
         }
-        .slick-next {
-          width: 60px;
-          position: absolute;
-          right: -80px;
-          border: 0px solid;
-        }
-      }
       }
     }
 
@@ -1828,23 +1830,23 @@
           width: auto !important;
           display: inline-flex !important;
         }
-      
+
         .slick__slide {
           width: 300px !important;
           flex-shrink: 0;
           margin-right: 16px;
         }
-      
+
         .slick-slider {
           overflow-x: auto !important;
           scroll-snap-type: x mandatory;
           -webkit-overflow-scrolling: touch;
         }
-      
+
         .slick-slider::-webkit-scrollbar {
           display: none;
         }
-      
+
         .slick__slide .views-field {
           width: 100%;
         }
@@ -1933,135 +1935,134 @@
           border: 0px solid;
         }
       }
-      @include breakpoint($desktop){
-
-      margin: 20px 0;
-      display: inline-block;
-      position: relative;
-      width: 100%;
-      header {
+      @include breakpoint($desktop) {
+        margin: 20px 0;
+        display: inline-block;
         position: relative;
-        margin: 0 auto;
-        width: 816px;
-        .lang {
-          display: none;
-        }
-        .camp-btn {
-          @include black-btn();
-        }
-        .camp-btn::before {
-          content: "";
-          display: inline-block;
-          width: 80px;
-          height: 80px;
-          background-image: url("/themes/custom/sph/images/Camp-spk.png");
-          background-size: cover;
-          background-repeat: no-repeat;
-          margin: -93px -4px -48px -20px;
-        }
-        .camp-tit {
-          @include fonts("Conv_Gotham-Medium", 48px, 800);
-          text-align: center;
-          line-height: 1;
-          margin-bottom: 10px;
-          margin: 24px auto;
-          color: #101828;
-          span.green {
+        width: 100%;
+        header {
+          position: relative;
+          margin: 0 auto;
+          width: 816px;
+          .lang {
+            display: none;
+          }
+          .camp-btn {
+            @include black-btn();
+          }
+          .camp-btn::before {
+            content: "";
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background-image: url("/themes/custom/sph/images/Camp-spk.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: -93px -4px -48px -20px;
+          }
+          .camp-tit {
             @include fonts("Conv_Gotham-Medium", 48px, 800);
-            color: $color-green;
+            text-align: center;
+            line-height: 1;
+            margin-bottom: 10px;
+            margin: 24px auto;
+            color: #101828;
+            span.green {
+              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              color: $color-green;
+            }
+          }
+          .camp-desc {
+            @include fonts("poppins", 16px, "normal");
+            color: #101828;
+            text-align: center;
+            margin-bottom: 24px;
           }
         }
-        .camp-desc {
-          @include fonts("poppins", 16px, "normal");
-          color: #101828;
-          text-align: center;
-          margin-bottom: 24px;
-        }
-      }
-      .slick-list .slick__slide {
-        margin-right: 24px;
-        height: 410px;
-        border: 1px solid #e9e9ee;
-        @include radius-spk-16();
-        .camp-title {
-          @include fonts("Conv_Gotham-Medium", 24px, 800);
-          color: #101828;
-          margin: 8px;
-        }
-        .camp-date {
+        .slick-list .slick__slide {
+          margin-right: 24px;
+          height: 410px;
           border: 1px solid #e9e9ee;
-          @include radius-sph();
-          text-align: center;
-          width: auto;
-          max-width: 290px;
-          height: 40px;
-          color: #101828;
-          position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          @include fonts("poppins", 14px, "normal");
-          margin: 8px;
-        }
-        .camp-date::before {
-          content: "";
-          display: inline-block;
-          width: 18px;
-          height: 18px;
-          background-image: url("/themes/custom/sph/images/calendario.svg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          margin-right: 4px;
-        }
-        .camp-sdesc {
-          @include fonts("poppins", 14px, "normal");
-          padding: 4px 12px;
-        }
-        a .camp-btn {
-          max-width: 344px !important;
-          @include black-btn-green(auto);
-          display: flex;
-          justify-content: flex-start;
-          align-items: center;
-          text-align: left;
-          @include fonts("poppins", 16px, "normal");
-          position: relative;
-          padding-left: 24px;
-          margin: 8px;
-          &::after {
-            content: "";
-            position: absolute;
-            right: 10px;
-            width: 29px;
-            height: 29px;
-            background-color: #fff;
-            border-radius: 50%;
+          @include radius-spk-16();
+          .camp-title {
+            @include fonts("Conv_Gotham-Medium", 24px, 800);
+            color: #101828;
+            margin: 8px;
+          }
+          .camp-date {
+            border: 1px solid #e9e9ee;
+            @include radius-sph();
+            text-align: center;
+            width: auto;
+            max-width: 290px;
+            height: 40px;
+            color: #101828;
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
+            @include fonts("poppins", 14px, "normal");
+            margin: 8px;
           }
+          .camp-date::before {
+            content: "";
+            display: inline-block;
+            width: 18px;
+            height: 18px;
+            background-image: url("/themes/custom/sph/images/calendario.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin-right: 4px;
+          }
+          .camp-sdesc {
+            @include fonts("poppins", 14px, "normal");
+            padding: 4px 12px;
+          }
+          a .camp-btn {
+            max-width: 344px !important;
+            @include black-btn-green(auto);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: left;
+            @include fonts("poppins", 16px, "normal");
+            position: relative;
+            padding-left: 24px;
+            margin: 8px;
+            &::after {
+              content: "";
+              position: absolute;
+              right: 10px;
+              width: 29px;
+              height: 29px;
+              background-color: #fff;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
 
-          &::after {
-            content: "\2197";
-            font-size: 16px;
-            color: #f7941d;
+            &::after {
+              content: "\2197";
+              font-size: 16px;
+              color: #f7941d;
+            }
           }
         }
-      }
-      nav {
-        .slick-prev {
-          width: 60px;
-          position: absolute;
-          left: -80px;
-          border: 0px solid;
+        nav {
+          .slick-prev {
+            width: 60px;
+            position: absolute;
+            left: -80px;
+            border: 0px solid;
+          }
+          .slick-next {
+            width: 60px;
+            position: absolute;
+            right: -80px;
+            border: 0px solid;
+          }
         }
-        .slick-next {
-          width: 60px;
-          position: absolute;
-          right: -80px;
-          border: 0px solid;
-        }
-      }
       }
     }
     #block-sph-views-block-news-block-1 {
@@ -2113,23 +2114,23 @@
           width: auto !important;
           display: inline-flex !important;
         }
-      
+
         .slick__slide {
           width: 300px !important;
           flex-shrink: 0;
           margin-right: 16px;
         }
-      
+
         .slick-slider {
           overflow-x: auto !important;
           scroll-snap-type: x mandatory;
           -webkit-overflow-scrolling: touch;
         }
-      
+
         .slick-slider::-webkit-scrollbar {
           display: none;
         }
-      
+
         .slick__slide .views-field {
           width: 100%;
         }
@@ -2212,128 +2213,128 @@
           border: 0px solid;
         }
       }
-      @include breakpoint($desktop){
+      @include breakpoint($desktop) {
         margin: 4% 0;
-      display: inline-block;
-      position: relative;
-      width: 100%;
-      header {
+        display: inline-block;
         position: relative;
-        margin: 0 auto;
-        width: 721px;
-        .lang {
-          display: none;
-        }
-        .news-btn {
-          max-width: 200px;
-          @include black-btn();
-        }
-        .news-btn::before {
-          content: "";
-          display: inline-block;
-          width: 80px;
-          height: 80px;
-          background-image: url("/themes/custom/sph/images/News-spk.png");
-          background-size: cover;
-          background-repeat: no-repeat;
-          margin: -93px -4px -48px -20px;
-        }
-        .news-tit {
-          @include fonts("Conv_Gotham-Medium", 48px, 800);
-          text-align: center;
-          line-height: 1;
-          margin-bottom: 10px;
-          margin: 24px auto;
-          color: #101828;
-          span.green {
-            @include fonts("Conv_Gotham-Medium", 48px, 800);
-            color: $color-green;
-          }
-        }
-        .news-desc {
-          @include fonts("poppins", 16px, "normal");
-          margin-bottom: 20px;
-          text-align: center;
-        }
-      }
-      .slick-list .slick__slide {
-        margin-right: 24px;
-        height: 470px;
-        border: 1px solid #e9e9ee;
-        @include radius-spk-16();
-        .news-image {
-          border-top-left-radius: 16px;
-          border-top-right-radius: 16px;
-          width: 364px;
-          img {
-            width: 100%;
-            height: auto;
-          }
-        }
-        .news-date {
-          border: 1px solid #e9e9ee;
-          @include radius-sph();
-          text-align: center;
-          width: auto;
-          max-width: 190px;
-          height: 40px;
-          color: #101828;
+        width: 100%;
+        header {
           position: relative;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          @include fonts("poppins", 14px, "normal");
-          margin: 16px;
-          &::before {
+          margin: 0 auto;
+          width: 721px;
+          .lang {
+            display: none;
+          }
+          .news-btn {
+            max-width: 200px;
+            @include black-btn();
+          }
+          .news-btn::before {
             content: "";
             display: inline-block;
-            width: 18px;
-            height: 18px;
-            background-image: url("/themes/custom/sph/images/calendario.svg");
+            width: 80px;
+            height: 80px;
+            background-image: url("/themes/custom/sph/images/News-spk.png");
             background-size: cover;
             background-repeat: no-repeat;
-            margin-right: 4px;
+            margin: -93px -4px -48px -20px;
+          }
+          .news-tit {
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            text-align: center;
+            line-height: 1;
+            margin-bottom: 10px;
+            margin: 24px auto;
+            color: #101828;
+            span.green {
+              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              color: $color-green;
+            }
+          }
+          .news-desc {
+            @include fonts("poppins", 16px, "normal");
+            margin-bottom: 20px;
+            text-align: center;
           }
         }
-        .news-title {
-          @include fonts("Conv_Gotham-Medium", 19px, "normal");
-          color: #101828;
-          line-height: 24px;
-          text-align: left;
-          margin-left: 16px;
+        .slick-list .slick__slide {
+          margin-right: 24px;
+          height: 470px;
+          border: 1px solid #e9e9ee;
+          @include radius-spk-16();
+          .news-image {
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            width: 364px;
+            img {
+              width: 100%;
+              height: auto;
+            }
+          }
+          .news-date {
+            border: 1px solid #e9e9ee;
+            @include radius-sph();
+            text-align: center;
+            width: auto;
+            max-width: 190px;
+            height: 40px;
+            color: #101828;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include fonts("poppins", 14px, "normal");
+            margin: 16px;
+            &::before {
+              content: "";
+              display: inline-block;
+              width: 18px;
+              height: 18px;
+              background-image: url("/themes/custom/sph/images/calendario.svg");
+              background-size: cover;
+              background-repeat: no-repeat;
+              margin-right: 4px;
+            }
+          }
+          .news-title {
+            @include fonts("Conv_Gotham-Medium", 19px, "normal");
+            color: #101828;
+            line-height: 24px;
+            text-align: left;
+            margin-left: 16px;
+          }
+          .news-sdesc {
+            @include fonts("poppins", 14px, "normal");
+            color: #101828;
+            text-align: left;
+            margin: 4px 16px 8px 16px;
+          }
+          a .news-btn {
+            max-width: 324px !important;
+            text-align: left;
+            @include fonts("poppins", 16px, "normal");
+            position: relative;
+            margin: 8px;
+            height: 45px !important;
+            @include black-btn();
+            width: auto !important;
+            background-color: #0077ff !important;
+          }
         }
-        .news-sdesc {
-          @include fonts("poppins", 14px, "normal");
-          color: #101828;
-          text-align: left;
-          margin: 4px 16px 8px 16px;
+        nav {
+          .slick-prev {
+            width: 60px;
+            position: absolute;
+            left: -80px;
+            border: 0px solid;
+          }
+          .slick-next {
+            width: 60px;
+            position: absolute;
+            right: -80px;
+            border: 0px solid;
+          }
         }
-        a .news-btn {
-          max-width: 324px !important;
-          text-align: left;
-          @include fonts("poppins", 16px, "normal");
-          position: relative;
-          margin: 8px;
-          height: 45px !important;
-          @include black-btn();
-          width: auto !important;
-          background-color: #0077ff !important;
-        }
-      }
-      nav {
-        .slick-prev {
-          width: 60px;
-          position: absolute;
-          left: -80px;
-          border: 0px solid;
-        }
-        .slick-next {
-          width: 60px;
-          position: absolute;
-          right: -80px;
-          border: 0px solid;
-        }
-      }
       }
     }
     #block-sph-views-block-nuestro-equipo-block-1 {
@@ -2406,76 +2407,76 @@
           color: #101828;
         }
       }
-      @include breakpoint($desktop){
+      @include breakpoint($desktop) {
         margin: 20px 0;
-      display: inline-block;
-      position: relative;
-      width: 100%;
-      header {
+        display: inline-block;
         position: relative;
-        margin: 0 auto;
-        width: 721px;
-        .lang {
-          display: none;
-        }
-        .team-btn {
-          max-width: 190px;
-          @include black-btn();
-        }
-        .team-btn::before {
-          content: "";
-          display: inline-block;
-          width: 80px;
-          height: 80px;
-          background-image: url("/themes/custom/sph/images/Team-spk.png");
-          background-size: cover;
-          background-repeat: no-repeat;
-          margin: -93px -4px -48px -20px;
-        }
-        .team-tit {
-          @include fonts("Conv_Gotham-Medium", 48px, 800);
-          text-align: center;
-          line-height: 1;
-          margin-bottom: 10px;
-          margin: 24px auto;
-          color: #101828;
-          span.green {
+        width: 100%;
+        header {
+          position: relative;
+          margin: 0 auto;
+          width: 721px;
+          .lang {
+            display: none;
+          }
+          .team-btn {
+            max-width: 190px;
+            @include black-btn();
+          }
+          .team-btn::before {
+            content: "";
+            display: inline-block;
+            width: 80px;
+            height: 80px;
+            background-image: url("/themes/custom/sph/images/Team-spk.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: -93px -4px -48px -20px;
+          }
+          .team-tit {
             @include fonts("Conv_Gotham-Medium", 48px, 800);
-            color: $color-green;
+            text-align: center;
+            line-height: 1;
+            margin-bottom: 10px;
+            margin: 24px auto;
+            color: #101828;
+            span.green {
+              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              color: $color-green;
+            }
+          }
+          .team-desc {
+            @include fonts("poppins", 16px, "normal");
+            margin-bottom: 40px;
+            text-align: center;
           }
         }
-        .team-desc {
-          @include fonts("poppins", 16px, "normal");
-          margin-bottom: 40px;
+        .views-row {
+          width: calc(91% / 4);
+          float: left;
+          margin-right: 24px;
           text-align: center;
-        }
-      }
-      .views-row {
-        width: calc(91% / 4);
-        float: left;
-        margin-right: 24px;
-        text-align: center;
-        .team-photo {
-          img {
-            width: 154px;
-            height: auto;
+          .team-photo {
+            img {
+              width: 154px;
+              height: auto;
+            }
+          }
+          .team-name {
+            @include fonts("Conv_Gotham-Medium", 32px, "normal");
+            margin-bottom: 4px;
+            color: #101828;
+          }
+          .team-group {
+            @include fonts("poppins", 16px, "normal");
+            margin-bottom: 8px;
+            color: #8cc63f;
+          }
+          .team-desc {
+            @include fonts("poppins", 16px, "normal");
+            color: #101828;
           }
         }
-        .team-name {
-          @include fonts("Conv_Gotham-Medium", 32px, "normal");
-          margin-bottom: 4px;
-          color: #101828;
-        }
-        .team-group {
-          @include fonts("poppins", 16px, "normal");
-          margin-bottom: 8px;
-          color: #8cc63f;
-        }
-        .team-desc {
-          @include fonts("poppins", 16px, "normal");
-          color: #101828;
-        }
-      }
       }
     }
   }
@@ -2558,7 +2559,7 @@
           }
         }
       }
-      @include breakpoint($desktop){
+      @include breakpoint($desktop) {
         margin: 5% 0;
         display: inline-block;
         position: relative;
@@ -2722,7 +2723,7 @@
           -webkit-filter: blur(64px);
         }
       }
-      @include breakpoint($desktop){
+      @include breakpoint($desktop) {
         position: relative;
         margin: 0 auto;
         width: 721px;
@@ -2770,7 +2771,7 @@
               justify-content: center;
               align-items: center;
             }
-  
+
             &::after {
               content: "\2197";
               font-size: 16px;
@@ -2790,7 +2791,6 @@
             @include radius-spk-24();
             z-index: 2;
           }
-  
           &::before {
             content: "";
             position: absolute;
