@@ -536,6 +536,7 @@
               .js-form-item {
                 display: flex;
                 align-items: center;
+                gap: 8px;
                 label {
                   text-align: left;
                   @include fonts("poppins", 16px, 600);
