@@ -5237,7 +5237,7 @@ body.is-mobile {
 }
 /* line 315, ../sass/components/_header.scss */
 #header .header-first #block-sph-languageswitcher ul.links li:first-child a {
-  background-image: url("/themes/custom/sph/images/espana.png");
+  background-image: url("/themes/custom/sph/images/mexico-flag.png");
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
