@@ -140,11 +140,11 @@
         }
 
         .menu {
-          display: inline-block!important;
-          height: auto!important;
+          display: inline-block !important;
+          height: auto !important;
           flex-direction: column;
           margin-top: 4px;
-          background-color: #fff!important;
+          background-color: #fff !important;
           @include radius-spk-16();
           padding: 4px;
         }
@@ -231,13 +231,12 @@
               color: #8cc63f;
             }
           }
-
           .is-active {
             @include -sph-hoverComponent();
             padding: 24px;
             color: #8cc63f;
             @include fonts("poppins", 14px, 500);
-
+            height: 45px;
             @include breakpoint($desktop) {
               @include -sph-hoverComponent();
               padding: 8px;

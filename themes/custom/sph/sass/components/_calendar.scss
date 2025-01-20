@@ -22,15 +22,27 @@
               }
             }
             .cal-tit {
-              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              @include fonts("Conv_Gotham-Medium", 32px, 800);
               text-align: center;
               line-height: 1;
               margin-bottom: 10px;
               margin: 24px auto;
               color: #101828;
               span.green {
-                @include fonts("Conv_Gotham-Medium", 48px, 800);
+                @include fonts("Conv_Gotham-Medium", 32px, 800);
                 color: $color-green;
+              }
+              @include breakpoint($desktop) {
+                @include fonts("Conv_Gotham-Medium", 48px, 800);
+                text-align: center;
+                line-height: 1;
+                margin-bottom: 10px;
+                margin: 24px auto;
+                color: #101828;
+                span.green {
+                  @include fonts("Conv_Gotham-Medium", 48px, 800);
+                  color: $color-green;
+                }
               }
             }
             .cal-des {
@@ -38,7 +50,14 @@
               color: #101828;
               text-align: center;
               margin: 8px auto 24px auto;
-              width: 70%;
+              width: 90%;
+              @include breakpoint($desktop) {
+                @include fonts("poppins", 16px, "normal");
+                color: #101828;
+                text-align: center;
+                margin: 8px auto 24px auto;
+                width: 70%;
+              }
             }
             .cal-colors {
               display: inline-flex;
@@ -78,9 +97,18 @@
               justify-content: space-between;
               align-items: center;
               background-color: #ffffff;
-              padding: 12px 24px;
+              padding: 0;
               box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
               border-radius: 12px;
+              @include breakpoint($desktop) {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #ffffff;
+                padding: 12px 24px;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+                border-radius: 12px;
+              }
             }
 
             .fc-left {
@@ -135,6 +163,13 @@
               background-color: #007aff;
               color: #ffffff;
               border-color: #005ac1;
+              display: none;
+              @include breakpoint($desktop) {
+                display: inline-block;
+                background-color: #007aff;
+                color: #ffffff;
+                border-color: #005ac1;
+              }
             }
 
             .fc-today-button {
@@ -150,7 +185,7 @@
             .fc-today-button:hover {
               background-color: #005ac1;
             }
-            .fc-prev-button{
+            .fc-prev-button {
               margin-right: 8px;
             }
             .fc-prev-button,
@@ -187,7 +222,6 @@
             .fc-next-button:hover .fc-icon {
               transform: scale(1.2);
             }
-
 
             .fc-view-container {
               table {
@@ -227,7 +261,6 @@
                 cursor: pointer;
                 color: #007aff;
               }
-
 
               .fc-event-container a {
                 display: block;

@@ -7,9 +7,9 @@
 
         .image {
           float: left;
-          width: 360px;
+          width: 100%;
           height: 360px;
-          margin: -8% 24px 0px 1px;
+          margin: 0;
           overflow: hidden;
           @include radius-spk-16();
           box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -17,7 +17,7 @@
         
         .image img {
           display: block; 
-          width: 360px;
+          width: 100%;
           height: 360px;
           object-fit: cover; 
           @include transition-all-sph();
@@ -36,8 +36,9 @@
         .title,
         .author,
         .descrption {
-          margin-left: 380px; 
-          display: flex;
+          width: 100%;
+          margin-left: 0; 
+          display: inline-block;
           flex-wrap: wrap;
         }
 
@@ -60,7 +61,7 @@
 
 
         .author {
-          display: flex;
+          display: inline-block;
           justify-content: flex-start;
           align-items: center;
           font-size: 14px;
@@ -87,7 +88,7 @@
 
   
         .register-btn{
-          max-width: 344px !important;
+          max-width: 97% !important;
           @include black-btn-green(auto);
           display: flex;
           justify-content: flex-start;
@@ -143,6 +144,32 @@
             header {
               display: none;
             }
+            @media screen and (max-width: 768px) {
+              .slick-track {
+                width: auto !important;
+                display: inline-flex !important;
+              }
+            
+              .slick__slide {
+                width: 300px !important;
+                flex-shrink: 0;
+                margin-right: 16px;
+              }
+            
+              .slick-slider {
+                overflow-x: auto !important;
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
+              }
+            
+              .slick-slider::-webkit-scrollbar {
+                display: none;
+              }
+            
+              .slick__slide .views-field {
+                width: 100%;
+              }
+            }
             .slick-list .slick__slide {
               margin-right: 24px;
               height: 470px;
@@ -151,7 +178,7 @@
               .news-image {
                 border-top-left-radius: 16px;
                 border-top-right-radius: 16px;
-                width: 364px;
+                width: 100%;
                 img {
                   width: 100%;
                   height: auto;
@@ -196,7 +223,7 @@
                 margin: 4px 16px 8px 16px;
               }
               a .news-btn {
-                max-width: 324px !important;
+                max-width: 270px !important;
                 text-align: left;
                 @include fonts("poppins", 16px, "normal");
                 position: relative;
@@ -219,6 +246,229 @@
                 position: absolute;
                 right: -80px;
                 border: 0px solid;
+              }
+            }
+          }
+        }
+        @include breakpoint($desktop){
+          margin: 30px 0;
+
+          .image {
+            float: left;
+            width: 360px;
+            height: 360px;
+            margin: -8% 24px 0px 1px;
+            overflow: hidden;
+            @include radius-spk-16();
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+          }
+          
+          .image img {
+            display: block; 
+            width: 360px;
+            height: 360px;
+            object-fit: cover; 
+            @include transition-all-sph();
+            object-position: center; 
+          }
+          
+  
+          .image img:hover {
+            transform: scale(1.05);
+          }
+  
+          .type{
+            margin-top: 8%;
+          }
+          .type,
+          .title,
+          .author,
+          .descrption {
+            width: auto;
+            margin-left: 380px; 
+            display: flex;
+            flex-wrap: wrap;
+          }
+  
+   
+          .type {
+            font-size: 14px;
+            color: #00adb5;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            font-weight: bold;
+          }
+  
+          .title h1 {
+            @include fonts("Conv_Gotham-Medium", 32px, "normal");
+            color: #101828;
+            margin: 0;
+            text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+          }
+  
+  
+          .author {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 14px;
+            color: #393e46;
+            margin: 12px 0;
+          }
+  
+          .author-date {
+            font-style: italic;
+            color: #6c757d;
+          }
+  
+  
+          .descrption {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #393e46;
+            margin-bottom: 20px;
+          }
+  
+          .descrption p {
+            margin: 0;
+          }
+  
+    
+          .register-btn{
+            max-width: 344px !important;
+            @include black-btn-green(auto);
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            text-align: left;
+            @include fonts("poppins", 16px, "normal");
+            position: relative;
+            padding-left: 24px;
+            margin: 8px;
+            @include transition-all-sph();
+            &::after {
+              content: "";
+              position: absolute;
+              right: 10px;
+              width: 29px;
+              height: 29px;
+              background-color: #fff;
+              border-radius: 50%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+  
+            &::after {
+              content: "\2197";
+              font-size: 16px;
+              color: #f7941d;
+            }
+          }
+  
+          .register-btn:hover {
+            @include transition-all-sph();
+            background: #007b7f;
+            transform: translateY(-2px);
+          }
+  
+          .register-btn:active {
+            transform: translateY(0);
+          }
+  
+          .last-news {
+            clear: both;
+            margin: 8% 0;
+            .last-news-tit {
+              @include fonts("Conv_Gotham-Medium", 24px, 800);
+              margin: 16px 0;
+              span.orange {
+                @include fonts("Conv_Gotham-Medium", 24px, 800);
+                color: $color-orange;
+              }
+            }
+            .last-news-view {
+              header {
+                display: none;
+              }
+              .slick-list .slick__slide {
+                margin-right: 24px;
+                height: 470px;
+                border: 1px solid #e9e9ee;
+                @include radius-spk-16();
+                .news-image {
+                  border-top-left-radius: 16px;
+                  border-top-right-radius: 16px;
+                  width: 364px;
+                  img {
+                    width: 100%;
+                    height: auto;
+                  }
+                }
+                .news-date {
+                  border: 1px solid #e9e9ee;
+                  @include radius-sph();
+                  text-align: center;
+                  width: auto;
+                  max-width: 190px;
+                  height: 40px;
+                  color: #101828;
+                  position: relative;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  @include fonts("poppins", 14px, "normal");
+                  margin: 16px;
+                  &::before {
+                    content: "";
+                    display: inline-block;
+                    width: 18px;
+                    height: 18px;
+                    background-image: url("/themes/custom/sph/images/calendario.svg");
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    margin-right: 4px;
+                  }
+                }
+                .news-title {
+                  @include fonts("Conv_Gotham-Medium", 19px, "normal");
+                  color: #101828;
+                  line-height: 24px;
+                  text-align: left;
+                  margin-left: 16px;
+                }
+                .news-sdesc {
+                  @include fonts("poppins", 14px, "normal");
+                  color: #101828;
+                  text-align: left;
+                  margin: 4px 16px 8px 16px;
+                }
+                a .news-btn {
+                  max-width: 324px !important;
+                  text-align: left;
+                  @include fonts("poppins", 16px, "normal");
+                  position: relative;
+                  margin: 8px;
+                  height: 45px !important;
+                  @include black-btn();
+                  width: auto !important;
+                  background-color: #0077ff !important;
+                }
+              }
+              nav {
+                .slick-prev {
+                  width: 60px;
+                  position: absolute;
+                  left: -80px;
+                  border: 0px solid;
+                }
+                .slick-next {
+                  width: 60px;
+                  position: absolute;
+                  right: -80px;
+                  border: 0px solid;
+                }
               }
             }
           }

@@ -1,14 +1,14 @@
 #footer {
   width: 100%;
-  height: 360px;
+  height: 432px;
   position: relative;
   display: inline-block;
   padding-top: 20px;
   background-color: #101828 !important;
   z-index: 3;
   .container {
-    width: 1170px;
-    margin: 0 auto;
+    width: 92%;
+    margin: 0 20px;
     background-color: #101828 !important;
     #block-sph-footerlogo {
       display: inline-block;
@@ -119,7 +119,7 @@
         align-items: center;
       }
       .terms {
-        float: right;
+        float: left;
         background: rgba(255, 255, 255, 0.28);
         border-radius: 16px;
         box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -128,8 +128,8 @@
         border: 1px solid rgba(255, 255, 255, 0.47);
         @include radius-sph();
         text-align: center;
-        width: 280px;
-        max-width: 280px;
+        width: 100%;
+        max-width: none;
         height: 40px;
         color: $color-white;
         position: relative;
@@ -140,6 +140,144 @@
         a {
           @include fonts("poppins", 14px, "normal");
           color: $color-white;
+        }
+      }
+    }
+    @include breakpoint($desktop) {
+      width: 1170px;
+      margin: 0 auto;
+      background-color: #101828 !important;
+      #block-sph-footerlogo {
+        display: inline-block;
+        position: relative;
+        padding: 20px 0;
+        width: 100%;
+        img:nth-child(1) {
+          float: left;
+          width: 100px;
+          height: auto;
+        }
+        img:nth-child(2) {
+          float: right;
+          width: 225px;
+          height: auto;
+        }
+      }
+      #block-sph-socialnetworkslink {
+        display: inline-block;
+        position: relative;
+        padding: 20px 0;
+        width: 100%;
+
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+
+          li {
+            float: left;
+            margin-right: 10px;
+
+            a {
+              display: block;
+              width: 40px;
+              height: 40px;
+              background-size: cover;
+              background-repeat: no-repeat;
+              background-position: center;
+              transition: transform 0.3s ease;
+              text-decoration: none;
+              color: transparent;
+              font-size: 0;
+
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+
+          li.tw a {
+            background-image: url("/themes/custom/sph/images/twitter-alt.svg");
+            filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(53deg)
+              brightness(106%) contrast(101%);
+            -webkit-filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(53deg)
+              brightness(106%) contrast(101%);
+          }
+
+          li.yt a {
+            background-image: url("/themes/custom/sph/images/youtube-spk.svg");
+            filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(53deg)
+              brightness(106%) contrast(101%);
+            -webkit-filter: invert(99%) sepia(0%) saturate(0%) hue-rotate(53deg)
+              brightness(106%) contrast(101%);
+          }
+
+          li.In a {
+            background-image: url("/themes/custom/sph/images/instagram.png");
+          }
+        }
+      }
+
+      #block-sph-piedepagina {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        padding: 10px 0;
+        clear: both;
+        ul {
+          list-style: none;
+          li {
+            width: auto;
+            margin-right: 8px;
+            float: left;
+            a {
+              @include fonts("poppins", 20px, "800");
+              color: $color-green;
+              @include transition-all-sph();
+            }
+            a:hover {
+              text-decoration: underline;
+              @include transition-all-sph();
+            }
+          }
+        }
+      }
+      #block-sph-footerderechosreservados {
+        display: inline-block;
+        position: relative;
+        width: 100%;
+        padding: 10px 0;
+        .copyright {
+          @include fonts("poppins", 16px, "normal");
+          float: left;
+          color: $color-green;
+          height: 50px;
+          display: flex;
+          align-items: center;
+        }
+        .terms {
+          float: right;
+          background: rgba(255, 255, 255, 0.28);
+          border-radius: 16px;
+          box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+          backdrop-filter: blur(8.5px);
+          -webkit-backdrop-filter: blur(8.5px);
+          border: 1px solid rgba(255, 255, 255, 0.47);
+          @include radius-sph();
+          text-align: center;
+          width: 280px;
+          max-width: 280px;
+          height: 40px;
+          color: $color-white;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          a {
+            @include fonts("poppins", 14px, "normal");
+            color: $color-white;
+          }
         }
       }
     }

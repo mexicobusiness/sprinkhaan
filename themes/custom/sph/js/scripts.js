@@ -17,6 +17,8 @@
 
   });
 })(jQuery);
+
+
 document.addEventListener('DOMContentLoaded', function() {
   const hamburger = document.getElementById('hamburger-menu');
   const mobileMenu = document.getElementById('mobile-menu');
