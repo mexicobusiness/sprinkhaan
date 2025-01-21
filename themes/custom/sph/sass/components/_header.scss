@@ -237,6 +237,8 @@
             color: #8cc63f;
             @include fonts("poppins", 14px, 500);
             height: 45px;
+            display: flex;
+            align-items: center;
             @include breakpoint($desktop) {
               @include -sph-hoverComponent();
               padding: 8px;
