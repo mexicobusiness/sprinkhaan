@@ -1080,6 +1080,12 @@
                     display: inline-block;
                     width: 100%;
                     margin-bottom: 10px;
+                    @include fonts("poppins", 16px, "normal");
+                    color: #39364f;
+                    span{
+                      @include fonts("poppins", 16px, 600);
+                      color: #39364f;
+                    }
                   }
                   div {
                     width: 100%;

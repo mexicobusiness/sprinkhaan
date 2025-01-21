@@ -642,6 +642,7 @@
       display: inline-block;
       width: 100%;
       position: relative;
+      padding: 8px;
       .about-us-left {
         width: 97%;
         float: left;
@@ -788,6 +789,7 @@
         display: inline-block;
         width: 100%;
         position: relative;
+        padding: 0;
         .about-us-left {
           width: 41%;
           float: left;
@@ -836,6 +838,7 @@
     #block-sph-clases {
       margin: 4% 0;
       overflow: hidden;
+      padding: 8px;
       .clases-top {
         position: relative;
         width: 100%;
@@ -893,7 +896,7 @@
             display: flex;
             align-items: center;
             width: auto;
-            max-width: 232px;
+            max-width: 250px;
             height: 34px;
             @include fonts("Conv_Gotham-Medium", 14px, 800);
             position: relative;
@@ -1051,7 +1054,7 @@
           }
           .clases-button-right-tex {
             width: auto;
-            max-width: 160px;
+            max-width: 190px;
             height: 34px;
             @include fonts("Conv_Gotham-Medium", 14px, 800);
             position: relative;
@@ -1068,7 +1071,7 @@
             filter: invert(8%) sepia(32%) saturate(985%) hue-rotate(182deg)
               brightness(92%) contrast(97%);
             background-image: url("/themes/custom/sph/images/world.svg");
-            background-size: cover;
+            background-size: contain;
             background-repeat: no-repeat;
             margin-right: 8px;
           }
@@ -1133,10 +1136,11 @@
       }
       @include breakpoint($desktop) {
         margin: 4% 0;
+        padding: 0;
         .clases-top {
           position: relative;
           width: 700px;
-          margin: 0 auto;
+          margin: 2% auto 0 auto;
           .clases-top-btn {
             width: 190px !important;
             @include black-btn();
@@ -1206,7 +1210,7 @@
               filter: invert(8%) sepia(32%) saturate(985%) hue-rotate(182deg)
                 brightness(92%) contrast(97%);
               background-image: url("/themes/custom/sph/images/marc.svg");
-              background-size: cover;
+              background-size: contain;
               background-repeat: no-repeat;
               margin-right: 4px;
             }
@@ -2344,6 +2348,7 @@
       display: inline-block;
       position: relative;
       width: 100%;
+      padding: 8px;
       header {
         position: relative;
         margin: 0 auto;
@@ -2414,6 +2419,7 @@
         display: inline-block;
         position: relative;
         width: 100%;
+        padding: 0;
         header {
           position: relative;
           margin: 0 auto;
@@ -2488,6 +2494,7 @@
       display: inline-block;
       position: relative;
       width: 100%;
+      padding: 8px;
       header {
         position: relative;
         margin: 0 auto;
@@ -2567,6 +2574,7 @@
         display: inline-block;
         position: relative;
         width: 100%;
+        padding: 0;
         header {
           position: relative;
           margin: 0 auto;
@@ -2662,6 +2670,7 @@
         @include fonts("poppins", 16px, "normal");
         margin-bottom: 40px;
         text-align: center;
+        padding: 8px;
       }
       .cont-btn {
         position: relative;
@@ -2747,6 +2756,7 @@
           @include fonts("poppins", 16px, "normal");
           margin-bottom: 40px;
           text-align: center;
+          padding: 0;
         }
         .cont-btn {
           position: relative;

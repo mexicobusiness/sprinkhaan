@@ -30,6 +30,8 @@
             margin: 0 auto 2% auto;
           }
           .sponsor-btn {
+            position: relative;
+            z-index: 5;
             margin: 0 auto;
             a {
               max-width: 330px !important;
@@ -69,6 +71,7 @@
               width: 100%;
               height: auto;
               margin-top: -16%;
+              z-index: 3;
             }
             &:before {
               content: "";
@@ -226,6 +229,7 @@
           display: inline-block;
           width: 100%;
           margin: 20px 0;
+          padding: 16px;
           div.sponsor-container-bottom-left {
             width: 100%;
             float: left;
@@ -544,6 +548,7 @@
             display: inline-block;
             width: 100%;
             margin: 20px 0;
+            padding: 0;
             div.sponsor-container-bottom-left {
               width: 56%;
               float: left;
@@ -649,9 +654,19 @@
   #page {
     #main-content {
       .header {
-        text-align: center;
         @include black-btn();
-        margin-top: 20px;
+        margin-top: 4%;
+        position: relative;
+        &::before {
+          content: "";
+          display: inline-block;
+          width: 80px;
+          height: 80px;
+          background-image: url("/themes/custom/sph/images/jouw.png");
+          background-size: cover;
+          background-repeat: no-repeat;
+          margin: -93px -8px -48px -32px;
+        }
         .title {
           h1 {
             color: $color-white;
@@ -663,9 +678,8 @@
           @include fonts("Conv_Gotham-Medium", 48px, 800);
           color: #101828;
           text-align: center;
-          margin: 20px 0px;
+          margin: 4% 0px;
           line-height: 1;
-          margin-bottom: 10px;
           span.green {
             @include fonts("Conv_Gotham-Medium", 48px, 800);
             color: $color-green;
