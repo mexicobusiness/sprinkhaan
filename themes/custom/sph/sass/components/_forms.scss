@@ -34,7 +34,7 @@
               margin-bottom: 16px;
             }
             .contact-us-dir {
-              width: 98%;
+              width: 99%;
               display: flex;
               align-items: center;
               @include radius-spk-16();
@@ -43,18 +43,21 @@
               @include fonts("poppins", 16px, "normal");
               padding-left: 16px;
             }
+            
             .contact-us-dir::before {
               content: "";
               display: inline-block;
-              width: 18px;
-              height: 19px;
+              width: 24px; 
+              height: 24px; 
               filter: invert(72%) sepia(36%) saturate(706%) hue-rotate(43deg)
                 brightness(92%) contrast(92%);
               background-image: url("/themes/custom/sph/images/marc.svg");
-              background-size: cover;
+              background-size: contain; 
               background-repeat: no-repeat;
+              background-position: center; 
               margin-right: 8px;
             }
+            
             .contact-us-map {
               margin-top: 16px;
               iframe {
@@ -220,7 +223,7 @@
                 }
               }
               input[type="submit"] {
-                max-width: 448px !important;
+                max-width: 100% !important;
                 @include black-btn-green(524px);
                 display: flex;
                 justify-content: flex-start;
@@ -461,7 +464,7 @@
                   }
                 }
                 input[type="submit"] {
-                  max-width: 524px !important;
+                  max-width: 100% !important;
                   @include black-btn-green(524px);
                   display: flex;
                   justify-content: flex-start;

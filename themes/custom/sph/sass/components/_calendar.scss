@@ -60,13 +60,24 @@
               }
             }
             .cal-colors {
-              display: inline-flex;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              border: 1px solid #e9e9ee;
+              height: auto;
+              @include radius-spk-12();
+              padding: 16px;
+              flex-wrap: wrap;
+              @include breakpoint($desktop){
+                display: inline-flex;
               justify-content: center;
               align-items: center;
               border: 1px solid #e9e9ee;
               height: 45px;
               @include radius-spk-12();
               padding: 16px;
+              flex-wrap: nowrap;
+              }
               div {
                 @include fonts("poppins", 13px, "normal");
                 color: #1c2635;

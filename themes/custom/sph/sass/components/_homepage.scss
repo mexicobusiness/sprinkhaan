@@ -437,8 +437,8 @@
     }
 
     #block-sph-videohome {
-      width: 100%;
-      height: 264px;
+      width: 97%;
+      height: 224px;
       position: relative;
       margin: 0 auto;
       background-color: rgba(255, 255, 255, 0.774);
@@ -839,7 +839,7 @@
       .clases-top {
         position: relative;
         width: 100%;
-        margin: 0 auto;
+        margin: 8% auto;
         .clases-top-btn {
           width: 190px !important;
           @include black-btn();
@@ -2541,10 +2541,11 @@
           }
         }
         .ui-accordion-content-active {
-          height: auto;
+          height: auto!important;
           display: flex;
           align-items: center;
           margin: 8px;
+          padding: 16px;
           @include radius-spk-16();
           background-color: #e9e9ee;
           justify-content: center;

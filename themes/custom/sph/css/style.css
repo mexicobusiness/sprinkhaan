@@ -425,7 +425,7 @@
   float: left;
   margin: 16px;
   border: 1px solid #e9e9ee;
-  height: 470px;
+  height: 480px;
   border-radius: 16px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
@@ -2401,7 +2401,7 @@
 }
 /* line 36, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-dir {
-  width: 98%;
+  width: 99%;
   display: flex;
   align-items: center;
   border-radius: 16px;
@@ -2416,23 +2416,24 @@
   font-weight: "normal";
   padding-left: 16px;
 }
-/* line 46, ../sass/components/_forms.scss */
+/* line 47, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-dir::before {
   content: "";
   display: inline-block;
-  width: 18px;
-  height: 19px;
+  width: 24px;
+  height: 24px;
   filter: invert(72%) sepia(36%) saturate(706%) hue-rotate(43deg) brightness(92%) contrast(92%);
   background-image: url("/themes/custom/sph/images/marc.svg");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
+  background-position: center;
   margin-right: 8px;
 }
-/* line 58, ../sass/components/_forms.scss */
+/* line 61, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-map {
   margin-top: 16px;
 }
-/* line 60, ../sass/components/_forms.scss */
+/* line 63, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-map iframe {
   border-radius: 16px;
   -webkit-border-radius: 16px;
@@ -2441,14 +2442,14 @@
   -o-border-radius: 16px;
   width: 100%;
 }
-/* line 66, ../sass/components/_forms.scss */
+/* line 69, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) {
   float: right;
   width: 100%;
   display: inline-block;
   position: relative;
 }
-/* line 71, ../sass/components/_forms.scss */
+/* line 74, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form {
   width: 100%;
   border-radius: 16px;
@@ -2460,40 +2461,40 @@
   padding: 24px;
   margin-bottom: 8%;
 }
-/* line 77, ../sass/components/_forms.scss */
+/* line 80, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form #edit-processed-text {
   padding: 0px 0 10px 0;
 }
-/* line 79, ../sass/components/_forms.scss */
+/* line 82, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form #edit-processed-text .webform-tit {
   font-family: "Conv_Gotham-Medium";
   font-size: 20px;
   font-weight: "normal";
   color: #303135;
 }
-/* line 83, ../sass/components/_forms.scss */
+/* line 86, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form #edit-processed-text .webform-tit-alt {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
   color: #52525b;
 }
-/* line 89, ../sass/components/_forms.scss */
+/* line 92, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset#edit-nombre--wrapper legend {
   display: none;
 }
-/* line 94, ../sass/components/_forms.scss */
+/* line 97, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item {
   margin: 8px 0;
 }
-/* line 96, ../sass/components/_forms.scss */
+/* line 99, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item label {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
   margin: 4px 0;
 }
-/* line 100, ../sass/components/_forms.scss */
+/* line 103, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item textarea {
   text-transform: capitalize;
   border: 1px solid #f7941d;
@@ -2518,7 +2519,7 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-/* line 113, ../sass/components/_forms.scss */
+/* line 116, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item textarea:hover {
   transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -2527,7 +2528,7 @@
   -o-transition: all 0.3s ease-in-out;
   box-shadow: #fbd28c 0px 0px 0px 1px, #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px, #fde9c8 0px 24px 24px -12px;
 }
-/* line 121, ../sass/components/_forms.scss */
+/* line 124, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="text"],
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="email"],
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="tel"] {
@@ -2553,7 +2554,7 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-/* line 135, ../sass/components/_forms.scss */
+/* line 138, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="text"]:hover,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="email"]:hover,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="tel"]:hover {
@@ -2564,17 +2565,17 @@
   -o-transition: all 0.3s ease-in-out;
   box-shadow: #fbd28c 0px 0px 0px 1px, #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px, #fde9c8 0px 24px 24px -12px;
 }
-/* line 144, ../sass/components/_forms.scss */
+/* line 147, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div {
   width: 100%;
 }
-/* line 146, ../sass/components/_forms.scss */
+/* line 149, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset #edit-como-te-gustaria-ser-contactado--wrapper-legend,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div #edit-como-te-gustaria-ser-contactado--wrapper-legend {
   padding: 16px 0 8px 0;
 }
-/* line 148, ../sass/components/_forms.scss */
+/* line 151, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset #edit-como-te-gustaria-ser-contactado--wrapper-legend span,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div #edit-como-te-gustaria-ser-contactado--wrapper-legend span {
   font-family: "poppins";
@@ -2582,13 +2583,13 @@
   font-weight: "normal";
   color: #303135;
 }
-/* line 154, ../sass/components/_forms.scss */
+/* line 157, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper #edit-como-te-gustaria-ser-contactado,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper #edit-como-te-gustaria-ser-contactado {
   display: flex;
   flex-wrap: nowrap;
 }
-/* line 157, ../sass/components/_forms.scss */
+/* line 160, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado {
   border: 1px solid #f7941d;
@@ -2608,14 +2609,14 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-/* line 165, ../sass/components/_forms.scss */
+/* line 168, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado label,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado label {
   width: 80%;
   margin-left: 8px;
   cursor: pointer;
 }
-/* line 171, ../sass/components/_forms.scss */
+/* line 174, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado:hover,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado:hover {
   transition: all 0.3s ease-in-out;
@@ -2625,12 +2626,12 @@
   -o-transition: all 0.3s ease-in-out;
   box-shadow: #fbd28c 0px 0px 0px 1px, #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px, #fde9c8 0px 24px 24px -12px;
 }
-/* line 182, ../sass/components/_forms.scss */
+/* line 185, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper {
   width: 100%;
 }
-/* line 184, ../sass/components/_forms.scss */
+/* line 187, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper .edit-como-te-gustaria-ser-contactado,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper .edit-como-te-gustaria-ser-contactado {
   display: flex;
@@ -2641,14 +2642,14 @@
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
 }
-/* line 189, ../sass/components/_forms.scss */
+/* line 192, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper div {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
-/* line 190, ../sass/components/_forms.scss */
+/* line 193, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div label,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper div label {
   font-family: "poppins";
@@ -2656,7 +2657,7 @@
   font-weight: "normal";
   margin: 4px 0;
 }
-/* line 197, ../sass/components/_forms.scss */
+/* line 200, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="text"],
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="email"],
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="tel"],
@@ -2685,7 +2686,7 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-/* line 211, ../sass/components/_forms.scss */
+/* line 214, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="text"]:hover,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="email"]:hover,
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="tel"]:hover,
@@ -2699,9 +2700,9 @@
   -o-transition: all 0.3s ease-in-out;
   box-shadow: #fbd28c 0px 0px 0px 1px, #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px, #fde9c8 0px 24px 24px -12px;
 }
-/* line 222, ../sass/components/_forms.scss */
+/* line 225, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form input[type="submit"] {
-  max-width: 448px !important;
+  max-width: 100% !important;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -2733,7 +2734,7 @@
   font-weight: "normal";
   color: #fff;
 }
-/* line 232, ../sass/components/_forms.scss */
+/* line 235, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form input[type="submit"]::after {
   content: "";
   position: absolute;
@@ -2746,19 +2747,19 @@
   justify-content: center;
   align-items: center;
 }
-/* line 245, ../sass/components/_forms.scss */
+/* line 248, ../sass/components/_forms.scss */
 .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form input[type="submit"]::after {
   content: "\2197";
   font-size: 16px;
   color: #f7941d;
 }
 @media (min-width: 1170px) {
-  /* line 254, ../sass/components/_forms.scss */
+  /* line 257, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) {
     float: left;
     width: 50%;
   }
-  /* line 257, ../sass/components/_forms.scss */
+  /* line 260, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-tit {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
@@ -2769,14 +2770,14 @@
     margin: 24px auto;
     color: #101828;
   }
-  /* line 264, ../sass/components/_forms.scss */
+  /* line 267, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-tit span.green {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
     font-weight: 800;
     color: #8CC63F;
   }
-  /* line 269, ../sass/components/_forms.scss */
+  /* line 272, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-des {
     width: 100%;
     display: flex;
@@ -2785,7 +2786,7 @@
     font-weight: "normal";
     margin-bottom: 16px;
   }
-  /* line 275, ../sass/components/_forms.scss */
+  /* line 278, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-dir {
     width: 90%;
     display: flex;
@@ -2802,7 +2803,7 @@
     font-weight: "normal";
     padding-left: 16px;
   }
-  /* line 285, ../sass/components/_forms.scss */
+  /* line 288, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-dir::before {
     content: "";
     display: inline-block;
@@ -2814,11 +2815,11 @@
     background-repeat: no-repeat;
     margin-right: 8px;
   }
-  /* line 297, ../sass/components/_forms.scss */
+  /* line 300, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-map {
     margin-top: 16px;
   }
-  /* line 299, ../sass/components/_forms.scss */
+  /* line 302, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(1) .contact-us-map iframe {
     border-radius: 16px;
     -webkit-border-radius: 16px;
@@ -2827,14 +2828,14 @@
     -o-border-radius: 16px;
     width: 90%;
   }
-  /* line 305, ../sass/components/_forms.scss */
+  /* line 308, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) {
     float: right;
     width: 50%;
     display: inline-block;
     position: relative;
   }
-  /* line 310, ../sass/components/_forms.scss */
+  /* line 313, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form {
     width: 100%;
     border-radius: 16px;
@@ -2846,40 +2847,40 @@
     padding: 24px;
     margin-bottom: 8%;
   }
-  /* line 316, ../sass/components/_forms.scss */
+  /* line 319, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form #edit-processed-text {
     padding: 0px 0 10px 0;
   }
-  /* line 318, ../sass/components/_forms.scss */
+  /* line 321, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form #edit-processed-text .webform-tit {
     font-family: "Conv_Gotham-Medium";
     font-size: 20px;
     font-weight: "normal";
     color: #303135;
   }
-  /* line 322, ../sass/components/_forms.scss */
+  /* line 325, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form #edit-processed-text .webform-tit-alt {
     font-family: "poppins";
     font-size: 16px;
     font-weight: "normal";
     color: #52525b;
   }
-  /* line 328, ../sass/components/_forms.scss */
+  /* line 331, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset#edit-nombre--wrapper legend {
     display: none;
   }
-  /* line 333, ../sass/components/_forms.scss */
+  /* line 336, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item {
     margin: 8px 0;
   }
-  /* line 335, ../sass/components/_forms.scss */
+  /* line 338, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item label {
     font-family: "poppins";
     font-size: 16px;
     font-weight: "normal";
     margin: 4px 0;
   }
-  /* line 339, ../sass/components/_forms.scss */
+  /* line 342, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item textarea {
     text-transform: capitalize;
     border: 1px solid #f7941d;
@@ -2904,7 +2905,7 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
   }
-  /* line 352, ../sass/components/_forms.scss */
+  /* line 355, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item textarea:hover {
     transition: all 0.3s ease-in-out;
     -webkit-transition: all 0.3s ease-in-out;
@@ -2913,7 +2914,7 @@
     -o-transition: all 0.3s ease-in-out;
     box-shadow: #fbd28c 0px 0px 0px 1px, #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px, #fde9c8 0px 24px 24px -12px;
   }
-  /* line 360, ../sass/components/_forms.scss */
+  /* line 363, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="text"],
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="email"],
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="tel"] {
@@ -2939,7 +2940,7 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
   }
-  /* line 374, ../sass/components/_forms.scss */
+  /* line 377, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="text"]:hover,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="email"]:hover,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div.js-form-item input[type="tel"]:hover {
@@ -2950,17 +2951,17 @@
     -o-transition: all 0.3s ease-in-out;
     box-shadow: #fbd28c 0px 0px 0px 1px, #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px, #fde9c8 0px 24px 24px -12px;
   }
-  /* line 383, ../sass/components/_forms.scss */
+  /* line 386, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div {
     width: 100%;
   }
-  /* line 385, ../sass/components/_forms.scss */
+  /* line 388, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset #edit-como-te-gustaria-ser-contactado--wrapper-legend,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div #edit-como-te-gustaria-ser-contactado--wrapper-legend {
     padding: 16px 0 8px 0;
   }
-  /* line 387, ../sass/components/_forms.scss */
+  /* line 390, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset #edit-como-te-gustaria-ser-contactado--wrapper-legend span,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div #edit-como-te-gustaria-ser-contactado--wrapper-legend span {
     font-family: "poppins";
@@ -2968,13 +2969,13 @@
     font-weight: "normal";
     color: #303135;
   }
-  /* line 393, ../sass/components/_forms.scss */
+  /* line 396, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper #edit-como-te-gustaria-ser-contactado,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper #edit-como-te-gustaria-ser-contactado {
     display: flex;
     flex-wrap: nowrap;
   }
-  /* line 396, ../sass/components/_forms.scss */
+  /* line 399, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado {
     border: 1px solid #f7941d;
@@ -2994,14 +2995,14 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
   }
-  /* line 404, ../sass/components/_forms.scss */
+  /* line 407, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado label,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado label {
     width: 80%;
     margin-left: 8px;
     cursor: pointer;
   }
-  /* line 410, ../sass/components/_forms.scss */
+  /* line 413, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado:hover,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper #edit-como-te-gustaria-ser-contactado .js-form-item-como-te-gustaria-ser-contactado:hover {
     transition: all 0.3s ease-in-out;
@@ -3011,12 +3012,12 @@
     -o-transition: all 0.3s ease-in-out;
     box-shadow: #fbd28c 0px 0px 0px 1px, #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px, #fde9c8 0px 24px 24px -12px;
   }
-  /* line 422, ../sass/components/_forms.scss */
+  /* line 425, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper {
     width: 100%;
   }
-  /* line 424, ../sass/components/_forms.scss */
+  /* line 427, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper .edit-como-te-gustaria-ser-contactado,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper .edit-como-te-gustaria-ser-contactado {
     display: flex;
@@ -3027,14 +3028,14 @@
     -ms-border-radius: 16px;
     -o-border-radius: 16px;
   }
-  /* line 429, ../sass/components/_forms.scss */
+  /* line 432, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper div {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
   }
-  /* line 430, ../sass/components/_forms.scss */
+  /* line 433, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div label,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form div .fieldset-wrapper div label {
     font-family: "poppins";
@@ -3042,7 +3043,7 @@
     font-weight: "normal";
     margin: 4px 0;
   }
-  /* line 437, ../sass/components/_forms.scss */
+  /* line 440, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="text"],
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="email"],
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="tel"],
@@ -3071,7 +3072,7 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
   }
-  /* line 451, ../sass/components/_forms.scss */
+  /* line 454, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="text"]:hover,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="email"]:hover,
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form fieldset .fieldset-wrapper div input[type="tel"]:hover,
@@ -3085,9 +3086,9 @@
     -o-transition: all 0.3s ease-in-out;
     box-shadow: #fbd28c 0px 0px 0px 1px, #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px, #fde9c8 0px 24px 24px -12px;
   }
-  /* line 463, ../sass/components/_forms.scss */
+  /* line 466, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form input[type="submit"] {
-    max-width: 524px !important;
+    max-width: 100% !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -3119,7 +3120,7 @@
     font-weight: "normal";
     color: #fff;
   }
-  /* line 473, ../sass/components/_forms.scss */
+  /* line 476, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form input[type="submit"]::after {
     content: "";
     position: absolute;
@@ -3132,7 +3133,7 @@
     justify-content: center;
     align-items: center;
   }
-  /* line 486, ../sass/components/_forms.scss */
+  /* line 489, ../sass/components/_forms.scss */
   .page-contact-us #page #main-content .content-center div.content div:nth-of-type(2) form input[type="submit"]::after {
     content: "\2197";
     font-size: 16px;
@@ -3140,21 +3141,21 @@
   }
 }
 
-/* line 504, ../sass/components/_forms.scss */
+/* line 507, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center header {
   display: none;
 }
-/* line 507, ../sass/components/_forms.scss */
+/* line 510, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content {
   margin: 11% 0;
 }
 @media (min-width: 1170px) {
-  /* line 507, ../sass/components/_forms.scss */
+  /* line 510, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content {
     margin: 4% 0;
   }
 }
-/* line 512, ../sass/components/_forms.scss */
+/* line 515, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div p {
   display: flex;
   justify-content: center;
@@ -3176,7 +3177,7 @@
   position: relative;
   max-width: 200px !important;
 }
-/* line 516, ../sass/components/_forms.scss */
+/* line 519, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div p::before {
   content: "";
   display: inline-block;
@@ -3187,45 +3188,45 @@
   background-repeat: no-repeat;
   margin-top: -32px;
 }
-/* line 529, ../sass/components/_forms.scss */
+/* line 532, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-es-esta-la-primera-vez-que-participas--wrapper span {
   font-family: "poppins";
   font-size: 18px;
   font-weight: 600;
   color: #1c2635;
 }
-/* line 533, ../sass/components/_forms.scss */
+/* line 536, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-es-esta-la-primera-vez-que-participas--wrapper #edit-es-esta-la-primera-vez-que-participas-si:checked {
   background-color: orange;
 }
-/* line 536, ../sass/components/_forms.scss */
+/* line 539, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-es-esta-la-primera-vez-que-participas--wrapper .js-form-item {
   display: flex;
   align-items: center;
   gap: 8px;
 }
-/* line 540, ../sass/components/_forms.scss */
+/* line 543, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-es-esta-la-primera-vez-que-participas--wrapper .js-form-item label {
   text-align: left;
   font-family: "poppins";
   font-size: 16px;
   font-weight: 600;
 }
-/* line 547, ../sass/components/_forms.scss */
+/* line 550, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .webform-progress {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 20px 0;
 }
-/* line 554, ../sass/components/_forms.scss */
+/* line 557, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .webform-progress-tracker {
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
 }
-/* line 561, ../sass/components/_forms.scss */
+/* line 564, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-step {
   display: flex;
   flex-direction: column;
@@ -3234,7 +3235,7 @@
   position: relative;
   flex: 1;
 }
-/* line 570, ../sass/components/_forms.scss */
+/* line 573, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-step:not(:last-child)::after {
   content: "";
   position: absolute;
@@ -3246,11 +3247,11 @@
   transform: translateY(-50%);
   background: #ddd;
 }
-/* line 582, ../sass/components/_forms.scss */
+/* line 585, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-step:last-child::after {
   display: none;
 }
-/* line 586, ../sass/components/_forms.scss */
+/* line 589, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-marker {
   width: 40px;
   height: 40px;
@@ -3267,7 +3268,7 @@
   margin-right: 8px;
 }
 @media (min-width: 1170px) {
-  /* line 586, ../sass/components/_forms.scss */
+  /* line 589, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form .progress-marker {
     width: 40px;
     height: 40px;
@@ -3284,37 +3285,37 @@
     margin-right: none;
   }
 }
-/* line 616, ../sass/components/_forms.scss */
+/* line 619, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-marker::before,
 .page-register #page #main-content .content-center div.content div form .progress-marker::after {
   background-color: transparent;
 }
-/* line 621, ../sass/components/_forms.scss */
+/* line 624, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-step.is-completed .progress-marker {
   background: #4caf50;
   color: #fff;
   border-color: #4caf50;
 }
-/* line 627, ../sass/components/_forms.scss */
+/* line 630, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-step.is-active .progress-marker {
   background: linear-gradient(180deg, #d5530a 0%, #b1360c 100%);
   color: #fff;
   border-color: #902b10;
 }
-/* line 637, ../sass/components/_forms.scss */
+/* line 640, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-step .is-completed::after {
   background: #4caf50;
 }
-/* line 641, ../sass/components/_forms.scss */
+/* line 644, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-step.is-active::after {
   background: #fbd28c;
 }
-/* line 645, ../sass/components/_forms.scss */
+/* line 648, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-text {
   padding-top: 20%;
   color: #52525b;
 }
-/* line 648, ../sass/components/_forms.scss */
+/* line 651, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-text .progress-title {
   border-radius: 8px;
   -webkit-border-radius: 8px;
@@ -3327,19 +3328,19 @@
   font-weight: "normal";
   color: #101828;
 }
-/* line 656, ../sass/components/_forms.scss */
+/* line 659, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-step.is-active .progress-text {
   color: #fbd28c;
 }
-/* line 660, ../sass/components/_forms.scss */
+/* line 663, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .progress-step.is-completed .progress-text {
   color: #4caf50;
 }
-/* line 663, ../sass/components/_forms.scss */
+/* line 666, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .js-form-item-terms-of-service {
   display: flex;
 }
-/* line 666, ../sass/components/_forms.scss */
+/* line 669, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .js-form-item-terms-of-service label a {
   font-family: "poppins";
   font-size: 16px;
@@ -3351,7 +3352,7 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-/* line 670, ../sass/components/_forms.scss */
+/* line 673, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .js-form-item-terms-of-service label a:hover {
   text-decoration: underline;
   transition: all 0.3s ease-in-out;
@@ -3361,7 +3362,7 @@
   -o-transition: all 0.3s ease-in-out;
   color: #902b10;
 }
-/* line 678, ../sass/components/_forms.scss */
+/* line 681, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-container,
 .page-register #page #main-content .content-center div.content div form #edit-container-01,
 .page-register #page #main-content .content-center div.content div form #edit-container-02,
@@ -3377,7 +3378,7 @@
   margin: 20px auto;
 }
 @media (min-width: 1170px) {
-  /* line 678, ../sass/components/_forms.scss */
+  /* line 681, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form #edit-container,
   .page-register #page #main-content .content-center div.content div form #edit-container-01,
   .page-register #page #main-content .content-center div.content div form #edit-container-02,
@@ -3393,7 +3394,7 @@
     margin: 20px auto;
   }
 }
-/* line 700, ../sass/components/_forms.scss */
+/* line 703, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-container label,
 .page-register #page #main-content .content-center div.content div form #edit-container-01 label,
 .page-register #page #main-content .content-center div.content div form #edit-container-02 label,
@@ -3417,7 +3418,7 @@
   display: block;
   color: #101828;
 }
-/* line 724, ../sass/components/_forms.scss */
+/* line 727, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-container input[type="text"],
 .page-register #page #main-content .content-center div.content div form #edit-container input[type="date"],
 .page-register #page #main-content .content-center div.content div form #edit-container input[type="tel"],
@@ -3467,7 +3468,7 @@
   color: #101828;
   box-sizing: border-box;
 }
-/* line 774, ../sass/components/_forms.scss */
+/* line 777, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-container input[type="text"]:focus,
 .page-register #page #main-content .content-center div.content div form #edit-container input[type="date"]:focus,
 .page-register #page #main-content .content-center div.content div form #edit-container input[type="tel"]:focus,
@@ -3511,7 +3512,7 @@
   border-color: #f7941d;
   outline: none;
 }
-/* line 818, ../sass/components/_forms.scss */
+/* line 821, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-container select,
 .page-register #page #main-content .content-center div.content div form #edit-container-01 select,
 .page-register #page #main-content .content-center div.content div form #edit-container-02 select,
@@ -3524,16 +3525,16 @@
   background-color: #fff;
   cursor: pointer;
 }
-/* line 831, ../sass/components/_forms.scss */
+/* line 834, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .js-form-required.form-required {
   color: #d9534f;
   margin-left: 5px;
 }
-/* line 836, ../sass/components/_forms.scss */
+/* line 839, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form .js-form-item {
   margin-bottom: 20px;
 }
-/* line 840, ../sass/components/_forms.scss */
+/* line 843, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-container-02 input[type="tel"],
 .page-register #page #main-content .content-center div.content div form #edit-container-02 select,
 .page-register #page #main-content .content-center div.content div form #edit-container-06 input[type="tel"],
@@ -3549,7 +3550,7 @@
   color: #101828;
   box-sizing: border-box;
 }
-/* line 856, ../sass/components/_forms.scss */
+/* line 859, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-container-02 fieldset,
 .page-register #page #main-content .content-center div.content div form #edit-container-02 legend,
 .page-register #page #main-content .content-center div.content div form #edit-container-06 fieldset,
@@ -3561,21 +3562,21 @@
   font-weight: 600;
   color: #101828;
 }
-/* line 868, ../sass/components/_forms.scss */
+/* line 871, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-container-02 input[type="radio"],
 .page-register #page #main-content .content-center div.content div form #edit-container-06 input[type="radio"],
 .page-register #page #main-content .content-center div.content div form #edit-container-07 input[type="radio"] {
   margin-right: 10px;
   vertical-align: middle;
 }
-/* line 875, ../sass/components/_forms.scss */
+/* line 878, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-container-02 label.option,
 .page-register #page #main-content .content-center div.content div form #edit-container-06 label.option,
 .page-register #page #main-content .content-center div.content div form #edit-container-07 label.option {
   display: inline-block;
   margin-right: 15px;
 }
-/* line 888, ../sass/components/_forms.scss */
+/* line 891, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02,
@@ -3614,7 +3615,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior #edit-processed-text-05 {
   margin-bottom: 20px;
 }
-/* line 895, ../sass/components/_forms.scss */
+/* line 898, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text .form-tit,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01 .form-tit,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02 .form-tit,
@@ -3661,7 +3662,7 @@
   width: 98%;
   color: #101828;
 }
-/* line 903, ../sass/components/_forms.scss */
+/* line 906, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text .form-tit span.green,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01 .form-tit span.green,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02 .form-tit span.green,
@@ -3703,7 +3704,7 @@
   font-weight: 800;
   color: #8CC63F;
 }
-/* line 908, ../sass/components/_forms.scss */
+/* line 911, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text .form-des,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01 .form-des,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02 .form-des,
@@ -3748,7 +3749,7 @@
   margin: 0 auto 2% auto;
 }
 @media (min-width: 1170px) {
-  /* line 888, ../sass/components/_forms.scss */
+  /* line 891, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text,
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01,
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02,
@@ -3787,7 +3788,7 @@
   .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior #edit-processed-text-05 {
     margin-bottom: 20px;
   }
-  /* line 916, ../sass/components/_forms.scss */
+  /* line 919, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text .form-tit,
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01 .form-tit,
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02 .form-tit,
@@ -3834,7 +3835,7 @@
     width: 816px;
     color: #101828;
   }
-  /* line 924, ../sass/components/_forms.scss */
+  /* line 927, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text .form-tit span.green,
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01 .form-tit span.green,
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02 .form-tit span.green,
@@ -3876,7 +3877,7 @@
     font-weight: 800;
     color: #8CC63F;
   }
-  /* line 929, ../sass/components/_forms.scss */
+  /* line 932, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text .form-des,
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-01 .form-des,
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases #edit-processed-text-02 .form-des,
@@ -3921,7 +3922,7 @@
     margin: 0 auto 2% auto;
   }
 }
-/* line 937, ../sass/components/_forms.scss */
+/* line 940, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset,
@@ -3934,7 +3935,7 @@
   font-weight: 600;
   margin-bottom: 20px;
 }
-/* line 941, ../sass/components/_forms.scss */
+/* line 944, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset span.green,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset span.green,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset span.green,
@@ -3946,7 +3947,7 @@
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 945, ../sass/components/_forms.scss */
+/* line 948, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper,
@@ -3956,7 +3957,7 @@
   display: inline-block;
   position: relative;
 }
-/* line 949, ../sass/components/_forms.scss */
+/* line 952, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div,
@@ -3984,7 +3985,7 @@
   -ms-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
 }
-/* line 962, ../sass/components/_forms.scss */
+/* line 965, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div:hover,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div:hover,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div:hover,
@@ -4001,7 +4002,7 @@
   box-shadow: #fbd28c 0px 0px 0px 1px, #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px, #fde9c8 0px 24px 24px -12px;
 }
 @media (min-width: 1170px) {
-  /* line 949, ../sass/components/_forms.scss */
+  /* line 952, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div,
   .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div,
   .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div,
@@ -4029,7 +4030,7 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
   }
-  /* line 984, ../sass/components/_forms.scss */
+  /* line 987, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div:hover,
   .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div:hover,
   .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones div:hover,
@@ -4046,7 +4047,7 @@
     box-shadow: #fbd28c 0px 0px 0px 1px, #fbd28c 0px 1px 1px -0.5px, #fde9c8 0px 3px 3px -1.5px, #fde9c8 0px 6px 6px -3px, #fde9c8 0px 12px 12px -6px, #fde9c8 0px 24px 24px -12px;
   }
 }
-/* line 996, ../sass/components/_forms.scss */
+/* line 999, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label,
@@ -4064,7 +4065,7 @@
   line-height: 20px;
   padding-top: 16px;
 }
-/* line 1005, ../sass/components/_forms.scss */
+/* line 1008, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span.green,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span.green,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label span.green,
@@ -4076,7 +4077,7 @@
   font-weight: 600;
   display: contents;
 }
-/* line 1009, ../sass/components/_forms.scss */
+/* line 1012, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones label img,
@@ -4087,7 +4088,7 @@
   width: 120px;
   height: auto;
 }
-/* line 1017, ../sass/components/_forms.scss */
+/* line 1020, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases fieldset .fieldset-wrapper #edit-es-esta-la-primera-vez-que-participas div,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student fieldset .fieldset-wrapper #edit-es-esta-la-primera-vez-que-participas div,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres fieldset .fieldset-wrapper #edit-es-esta-la-primera-vez-que-participas div,
@@ -4097,7 +4098,7 @@
   float: left;
   width: 100px;
 }
-/* line 1024, ../sass/components/_forms.scss */
+/* line 1027, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper,
@@ -4106,7 +4107,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper {
   margin-bottom: 20px;
 }
-/* line 1027, ../sass/components/_forms.scss */
+/* line 1030, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span,
@@ -4118,7 +4119,7 @@
   font-weight: 600;
   color: #1c2635;
 }
-/* line 1030, ../sass/components/_forms.scss */
+/* line 1033, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span .green,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span .green,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper #edit-por-favor-seleccione-una-de-las-siguientes-opciones--wrapper-legend span .green,
@@ -4130,7 +4131,7 @@
   font-weight: 600;
   color: #8CC63F;
 }
-/* line 1036, ../sass/components/_forms.scss */
+/* line 1039, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper > label:first-of-type,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper > label:first-of-type,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper > label:first-of-type,
@@ -4171,7 +4172,7 @@
   font-weight: "normal";
   color: #fff;
 }
-/* line 1042, ../sass/components/_forms.scss */
+/* line 1045, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper > label:first-of-type::before,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper > label:first-of-type::before,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper > label:first-of-type::before,
@@ -4187,7 +4188,7 @@
   background-repeat: no-repeat;
   margin: -83px -8px -48px -32px;
 }
-/* line 1054, ../sass/components/_forms.scss */
+/* line 1057, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div label,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div label,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper div label,
@@ -4198,7 +4199,7 @@
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 1059, ../sass/components/_forms.scss */
+/* line 1062, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div input,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div input,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper div input,
@@ -4207,7 +4208,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper div input {
   margin-bottom: 10px;
 }
-/* line 1063, ../sass/components/_forms.scss */
+/* line 1066, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div.form-type-webform-terms-of-service,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div.form-type-webform-terms-of-service,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper div.form-type-webform-terms-of-service,
@@ -4218,7 +4219,7 @@
   position: relative;
   width: 100%;
 }
-/* line 1067, ../sass/components/_forms.scss */
+/* line 1070, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div.form-type-webform-terms-of-service input,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper div.form-type-webform-terms-of-service label,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper div.form-type-webform-terms-of-service input,
@@ -4235,7 +4236,7 @@
   margin-right: 15px;
   width: auto;
 }
-/* line 1074, ../sass/components/_forms.scss */
+/* line 1077, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset,
@@ -4244,7 +4245,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper fieldset {
   text-align: left;
 }
-/* line 1076, ../sass/components/_forms.scss */
+/* line 1079, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset legend,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset legend,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset legend,
@@ -4255,7 +4256,7 @@
   width: 100%;
   margin-bottom: 10px;
 }
-/* line 1081, ../sass/components/_forms.scss */
+/* line 1084, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset div,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset div,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset div,
@@ -4264,7 +4265,7 @@
 .page-register #page #main-content .content-center div.content div form #edit-sobre-la-escuela-actual-o-anterior .js-form-wrapper fieldset div {
   width: 100%;
 }
-/* line 1083, ../sass/components/_forms.scss */
+/* line 1086, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper fieldset div .js-form-type-radio,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper fieldset div .js-form-type-radio,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper fieldset div .js-form-type-radio,
@@ -4275,7 +4276,7 @@
   width: auto;
   margin-right: 20px;
 }
-/* line 1090, ../sass/components/_forms.scss */
+/* line 1093, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table,
@@ -4285,7 +4286,7 @@
   width: 100%;
   overflow: auto;
 }
-/* line 1093, ../sass/components/_forms.scss */
+/* line 1096, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table table,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table table,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table table,
@@ -4303,7 +4304,7 @@
   overflow: hidden;
   transition: all 0.3s ease;
 }
-/* line 1103, ../sass/components/_forms.scss */
+/* line 1106, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table th,
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table td,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table th,
@@ -4319,7 +4320,7 @@
   min-width: 350px;
   padding: 8px;
 }
-/* line 1108, ../sass/components/_forms.scss */
+/* line 1111, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table th,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table th,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table th,
@@ -4334,7 +4335,7 @@
   text-transform: uppercase;
   border-bottom: 2px solid #e0e0e0;
 }
-/* line 1116, ../sass/components/_forms.scss */
+/* line 1119, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table th span,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table th span,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table th span,
@@ -4345,7 +4346,7 @@
   font-size: 16px;
   font-weight: "normal";
 }
-/* line 1121, ../sass/components/_forms.scss */
+/* line 1124, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table td,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table td,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table td,
@@ -4357,7 +4358,7 @@
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-/* line 1126, ../sass/components/_forms.scss */
+/* line 1129, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table td input[type="number"],
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table td input[type="number"],
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table td input[type="number"],
@@ -4373,7 +4374,7 @@
   color: #101828;
   box-sizing: border-box;
 }
-/* line 1136, ../sass/components/_forms.scss */
+/* line 1139, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table td .js-webform-radios,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table td .js-webform-radios,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table td .js-webform-radios,
@@ -4383,7 +4384,7 @@
   display: flex;
   justify-content: center;
 }
-/* line 1142, ../sass/components/_forms.scss */
+/* line 1145, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-inscribete-en-campamentos-eventos-y-clases .js-form-wrapper .webform-multiple-table td:hover,
 .page-register #page #main-content .content-center div.content div form #edit-informatie-over-de-student .js-form-wrapper .webform-multiple-table td:hover,
 .page-register #page #main-content .content-center div.content div form #edit-informacion-de-los-padres .js-form-wrapper .webform-multiple-table td:hover,
@@ -4394,7 +4395,7 @@
   cursor: pointer;
   color: #007aff;
 }
-/* line 1150, ../sass/components/_forms.scss */
+/* line 1153, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions {
   display: flex;
   justify-content: center;
@@ -4403,7 +4404,7 @@
   flex-wrap: wrap;
 }
 @media (min-width: 1170px) {
-  /* line 1150, ../sass/components/_forms.scss */
+  /* line 1153, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form #edit-actions {
     display: flex;
     justify-content: center;
@@ -4412,7 +4413,7 @@
     flex-wrap: nowrap;
   }
 }
-/* line 1163, ../sass/components/_forms.scss */
+/* line 1166, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions .webform-button--next {
   max-width: 344px !important;
   display: flex;
@@ -4448,7 +4449,7 @@
   font-weight: "normal";
   color: #fff;
 }
-/* line 1176, ../sass/components/_forms.scss */
+/* line 1179, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions .webform-button--next::after {
   content: "\2197";
   font-size: 16px;
@@ -4458,7 +4459,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 1187, ../sass/components/_forms.scss */
+/* line 1190, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions .webform-button--previous {
   max-width: 344px !important;
   display: flex;
@@ -4497,7 +4498,7 @@
   font-weight: "normal";
   color: #fff;
 }
-/* line 1203, ../sass/components/_forms.scss */
+/* line 1206, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions .webform-button--previous::after {
   content: "\2190";
   font-size: 16px;
@@ -4507,11 +4508,11 @@
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 1213, ../sass/components/_forms.scss */
+/* line 1216, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions .webform-button--previous:hover {
   background-color: #d6d6d6;
 }
-/* line 1218, ../sass/components/_forms.scss */
+/* line 1221, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions .webform-button--submit {
   max-width: 344px !important;
   display: flex;
@@ -4550,7 +4551,7 @@
   font-weight: "normal";
   color: #fff;
 }
-/* line 1234, ../sass/components/_forms.scss */
+/* line 1237, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions .webform-button--submit::after {
   content: "\2713";
   font-size: 18px;
@@ -4560,11 +4561,11 @@
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 1244, ../sass/components/_forms.scss */
+/* line 1247, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions .webform-button--submit:hover {
   background-color: #45a049;
 }
-/* line 1249, ../sass/components/_forms.scss */
+/* line 1252, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form #edit-actions button,
 .page-register #page #main-content .content-center div.content div form #edit-actions input[type="reset"],
 .page-register #page #main-content .content-center div.content div form #edit-actions input[type="button"] {
@@ -5916,8 +5917,8 @@ body.is-mobile {
 }
 /* line 439, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-videohome {
-  width: 100%;
-  height: 264px;
+  width: 97%;
+  height: 224px;
   position: relative;
   margin: 0 auto;
   background-color: rgba(255, 255, 255, 0.774);
@@ -6462,7 +6463,7 @@ body.is-mobile {
 .path-frontpage .content-center #block-sph-clases .clases-top {
   position: relative;
   width: 100%;
-  margin: 0 auto;
+  margin: 8% auto;
 }
 /* line 843, ../sass/components/_homepage.scss */
 .path-frontpage .content-center #block-sph-clases .clases-top .clases-top-btn {
@@ -8946,10 +8947,11 @@ body.is-mobile {
 }
 /* line 2543, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-accordion-content-active {
-  height: auto;
+  height: auto !important;
   display: flex;
   align-items: center;
   margin: 8px;
+  padding: 16px;
   border-radius: 16px;
   -webkit-border-radius: 16px;
   -moz-border-radius: 16px;
@@ -8958,18 +8960,18 @@ body.is-mobile {
   background-color: #e9e9ee;
   justify-content: center;
 }
-/* line 2551, ../sass/components/_homepage.scss */
+/* line 2552, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-accordion-content-active p {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
 }
-/* line 2555, ../sass/components/_homepage.scss */
+/* line 2556, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active {
   background-color: #8CC63F;
   color: #fff;
 }
-/* line 2558, ../sass/components/_homepage.scss */
+/* line 2559, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active span {
   font-family: "poppins";
   font-size: 16px;
@@ -8984,17 +8986,17 @@ body.is-mobile {
     position: relative;
     width: 100%;
   }
-  /* line 2569, ../sass/components/_homepage.scss */
+  /* line 2570, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header {
     position: relative;
     margin: 0 auto;
     width: 721px;
   }
-  /* line 2573, ../sass/components/_homepage.scss */
+  /* line 2574, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .lang {
     display: none;
   }
-  /* line 2576, ../sass/components/_homepage.scss */
+  /* line 2577, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-btn {
     display: flex;
     justify-content: center;
@@ -9014,7 +9016,7 @@ body.is-mobile {
     font-size: 15px;
     font-weight: "normal";
   }
-  /* line 2579, ../sass/components/_homepage.scss */
+  /* line 2580, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-btn::before {
     content: "";
     display: inline-block;
@@ -9025,7 +9027,7 @@ body.is-mobile {
     background-repeat: no-repeat;
     margin: -93px -4px -48px -20px;
   }
-  /* line 2589, ../sass/components/_homepage.scss */
+  /* line 2590, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
@@ -9036,14 +9038,14 @@ body.is-mobile {
     margin: 24px auto;
     color: #101828;
   }
-  /* line 2596, ../sass/components/_homepage.scss */
+  /* line 2597, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit span.green {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
     font-weight: 800;
     color: #8CC63F;
   }
-  /* line 2601, ../sass/components/_homepage.scss */
+  /* line 2602, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-desc {
     font-family: "poppins";
     font-size: 16px;
@@ -9051,11 +9053,11 @@ body.is-mobile {
     margin-bottom: 40px;
     text-align: center;
   }
-  /* line 2607, ../sass/components/_homepage.scss */
+  /* line 2608, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row {
     margin: 10px 0;
   }
-  /* line 2609, ../sass/components/_homepage.scss */
+  /* line 2610, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-default {
     border: 1px solid #e9e9ee;
     border-radius: 16px;
@@ -9068,14 +9070,14 @@ body.is-mobile {
     align-items: center;
     padding-left: 16px;
   }
-  /* line 2616, ../sass/components/_homepage.scss */
+  /* line 2617, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-default span {
     font-family: "poppins";
     font-size: 16px;
     font-weight: "normal";
     color: #101828;
   }
-  /* line 2621, ../sass/components/_homepage.scss */
+  /* line 2622, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-accordion-content-active {
     height: 48px;
     display: flex;
@@ -9089,18 +9091,18 @@ body.is-mobile {
     background-color: #e9e9ee;
     justify-content: center;
   }
-  /* line 2629, ../sass/components/_homepage.scss */
+  /* line 2630, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-accordion-content-active p {
     font-family: "poppins";
     font-size: 16px;
     font-weight: "normal";
   }
-  /* line 2633, ../sass/components/_homepage.scss */
+  /* line 2634, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active {
     background-color: #8CC63F;
     color: #fff;
   }
-  /* line 2636, ../sass/components/_homepage.scss */
+  /* line 2637, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active span {
     font-family: "poppins";
     font-size: 16px;
@@ -9108,13 +9110,13 @@ body.is-mobile {
     color: #fff;
   }
 }
-/* line 2644, ../sass/components/_homepage.scss */
+/* line 2645, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos {
   position: relative;
   margin: 0 auto;
   width: 100%;
 }
-/* line 2648, ../sass/components/_homepage.scss */
+/* line 2649, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-tit {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
@@ -9125,14 +9127,14 @@ body.is-mobile {
   margin: 24px auto;
   color: #101828;
 }
-/* line 2655, ../sass/components/_homepage.scss */
+/* line 2656, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-tit span.green {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
   font-weight: 800;
   color: #8CC63F;
 }
-/* line 2660, ../sass/components/_homepage.scss */
+/* line 2661, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-desc {
   font-family: "poppins";
   font-size: 16px;
@@ -9140,13 +9142,13 @@ body.is-mobile {
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 2665, ../sass/components/_homepage.scss */
+/* line 2666, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn {
   position: relative;
   z-index: 3;
   margin: 0 auto;
 }
-/* line 2669, ../sass/components/_homepage.scss */
+/* line 2670, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn a {
   max-width: 330px !important;
   display: flex;
@@ -9181,7 +9183,7 @@ body.is-mobile {
   font-weight: "normal";
   color: #fff;
 }
-/* line 2680, ../sass/components/_homepage.scss */
+/* line 2681, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn a::after {
   content: "";
   position: absolute;
@@ -9194,13 +9196,13 @@ body.is-mobile {
   justify-content: center;
   align-items: center;
 }
-/* line 2693, ../sass/components/_homepage.scss */
+/* line 2694, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn a::after {
   content: "\2197";
   font-size: 16px;
   color: #f7941d;
 }
-/* line 2700, ../sass/components/_homepage.scss */
+/* line 2701, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-img {
   overflow: hidden;
   width: 100%;
@@ -9209,7 +9211,7 @@ body.is-mobile {
   display: flex;
   margin-top: -20%;
 }
-/* line 2707, ../sass/components/_homepage.scss */
+/* line 2708, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-img img {
   width: 100%;
   height: auto;
@@ -9220,7 +9222,7 @@ body.is-mobile {
   -o-border-radius: 24px;
   z-index: 2;
 }
-/* line 2714, ../sass/components/_homepage.scss */
+/* line 2715, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-img::before {
   content: "";
   position: absolute;
@@ -9236,13 +9238,13 @@ body.is-mobile {
   -webkit-filter: blur(64px);
 }
 @media (min-width: 1170px) {
-  /* line 2644, ../sass/components/_homepage.scss */
+  /* line 2645, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos {
     position: relative;
     margin: 0 auto;
     width: 721px;
   }
-  /* line 2733, ../sass/components/_homepage.scss */
+  /* line 2734, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-tit {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
@@ -9253,14 +9255,14 @@ body.is-mobile {
     margin: 24px auto;
     color: #101828;
   }
-  /* line 2740, ../sass/components/_homepage.scss */
+  /* line 2741, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-tit span.green {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
     font-weight: 800;
     color: #8CC63F;
   }
-  /* line 2745, ../sass/components/_homepage.scss */
+  /* line 2746, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-desc {
     font-family: "poppins";
     font-size: 16px;
@@ -9268,13 +9270,13 @@ body.is-mobile {
     margin-bottom: 40px;
     text-align: center;
   }
-  /* line 2750, ../sass/components/_homepage.scss */
+  /* line 2751, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-btn {
     position: relative;
     z-index: 3;
     margin: 0 auto;
   }
-  /* line 2754, ../sass/components/_homepage.scss */
+  /* line 2755, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-btn a {
     max-width: 330px !important;
     display: flex;
@@ -9309,7 +9311,7 @@ body.is-mobile {
     font-weight: "normal";
     color: #fff;
   }
-  /* line 2765, ../sass/components/_homepage.scss */
+  /* line 2766, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-btn a::after {
     content: "";
     position: absolute;
@@ -9322,13 +9324,13 @@ body.is-mobile {
     justify-content: center;
     align-items: center;
   }
-  /* line 2778, ../sass/components/_homepage.scss */
+  /* line 2779, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-btn a::after {
     content: "\2197";
     font-size: 16px;
     color: #f7941d;
   }
-  /* line 2785, ../sass/components/_homepage.scss */
+  /* line 2786, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-img {
     width: 690px;
     float: left;
@@ -9337,7 +9339,7 @@ body.is-mobile {
     margin-top: -20%;
     overflow: visible;
   }
-  /* line 2792, ../sass/components/_homepage.scss */
+  /* line 2793, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-img img {
     width: 100%;
     height: auto;
@@ -9348,7 +9350,7 @@ body.is-mobile {
     -o-border-radius: 24px;
     z-index: 2;
   }
-  /* line 2798, ../sass/components/_homepage.scss */
+  /* line 2799, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-img::before {
     content: "";
     position: absolute;
@@ -10174,26 +10176,44 @@ body.is-mobile {
 }
 /* line 62, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #e9e9ee;
-  height: 45px;
+  height: auto;
   border-radius: 12px;
   -webkit-border-radius: 12px;
   -moz-border-radius: 12px;
   -ms-border-radius: 12px;
   -o-border-radius: 12px;
   padding: 16px;
+  flex-wrap: wrap;
 }
-/* line 70, ../sass/components/_calendar.scss */
+@media (min-width: 1170px) {
+  /* line 62, ../sass/components/_calendar.scss */
+  .page-calendar #page #main-content .content-center .views-element-container header .cal-colors {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #e9e9ee;
+    height: 45px;
+    border-radius: 12px;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -ms-border-radius: 12px;
+    -o-border-radius: 12px;
+    padding: 16px;
+    flex-wrap: nowrap;
+  }
+}
+/* line 81, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors div {
   font-family: "poppins";
   font-size: 13px;
   font-weight: "normal";
   color: #1c2635;
 }
-/* line 74, ../sass/components/_calendar.scss */
+/* line 85, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle {
   height: 15px;
   width: 15px;
@@ -10202,15 +10222,15 @@ body.is-mobile {
   display: inline-block;
   margin: 10px;
 }
-/* line 82, ../sass/components/_calendar.scss */
+/* line 93, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle.cultural-color {
   background-color: #fc9a0a;
 }
-/* line 85, ../sass/components/_calendar.scss */
+/* line 96, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle.camp-color {
   background-color: #1f978d;
 }
-/* line 90, ../sass/components/_calendar.scss */
+/* line 101, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar {
   border: 1px solid #e9e9ee;
   padding: 4%;
@@ -10220,7 +10240,7 @@ body.is-mobile {
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
 }
-/* line 95, ../sass/components/_calendar.scss */
+/* line 106, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-toolbar.fc-header-toolbar {
   display: flex;
   justify-content: space-between;
@@ -10231,7 +10251,7 @@ body.is-mobile {
   border-radius: 12px;
 }
 @media (min-width: 1170px) {
-  /* line 95, ../sass/components/_calendar.scss */
+  /* line 106, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-toolbar.fc-header-toolbar {
     display: flex;
     justify-content: space-between;
@@ -10242,13 +10262,13 @@ body.is-mobile {
     border-radius: 12px;
   }
 }
-/* line 114, ../sass/components/_calendar.scss */
+/* line 125, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-left {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-/* line 120, ../sass/components/_calendar.scss */
+/* line 131, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-button-group button {
   background-color: transparent;
   border: 1px solid #dcdcdc;
@@ -10258,14 +10278,14 @@ body.is-mobile {
   font-weight: 600;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
-/* line 131, ../sass/components/_calendar.scss */
+/* line 142, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-button-group button:hover,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-button-group button:focus {
   background-color: #007aff;
   border-color: #007aff;
   color: #ffffff;
 }
-/* line 138, ../sass/components/_calendar.scss */
+/* line 149, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-center h2 {
   font-size: 20px;
   color: #333333;
@@ -10274,12 +10294,12 @@ body.is-mobile {
   letter-spacing: 0.5px;
   margin: 0;
 }
-/* line 147, ../sass/components/_calendar.scss */
+/* line 158, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-right {
   display: flex;
   align-items: center;
 }
-/* line 152, ../sass/components/_calendar.scss */
+/* line 163, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button {
   background-color: transparent;
   border: 1px solid #dcdcdc;
@@ -10290,7 +10310,7 @@ body.is-mobile {
   transition: all 0.3s ease;
   display: none;
 }
-/* line 163, ../sass/components/_calendar.scss */
+/* line 174, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button.fc-button-active {
   background-color: #007aff;
   color: #ffffff;
@@ -10298,7 +10318,7 @@ body.is-mobile {
   display: none;
 }
 @media (min-width: 1170px) {
-  /* line 163, ../sass/components/_calendar.scss */
+  /* line 174, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button.fc-button-active {
     display: none;
     background-color: #007aff;
@@ -10306,7 +10326,7 @@ body.is-mobile {
     border-color: #005ac1;
   }
 }
-/* line 176, ../sass/components/_calendar.scss */
+/* line 187, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button {
   background-color: #007aff;
   color: #ffffff;
@@ -10316,15 +10336,15 @@ body.is-mobile {
   border: none;
   transition: all 0.3s ease;
 }
-/* line 186, ../sass/components/_calendar.scss */
+/* line 197, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button:hover {
   background-color: #005ac1;
 }
-/* line 189, ../sass/components/_calendar.scss */
+/* line 200, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button {
   margin-right: 8px;
 }
-/* line 192, ../sass/components/_calendar.scss */
+/* line 203, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button {
   background-color: transparent;
@@ -10340,25 +10360,25 @@ body.is-mobile {
   padding: 0;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
-/* line 209, ../sass/components/_calendar.scss */
+/* line 220, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button:hover,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button:hover {
   background-color: #007aff;
   border-color: #007aff;
   color: #ffffff;
 }
-/* line 216, ../sass/components/_calendar.scss */
+/* line 227, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button .fc-icon,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button .fc-icon {
   font-size: 20px;
   transition: transform 0.3s ease;
 }
-/* line 222, ../sass/components/_calendar.scss */
+/* line 233, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button:hover .fc-icon,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button:hover .fc-icon {
   transform: scale(1.2);
 }
-/* line 228, ../sass/components/_calendar.scss */
+/* line 239, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container table {
   width: 100%;
   border-collapse: collapse;
@@ -10370,7 +10390,7 @@ body.is-mobile {
   overflow: hidden;
   transition: all 0.3s ease;
 }
-/* line 241, ../sass/components/_calendar.scss */
+/* line 252, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container th {
   text-align: center;
   color: #555555;
@@ -10381,7 +10401,7 @@ body.is-mobile {
   text-transform: uppercase;
   border-bottom: 2px solid #e0e0e0;
 }
-/* line 252, ../sass/components/_calendar.scss */
+/* line 263, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container td {
   text-align: center;
   padding: 18px;
@@ -10389,13 +10409,13 @@ body.is-mobile {
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-/* line 260, ../sass/components/_calendar.scss */
+/* line 271, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container td:hover {
   background-color: #f8f8f8;
   cursor: pointer;
   color: #007aff;
 }
-/* line 266, ../sass/components/_calendar.scss */
+/* line 277, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a {
   display: block;
   text-align: center;
@@ -10409,31 +10429,31 @@ body.is-mobile {
   transition: all 0.3s ease;
   border: 1px solid #007aff;
 }
-/* line 280, ../sass/components/_calendar.scss */
+/* line 291, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a:hover {
   background-color: #007aff;
   color: #ffffff;
   border-color: #005ac1;
 }
-/* line 286, ../sass/components/_calendar.scss */
+/* line 297, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day.fc-sat,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day.fc-sun {
   color: #999999;
 }
-/* line 291, ../sass/components/_calendar.scss */
+/* line 302, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-scroller {
   overflow-y: auto;
   max-height: 550px;
 }
-/* line 296, ../sass/components/_calendar.scss */
+/* line 307, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day {
   border-right: 1px solid #f1f1f1;
 }
-/* line 300, ../sass/components/_calendar.scss */
+/* line 311, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day:last-child {
   border-right: none;
 }
-/* line 304, ../sass/components/_calendar.scss */
+/* line 315, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-title {
   color: #fff;
   font-size: 12px;
