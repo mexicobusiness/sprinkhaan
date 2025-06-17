@@ -435,7 +435,103 @@
         }
       }
     }
+    #block-sph-sobrenosotros {
+      margin-top: 4%;
+      display: inline-block;
+      width: 100%;
+      position: relative;
+      padding: 8px;
+      .about-us-left {
+        width: 97%;
+        float: left;
+        margin: 7% 2% 0 2%;
+        h2 {
+          position: relative;
+          @include fonts("Conv_Gotham-Medium", 36px, 800);
+          color: #101828;
+          span.orange {
+            @include fonts("Conv_Gotham-Medium", 36px, 800);
+            color: $color-orange;
+          }
+        }
+        h2:before {
+          content: "";
+          display: inline-block;
+          width: 24px;
+          height: 24px;
+          background-image: url("/themes/custom/sph/images/School-spk.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+          position: absolute;
+          top: -12px;
+          left: 0;
+          filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg)
+            brightness(95%) contrast(94%);
+        }
+        .about-us-left-text {
+          @include fonts("poppins", 16px, "normal");
+          color: #323b48;
+        }
+      }
+      .about-us-right {
+        width: 100%;
+        float: left;
+        img {
+          @include radius-spk-32();
+          width: 100%;
+          height: auto;
+        }
+      }
 
+      @include breakpoint($desktop) {
+        margin-top: 4%;
+        display: inline-block;
+        width: 100%;
+        position: relative;
+        padding: 0;
+        .about-us-left {
+          width: 41%;
+          float: left;
+          margin: 7% 8% 0 0;
+          h2 {
+            position: relative;
+            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            color: #101828;
+            span.orange {
+              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              color: $color-orange;
+            }
+          }
+          h2:before {
+            content: "";
+            display: inline-block;
+            width: 31px;
+            height: 31px;
+            background-image: url("/themes/custom/sph/images/School-spk.svg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: -18px;
+            left: 4px;
+            filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg)
+              brightness(95%) contrast(94%);
+          }
+          .about-us-left-text {
+            @include fonts("poppins", 16px, "normal");
+            color: #323b48;
+          }
+        }
+        .about-us-right {
+          width: 50%;
+          float: left;
+          img {
+            @include radius-spk-32();
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
     #block-sph-videohome {
       width: 97%;
       height: 224px;
@@ -637,54 +733,6 @@
         }
       }
     }
-    #block-sph-sobrenosotros {
-      margin-top: 4%;
-      display: inline-block;
-      width: 100%;
-      position: relative;
-      padding: 8px;
-      .about-us-left {
-        width: 97%;
-        float: left;
-        margin: 7% 2% 0 2%;
-        h2 {
-          position: relative;
-          @include fonts("Conv_Gotham-Medium", 36px, 800);
-          color: #101828;
-          span.orange {
-            @include fonts("Conv_Gotham-Medium", 36px, 800);
-            color: $color-orange;
-          }
-        }
-        h2:before {
-          content: "";
-          display: inline-block;
-          width: 24px;
-          height: 24px;
-          background-image: url("/themes/custom/sph/images/School-spk.svg");
-          background-size: cover;
-          background-repeat: no-repeat;
-          position: absolute;
-          top: -12px;
-          left: 0;
-          filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg)
-            brightness(95%) contrast(94%);
-        }
-        .about-us-left-text {
-          @include fonts("poppins", 16px, "normal");
-          color: #323b48;
-        }
-      }
-      .about-us-right {
-        width: 100%;
-        float: left;
-        img {
-          @include radius-spk-32();
-          width: 100%;
-          height: auto;
-        }
-      }
-    }
     @include breakpoint($desktop) {
       width: 100%;
       display: inline-block;
@@ -781,54 +829,6 @@
             position: absolute;
             right: -48px;
             border: 0px solid;
-          }
-        }
-      }
-      #block-sph-sobrenosotros {
-        margin-top: 4%;
-        display: inline-block;
-        width: 100%;
-        position: relative;
-        padding: 0;
-        .about-us-left {
-          width: 41%;
-          float: left;
-          margin: 7% 8% 0 0;
-          h2 {
-            position: relative;
-            @include fonts("Conv_Gotham-Medium", 48px, 800);
-            color: #101828;
-            span.orange {
-              @include fonts("Conv_Gotham-Medium", 48px, 800);
-              color: $color-orange;
-            }
-          }
-          h2:before {
-            content: "";
-            display: inline-block;
-            width: 31px;
-            height: 31px;
-            background-image: url("/themes/custom/sph/images/School-spk.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            position: absolute;
-            top: -18px;
-            left: 4px;
-            filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg)
-              brightness(95%) contrast(94%);
-          }
-          .about-us-left-text {
-            @include fonts("poppins", 16px, "normal");
-            color: #323b48;
-          }
-        }
-        .about-us-right {
-          width: 50%;
-          float: left;
-          img {
-            @include radius-spk-32();
-            width: 100%;
-            height: auto;
           }
         }
       }
@@ -2548,7 +2548,7 @@
           }
         }
         .ui-accordion-content-active {
-          height: auto!important;
+          height: auto !important;
           display: flex;
           align-items: center;
           margin: 8px;

@@ -5952,7 +5952,139 @@ body.is-mobile {
     transform: translateY(-20px) scale(1.1) rotate(5deg);
   }
 }
-/* line 439, ../sass/components/_homepage.scss */
+/* line 438, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-sobrenosotros {
+  margin-top: 4%;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+  padding: 8px;
+}
+/* line 444, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-sobrenosotros .about-us-left {
+  width: 97%;
+  float: left;
+  margin: 7% 2% 0 2%;
+}
+/* line 448, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-sobrenosotros .about-us-left h2 {
+  position: relative;
+  font-family: "Conv_Gotham-Medium";
+  font-size: 36px;
+  font-weight: 800;
+  color: #101828;
+}
+/* line 452, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-sobrenosotros .about-us-left h2 span.orange {
+  font-family: "Conv_Gotham-Medium";
+  font-size: 36px;
+  font-weight: 800;
+  color: #F7941D;
+}
+/* line 457, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-sobrenosotros .about-us-left h2:before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  background-image: url("/themes/custom/sph/images/School-spk.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: -12px;
+  left: 0;
+  filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg) brightness(95%) contrast(94%);
+}
+/* line 471, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-sobrenosotros .about-us-left .about-us-left-text {
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: "normal";
+  color: #323b48;
+}
+/* line 476, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-sobrenosotros .about-us-right {
+  width: 100%;
+  float: left;
+}
+/* line 479, ../sass/components/_homepage.scss */
+.path-frontpage .region-top #block-sph-sobrenosotros .about-us-right img {
+  border-radius: 32px;
+  -webkit-border-radius: 32px;
+  -moz-border-radius: 32px;
+  -ms-border-radius: 32px;
+  -o-border-radius: 32px;
+  width: 100%;
+  height: auto;
+}
+@media (min-width: 1170px) {
+  /* line 438, ../sass/components/_homepage.scss */
+  .path-frontpage .region-top #block-sph-sobrenosotros {
+    margin-top: 4%;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    padding: 0;
+  }
+  /* line 492, ../sass/components/_homepage.scss */
+  .path-frontpage .region-top #block-sph-sobrenosotros .about-us-left {
+    width: 41%;
+    float: left;
+    margin: 7% 8% 0 0;
+  }
+  /* line 496, ../sass/components/_homepage.scss */
+  .path-frontpage .region-top #block-sph-sobrenosotros .about-us-left h2 {
+    position: relative;
+    font-family: "Conv_Gotham-Medium";
+    font-size: 48px;
+    font-weight: 800;
+    color: #101828;
+  }
+  /* line 500, ../sass/components/_homepage.scss */
+  .path-frontpage .region-top #block-sph-sobrenosotros .about-us-left h2 span.orange {
+    font-family: "Conv_Gotham-Medium";
+    font-size: 48px;
+    font-weight: 800;
+    color: #F7941D;
+  }
+  /* line 505, ../sass/components/_homepage.scss */
+  .path-frontpage .region-top #block-sph-sobrenosotros .about-us-left h2:before {
+    content: "";
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-image: url("/themes/custom/sph/images/School-spk.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -18px;
+    left: 4px;
+    filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg) brightness(95%) contrast(94%);
+  }
+  /* line 519, ../sass/components/_homepage.scss */
+  .path-frontpage .region-top #block-sph-sobrenosotros .about-us-left .about-us-left-text {
+    font-family: "poppins";
+    font-size: 16px;
+    font-weight: "normal";
+    color: #323b48;
+  }
+  /* line 524, ../sass/components/_homepage.scss */
+  .path-frontpage .region-top #block-sph-sobrenosotros .about-us-right {
+    width: 50%;
+    float: left;
+  }
+  /* line 527, ../sass/components/_homepage.scss */
+  .path-frontpage .region-top #block-sph-sobrenosotros .about-us-right img {
+    border-radius: 32px;
+    -webkit-border-radius: 32px;
+    -moz-border-radius: 32px;
+    -ms-border-radius: 32px;
+    -o-border-radius: 32px;
+    width: 100%;
+    height: auto;
+  }
+}
+/* line 535, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-videohome {
   width: 97%;
   height: 224px;
@@ -5974,7 +6106,7 @@ body.is-mobile {
   animation: slide-up-bounce 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
   animation-delay: 2.1s;
 }
-/* line 457, ../sass/components/_homepage.scss */
+/* line 553, ../sass/components/_homepage.scss */
 .path-frontpage .region-top #block-sph-videohome video {
   border: 1px solid #e9e9ee;
   padding: 8px;
@@ -5988,7 +6120,7 @@ body.is-mobile {
   -o-border-radius: 16px;
 }
 @media (min-width: 1170px) {
-  /* line 439, ../sass/components/_homepage.scss */
+  /* line 535, ../sass/components/_homepage.scss */
   .path-frontpage .region-top #block-sph-videohome {
     width: 1001px;
     height: 580px;
@@ -6010,7 +6142,7 @@ body.is-mobile {
     animation: slide-up-bounce 2.5s cubic-bezier(0.68, -0.55, 0.27, 1.55) forwards;
     animation-delay: 2.1s;
   }
-  /* line 483, ../sass/components/_homepage.scss */
+  /* line 579, ../sass/components/_homepage.scss */
   .path-frontpage .region-top #block-sph-videohome video {
     border: 1px solid #e9e9ee;
     padding: 8px;
@@ -6042,24 +6174,24 @@ body.is-mobile {
     opacity: 1;
   }
 }
-/* line 513, ../sass/components/_homepage.scss */
+/* line 609, ../sass/components/_homepage.scss */
 .path-frontpage .region-center {
   width: 100%;
   display: inline-block;
   position: relative;
 }
-/* line 517, ../sass/components/_homepage.scss */
+/* line 613, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 {
   display: inline-block;
   position: relative;
   width: 100%;
   margin-top: 5%;
 }
-/* line 523, ../sass/components/_homepage.scss */
+/* line 619, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .lang {
   display: none;
 }
-/* line 526, ../sass/components/_homepage.scss */
+/* line 622, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-btn {
   display: flex;
   justify-content: center;
@@ -6079,7 +6211,7 @@ body.is-mobile {
   font-size: 15px;
   font-weight: "normal";
 }
-/* line 529, ../sass/components/_homepage.scss */
+/* line 625, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-btn::before {
   content: "";
   display: inline-block;
@@ -6090,7 +6222,7 @@ body.is-mobile {
   background-repeat: no-repeat;
   margin: -93px -8px -48px -32px;
 }
-/* line 539, ../sass/components/_homepage.scss */
+/* line 635, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-tit {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
@@ -6100,14 +6232,14 @@ body.is-mobile {
   line-height: 1;
   color: #101828;
 }
-/* line 545, ../sass/components/_homepage.scss */
+/* line 641, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-tit span.green {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
   font-weight: 800;
   color: #8CC63F;
 }
-/* line 550, ../sass/components/_homepage.scss */
+/* line 646, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-tit::after {
   content: "";
   display: inline-block;
@@ -6119,33 +6251,33 @@ body.is-mobile {
   margin: 0 0 -4px -2px;
 }
 @media screen and (max-width: 768px) {
-  /* line 563, ../sass/components/_homepage.scss */
+  /* line 659, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-track {
     width: auto !important;
     display: inline-flex !important;
   }
-  /* line 568, ../sass/components/_homepage.scss */
+  /* line 664, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick__slide {
     width: 300px !important;
     flex-shrink: 0;
     margin-right: 16px;
   }
-  /* line 574, ../sass/components/_homepage.scss */
+  /* line 670, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-slider {
     overflow-x: auto !important;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
   }
-  /* line 580, ../sass/components/_homepage.scss */
+  /* line 676, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-slider::-webkit-scrollbar {
     display: none;
   }
-  /* line 584, ../sass/components/_homepage.scss */
+  /* line 680, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick__slide .views-field {
     width: 100%;
   }
 }
-/* line 589, ../sass/components/_homepage.scss */
+/* line 685, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide {
   border: 1px solid #e9e9ee;
   margin: 16px;
@@ -6157,12 +6289,12 @@ body.is-mobile {
   min-height: 250px;
   padding: 32px;
 }
-/* line 595, ../sass/components/_homepage.scss */
+/* line 691, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-fot {
   float: left;
   margin: 4px;
 }
-/* line 598, ../sass/components/_homepage.scss */
+/* line 694, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-fot img {
   border-radius: 24px;
   -webkit-border-radius: 24px;
@@ -6172,133 +6304,68 @@ body.is-mobile {
   width: 54px;
   height: auto;
 }
-/* line 604, ../sass/components/_homepage.scss */
+/* line 700, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-tit {
   font-family: "poppins";
   font-size: 18px;
   font-weight: 800;
 }
-/* line 607, ../sass/components/_homepage.scss */
+/* line 703, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-est {
   margin-bottom: 16px;
 }
-/* line 609, ../sass/components/_homepage.scss */
+/* line 705, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-est div {
   float: left;
   color: #F7941D;
   font-size: 22px;
   margin-right: 6px;
 }
-/* line 616, ../sass/components/_homepage.scss */
+/* line 712, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-tes {
   clear: both;
   width: 100%;
 }
-/* line 619, ../sass/components/_homepage.scss */
+/* line 715, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-tes p {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
   color: #323b48;
 }
-/* line 626, ../sass/components/_homepage.scss */
+/* line 722, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 nav .slick-prev {
   width: 60px;
   position: absolute;
   left: -2px;
   border: 0px solid;
 }
-/* line 632, ../sass/components/_homepage.scss */
+/* line 728, ../sass/components/_homepage.scss */
 .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 nav .slick-next {
   width: 60px;
   position: absolute;
   right: -2px;
   border: 0px solid;
 }
-/* line 640, ../sass/components/_homepage.scss */
-.path-frontpage .region-center #block-sph-sobrenosotros {
-  margin-top: 4%;
-  display: inline-block;
-  width: 100%;
-  position: relative;
-  padding: 8px;
-}
-/* line 646, ../sass/components/_homepage.scss */
-.path-frontpage .region-center #block-sph-sobrenosotros .about-us-left {
-  width: 97%;
-  float: left;
-  margin: 7% 2% 0 2%;
-}
-/* line 650, ../sass/components/_homepage.scss */
-.path-frontpage .region-center #block-sph-sobrenosotros .about-us-left h2 {
-  position: relative;
-  font-family: "Conv_Gotham-Medium";
-  font-size: 36px;
-  font-weight: 800;
-  color: #101828;
-}
-/* line 654, ../sass/components/_homepage.scss */
-.path-frontpage .region-center #block-sph-sobrenosotros .about-us-left h2 span.orange {
-  font-family: "Conv_Gotham-Medium";
-  font-size: 36px;
-  font-weight: 800;
-  color: #F7941D;
-}
-/* line 659, ../sass/components/_homepage.scss */
-.path-frontpage .region-center #block-sph-sobrenosotros .about-us-left h2:before {
-  content: "";
-  display: inline-block;
-  width: 24px;
-  height: 24px;
-  background-image: url("/themes/custom/sph/images/School-spk.svg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: absolute;
-  top: -12px;
-  left: 0;
-  filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg) brightness(95%) contrast(94%);
-}
-/* line 673, ../sass/components/_homepage.scss */
-.path-frontpage .region-center #block-sph-sobrenosotros .about-us-left .about-us-left-text {
-  font-family: "poppins";
-  font-size: 16px;
-  font-weight: "normal";
-  color: #323b48;
-}
-/* line 678, ../sass/components/_homepage.scss */
-.path-frontpage .region-center #block-sph-sobrenosotros .about-us-right {
-  width: 100%;
-  float: left;
-}
-/* line 681, ../sass/components/_homepage.scss */
-.path-frontpage .region-center #block-sph-sobrenosotros .about-us-right img {
-  border-radius: 32px;
-  -webkit-border-radius: 32px;
-  -moz-border-radius: 32px;
-  -ms-border-radius: 32px;
-  -o-border-radius: 32px;
-  width: 100%;
-  height: auto;
-}
 @media (min-width: 1170px) {
-  /* line 513, ../sass/components/_homepage.scss */
+  /* line 609, ../sass/components/_homepage.scss */
   .path-frontpage .region-center {
     width: 100%;
     display: inline-block;
     position: relative;
   }
-  /* line 692, ../sass/components/_homepage.scss */
+  /* line 740, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 {
     display: inline-block;
     position: relative;
     width: 100%;
     margin-top: 5%;
   }
-  /* line 698, ../sass/components/_homepage.scss */
+  /* line 746, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .lang {
     display: none;
   }
-  /* line 701, ../sass/components/_homepage.scss */
+  /* line 749, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-btn {
     display: flex;
     justify-content: center;
@@ -6318,7 +6385,7 @@ body.is-mobile {
     font-size: 15px;
     font-weight: "normal";
   }
-  /* line 704, ../sass/components/_homepage.scss */
+  /* line 752, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-btn::before {
     content: "";
     display: inline-block;
@@ -6329,7 +6396,7 @@ body.is-mobile {
     background-repeat: no-repeat;
     margin: -93px -8px -48px -32px;
   }
-  /* line 714, ../sass/components/_homepage.scss */
+  /* line 762, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-tit {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
@@ -6339,14 +6406,14 @@ body.is-mobile {
     line-height: 1;
     color: #101828;
   }
-  /* line 720, ../sass/components/_homepage.scss */
+  /* line 768, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-tit span.green {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
     font-weight: 800;
     color: #8CC63F;
   }
-  /* line 725, ../sass/components/_homepage.scss */
+  /* line 773, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 header .testimonials-tit::after {
     content: "";
     display: inline-block;
@@ -6357,7 +6424,7 @@ body.is-mobile {
     background-repeat: no-repeat;
     margin: 0 0 -4px -2px;
   }
-  /* line 736, ../sass/components/_homepage.scss */
+  /* line 784, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide {
     border: 1px solid #e9e9ee;
     margin: 16px;
@@ -6369,12 +6436,12 @@ body.is-mobile {
     min-height: 250px;
     padding: 32px;
   }
-  /* line 742, ../sass/components/_homepage.scss */
+  /* line 790, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-fot {
     float: left;
     margin: 4px;
   }
-  /* line 745, ../sass/components/_homepage.scss */
+  /* line 793, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-fot img {
     border-radius: 24px;
     -webkit-border-radius: 24px;
@@ -6384,113 +6451,48 @@ body.is-mobile {
     width: 54px;
     height: auto;
   }
-  /* line 751, ../sass/components/_homepage.scss */
+  /* line 799, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-tit {
     font-family: "poppins";
     font-size: 18px;
     font-weight: 800;
   }
-  /* line 754, ../sass/components/_homepage.scss */
+  /* line 802, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-est {
     margin-bottom: 16px;
   }
-  /* line 756, ../sass/components/_homepage.scss */
+  /* line 804, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-est div {
     float: left;
     color: #F7941D;
     font-size: 22px;
     margin-right: 6px;
   }
-  /* line 763, ../sass/components/_homepage.scss */
+  /* line 811, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-tes {
     clear: both;
     width: 100%;
   }
-  /* line 766, ../sass/components/_homepage.scss */
+  /* line 814, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 .slick-list .slick__slide .testimoniales-tes p {
     font-family: "poppins";
     font-size: 16px;
     font-weight: "normal";
     color: #323b48;
   }
-  /* line 773, ../sass/components/_homepage.scss */
+  /* line 821, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 nav .slick-prev {
     width: 60px;
     position: absolute;
     left: -48px;
     border: 0px solid;
   }
-  /* line 779, ../sass/components/_homepage.scss */
+  /* line 827, ../sass/components/_homepage.scss */
   .path-frontpage .region-center #block-sph-views-block-testimoniales-block-1 nav .slick-next {
     width: 60px;
     position: absolute;
     right: -48px;
     border: 0px solid;
-  }
-  /* line 787, ../sass/components/_homepage.scss */
-  .path-frontpage .region-center #block-sph-sobrenosotros {
-    margin-top: 4%;
-    display: inline-block;
-    width: 100%;
-    position: relative;
-    padding: 0;
-  }
-  /* line 793, ../sass/components/_homepage.scss */
-  .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left {
-    width: 41%;
-    float: left;
-    margin: 7% 8% 0 0;
-  }
-  /* line 797, ../sass/components/_homepage.scss */
-  .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left h2 {
-    position: relative;
-    font-family: "Conv_Gotham-Medium";
-    font-size: 48px;
-    font-weight: 800;
-    color: #101828;
-  }
-  /* line 801, ../sass/components/_homepage.scss */
-  .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left h2 span.orange {
-    font-family: "Conv_Gotham-Medium";
-    font-size: 48px;
-    font-weight: 800;
-    color: #F7941D;
-  }
-  /* line 806, ../sass/components/_homepage.scss */
-  .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left h2:before {
-    content: "";
-    display: inline-block;
-    width: 31px;
-    height: 31px;
-    background-image: url("/themes/custom/sph/images/School-spk.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: absolute;
-    top: -18px;
-    left: 4px;
-    filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg) brightness(95%) contrast(94%);
-  }
-  /* line 820, ../sass/components/_homepage.scss */
-  .path-frontpage .region-center #block-sph-sobrenosotros .about-us-left .about-us-left-text {
-    font-family: "poppins";
-    font-size: 16px;
-    font-weight: "normal";
-    color: #323b48;
-  }
-  /* line 825, ../sass/components/_homepage.scss */
-  .path-frontpage .region-center #block-sph-sobrenosotros .about-us-right {
-    width: 50%;
-    float: left;
-  }
-  /* line 828, ../sass/components/_homepage.scss */
-  .path-frontpage .region-center #block-sph-sobrenosotros .about-us-right img {
-    border-radius: 32px;
-    -webkit-border-radius: 32px;
-    -moz-border-radius: 32px;
-    -ms-border-radius: 32px;
-    -o-border-radius: 32px;
-    width: 100%;
-    height: auto;
   }
 }
 /* line 838, ../sass/components/_homepage.scss */
