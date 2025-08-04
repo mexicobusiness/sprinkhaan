@@ -2460,29 +2460,72 @@
           }
         }
         .views-row {
-          width: calc(91% / 4);
-          float: left;
-          margin-right: 24px;
+          width: calc((96% - 72px) / 4);
+          margin: 12px;
+          padding: 24px;
+          display: inline-flex;
+          background: #ffffff;
+          border-radius: 12px;
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
           text-align: center;
+          float: none;
+          box-sizing: border-box;
+
+          &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+          }
+
           .team-photo {
+            margin: 0 auto 16px;
+            width: 160px;
+            height: 160px;
+            overflow: hidden;
+            border-radius: 50%;
+            border: 2px solid #f1f1f1;
+
             img {
-              width: 154px;
-              height: auto;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+              border-radius: 50%;
             }
           }
+
           .team-name {
-            @include fonts("Conv_Gotham-Medium", 32px, "normal");
-            margin-bottom: 4px;
-            color: #101828;
-          }
-          .team-group {
-            @include fonts("poppins", 16px, "normal");
+            @include fonts("Conv_Gotham-Medium", 24px, 500);
             margin-bottom: 8px;
-            color: #8cc63f;
-          }
-          .team-desc {
-            @include fonts("poppins", 16px, "normal");
             color: #101828;
+            line-height: 1.2;
+          }
+
+          .team-group {
+            @include fonts("poppins", 14px, 400);
+            margin-bottom: 12px;
+            color: #8cc63f;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+          }
+
+          .team-desc {
+            @include fonts("poppins", 14px, 400);
+            color: #475467;
+            line-height: 1.5;
+            max-width: 90%;
+            margin: 0 auto;
+          }
+        }
+        @media (max-width: 768px) {
+          .views-row {
+            width: calc((100% - 24px) / 2);
+          }
+        }
+
+        @media (max-width: 480px) {
+          .views-row {
+            width: 100%;
+            margin: 12px 0;
           }
         }
       }

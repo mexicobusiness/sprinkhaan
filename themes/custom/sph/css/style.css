@@ -8858,41 +8858,84 @@ body.is-mobile {
   }
   /* line 2462, ../sass/components/_homepage.scss */
   .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
-    width: calc(91% / 4);
-    float: left;
-    margin-right: 24px;
+    width: calc((96% - 72px) / 4);
+    margin: 12px;
+    padding: 24px;
+    display: inline-block;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
+    float: none;
+    box-sizing: border-box;
   }
-  /* line 2468, ../sass/components/_homepage.scss */
+  /* line 2475, ../sass/components/_homepage.scss */
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  }
+  /* line 2480, ../sass/components/_homepage.scss */
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo {
+    margin: 0 auto 16px;
+    width: 160px;
+    height: 160px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 2px solid #f1f1f1;
+  }
+  /* line 2488, ../sass/components/_homepage.scss */
   .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img {
-    width: 154px;
-    height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
   }
-  /* line 2473, ../sass/components/_homepage.scss */
+  /* line 2496, ../sass/components/_homepage.scss */
   .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name {
     font-family: "Conv_Gotham-Medium";
-    font-size: 32px;
-    font-weight: "normal";
-    margin-bottom: 4px;
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 8px;
     color: #101828;
+    line-height: 1.2;
   }
-  /* line 2478, ../sass/components/_homepage.scss */
+  /* line 2503, ../sass/components/_homepage.scss */
   .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group {
     font-family: "poppins";
-    font-size: 16px;
-    font-weight: "normal";
-    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
     color: #8cc63f;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
   }
-  /* line 2483, ../sass/components/_homepage.scss */
+  /* line 2511, ../sass/components/_homepage.scss */
   .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc {
     font-family: "poppins";
-    font-size: 16px;
-    font-weight: "normal";
-    color: #101828;
+    font-size: 14px;
+    font-weight: 400;
+    color: #475467;
+    line-height: 1.5;
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
-/* line 2492, ../sass/components/_homepage.scss */
+@media (min-width: 1170px) and (max-width: 768px) {
+  /* line 2520, ../sass/components/_homepage.scss */
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
+    width: calc((100% - 24px) / 2);
+  }
+}
+@media (min-width: 1170px) and (max-width: 480px) {
+  /* line 2526, ../sass/components/_homepage.scss */
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
+    width: 100%;
+    margin: 12px 0;
+  }
+}
+
+/* line 2535, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 {
   margin: 5% 0;
   display: inline-block;
@@ -8900,17 +8943,17 @@ body.is-mobile {
   width: 100%;
   padding: 8px;
 }
-/* line 2498, ../sass/components/_homepage.scss */
+/* line 2541, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header {
   position: relative;
   margin: 0 auto;
   width: 100%;
 }
-/* line 2502, ../sass/components/_homepage.scss */
+/* line 2545, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .lang {
   display: none;
 }
-/* line 2505, ../sass/components/_homepage.scss */
+/* line 2548, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-btn {
   display: flex;
   justify-content: center;
@@ -8930,7 +8973,7 @@ body.is-mobile {
   font-size: 15px;
   font-weight: "normal";
 }
-/* line 2508, ../sass/components/_homepage.scss */
+/* line 2551, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-btn::before {
   content: "";
   display: inline-block;
@@ -8941,7 +8984,7 @@ body.is-mobile {
   background-repeat: no-repeat;
   margin: -93px -4px -48px -20px;
 }
-/* line 2518, ../sass/components/_homepage.scss */
+/* line 2561, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
@@ -8952,14 +8995,14 @@ body.is-mobile {
   margin: 24px auto;
   color: #101828;
 }
-/* line 2525, ../sass/components/_homepage.scss */
+/* line 2568, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit span.green {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
   font-weight: 800;
   color: #8CC63F;
 }
-/* line 2530, ../sass/components/_homepage.scss */
+/* line 2573, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-desc {
   font-family: "poppins";
   font-size: 16px;
@@ -8967,11 +9010,11 @@ body.is-mobile {
   margin-bottom: 40px;
   text-align: center;
 }
-/* line 2536, ../sass/components/_homepage.scss */
+/* line 2579, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row {
   margin: 10px 0;
 }
-/* line 2538, ../sass/components/_homepage.scss */
+/* line 2581, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-default {
   border: 1px solid #e9e9ee;
   border-radius: 16px;
@@ -8984,14 +9027,14 @@ body.is-mobile {
   align-items: center;
   padding-left: 16px;
 }
-/* line 2545, ../sass/components/_homepage.scss */
+/* line 2588, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-default span {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
   color: #101828;
 }
-/* line 2550, ../sass/components/_homepage.scss */
+/* line 2593, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-accordion-content-active {
   height: auto !important;
   display: flex;
@@ -9006,18 +9049,18 @@ body.is-mobile {
   background-color: #e9e9ee;
   justify-content: center;
 }
-/* line 2559, ../sass/components/_homepage.scss */
+/* line 2602, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-accordion-content-active p {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
 }
-/* line 2563, ../sass/components/_homepage.scss */
+/* line 2606, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active {
   background-color: #8CC63F;
   color: #fff;
 }
-/* line 2566, ../sass/components/_homepage.scss */
+/* line 2609, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active span {
   font-family: "poppins";
   font-size: 16px;
@@ -9025,7 +9068,7 @@ body.is-mobile {
   color: #fff;
 }
 @media (min-width: 1170px) {
-  /* line 2492, ../sass/components/_homepage.scss */
+  /* line 2535, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 {
     margin: 5% 0;
     display: inline-block;
@@ -9033,17 +9076,17 @@ body.is-mobile {
     width: 100%;
     padding: 0;
   }
-  /* line 2578, ../sass/components/_homepage.scss */
+  /* line 2621, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header {
     position: relative;
     margin: 0 auto;
     width: 721px;
   }
-  /* line 2582, ../sass/components/_homepage.scss */
+  /* line 2625, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .lang {
     display: none;
   }
-  /* line 2585, ../sass/components/_homepage.scss */
+  /* line 2628, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-btn {
     display: flex;
     justify-content: center;
@@ -9063,7 +9106,7 @@ body.is-mobile {
     font-size: 15px;
     font-weight: "normal";
   }
-  /* line 2588, ../sass/components/_homepage.scss */
+  /* line 2631, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-btn::before {
     content: "";
     display: inline-block;
@@ -9074,7 +9117,7 @@ body.is-mobile {
     background-repeat: no-repeat;
     margin: -93px -4px -48px -20px;
   }
-  /* line 2598, ../sass/components/_homepage.scss */
+  /* line 2641, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
@@ -9085,14 +9128,14 @@ body.is-mobile {
     margin: 24px auto;
     color: #101828;
   }
-  /* line 2605, ../sass/components/_homepage.scss */
+  /* line 2648, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-tit span.green {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
     font-weight: 800;
     color: #8CC63F;
   }
-  /* line 2610, ../sass/components/_homepage.scss */
+  /* line 2653, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 header .faq-desc {
     font-family: "poppins";
     font-size: 16px;
@@ -9100,11 +9143,11 @@ body.is-mobile {
     margin-bottom: 40px;
     text-align: center;
   }
-  /* line 2616, ../sass/components/_homepage.scss */
+  /* line 2659, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row {
     margin: 10px 0;
   }
-  /* line 2618, ../sass/components/_homepage.scss */
+  /* line 2661, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-default {
     border: 1px solid #e9e9ee;
     border-radius: 16px;
@@ -9117,14 +9160,14 @@ body.is-mobile {
     align-items: center;
     padding-left: 16px;
   }
-  /* line 2625, ../sass/components/_homepage.scss */
+  /* line 2668, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-default span {
     font-family: "poppins";
     font-size: 16px;
     font-weight: "normal";
     color: #101828;
   }
-  /* line 2630, ../sass/components/_homepage.scss */
+  /* line 2673, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-accordion-content-active {
     height: 48px;
     display: flex;
@@ -9138,18 +9181,18 @@ body.is-mobile {
     background-color: #e9e9ee;
     justify-content: center;
   }
-  /* line 2638, ../sass/components/_homepage.scss */
+  /* line 2681, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-accordion-content-active p {
     font-family: "poppins";
     font-size: 16px;
     font-weight: "normal";
   }
-  /* line 2642, ../sass/components/_homepage.scss */
+  /* line 2685, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active {
     background-color: #8CC63F;
     color: #fff;
   }
-  /* line 2645, ../sass/components/_homepage.scss */
+  /* line 2688, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-views-block-faq-block-1 .views-row .ui-state-active span {
     font-family: "poppins";
     font-size: 16px;
@@ -9157,13 +9200,13 @@ body.is-mobile {
     color: #fff;
   }
 }
-/* line 2653, ../sass/components/_homepage.scss */
+/* line 2696, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos {
   position: relative;
   margin: 0 auto;
   width: 100%;
 }
-/* line 2657, ../sass/components/_homepage.scss */
+/* line 2700, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-tit {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
@@ -9174,14 +9217,14 @@ body.is-mobile {
   margin: 24px auto;
   color: #101828;
 }
-/* line 2664, ../sass/components/_homepage.scss */
+/* line 2707, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-tit span.green {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
   font-weight: 800;
   color: #8CC63F;
 }
-/* line 2669, ../sass/components/_homepage.scss */
+/* line 2712, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-desc {
   font-family: "poppins";
   font-size: 16px;
@@ -9190,13 +9233,13 @@ body.is-mobile {
   text-align: center;
   padding: 8px;
 }
-/* line 2675, ../sass/components/_homepage.scss */
+/* line 2718, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn {
   position: relative;
   z-index: 3;
   margin: 0 auto;
 }
-/* line 2679, ../sass/components/_homepage.scss */
+/* line 2722, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn a {
   max-width: 330px !important;
   display: flex;
@@ -9231,7 +9274,7 @@ body.is-mobile {
   font-weight: "normal";
   color: #fff;
 }
-/* line 2690, ../sass/components/_homepage.scss */
+/* line 2733, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn a::after {
   content: "";
   position: absolute;
@@ -9244,13 +9287,13 @@ body.is-mobile {
   justify-content: center;
   align-items: center;
 }
-/* line 2703, ../sass/components/_homepage.scss */
+/* line 2746, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-btn a::after {
   content: "\2197";
   font-size: 16px;
   color: #f7941d;
 }
-/* line 2710, ../sass/components/_homepage.scss */
+/* line 2753, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-img {
   overflow: hidden;
   width: 100%;
@@ -9259,7 +9302,7 @@ body.is-mobile {
   display: flex;
   margin-top: -20%;
 }
-/* line 2717, ../sass/components/_homepage.scss */
+/* line 2760, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-img img {
   width: 100%;
   height: auto;
@@ -9270,7 +9313,7 @@ body.is-mobile {
   -o-border-radius: 24px;
   z-index: 2;
 }
-/* line 2724, ../sass/components/_homepage.scss */
+/* line 2767, ../sass/components/_homepage.scss */
 .path-frontpage .content-middle #block-sph-contactanos .cont-img::before {
   content: "";
   position: absolute;
@@ -9286,13 +9329,13 @@ body.is-mobile {
   -webkit-filter: blur(64px);
 }
 @media (min-width: 1170px) {
-  /* line 2653, ../sass/components/_homepage.scss */
+  /* line 2696, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos {
     position: relative;
     margin: 0 auto;
     width: 721px;
   }
-  /* line 2743, ../sass/components/_homepage.scss */
+  /* line 2786, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-tit {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
@@ -9303,14 +9346,14 @@ body.is-mobile {
     margin: 24px auto;
     color: #101828;
   }
-  /* line 2750, ../sass/components/_homepage.scss */
+  /* line 2793, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-tit span.green {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
     font-weight: 800;
     color: #8CC63F;
   }
-  /* line 2755, ../sass/components/_homepage.scss */
+  /* line 2798, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-desc {
     font-family: "poppins";
     font-size: 16px;
@@ -9319,13 +9362,13 @@ body.is-mobile {
     text-align: center;
     padding: 0;
   }
-  /* line 2761, ../sass/components/_homepage.scss */
+  /* line 2804, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-btn {
     position: relative;
     z-index: 3;
     margin: 0 auto;
   }
-  /* line 2765, ../sass/components/_homepage.scss */
+  /* line 2808, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-btn a {
     max-width: 330px !important;
     display: flex;
@@ -9360,7 +9403,7 @@ body.is-mobile {
     font-weight: "normal";
     color: #fff;
   }
-  /* line 2776, ../sass/components/_homepage.scss */
+  /* line 2819, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-btn a::after {
     content: "";
     position: absolute;
@@ -9373,13 +9416,13 @@ body.is-mobile {
     justify-content: center;
     align-items: center;
   }
-  /* line 2789, ../sass/components/_homepage.scss */
+  /* line 2832, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-btn a::after {
     content: "\2197";
     font-size: 16px;
     color: #f7941d;
   }
-  /* line 2796, ../sass/components/_homepage.scss */
+  /* line 2839, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-img {
     width: 690px;
     float: left;
@@ -9388,7 +9431,7 @@ body.is-mobile {
     margin-top: -20%;
     overflow: visible;
   }
-  /* line 2803, ../sass/components/_homepage.scss */
+  /* line 2846, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-img img {
     width: 100%;
     height: auto;
@@ -9399,7 +9442,7 @@ body.is-mobile {
     -o-border-radius: 24px;
     z-index: 2;
   }
-  /* line 2809, ../sass/components/_homepage.scss */
+  /* line 2852, ../sass/components/_homepage.scss */
   .path-frontpage .content-middle #block-sph-contactanos .cont-img::before {
     content: "";
     position: absolute;
