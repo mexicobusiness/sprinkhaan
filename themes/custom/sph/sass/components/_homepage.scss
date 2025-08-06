@@ -689,12 +689,15 @@
         min-height: 250px;
         padding: 32px;
         .testimoniales-fot {
+          width: 54px;
+          height: 54px;
+          overflow: hidden;
+          @include radius-spk-32();
           float: left;
-          margin: 4px;
           img {
-            @include radius-spk-24();
-            width: 54px;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
           }
         }
         .testimoniales-tit {
@@ -712,6 +715,11 @@
         .testimoniales-tes {
           clear: both;
           width: 100%;
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
           p {
             @include fonts("poppins", 16px, "normal");
             color: #323b48;
@@ -788,12 +796,15 @@
           min-height: 250px;
           padding: 32px;
           .testimoniales-fot {
+            width: 54px;
+            height: 54px;
+            overflow: hidden;
+            @include radius-spk-32();
             float: left;
-            margin: 4px;
             img {
-              @include radius-spk-24();
-              width: 54px;
-              height: auto;
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
             }
           }
           .testimoniales-tit {
@@ -811,6 +822,11 @@
           .testimoniales-tes {
             clear: both;
             width: 100%;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
             p {
               @include fonts("poppins", 16px, "normal");
               color: #323b48;
@@ -1503,13 +1519,16 @@
         .cultura-img {
           display: inline-block;
           position: relative;
+          width: 381px;
+          height: 485px;
+          overflow: hidden;
+          @include radius-spk-16();
 
           img {
             width: 100%;
-            height: auto;
-            display: block;
+            height: 100%;
+            object-fit: cover;
           }
-
           &::after {
             content: "";
             position: absolute;
@@ -1575,6 +1594,11 @@
             color: $color-white;
             height: 60px;
             margin: 8px 0;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
           .cultura-reg {
             max-width: none !important;
@@ -1665,13 +1689,16 @@
           .cultura-img {
             display: inline-block;
             position: relative;
+            width: 381px;
+            height: 485px;
+            overflow: hidden;
+            @include radius-spk-16();
 
             img {
               width: 100%;
-              height: auto;
-              display: block;
+              height: 100%;
+              object-fit: cover;
             }
-
             &::after {
               content: "";
               position: absolute;
@@ -1737,6 +1764,11 @@
               color: $color-white;
               height: 60px;
               margin: 8px 0;
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+              text-overflow: ellipsis;
             }
             .cultura-reg {
               max-width: none !important;
@@ -1862,6 +1894,18 @@
         height: 410px;
         border: 1px solid #e9e9ee;
         @include radius-spk-16();
+        .camp-image {
+          width: 364px;
+          height: 158px;
+          overflow: hidden;
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
         .camp-title {
           @include fonts("Conv_Gotham-Medium", 24px, 800);
           color: #101828;
@@ -1895,6 +1939,11 @@
         .camp-sdesc {
           @include fonts("poppins", 14px, "normal");
           padding: 4px 12px;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         a .camp-btn {
           max-width: 344px !important;
@@ -2023,6 +2072,11 @@
           .camp-sdesc {
             @include fonts("poppins", 14px, "normal");
             padding: 4px 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
           a .camp-btn {
             max-width: 344px !important;
@@ -2149,10 +2203,13 @@
         .news-image {
           border-top-left-radius: 16px;
           border-top-right-radius: 16px;
-          width: 100%;
+          width: 364px;
+          height: 192px;
+          overflow: hidden;
           img {
             width: 100%;
-            height: auto;
+            height: 100%;
+            object-fit: cover;
           }
         }
         .news-date {
@@ -2192,6 +2249,11 @@
           color: #101828;
           text-align: left;
           margin: 4px 16px 8px 16px;
+          display: -webkit-box;
+          -webkit-line-clamp: 4;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
         a .news-btn {
           max-width: 270px !important;
@@ -2272,9 +2334,12 @@
             border-top-left-radius: 16px;
             border-top-right-radius: 16px;
             width: 364px;
+            height: 192px;
+            overflow: hidden;
             img {
               width: 100%;
-              height: auto;
+              height: 100%;
+              object-fit: cover;
             }
           }
           .news-date {
@@ -2314,6 +2379,11 @@
             color: #101828;
             text-align: left;
             margin: 4px 16px 8px 16px;
+            display: -webkit-box;
+            -webkit-line-clamp: 4;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
           a .news-btn {
             max-width: 324px !important;
@@ -2386,6 +2456,11 @@
           @include fonts("poppins", 16px, "normal");
           margin-bottom: 40px;
           text-align: center;
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
       .views-row {
@@ -2412,6 +2487,11 @@
         .team-desc {
           @include fonts("poppins", 16px, "normal");
           color: #101828;
+          display: -webkit-box;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
         }
       }
       @include breakpoint($desktop) {
@@ -2457,6 +2537,11 @@
             @include fonts("poppins", 16px, "normal");
             margin-bottom: 40px;
             text-align: center;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
         }
         .views-row {
@@ -2514,6 +2599,11 @@
             line-height: 1.5;
             max-width: 90%;
             margin: 0 auto;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            text-overflow: ellipsis;
           }
         }
         @media (max-width: 768px) {
