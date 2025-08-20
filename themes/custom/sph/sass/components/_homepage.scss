@@ -9,7 +9,7 @@
       margin: 8% auto;
       position: relative;
       @include breakpoint($desktop) {
-        width: 45%;
+        width: 47%;
         float: left;
         margin: 10% 0% 8% 8%;
         position: relative;
@@ -48,7 +48,7 @@
           color: $color-orange;
         }
         @include breakpoint($desktop) {
-          @include fonts("Conv_Gotham-Medium", 48px, 800);
+          @include fonts("Conv_Gotham-Medium", 40px, 800);
           text-align: center;
           margin: 24px 0px 16px 0;
           line-height: 1;
@@ -56,12 +56,12 @@
           color: #101828;
 
           span.green {
-            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            @include fonts("Conv_Gotham-Medium", 40px, 800);
             color: $color-green;
           }
 
           span.orange {
-            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            @include fonts("Conv_Gotham-Medium", 40px, 800);
             color: $color-orange;
           }
         }
@@ -487,24 +487,24 @@
           margin: 4% 0 0 0;
           h2 {
             position: relative;
-            @include fonts("Conv_Gotham-Medium", 48px, 800);
+            @include fonts("Conv_Gotham-Medium", 40px, 800);
             color: #101828;
             span.orange {
-              @include fonts("Conv_Gotham-Medium", 48px, 800);
+              @include fonts("Conv_Gotham-Medium", 40px, 800);
               color: $color-orange;
             }
           }
           h2:before {
             content: "";
             display: inline-block;
-            width: 31px;
-            height: 31px;
+            width: 24px;
+            height: 24px;
             background-image: url("/themes/custom/sph/images/School-spk.svg");
             background-size: cover;
             background-repeat: no-repeat;
             position: absolute;
-            top: -18px;
-            left: 4px;
+            top: -12px;
+            left: 1px;
             filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg)
               brightness(95%) contrast(94%);
           }
@@ -2486,7 +2486,7 @@
         }
       }
     }
-    #block-sph-views-block-nuestro-equipo-block-1, #block-sph-views-block-nuestro-equipo-block-2 {
+    #block-sph-views-block-nuestro-equipo-block-1 {
       margin: 20px 0;
       display: inline-block;
       position: relative;
@@ -2500,7 +2500,7 @@
           display: none;
         }
         .team-btn {
-          max-width: 240px;
+          max-width: 190px;
           @include black-btn();
         }
         .team-btn::before {
@@ -2581,7 +2581,7 @@
             display: none;
           }
           .team-btn {
-            max-width: 240px;
+            max-width: 190px;
             @include black-btn();
           }
           .team-btn::before {

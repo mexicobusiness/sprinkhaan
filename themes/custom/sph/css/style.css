@@ -5449,7 +5449,7 @@ body.is-mobile {
 @media (min-width: 1170px) {
   /* line 7, ../sass/components/_homepage.scss */
   .path-frontpage .region-top #block-sph-ntcdesprinkhaan {
-    width: 45%;
+    width: 47%;
     float: left;
     margin: 10% 0% 8% 8%;
     position: relative;
@@ -5516,7 +5516,7 @@ body.is-mobile {
   /* line 33, ../sass/components/_homepage.scss */
   .path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-title h1 {
     font-family: "Conv_Gotham-Medium";
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
     text-align: center;
     margin: 24px 0px 16px 0;
@@ -5527,14 +5527,14 @@ body.is-mobile {
   /* line 58, ../sass/components/_homepage.scss */
   .path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-title h1 span.green {
     font-family: "Conv_Gotham-Medium";
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
     color: #8CC63F;
   }
   /* line 63, ../sass/components/_homepage.scss */
   .path-frontpage .region-top #block-sph-ntcdesprinkhaan .ntc-de-sprinkhaan-title h1 span.orange {
     font-family: "Conv_Gotham-Medium";
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
     color: #F7941D;
   }
@@ -6023,14 +6023,14 @@ body.is-mobile {
   .path-frontpage .region-top #block-sph-sobrenosotros .about-us-left h2 {
     position: relative;
     font-family: "Conv_Gotham-Medium";
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
     color: #101828;
   }
   /* line 492, ../sass/components/_homepage.scss */
   .path-frontpage .region-top #block-sph-sobrenosotros .about-us-left h2 span.orange {
     font-family: "Conv_Gotham-Medium";
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
     color: #F7941D;
   }
@@ -6038,14 +6038,14 @@ body.is-mobile {
   .path-frontpage .region-top #block-sph-sobrenosotros .about-us-left h2:before {
     content: "";
     display: inline-block;
-    width: 31px;
-    height: 31px;
+    width: 24px;
+    height: 24px;
     background-image: url("/themes/custom/sph/images/School-spk.svg");
     background-size: cover;
     background-repeat: no-repeat;
     position: absolute;
-    top: -18px;
-    left: 4px;
+    top: -12px;
+    left: 1px;
     filter: invert(7%) sepia(6%) saturate(6387%) hue-rotate(183deg) brightness(95%) contrast(94%);
   }
   /* line 511, ../sass/components/_homepage.scss */
@@ -8839,7 +8839,7 @@ body.is-mobile {
   }
 }
 /* line 2489, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 {
   margin: 20px 0;
   display: inline-block;
   position: relative;
@@ -8847,18 +8847,18 @@ body.is-mobile {
   padding: 8px;
 }
 /* line 2495, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header {
   position: relative;
   margin: 0 auto;
   width: 100%;
 }
 /* line 2499, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .lang, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .lang {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .lang {
   display: none;
 }
 /* line 2502, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-btn {
-  max-width: 240px;
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn {
+  max-width: 190px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8878,7 +8878,7 @@ body.is-mobile {
   font-weight: "normal";
 }
 /* line 2506, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn::before, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-btn::before {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn::before {
   content: "";
   display: inline-block;
   width: 80px;
@@ -8889,7 +8889,7 @@ body.is-mobile {
   margin: -93px -4px -48px -20px;
 }
 /* line 2516, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-tit {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
   font-weight: 800;
@@ -8900,14 +8900,14 @@ body.is-mobile {
   color: #101828;
 }
 /* line 2523, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit span.green, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-tit span.green {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit span.green {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
   font-weight: 800;
   color: #8CC63F;
 }
 /* line 2528, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-desc, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-desc {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-desc {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
@@ -8920,19 +8920,19 @@ body.is-mobile {
   text-overflow: ellipsis;
 }
 /* line 2539, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
   width: calc(100% / 2);
   float: left;
   margin-right: 0;
   text-align: center;
 }
 /* line 2545, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-photo img {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img {
   width: 154px;
   height: auto;
 }
 /* line 2550, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-name {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
   font-weight: "normal";
@@ -8940,7 +8940,7 @@ body.is-mobile {
   color: #101828;
 }
 /* line 2555, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-group {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
@@ -8948,7 +8948,7 @@ body.is-mobile {
   color: #8cc63f;
 }
 /* line 2560, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-desc {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
@@ -8961,7 +8961,7 @@ body.is-mobile {
 }
 @media (min-width: 1170px) {
   /* line 2489, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 {
     margin: 20px 0;
     display: inline-block;
     position: relative;
@@ -8969,18 +8969,18 @@ body.is-mobile {
     padding: 0;
   }
   /* line 2576, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header {
     position: relative;
     margin: 0 auto;
     width: 721px;
   }
   /* line 2580, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .lang, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .lang {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .lang {
     display: none;
   }
   /* line 2583, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-btn {
-    max-width: 240px;
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn {
+    max-width: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9000,7 +9000,7 @@ body.is-mobile {
     font-weight: "normal";
   }
   /* line 2587, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn::before, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-btn::before {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn::before {
     content: "";
     display: inline-block;
     width: 80px;
@@ -9011,7 +9011,7 @@ body.is-mobile {
     margin: -93px -4px -48px -20px;
   }
   /* line 2597, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-tit {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
     font-weight: 800;
@@ -9022,14 +9022,14 @@ body.is-mobile {
     color: #101828;
   }
   /* line 2604, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit span.green, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-tit span.green {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit span.green {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
     font-weight: 800;
     color: #8CC63F;
   }
   /* line 2609, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-desc, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-desc {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-desc {
     font-family: "poppins";
     font-size: 16px;
     font-weight: "normal";
@@ -9042,7 +9042,7 @@ body.is-mobile {
     text-overflow: ellipsis;
   }
   /* line 2620, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
     width: calc((96% - 72px) / 4);
     margin: 12px;
     padding: 24px;
@@ -9057,12 +9057,12 @@ body.is-mobile {
     box-sizing: border-box;
   }
   /* line 2634, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row:hover, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row:hover {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
   /* line 2639, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-photo {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo {
     margin: 0 auto 16px;
     width: 160px;
     height: 160px;
@@ -9071,14 +9071,14 @@ body.is-mobile {
     border: 2px solid #f1f1f1;
   }
   /* line 2647, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-photo img {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
   }
   /* line 2655, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-name {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name {
     font-family: "Conv_Gotham-Medium";
     font-size: 24px;
     font-weight: 500;
@@ -9087,7 +9087,7 @@ body.is-mobile {
     line-height: 1.2;
   }
   /* line 2662, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-group {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group {
     font-family: "poppins";
     font-size: 14px;
     font-weight: 400;
@@ -9097,7 +9097,7 @@ body.is-mobile {
     letter-spacing: 0.5px;
   }
   /* line 2670, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-desc {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc {
     font-family: "poppins";
     font-size: 14px;
     font-weight: 400;
@@ -9114,13 +9114,13 @@ body.is-mobile {
 }
 @media (min-width: 1170px) and (max-width: 768px) {
   /* line 2684, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
     width: calc((100% - 24px) / 2);
   }
 }
 @media (min-width: 1170px) and (max-width: 480px) {
   /* line 2690, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
     width: 100%;
     margin: 12px 0;
   }
