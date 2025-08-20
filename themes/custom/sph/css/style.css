@@ -8933,7 +8933,7 @@ body.is-mobile {
 .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
   width: calc( (96% - 24px) / 2 );
   margin: 8px;
-  padding: 24px;
+  padding: 8px;
   display: inline-flex;
   justify-content: center;
   background: #ffffff;
