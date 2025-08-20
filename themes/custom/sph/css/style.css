@@ -8839,7 +8839,7 @@ body.is-mobile {
   }
 }
 /* line 2489, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 {
   margin: 20px 0;
   display: inline-block;
   position: relative;
@@ -8847,18 +8847,18 @@ body.is-mobile {
   padding: 8px;
 }
 /* line 2495, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header {
   position: relative;
   margin: 0 auto;
   width: 100%;
 }
 /* line 2499, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .lang {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .lang, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .lang {
   display: none;
 }
 /* line 2502, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn {
-  max-width: 190px;
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-btn {
+  max-width: 240px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8878,7 +8878,7 @@ body.is-mobile {
   font-weight: "normal";
 }
 /* line 2506, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn::before {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn::before, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-btn::before {
   content: "";
   display: inline-block;
   width: 80px;
@@ -8889,7 +8889,7 @@ body.is-mobile {
   margin: -93px -4px -48px -20px;
 }
 /* line 2516, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-tit {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
   font-weight: 800;
@@ -8900,14 +8900,14 @@ body.is-mobile {
   color: #101828;
 }
 /* line 2523, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit span.green {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit span.green, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-tit span.green {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
   font-weight: 800;
   color: #8CC63F;
 }
 /* line 2528, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-desc {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-desc, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-desc {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
@@ -8920,19 +8920,19 @@ body.is-mobile {
   text-overflow: ellipsis;
 }
 /* line 2539, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row {
   width: calc(100% / 2);
   float: left;
   margin-right: 0;
   text-align: center;
 }
 /* line 2545, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-photo img {
   width: 154px;
   height: auto;
 }
 /* line 2550, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-name {
   font-family: "Conv_Gotham-Medium";
   font-size: 32px;
   font-weight: "normal";
@@ -8940,7 +8940,7 @@ body.is-mobile {
   color: #101828;
 }
 /* line 2555, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-group {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
@@ -8948,7 +8948,7 @@ body.is-mobile {
   color: #8cc63f;
 }
 /* line 2560, ../sass/components/_homepage.scss */
-.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc {
+.path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-desc {
   font-family: "poppins";
   font-size: 16px;
   font-weight: "normal";
@@ -8961,7 +8961,7 @@ body.is-mobile {
 }
 @media (min-width: 1170px) {
   /* line 2489, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 {
     margin: 20px 0;
     display: inline-block;
     position: relative;
@@ -8969,18 +8969,18 @@ body.is-mobile {
     padding: 0;
   }
   /* line 2576, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header {
     position: relative;
     margin: 0 auto;
     width: 721px;
   }
   /* line 2580, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .lang {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .lang, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .lang {
     display: none;
   }
   /* line 2583, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn {
-    max-width: 190px;
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-btn {
+    max-width: 240px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -9000,7 +9000,7 @@ body.is-mobile {
     font-weight: "normal";
   }
   /* line 2587, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn::before {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-btn::before, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-btn::before {
     content: "";
     display: inline-block;
     width: 80px;
@@ -9011,7 +9011,7 @@ body.is-mobile {
     margin: -93px -4px -48px -20px;
   }
   /* line 2597, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-tit {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
     font-weight: 800;
@@ -9022,14 +9022,14 @@ body.is-mobile {
     color: #101828;
   }
   /* line 2604, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit span.green {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-tit span.green, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-tit span.green {
     font-family: "Conv_Gotham-Medium";
     font-size: 48px;
     font-weight: 800;
     color: #8CC63F;
   }
   /* line 2609, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-desc {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 header .team-desc, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 header .team-desc {
     font-family: "poppins";
     font-size: 16px;
     font-weight: "normal";
@@ -9042,7 +9042,7 @@ body.is-mobile {
     text-overflow: ellipsis;
   }
   /* line 2620, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row {
     width: calc((96% - 72px) / 4);
     margin: 12px;
     padding: 24px;
@@ -9057,12 +9057,12 @@ body.is-mobile {
     box-sizing: border-box;
   }
   /* line 2634, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row:hover {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row:hover, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row:hover {
     transform: translateY(-4px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
   }
   /* line 2639, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-photo {
     margin: 0 auto 16px;
     width: 160px;
     height: 160px;
@@ -9071,14 +9071,14 @@ body.is-mobile {
     border: 2px solid #f1f1f1;
   }
   /* line 2647, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-photo img, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-photo img {
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
   }
   /* line 2655, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-name, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-name {
     font-family: "Conv_Gotham-Medium";
     font-size: 24px;
     font-weight: 500;
@@ -9087,7 +9087,7 @@ body.is-mobile {
     line-height: 1.2;
   }
   /* line 2662, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-group, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-group {
     font-family: "poppins";
     font-size: 14px;
     font-weight: 400;
@@ -9097,7 +9097,7 @@ body.is-mobile {
     letter-spacing: 0.5px;
   }
   /* line 2670, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row .team-desc, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row .team-desc {
     font-family: "poppins";
     font-size: 14px;
     font-weight: 400;
@@ -9114,13 +9114,13 @@ body.is-mobile {
 }
 @media (min-width: 1170px) and (max-width: 768px) {
   /* line 2684, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row {
     width: calc((100% - 24px) / 2);
   }
 }
 @media (min-width: 1170px) and (max-width: 480px) {
   /* line 2690, ../sass/components/_homepage.scss */
-  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row {
+  .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-1 .views-row, .path-frontpage .content-center #block-sph-views-block-nuestro-equipo-block-2 .views-row {
     width: 100%;
     margin: 12px 0;
   }
@@ -10507,13 +10507,29 @@ body.is-mobile {
 }
 /* line 93, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle.cultural-color {
-  background-color: #fc9a0a;
+  background-color: #FFA500;
 }
 /* line 96, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle.camp-color {
-  background-color: #1f978d;
+  background-color: #00008B;
 }
-/* line 101, ../sass/components/_calendar.scss */
+/* line 99, ../sass/components/_calendar.scss */
+.page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle.online-color {
+  background-color: #90EE90;
+}
+/* line 102, ../sass/components/_calendar.scss */
+.page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle.inperson-color {
+  background-color: #006400;
+}
+/* line 105, ../sass/components/_calendar.scss */
+.page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle.holiday-color {
+  background-color: #FF0000;
+}
+/* line 108, ../sass/components/_calendar.scss */
+.page-calendar #page #main-content .content-center .views-element-container header .cal-colors div.circle.parents-color {
+  background-color: #21468B;
+}
+/* line 113, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar {
   border: 1px solid #e9e9ee;
   padding: 4%;
@@ -10523,7 +10539,7 @@ body.is-mobile {
   -ms-border-radius: 16px;
   -o-border-radius: 16px;
 }
-/* line 106, ../sass/components/_calendar.scss */
+/* line 118, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-toolbar.fc-header-toolbar {
   display: flex;
   justify-content: space-between;
@@ -10534,7 +10550,7 @@ body.is-mobile {
   border-radius: 12px;
 }
 @media (min-width: 1170px) {
-  /* line 106, ../sass/components/_calendar.scss */
+  /* line 118, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-toolbar.fc-header-toolbar {
     display: flex;
     justify-content: space-between;
@@ -10545,13 +10561,13 @@ body.is-mobile {
     border-radius: 12px;
   }
 }
-/* line 125, ../sass/components/_calendar.scss */
+/* line 137, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-left {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-/* line 131, ../sass/components/_calendar.scss */
+/* line 143, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-button-group button {
   background-color: transparent;
   border: 1px solid #dcdcdc;
@@ -10561,14 +10577,14 @@ body.is-mobile {
   font-weight: 600;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
-/* line 142, ../sass/components/_calendar.scss */
+/* line 154, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-button-group button:hover,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-button-group button:focus {
   background-color: #007aff;
   border-color: #007aff;
   color: #ffffff;
 }
-/* line 149, ../sass/components/_calendar.scss */
+/* line 161, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-center h2 {
   font-size: 20px;
   color: #333333;
@@ -10577,12 +10593,12 @@ body.is-mobile {
   letter-spacing: 0.5px;
   margin: 0;
 }
-/* line 158, ../sass/components/_calendar.scss */
+/* line 170, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-right {
   display: flex;
   align-items: center;
 }
-/* line 163, ../sass/components/_calendar.scss */
+/* line 175, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button {
   background-color: transparent;
   border: 1px solid #dcdcdc;
@@ -10593,7 +10609,7 @@ body.is-mobile {
   transition: all 0.3s ease;
   display: none;
 }
-/* line 174, ../sass/components/_calendar.scss */
+/* line 186, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button.fc-button-active {
   background-color: #007aff;
   color: #ffffff;
@@ -10601,7 +10617,7 @@ body.is-mobile {
   display: none;
 }
 @media (min-width: 1170px) {
-  /* line 174, ../sass/components/_calendar.scss */
+  /* line 186, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button.fc-button-active {
     display: none;
     background-color: #007aff;
@@ -10609,7 +10625,7 @@ body.is-mobile {
     border-color: #005ac1;
   }
 }
-/* line 187, ../sass/components/_calendar.scss */
+/* line 199, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button {
   background-color: #007aff;
   color: #ffffff;
@@ -10619,15 +10635,15 @@ body.is-mobile {
   border: none;
   transition: all 0.3s ease;
 }
-/* line 197, ../sass/components/_calendar.scss */
+/* line 209, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button:hover {
   background-color: #005ac1;
 }
-/* line 200, ../sass/components/_calendar.scss */
+/* line 212, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button {
   margin-right: 8px;
 }
-/* line 203, ../sass/components/_calendar.scss */
+/* line 215, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button {
   background-color: transparent;
@@ -10643,25 +10659,25 @@ body.is-mobile {
   padding: 0;
   transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
 }
-/* line 220, ../sass/components/_calendar.scss */
+/* line 232, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button:hover,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button:hover {
   background-color: #007aff;
   border-color: #007aff;
   color: #ffffff;
 }
-/* line 227, ../sass/components/_calendar.scss */
+/* line 239, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button .fc-icon,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button .fc-icon {
   font-size: 20px;
   transition: transform 0.3s ease;
 }
-/* line 233, ../sass/components/_calendar.scss */
+/* line 245, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button:hover .fc-icon,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button:hover .fc-icon {
   transform: scale(1.2);
 }
-/* line 239, ../sass/components/_calendar.scss */
+/* line 251, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container table {
   width: 100%;
   border-collapse: collapse;
@@ -10673,7 +10689,7 @@ body.is-mobile {
   overflow: hidden;
   transition: all 0.3s ease;
 }
-/* line 252, ../sass/components/_calendar.scss */
+/* line 264, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container th {
   text-align: center;
   color: #555555;
@@ -10684,7 +10700,7 @@ body.is-mobile {
   text-transform: uppercase;
   border-bottom: 2px solid #e0e0e0;
 }
-/* line 263, ../sass/components/_calendar.scss */
+/* line 275, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container td {
   text-align: center;
   padding: 18px;
@@ -10692,13 +10708,13 @@ body.is-mobile {
   position: relative;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-/* line 271, ../sass/components/_calendar.scss */
+/* line 283, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container td:hover {
   background-color: #f8f8f8;
   cursor: pointer;
   color: #007aff;
 }
-/* line 277, ../sass/components/_calendar.scss */
+/* line 289, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a {
   display: block;
   text-align: center;
@@ -10712,31 +10728,31 @@ body.is-mobile {
   transition: all 0.3s ease;
   border: 1px solid #007aff;
 }
-/* line 291, ../sass/components/_calendar.scss */
+/* line 303, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a:hover {
   background-color: #007aff;
   color: #ffffff;
   border-color: #005ac1;
 }
-/* line 297, ../sass/components/_calendar.scss */
+/* line 309, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day.fc-sat,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day.fc-sun {
   color: #999999;
 }
-/* line 302, ../sass/components/_calendar.scss */
+/* line 314, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-scroller {
   overflow-y: auto;
   max-height: 550px;
 }
-/* line 307, ../sass/components/_calendar.scss */
+/* line 319, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day {
   border-right: 1px solid #f1f1f1;
 }
-/* line 311, ../sass/components/_calendar.scss */
+/* line 323, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day:last-child {
   border-right: none;
 }
-/* line 315, ../sass/components/_calendar.scss */
+/* line 327, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-title {
   color: #fff;
   font-size: 12px;

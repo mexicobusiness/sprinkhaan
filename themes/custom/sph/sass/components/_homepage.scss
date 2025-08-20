@@ -2486,7 +2486,7 @@
         }
       }
     }
-    #block-sph-views-block-nuestro-equipo-block-1 {
+    #block-sph-views-block-nuestro-equipo-block-1, #block-sph-views-block-nuestro-equipo-block-2 {
       margin: 20px 0;
       display: inline-block;
       position: relative;
@@ -2500,7 +2500,7 @@
           display: none;
         }
         .team-btn {
-          max-width: 190px;
+          max-width: 240px;
           @include black-btn();
         }
         .team-btn::before {
@@ -2581,7 +2581,7 @@
             display: none;
           }
           .team-btn {
-            max-width: 190px;
+            max-width: 240px;
             @include black-btn();
           }
           .team-btn::before {
