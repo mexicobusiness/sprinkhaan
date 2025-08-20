@@ -14,6 +14,12 @@
         margin: 10% 0% 8% 8%;
         position: relative;
       }
+      .ntc-de-sprinkhaan {
+        margin-left: 0;
+        @include breakpoint($desktop) {
+          margin-left: -16%;
+        }
+      }
       .ntc-de-sprinkhaan-black-btn {
         @include black-btn();
         position: relative;
@@ -320,7 +326,7 @@
       &:after {
         background-image: url("/themes/custom/sph/images/cuaderno@2x.png");
         top: -10%;
-        right: -18%;
+        right: -4%;
         animation-delay: 0.5s, 2s;
         width: 89px;
         height: 89px;
@@ -351,8 +357,8 @@
         &:before {
           content: "";
           position: absolute;
-          width: 135px;
-          height: 135px;
+          width: 120px;
+          height: 120px;
           background-image: url("/themes/custom/sph/images/AVION@2x.png");
           background-size: cover;
           background-repeat: no-repeat;
@@ -368,13 +374,13 @@
         &:after {
           content: "";
           position: absolute;
-          width: 135px;
-          height: 135px;
+          width: 120px;
+          height: 120px;
           background-image: url("/themes/custom/sph/images/pluma@2x.png");
           background-size: cover;
           background-repeat: no-repeat;
           bottom: -47%;
-          right: -20%;
+          right: -5%;
           opacity: 0;
           transform: translateY(200%) scale(0.5) rotate(-45deg);
           animation: initAnimation 1.5s ease-out forwards,
@@ -403,14 +409,14 @@
         &:before {
           background-image: url("/themes/custom/sph/images/imagen@2x.png");
           top: -16%;
-          left: -54%;
+          left: -34%;
           animation-delay: 0.5s, 2s;
         }
 
         &:after {
           background-image: url("/themes/custom/sph/images/enlace@2x.png");
           top: -16%;
-          right: -54%;
+          right: -32%;
           animation-delay: 0.8s, 2.5s;
         }
       }
@@ -478,7 +484,7 @@
       @include breakpoint($desktop) {
         margin-top: 4%;
         display: inline-block;
-        width: 54%;
+        width: 55%;
         position: relative;
         padding: 8px;
         .about-us-left {
@@ -550,7 +556,7 @@
         filter: brightness(1.1);
       }
       .ntc-de-sprinkhaan-video .play-icon {
-       background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, 0.3);
         border-radius: 50%;
         cursor: pointer;
         left: 50%;
@@ -572,7 +578,7 @@
       }
       .ntc-de-sprinkhaan-video .play-icon svg {
         padding-left: 8%;
-        fill: #8CC63F;
+        fill: #8cc63f;
         transition: fill 0.3s ease;
       }
       .ntc-de-sprinkhaan-video .play-icon:hover svg {
@@ -1967,16 +1973,16 @@
             object-fit: cover;
           }
           @include breakpoint($desktop) {
-             width: 364px;
-          height: 158px;
-          overflow: hidden;
-          border-top-left-radius: 16px;
-          border-top-right-radius: 16px;
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-          }
+            width: 364px;
+            height: 158px;
+            overflow: hidden;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
           }
         }
         .camp-title {
@@ -2492,6 +2498,7 @@
       position: relative;
       width: 100%;
       padding: 8px;
+
       header {
         position: relative;
         margin: 0 auto;
@@ -2536,30 +2543,65 @@
           text-overflow: ellipsis;
         }
       }
+
       .views-row {
-        width: calc(100% / 2);
-        float: left;
-        margin-right: 0;
+        width: calc(
+          (96% - 24px) / 2
+        );
+        margin: 8px;
+        padding: 24px;
+        display: inline-flex;
+        justify-content: center;
+        background: #ffffff;
+        border-radius: 12px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
         text-align: center;
+        float: none;
+        box-sizing: border-box;
+
+        &:hover {
+          transform: translateY(-4px);
+          box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+        }
+
         .team-photo {
+          margin: 0 auto 16px;
+          width: 120px;
+          height: 120px;
+          overflow: hidden;
+          border-radius: 50%;
+          border: 2px solid #f1f1f1;
+
           img {
-            width: 154px;
-            height: auto;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
           }
         }
+
         .team-name {
-          @include fonts("Conv_Gotham-Medium", 32px, "normal");
-          margin-bottom: 4px;
-          color: #101828;
-        }
-        .team-group {
-          @include fonts("poppins", 16px, "normal");
+          @include fonts("Conv_Gotham-Medium", 24px, 500);
           margin-bottom: 8px;
-          color: #8cc63f;
-        }
-        .team-desc {
-          @include fonts("poppins", 16px, "normal");
           color: #101828;
+          line-height: 1.2;
+        }
+
+        .team-group {
+          @include fonts("poppins", 14px, 400);
+          margin-bottom: 12px;
+          color: #8cc63f;
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+        }
+
+        .team-desc {
+          @include fonts("poppins", 14px, 400);
+          color: #475467;
+          line-height: 1.5;
+          max-width: 90%;
+          margin: 0 auto;
           display: -webkit-box;
           -webkit-line-clamp: 5;
           -webkit-box-orient: vertical;
@@ -2567,12 +2609,14 @@
           text-overflow: ellipsis;
         }
       }
+
       @include breakpoint($desktop) {
         margin: 20px 0;
         display: inline-block;
         position: relative;
         width: 100%;
         padding: 0;
+
         header {
           position: relative;
           margin: 0 auto;
@@ -2617,8 +2661,11 @@
             text-overflow: ellipsis;
           }
         }
+
         .views-row {
-          width: calc((96% - 72px) / 4);
+          width: calc(
+            (96% - 72px) / 4
+          ); /* 4 columns: 96% minus 18px gap per card, divided by 4 */
           margin: 12px;
           padding: 24px;
           display: inline-flex;
@@ -2678,18 +2725,6 @@
             -webkit-box-orient: vertical;
             overflow: hidden;
             text-overflow: ellipsis;
-          }
-        }
-        @media (max-width: 768px) {
-          .views-row {
-            width: calc((100% - 24px) / 2);
-          }
-        }
-
-        @media (max-width: 480px) {
-          .views-row {
-            width: 100%;
-            margin: 12px 0;
           }
         }
       }
