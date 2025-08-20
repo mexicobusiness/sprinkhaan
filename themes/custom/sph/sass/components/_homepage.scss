@@ -9,8 +9,9 @@
       margin: 8% auto;
       position: relative;
       @include breakpoint($desktop) {
-        width: 60%;
-        margin: 8% auto;
+        width: 45%;
+        float: left;
+        margin: 10% 0% 8% 8%;
         position: relative;
       }
       .ntc-de-sprinkhaan-black-btn {
@@ -310,7 +311,7 @@
       &:before {
         background-image: url("/themes/custom/sph/images/copa@2x.png");
         top: -18%;
-        left: -29%;
+        left: -21%;
         animation-delay: 0.5s, 2s;
         width: 140px;
         height: 140px;
@@ -319,7 +320,7 @@
       &:after {
         background-image: url("/themes/custom/sph/images/cuaderno@2x.png");
         top: -10%;
-        right: -20%;
+        right: -18%;
         animation-delay: 0.5s, 2s;
         width: 89px;
         height: 89px;
@@ -350,13 +351,13 @@
         &:before {
           content: "";
           position: absolute;
-          width: 150px;
-          height: 150px;
+          width: 135px;
+          height: 135px;
           background-image: url("/themes/custom/sph/images/AVION@2x.png");
           background-size: cover;
           background-repeat: no-repeat;
           bottom: -53%;
-          left: -30%;
+          left: -16%;
           opacity: 0;
           transform: translateY(200%) scale(0.5) rotate(-45deg);
           animation: initAnimation 1.5s ease-out forwards,
@@ -367,13 +368,13 @@
         &:after {
           content: "";
           position: absolute;
-          width: 150px;
-          height: 150px;
+          width: 135px;
+          height: 135px;
           background-image: url("/themes/custom/sph/images/pluma@2x.png");
           background-size: cover;
           background-repeat: no-repeat;
           bottom: -47%;
-          right: -27%;
+          right: -20%;
           opacity: 0;
           transform: translateY(200%) scale(0.5) rotate(-45deg);
           animation: initAnimation 1.5s ease-out forwards,
@@ -389,8 +390,8 @@
         &:after {
           content: "";
           position: absolute;
-          width: 100px;
-          height: 100px;
+          width: 80px;
+          height: 80px;
           background-size: cover;
           background-repeat: no-repeat;
           opacity: 0;
@@ -441,8 +442,9 @@
       width: 100%;
       position: relative;
       padding: 8px;
+      float: left;
       .about-us-left {
-        width: 97%;
+        width: 100%;
         float: left;
         margin: 7% 2% 0 2%;
         h2 {
@@ -473,26 +475,16 @@
           color: #323b48;
         }
       }
-      .about-us-right {
-        width: 100%;
-        float: left;
-        img {
-          @include radius-spk-32();
-          width: 100%;
-          height: auto;
-        }
-      }
-
       @include breakpoint($desktop) {
         margin-top: 4%;
         display: inline-block;
-        width: 100%;
+        width: 54%;
         position: relative;
-        padding: 0;
+        padding: 8px;
         .about-us-left {
-          width: 41%;
+          width: 100%;
           float: left;
-          margin: 7% 8% 0 0;
+          margin: 4% 0 0 0;
           h2 {
             position: relative;
             @include fonts("Conv_Gotham-Medium", 48px, 800);
@@ -521,14 +513,83 @@
             color: #323b48;
           }
         }
-        .about-us-right {
-          width: 50%;
-          float: left;
-          img {
-            @include radius-spk-32();
-            width: 100%;
-            height: auto;
-          }
+      }
+    }
+    #block-sph-videostartsprinkhaan {
+      float: right;
+      width: 100%;
+      margin-top: 20%;
+      @include breakpoint($desktop) {
+        width: 45%;
+        float: right;
+        margin-top: 4%;
+        @include radius-spk-24();
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+      }
+      h2 {
+        display: none;
+      }
+      .ntc-de-sprinkhaan-video {
+        display: inline-block;
+        position: relative;
+        transition: all 0.3s ease-in-out;
+      }
+      .ntc-de-sprinkhaan-video:hover {
+        transform: scale(1.02);
+      }
+      .ntc-de-sprinkhaan-video #miVideo {
+        display: block;
+        transition: filter 0.3s ease;
+        @include radius-spk-24();
+        width: 100%;
+        height: 764px;
+      }
+      .ntc-de-sprinkhaan-video:hover #miVideo {
+        filter: brightness(1.1);
+      }
+      .ntc-de-sprinkhaan-video .play-icon {
+       background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 50%;
+        cursor: pointer;
+        left: 50%;
+        padding: 12px;
+        position: absolute;
+        top: 50%;
+        transform: translate(-50%, -50%) scale(1);
+        display: block;
+        transition: all 0.3s ease-in-out;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      }
+      .ntc-de-sprinkhaan-video .play-icon:hover {
+        background-color: rgba(0, 0, 0, 0.3);
+        transform: translate(-50%, -50%) scale(1.1);
+        opacity: 0.9;
+      }
+      .ntc-de-sprinkhaan-video .play-icon.paused {
+        animation: pulse 2s infinite ease-in-out;
+      }
+      .ntc-de-sprinkhaan-video .play-icon svg {
+        padding-left: 8%;
+        fill: #8CC63F;
+        transition: fill 0.3s ease;
+      }
+      .ntc-de-sprinkhaan-video .play-icon:hover svg {
+        fill: #f7951d;
+      }
+      @keyframes pulse {
+        0% {
+          transform: translate(-50%, -50%) scale(1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        50% {
+          transform: translate(-50%, -50%) scale(1.05);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
+        }
+        100% {
+          transform: translate(-50%, -50%) scale(1);
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
       }
     }
@@ -1519,7 +1580,7 @@
         .cultura-img {
           display: inline-block;
           position: relative;
-          width: 381px;
+          width: 100%;
           height: 485px;
           overflow: hidden;
           @include radius-spk-16();
@@ -1895,7 +1956,7 @@
         border: 1px solid #e9e9ee;
         @include radius-spk-16();
         .camp-image {
-          width: 364px;
+          width: 100%;
           height: 158px;
           overflow: hidden;
           border-top-left-radius: 16px;
@@ -1904,6 +1965,18 @@
             width: 100%;
             height: 100%;
             object-fit: cover;
+          }
+          @include breakpoint($desktop) {
+             width: 364px;
+          height: 158px;
+          overflow: hidden;
+          border-top-left-radius: 16px;
+          border-top-right-radius: 16px;
+          img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
           }
         }
         .camp-title {
@@ -2203,7 +2276,7 @@
         .news-image {
           border-top-left-radius: 16px;
           border-top-right-radius: 16px;
-          width: 364px;
+          width: 100%;
           height: 192px;
           overflow: hidden;
           img {
@@ -2549,6 +2622,7 @@
           margin: 12px;
           padding: 24px;
           display: inline-flex;
+          justify-content: center;
           background: #ffffff;
           border-radius: 12px;
           box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
