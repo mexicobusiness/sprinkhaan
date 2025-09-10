@@ -389,7 +389,7 @@
                 }
                 fieldset,
                 div {
-                  #edit-como-te-gustaria-ser-contactado--wrapper-legend {
+                  block-sph-sobrenosotros#edit-como-te-gustaria-ser-contactado--wrapper-legend {
                     padding: 16px 0 8px 0;
                     span {
                       @include fonts("poppins", 16px, "normal");
@@ -504,7 +504,12 @@
     }
   }
 }
-.page-register {
+.page-register,
+.page-Registro-inscription,
+.page-Spannende-Kampavonturen,
+.page-komende_cultuurdagen,
+.page-Lesmogelijkheden,
+.page-meer-informatie {
   #page {
     #main-content {
       .content-center {
@@ -848,7 +853,7 @@
             #edit-container-02 select,
             #edit-container-06 input[type="tel"],
             #edit-container-06 select,
-            #edit-container-07 input[type="tel"],
+            #edit-container-07ensore input[type="tel"],
             #edit-container-07 select {
               width: 100%;
               padding: 10px;
@@ -1086,7 +1091,7 @@
                     margin-bottom: 10px;
                     @include fonts("poppins", 16px, "normal");
                     color: #39364f;
-                    span{
+                    span {
                       @include fonts("poppins", 16px, 600);
                       color: #39364f;
                     }
@@ -1150,12 +1155,11 @@
                       display: flex;
                       justify-content: center;
                     }
-                  }
-
-                  td:hover {
-                    background-color: #f8f8f8;
-                    cursor: pointer;
-                    color: #007aff;
+                    &:hover {
+                      background-color: #f8f8f8;
+                      cursor: pointer;
+                      color: #007aff;
+                    }
                   }
                 }
               }
@@ -1264,6 +1268,461 @@
               input[type="button"] {
                 width: 220px;
                 height: 40px;
+              }
+            }
+            &.webform-submission-komende-cultuurdagen-node-474-add-form {
+              .js-form-item {
+                margin-bottom: 20px;
+              }
+              .js-form-required.form-required {
+                color: #d9534f;
+                margin-left: 5px;
+              }
+              .js-form-item-volledige-naam-leerling,
+              .js-form-item-neemt-deel-aan-de-volgende-cultuurdag,
+              .js-form-item-ik-neem-mee-ouders-en-of-begeleiders,
+              .js-form-item-ik-neem-mee-vrienden-die-verbonden-zijn-met-nederland {
+                border: 1px solid #d3d3d3;
+                border-radius: 16px;
+                padding: 20px;
+                max-width: 98%;
+                margin: 20px auto;
+                @include breakpoint($desktop) {
+                  max-width: 600px;
+                  margin: 20px auto;
+                }
+                label {
+                  font-family: "Poppins", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  margin-bottom: 8px;
+                  display: block;
+                  color: #101828;
+                }
+                input[type="text"],
+                select {
+                  width: 100%;
+                  padding: 10px;
+                  margin-bottom: 15px;
+                  border: 1px solid #f7941d;
+                  border-radius: 24px;
+                  font-size: 14px;
+                  color: #101828;
+                  box-sizing: border-box;
+                  &:focus {
+                    border-color: #f7941d;
+                    outline: none;
+                  }
+                }
+                select {
+                  appearance: none;
+                  background-color: #fff;
+                  cursor: pointer;
+                }
+              }
+              .webform-multiple-table {
+                width: 100%;
+                overflow: auto;
+                table {
+                  width: 100%;
+                  border-collapse: collapse;
+                  @include fonts("poppins", 16px, "normal");
+                  background-color: #ffffff;
+                  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+                  border-radius: 10px;
+                  overflow: hidden;
+                  transition: all 0.3s ease;
+                }
+                th,
+                td {
+                  min-width: 150px;
+                  padding: 8px;
+                }
+                th {
+                  color: #39364f;
+                  background-color: #f8f8f8;
+                  padding: 18px;
+                  font-weight: 600;
+                  letter-spacing: 0.5px;
+                  text-transform: uppercase;
+                  border-bottom: 2px solid #e0e0e0;
+                  span {
+                    @include fonts("poppins", 16px, "normal");
+                  }
+                }
+                td {
+                  padding: 18px;
+                  color: #39364f;
+                  position: relative;
+                  transition: background-color 0.3s ease, color 0.3s ease;
+                  input[type="text"],
+                  input[type="number"] {
+                    width: 100%;
+                    padding: 10px;
+                    margin-bottom: 15px;
+                    border: 1px solid #f7941d;
+                    border-radius: 24px;
+                    font-size: 14px;
+                    color: #101828;
+                    box-sizing: border-box;
+                  }
+                  &:hover {
+                    background-color: #f8f8f8;
+                    cursor: pointer;
+                    color: #007aff;
+                  }
+                }
+                .webform-multiple-table--operations {
+                  input[type="image"] {
+                    width: 24px;
+                    height: 24px;
+                    margin: 0 5px;
+                  }
+                }
+                .webform-multiple-table--handle,
+                .webform-multiple-table--weight {
+                  display: none;
+                }
+              }
+              .webform-multiple-add,
+              .tabledrag-toggle-weight-wrapper {
+                display: none; 
+              }
+              .form-actions {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 20px;
+                flex-wrap: wrap;
+                @include breakpoint($desktop) {
+                  flex-wrap: nowrap;
+                }
+                .webform-button--submit {
+                  max-width: 344px !important;
+                  @include black-btn-green(auto);
+                  @include fonts("poppins", 16px, "normal");
+                  position: relative;
+                  padding: 10px 24px;
+                  margin: 8px;
+                  background-color: #4caf50;
+                  border: 1px solid #388e3c;
+                  color: white;
+                  border-radius: 24px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  &::after {
+                    content: "\2713";
+                    font-size: 18px;
+                    color: white;
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                  &:hover {
+                    background-color: #45a049;
+                  }
+                }
+              }
+              .contextual {
+                display: none; 
+              }
+            }
+            &.webform-submission-spannende-kampavonturen-node-475-add-form {
+              .js-form-item {
+                margin-bottom: 20px;
+              }
+              .js-form-item-olledige-naam-leerling,
+              .js-form-item-neemt-deel-aan-het-volgende-taalkamp {
+                border: 1px solid #d3d3d3;
+                border-radius: 16px;
+                padding: 20px;
+                max-width: 98%;
+                margin: 20px auto;
+                @include breakpoint($desktop) {
+                  max-width: 600px;
+                  margin: 20px auto;
+                }
+                label {
+                  font-family: "Poppins", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  margin-bottom: 8px;
+                  display: block;
+                  color: #101828;
+                }
+                input[type="text"],
+                select {
+                  width: 100%;
+                  padding: 10px;
+                  margin-bottom: 15px;
+                  border: 1px solid #f7941d;
+                  border-radius: 24px;
+                  font-size: 14px;
+                  color: #101828;
+                  box-sizing: border-box;
+                  &:focus {
+                    border-color: #f7941d;
+                    outline: none;
+                  }
+                }
+                select {
+                  appearance: none;
+                  background-color: #fff;
+                  cursor: pointer;
+                }
+              }
+              .form-actions {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 20px;
+                flex-wrap: wrap;
+                @include breakpoint($desktop) {
+                  flex-wrap: nowrap;
+                }
+                .webform-button--submit {
+                  max-width: 344px !important;
+                  @include black-btn-green(auto);
+                  @include fonts("poppins", 16px, "normal");
+                  position: relative;
+                  padding: 10px 24px;
+                  margin: 8px;
+                  background-color: #4caf50;
+                  border: 1px solid #388e3c;
+                  color: white;
+                  border-radius: 24px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  &::after {
+                    content: "\2713";
+                    font-size: 18px;
+                    color: white;
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                  &:hover {
+                    background-color: #45a049;
+                  }
+                }
+              }
+              .contextual {
+                display: none; 
+              }
+            }
+            &.webform-submission-lesmogelijkheden-node-476-add-form {
+              .js-form-item {
+                margin-bottom: 20px;
+              }
+              .js-form-required.form-required {
+                color: #d9534f;
+                margin-left: 5px;
+              }
+              #edit-kies-een-optie--wrapper {
+                border: 1px solid #d3d3d3;
+                border-radius: 16px;
+                padding: 20px;
+                max-width: 98%;
+                margin: 20px auto;
+                @include breakpoint($desktop) {
+                  max-width: 600px;
+                  margin: 20px auto;
+                }
+                legend {
+                  font-family: "Poppins", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  margin-bottom: 8px;
+                  display: block;
+                  color: #101828;
+                }
+                .fieldset-wrapper {
+                  .js-webform-radios {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 15px;
+                  }
+                  .js-form-item {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    input[type="radio"] {
+                      margin-right: 10px;
+                      vertical-align: middle;
+                      width: 20px;
+                      height: 20px;
+                      border: 1px solid #f7941d;
+                      border-radius: 50%;
+                      &:checked {
+                        background-color: #f7941d;
+                      }
+                    }
+                    label.option {
+                      font-family: "Poppins", sans-serif;
+                      font-size: 14px;
+                      color: #101828;
+                      cursor: pointer;
+                    }
+                  }
+                }
+              }
+              .form-actions {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 20px;
+                flex-wrap: wrap;
+                @include breakpoint($desktop) {
+                  flex-wrap: nowrap;
+                }
+                .webform-button--submit {
+                  max-width: 344px !important;
+                  @include black-btn-green(auto);
+                  @include fonts("poppins", 16px, "normal");
+                  position: relative;
+                  padding: 10px 24px;
+                  margin: 8px;
+                  background-color: #4caf50;
+                  border: 1px solid #388e3c;
+                  color: white;
+                  border-radius: 24px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  &::after {
+                    content: "\2713";
+                    font-size: 18px;
+                    color: white;
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                  &:hover {
+                    background-color: #45a049;
+                  }
+                }
+              }
+              .contextual {
+                display: none; 
+              }
+            }
+            &.webform-submission-meer-informatie-node-477-add-form {
+              .js-form-item {
+                margin-bottom: 20px;
+              }
+              .js-form-required.form-required {
+                color: #d9534f;
+                margin-left: 5px;
+              }
+              .js-form-item-olledige-naam-leerling,
+              .js-form-item-leeftijd,
+              .js-form-item-telefoonnummer,
+              #edit-email {
+                border: 1px solid #d3d3d3;
+                border-radius: 16px;
+                padding: 20px;
+                max-width: 98%;
+                margin: 20px auto;
+                @include breakpoint($desktop) {
+                  max-width: 600px;
+                  margin: 20px auto;
+                }
+                label {
+                  font-family: "Poppins", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  margin-bottom: 8px;
+                  display: block;
+                  color: #101828;
+                }
+                input[type="text"],
+                input[type="email"] {
+                  width: 100%;
+                  padding: 10px;
+                  margin-bottom: 15px;
+                  border: 1px solid #f7941d;
+                  border-radius: 24px;
+                  font-size: 14px;
+                  color: #101828;
+                  box-sizing: border-box;
+                  &:focus {
+                    border-color: #f7941d;
+                    outline: none;
+                  }
+                }
+              }
+              #edit-email {
+                legend {
+                  font-family: "Poppins", sans-serif;
+                  font-size: 16px;
+                  font-weight: 600;
+                  margin-bottom: 8px;
+                  display: block;
+                  color: #101828;
+                }
+                .fieldset-wrapper {
+                  .js-form-item {
+                    input[type="email"] {
+                      width: 100%;
+                      padding: 10px;
+                      margin-bottom: 15px;
+                      border: 1px solid #f7941d;
+                      border-radius: 24px;
+                      font-size: 14px;
+                      color: #101828;
+                      box-sizing: border-box;
+                      &:focus {
+                        border-color: #f7941d;
+                        outline: none;
+                      }
+                    }
+                  }
+                }
+              }
+              .form-actions {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin: 20px;
+                flex-wrap: wrap;
+                @include breakpoint($desktop) {
+                  flex-wrap: nowrap;
+                }
+                .webform-button--submit {
+                  max-width: 344px !important;
+                  @include black-btn-green(auto);
+                  @include fonts("poppins", 16px, "normal");
+                  position: relative;
+                  padding: 10px 24px;
+                  margin: 8px;
+                  background-color: #4caf50;
+                  border: 1px solid #388e3c;
+                  color: white;
+                  border-radius: 24px;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  &::after {
+                    content: "\2713";
+                    font-size: 18px;
+                    color: white;
+                    position: absolute;
+                    right: 10px;
+                    top: 50%;
+                    transform: translateY(-50%);
+                  }
+                  &:hover {
+                    background-color: #45a049;
+                  }
+                }
+              }
+              .contextual {
+                display: none; 
               }
             }
           }
