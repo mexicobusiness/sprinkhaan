@@ -44,21 +44,21 @@
               @include fonts("poppins", 16px, "normal");
               padding-left: 16px;
             }
-            
+
             .contact-us-dir::before {
               content: "";
               display: inline-block;
-              width: 24px; 
-              height: 24px; 
+              width: 24px;
+              height: 24px;
               filter: invert(72%) sepia(36%) saturate(706%) hue-rotate(43deg)
                 brightness(92%) contrast(92%);
               background-image: url("/themes/custom/sph/images/marc.svg");
-              background-size: contain; 
+              background-size: contain;
               background-repeat: no-repeat;
-              background-position: center; 
+              background-position: center;
               margin-right: 8px;
             }
-            
+
             .contact-us-map {
               margin-top: 16px;
               iframe {
@@ -190,7 +190,7 @@
                     display: flex;
                     border: 1px solid #f7941d;
                     @include radius-spk-16();
-                    padding: 0!important;
+                    padding: 0 !important;
                   }
                   div {
                     label {
@@ -1275,7 +1275,7 @@
                 margin-bottom: 20px;
               }
               .js-form-required.form-required {
-                color: #d9534f;
+                color: #101828;
                 margin-left: 5px;
               }
               .js-form-item-volledige-naam-leerling,
@@ -1386,7 +1386,7 @@
               }
               .webform-multiple-add,
               .tabledrag-toggle-weight-wrapper {
-                display: none; 
+                display: none;
               }
               .form-actions {
                 display: flex;
@@ -1426,7 +1426,7 @@
                 }
               }
               .contextual {
-                display: none; 
+                display: none;
               }
             }
             &.webform-submission-spannende-kampavonturen-node-475-add-form {
@@ -1511,7 +1511,7 @@
                 }
               }
               .contextual {
-                display: none; 
+                display: none;
               }
             }
             &.webform-submission-lesmogelijkheden-node-476-add-form {
@@ -1519,15 +1519,18 @@
                 margin-bottom: 20px;
               }
               .js-form-required.form-required {
-                color: #d9534f;
+                @include fonts("poppins", 20px, 600);
+                color: #101828;
                 margin-left: 5px;
               }
               #edit-kies-een-optie--wrapper {
                 border: 1px solid #d3d3d3;
-                border-radius: 16px;
-                padding: 20px;
+                @include radius-spk-24();
+                padding: 32px;
                 max-width: 98%;
                 margin: 20px auto;
+                background-color: #fff;
+                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
                 @include breakpoint($desktop) {
                   max-width: 600px;
                   margin: 20px auto;
@@ -1536,7 +1539,7 @@
                   font-family: "Poppins", sans-serif;
                   font-size: 16px;
                   font-weight: 600;
-                  margin-bottom: 8px;
+                  margin-bottom: 16px;
                   display: block;
                   color: #101828;
                 }
@@ -1544,28 +1547,47 @@
                   .js-webform-radios {
                     display: flex;
                     flex-direction: column;
-                    gap: 15px;
+                    gap: 16px;
                   }
                   .js-form-item {
                     display: flex;
                     align-items: center;
-                    gap: 10px;
+                    gap: 12px;
+                    padding: 12px;
+                    border: 1px solid #e0e0e0;
+                    @include radius-spk-24();
+                    background-color: #fff;
+                    transition: all 0.3s ease;
+                    &:hover {
+                      border-color: #f7941d;
+                      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                    }
                     input[type="radio"] {
-                      margin-right: 10px;
-                      vertical-align: middle;
                       width: 20px;
                       height: 20px;
-                      border: 1px solid #f7941d;
+                      border: 2px solid #f7941d;
                       border-radius: 50%;
+                      appearance: none;
+                      cursor: pointer;
+                      background-color: #fff;
                       &:checked {
                         background-color: #f7941d;
+                        border-color: #f7941d;
+                        box-shadow: inset 0 0 0 4px #fff;
                       }
                     }
                     label.option {
-                      font-family: "Poppins", sans-serif;
-                      font-size: 14px;
+                      @include fonts("poppins", 16px, 600);
                       color: #101828;
-                      cursor: pointer;
+                      display: flex;
+                      align-items: center;
+                      gap: 12px;
+                      flex-grow: 1;
+                      img {
+                        width: 100px;
+                        height: auto;
+                        object-fit: cover;
+                      }
                     }
                   }
                 }
@@ -1608,7 +1630,7 @@
                 }
               }
               .contextual {
-                display: none; 
+                display: none;
               }
             }
             &.webform-submission-meer-informatie-node-477-add-form {
@@ -1616,7 +1638,8 @@
                 margin-bottom: 20px;
               }
               .js-form-required.form-required {
-                color: #d9534f;
+                @include fonts("poppins", 16px, 600);
+                color: #101828;
                 margin-left: 5px;
               }
               .js-form-item-olledige-naam-leerling,
@@ -1722,7 +1745,7 @@
                 }
               }
               .contextual {
-                display: none; 
+                display: none;
               }
             }
           }

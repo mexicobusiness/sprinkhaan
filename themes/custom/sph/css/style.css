@@ -8098,7 +8098,7 @@
 .page-komende_cultuurdagen #page #main-content .content-center div.content div form.webform-submission-komende-cultuurdagen-node-474-add-form .js-form-required.form-required,
 .page-Lesmogelijkheden #page #main-content .content-center div.content div form.webform-submission-komende-cultuurdagen-node-474-add-form .js-form-required.form-required,
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-komende-cultuurdagen-node-474-add-form .js-form-required.form-required {
-  color: #d9534f;
+  color: #101828;
   margin-left: 5px;
 }
 /* line 1281, ../sass/components/_forms.scss */
@@ -8860,10 +8860,13 @@
 .page-komende_cultuurdagen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .js-form-required.form-required,
 .page-Lesmogelijkheden #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .js-form-required.form-required,
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .js-form-required.form-required {
-  color: #d9534f;
+  font-family: "poppins";
+  font-size: 20px;
+  font-weight: 600;
+  color: #101828;
   margin-left: 5px;
 }
-/* line 1525, ../sass/components/_forms.scss */
+/* line 1526, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper,
@@ -8871,13 +8874,19 @@
 .page-Lesmogelijkheden #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper,
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper {
   border: 1px solid #d3d3d3;
-  border-radius: 16px;
-  padding: 20px;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  padding: 32px;
   max-width: 98%;
   margin: 20px auto;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 @media (min-width: 1170px) {
-  /* line 1525, ../sass/components/_forms.scss */
+  /* line 1526, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper,
   .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper,
   .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper,
@@ -8888,7 +8897,7 @@
     margin: 20px auto;
   }
 }
-/* line 1535, ../sass/components/_forms.scss */
+/* line 1538, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper legend,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper legend,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper legend,
@@ -8898,11 +8907,11 @@
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
   display: block;
   color: #101828;
 }
-/* line 1544, ../sass/components/_forms.scss */
+/* line 1547, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-webform-radios,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-webform-radios,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-webform-radios,
@@ -8911,9 +8920,9 @@
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-webform-radios {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 16px;
 }
-/* line 1549, ../sass/components/_forms.scss */
+/* line 1552, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item,
@@ -8922,23 +8931,43 @@
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 24px;
+  -webkit-border-radius: 24px;
+  -moz-border-radius: 24px;
+  -ms-border-radius: 24px;
+  -o-border-radius: 24px;
+  background-color: #fff;
+  transition: all 0.3s ease;
 }
-/* line 1553, ../sass/components/_forms.scss */
+/* line 1561, ../sass/components/_forms.scss */
+.page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item:hover,
+.page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item:hover,
+.page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item:hover,
+.page-komende_cultuurdagen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item:hover,
+.page-Lesmogelijkheden #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item:hover,
+.page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item:hover {
+  border-color: #f7941d;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* line 1565, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item input[type="radio"],
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item input[type="radio"],
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item input[type="radio"],
 .page-komende_cultuurdagen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item input[type="radio"],
 .page-Lesmogelijkheden #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item input[type="radio"],
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item input[type="radio"] {
-  margin-right: 10px;
-  vertical-align: middle;
   width: 20px;
   height: 20px;
-  border: 1px solid #f7941d;
+  border: 2px solid #f7941d;
   border-radius: 50%;
+  appearance: none;
+  cursor: pointer;
+  background-color: #fff;
 }
-/* line 1560, ../sass/components/_forms.scss */
+/* line 1573, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item input[type="radio"]:checked,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item input[type="radio"]:checked,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item input[type="radio"]:checked,
@@ -8946,20 +8975,37 @@
 .page-Lesmogelijkheden #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item input[type="radio"]:checked,
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item input[type="radio"]:checked {
   background-color: #f7941d;
+  border-color: #f7941d;
+  box-shadow: inset 0 0 0 4px #fff;
 }
-/* line 1564, ../sass/components/_forms.scss */
+/* line 1579, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option,
 .page-komende_cultuurdagen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option,
 .page-Lesmogelijkheden #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option,
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option {
-  font-family: "Poppins", sans-serif;
-  font-size: 14px;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: 600;
   color: #101828;
-  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-grow: 1;
 }
-/* line 1573, ../sass/components/_forms.scss */
+/* line 1586, ../sass/components/_forms.scss */
+.page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option img,
+.page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option img,
+.page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option img,
+.page-komende_cultuurdagen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option img,
+.page-Lesmogelijkheden #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option img,
+.page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form #edit-kies-een-optie--wrapper .fieldset-wrapper .js-form-item label.option img {
+  width: 100px;
+  height: auto;
+  object-fit: cover;
+}
+/* line 1595, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions,
@@ -8973,7 +9019,7 @@
   flex-wrap: wrap;
 }
 @media (min-width: 1170px) {
-  /* line 1573, ../sass/components/_forms.scss */
+  /* line 1595, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions,
   .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions,
   .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions,
@@ -8983,7 +9029,7 @@
     flex-wrap: nowrap;
   }
 }
-/* line 1582, ../sass/components/_forms.scss */
+/* line 1604, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions .webform-button--submit,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions .webform-button--submit,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions .webform-button--submit,
@@ -9031,7 +9077,7 @@
   font-weight: "normal";
   color: #fff;
 }
-/* line 1596, ../sass/components/_forms.scss */
+/* line 1618, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions .webform-button--submit::after,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions .webform-button--submit::after,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions .webform-button--submit::after,
@@ -9046,7 +9092,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 1605, ../sass/components/_forms.scss */
+/* line 1627, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions .webform-button--submit:hover,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions .webform-button--submit:hover,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions .webform-button--submit:hover,
@@ -9055,7 +9101,7 @@
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .form-actions .webform-button--submit:hover {
   background-color: #45a049;
 }
-/* line 1610, ../sass/components/_forms.scss */
+/* line 1632, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .contextual,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .contextual,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .contextual,
@@ -9064,7 +9110,7 @@
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-lesmogelijkheden-node-476-add-form .contextual {
   display: none;
 }
-/* line 1615, ../sass/components/_forms.scss */
+/* line 1637, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item,
@@ -9073,17 +9119,20 @@
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item {
   margin-bottom: 20px;
 }
-/* line 1618, ../sass/components/_forms.scss */
+/* line 1640, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-required.form-required,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-required.form-required,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-required.form-required,
 .page-komende_cultuurdagen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-required.form-required,
 .page-Lesmogelijkheden #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-required.form-required,
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-required.form-required {
-  color: #d9534f;
+  font-family: "poppins";
+  font-size: 16px;
+  font-weight: 600;
+  color: #101828;
   margin-left: 5px;
 }
-/* line 1622, ../sass/components/_forms.scss */
+/* line 1645, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-olledige-naam-leerling,
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-leeftijd,
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-telefoonnummer,
@@ -9115,7 +9164,7 @@
   margin: 20px auto;
 }
 @media (min-width: 1170px) {
-  /* line 1622, ../sass/components/_forms.scss */
+  /* line 1645, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-olledige-naam-leerling,
   .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-leeftijd,
   .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-telefoonnummer,
@@ -9144,7 +9193,7 @@
     margin: 20px auto;
   }
 }
-/* line 1635, ../sass/components/_forms.scss */
+/* line 1658, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-olledige-naam-leerling label,
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-leeftijd label,
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-telefoonnummer label,
@@ -9176,7 +9225,7 @@
   display: block;
   color: #101828;
 }
-/* line 1643, ../sass/components/_forms.scss */
+/* line 1666, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-olledige-naam-leerling input[type="text"],
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-olledige-naam-leerling input[type="email"],
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-leeftijd input[type="text"],
@@ -9234,7 +9283,7 @@
   color: #101828;
   box-sizing: border-box;
 }
-/* line 1653, ../sass/components/_forms.scss */
+/* line 1676, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-olledige-naam-leerling input[type="text"]:focus,
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-olledige-naam-leerling input[type="email"]:focus,
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .js-form-item-leeftijd input[type="text"]:focus,
@@ -9286,7 +9335,7 @@
   border-color: #f7941d;
   outline: none;
 }
-/* line 1660, ../sass/components/_forms.scss */
+/* line 1683, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form #edit-email legend,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form #edit-email legend,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form #edit-email legend,
@@ -9300,7 +9349,7 @@
   display: block;
   color: #101828;
 }
-/* line 1670, ../sass/components/_forms.scss */
+/* line 1693, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form #edit-email .fieldset-wrapper .js-form-item input[type="email"],
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form #edit-email .fieldset-wrapper .js-form-item input[type="email"],
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form #edit-email .fieldset-wrapper .js-form-item input[type="email"],
@@ -9316,7 +9365,7 @@
   color: #101828;
   box-sizing: border-box;
 }
-/* line 1679, ../sass/components/_forms.scss */
+/* line 1702, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form #edit-email .fieldset-wrapper .js-form-item input[type="email"]:focus,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form #edit-email .fieldset-wrapper .js-form-item input[type="email"]:focus,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form #edit-email .fieldset-wrapper .js-form-item input[type="email"]:focus,
@@ -9326,7 +9375,7 @@
   border-color: #f7941d;
   outline: none;
 }
-/* line 1687, ../sass/components/_forms.scss */
+/* line 1710, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions,
@@ -9340,7 +9389,7 @@
   flex-wrap: wrap;
 }
 @media (min-width: 1170px) {
-  /* line 1687, ../sass/components/_forms.scss */
+  /* line 1710, ../sass/components/_forms.scss */
   .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions,
   .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions,
   .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions,
@@ -9350,7 +9399,7 @@
     flex-wrap: nowrap;
   }
 }
-/* line 1696, ../sass/components/_forms.scss */
+/* line 1719, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions .webform-button--submit,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions .webform-button--submit,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions .webform-button--submit,
@@ -9398,7 +9447,7 @@
   font-weight: "normal";
   color: #fff;
 }
-/* line 1710, ../sass/components/_forms.scss */
+/* line 1733, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions .webform-button--submit::after,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions .webform-button--submit::after,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions .webform-button--submit::after,
@@ -9413,7 +9462,7 @@
   top: 50%;
   transform: translateY(-50%);
 }
-/* line 1719, ../sass/components/_forms.scss */
+/* line 1742, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions .webform-button--submit:hover,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions .webform-button--submit:hover,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions .webform-button--submit:hover,
@@ -9422,7 +9471,7 @@
 .page-meer-informatie #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .form-actions .webform-button--submit:hover {
   background-color: #45a049;
 }
-/* line 1724, ../sass/components/_forms.scss */
+/* line 1747, ../sass/components/_forms.scss */
 .page-register #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .contextual,
 .page-Registro-inscription #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .contextual,
 .page-Spannende-Kampavonturen #page #main-content .content-center div.content div form.webform-submission-meer-informatie-node-477-add-form .contextual,
