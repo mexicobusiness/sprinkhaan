@@ -1,11 +1,12 @@
 {
+  "name": "tour",
   "private": true,
   "type": "module",
   "scripts": {
     "build": "vite build"
   },
   "dependencies": {
-    "shepherd.js": "^14.0.1",
+    "shepherd.js": "^13.0.3",
     "vite": "^5.4.9"
   },
   "devDependencies": {
