@@ -1,4 +1,18 @@
 ;(function ($) {
+
+  //calendarios popup close when click outside
+document.addEventListener('mousedown', function(e) {
+  const popup = document.querySelector('[id^="htmlElement_window_"]');
+  if (popup) {
+    if (!popup.contains(e.target)) {
+      const closeBtn = popup.querySelector('div[style*="cursor: pointer"]');
+      if (closeBtn) {
+        closeBtn.click();
+      }
+    }
+  }
+});
+
   $(document).ready(function() {
 
     //Add link in logo
