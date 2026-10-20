@@ -15479,7 +15479,7 @@ body.is-mobile {
     width: 70%;
   }
 }
-/* line 164, ../sass/components/_calendar.scss */
+/* line 165, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors {
   background-color: #ffffff;
   border: 3px dashed #e2e8f0;
@@ -15494,26 +15494,31 @@ body.is-mobile {
   line-height: 2.8;
   margin: 4% auto 30px auto;
   width: 100%;
-  max-width: 880px;
+  max-width: 990px;
   transition: all 0.3s ease;
   opacity: 0;
   animation: fadeInUp 0.6s ease-out forwards 0.4s;
+  /* Les online: lunes-miércoles */
+  /* Les online: martes-jueves */
+  /* Les op locatie: azul oscuro */
 }
-/* line 176, ../sass/components/_calendar.scss */
+/* line 184, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors p {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 700;
   color: #475569;
   line-height: 2.8;
+  display: inline;
+  margin: 0;
 }
-/* line 190, ../sass/components/_calendar.scss */
+/* line 194, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors:hover {
   border-color: #cbd5e1;
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.06);
 }
 @media (max-width: 768px) {
-  /* line 164, ../sass/components/_calendar.scss */
+  /* line 165, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container header .cal-colors {
     padding: 16px;
     border-radius: 16px;
@@ -15523,13 +15528,12 @@ body.is-mobile {
     text-align: left;
   }
 }
-/* line 202, ../sass/components/_calendar.scss */
-.page-calendar #page #main-content .content-center .views-element-container header .cal-colors p,
+/* line 208, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors div:not(.circle) {
   display: inline;
   margin: 0;
 }
-/* line 208, ../sass/components/_calendar.scss */
+/* line 213, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors .circle {
   height: 20px;
   width: 20px;
@@ -15544,50 +15548,51 @@ body.is-mobile {
   cursor: pointer;
 }
 @media (max-width: 768px) {
-  /* line 208, ../sass/components/_calendar.scss */
+  /* line 213, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container header .cal-colors .circle {
     margin: 0 6px 0 10px;
     height: 18px;
     width: 18px;
   }
 }
-/* line 230, ../sass/components/_calendar.scss */
+/* line 235, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors .circle:first-child {
   margin-left: 0 !important;
 }
-/* line 233, ../sass/components/_calendar.scss */
+/* line 239, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors .circle:hover {
   transform: scale(1.3) translateY(-3px);
 }
-/* line 237, ../sass/components/_calendar.scss */
+/* line 244, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors .cultural-color {
   background: linear-gradient(135deg, #ffb347, #ff8c00);
 }
-/* line 240, ../sass/components/_calendar.scss */
+/* line 248, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors .camp-color {
   background: linear-gradient(135deg, #4a90e2, #00008b);
 }
-/* line 243, ../sass/components/_calendar.scss */
+/* line 253, ../sass/components/_calendar.scss */
+.page-calendar #page #main-content .content-center .views-element-container header .cal-colors .online-color,
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors .online-color-mw {
   background: linear-gradient(135deg, #a8e063, #56ab2f);
 }
-/* line 246, ../sass/components/_calendar.scss */
+/* line 259, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors .online-color-dd {
   background: linear-gradient(135deg, #4cb8c4, #23a9d2);
 }
-/* line 249, ../sass/components/_calendar.scss */
+/* line 264, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors .inperson-color {
-  background: linear-gradient(135deg, #56ab2f, #006400);
+  background: linear-gradient(135deg, #1e3c72, #2a5298);
 }
-/* line 252, ../sass/components/_calendar.scss */
+/* line 268, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors .holiday-color {
   background: linear-gradient(135deg, #ff6b6b, #ff0000);
 }
-/* line 255, ../sass/components/_calendar.scss */
+/* line 272, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container header .cal-colors .parents-color {
   background: linear-gradient(135deg, #6dd5ed, #21468b);
 }
-/* line 261, ../sass/components/_calendar.scss */
+/* line 278, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar {
   background-color: #ffffff;
   border: 4px solid #f1f5f9;
@@ -15600,14 +15605,14 @@ body.is-mobile {
   animation: popInCalendar 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards 0.5s;
 }
 @media (max-width: 768px) {
-  /* line 261, ../sass/components/_calendar.scss */
+  /* line 278, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar {
     padding: 10px;
     border-radius: 20px;
     border-width: 2px;
   }
 }
-/* line 279, ../sass/components/_calendar.scss */
+/* line 296, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-toolbar.fc-header-toolbar {
   display: flex;
   justify-content: space-between;
@@ -15619,28 +15624,28 @@ body.is-mobile {
   border: 2px dashed #e2e8f0;
 }
 @media (max-width: 768px) {
-  /* line 279, ../sass/components/_calendar.scss */
+  /* line 296, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-toolbar.fc-header-toolbar {
     flex-direction: column;
     gap: 16px;
     padding: 16px;
   }
 }
-/* line 296, ../sass/components/_calendar.scss */
+/* line 313, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-left {
   display: flex;
   align-items: center;
   gap: 16px;
 }
 @media (max-width: 768px) {
-  /* line 296, ../sass/components/_calendar.scss */
+  /* line 313, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-left {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
   }
 }
-/* line 308, ../sass/components/_calendar.scss */
+/* line 325, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-button-group button,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button {
@@ -15654,14 +15659,14 @@ body.is-mobile {
   transition: all 0.2s ease;
   box-shadow: 0 4px 0 #cbd5e1;
 }
-/* line 321, ../sass/components/_calendar.scss */
+/* line 338, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-button-group button:hover,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button:hover,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 0 #94a3b8;
 }
-/* line 326, ../sass/components/_calendar.scss */
+/* line 343, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-button-group button:active,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button:active,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button:active {
@@ -15669,7 +15674,7 @@ body.is-mobile {
   box-shadow: 0 0 0 transparent;
 }
 @media (max-width: 768px) {
-  /* line 308, ../sass/components/_calendar.scss */
+  /* line 325, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-button-group button,
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button,
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-dayGridMonth-button {
@@ -15677,11 +15682,11 @@ body.is-mobile {
     font-size: 13px;
   }
 }
-/* line 337, ../sass/components/_calendar.scss */
+/* line 354, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-button-group button {
   padding: 10px 16px;
 }
-/* line 341, ../sass/components/_calendar.scss */
+/* line 358, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button {
   border-radius: 50% !important;
@@ -15693,14 +15698,14 @@ body.is-mobile {
   align-items: center !important;
 }
 @media (max-width: 768px) {
-  /* line 341, ../sass/components/_calendar.scss */
+  /* line 358, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button,
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button {
     width: 40px !important;
     height: 40px !important;
   }
 }
-/* line 356, ../sass/components/_calendar.scss */
+/* line 373, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-prev-button .fc-icon,
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-next-button .fc-icon {
   display: flex;
@@ -15708,7 +15713,7 @@ body.is-mobile {
   justify-content: center;
   font-size: 20px;
 }
-/* line 364, ../sass/components/_calendar.scss */
+/* line 381, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button {
   background-color: #ffb443;
   color: white;
@@ -15719,24 +15724,24 @@ body.is-mobile {
   letter-spacing: 1px;
   margin-left: 10px;
 }
-/* line 374, ../sass/components/_calendar.scss */
+/* line 391, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button:hover {
   background-color: #fbbf24;
 }
-/* line 377, ../sass/components/_calendar.scss */
+/* line 394, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-today-button:disabled {
   opacity: 0.5;
   transform: none;
   box-shadow: none;
   cursor: not-allowed;
 }
-/* line 385, ../sass/components/_calendar.scss */
+/* line 402, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-center {
   display: flex;
   align-items: center;
   justify-content: center;
 }
-/* line 390, ../sass/components/_calendar.scss */
+/* line 407, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-center h2 {
   font-family: "Conv_Gotham-Medium", sans-serif;
   font-size: 28px;
@@ -15749,25 +15754,25 @@ body.is-mobile {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.05);
 }
 @media (max-width: 768px) {
-  /* line 390, ../sass/components/_calendar.scss */
+  /* line 407, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-center h2 {
     font-size: 22px;
   }
 }
-/* line 407, ../sass/components/_calendar.scss */
+/* line 424, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-right {
   display: flex;
   align-items: center;
 }
 @media (max-width: 768px) {
-  /* line 407, ../sass/components/_calendar.scss */
+  /* line 424, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-right {
     width: 100%;
     justify-content: center;
     margin-top: 10px;
   }
 }
-/* line 417, ../sass/components/_calendar.scss */
+/* line 434, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-right .fc-dayGridMonth-button {
   background-color: #4a90e2;
   color: #ffffff;
@@ -15777,32 +15782,32 @@ body.is-mobile {
   text-transform: uppercase;
   letter-spacing: 1px;
 }
-/* line 426, ../sass/components/_calendar.scss */
+/* line 443, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-right .fc-dayGridMonth-button.fc-button-active {
   background-color: #2563eb;
   transform: translateY(2px);
   box-shadow: 0 2px 0 #1d4ed8;
 }
-/* line 434, ../sass/components/_calendar.scss */
+/* line 451, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container {
   width: 100%;
 }
 @media (max-width: 768px) {
-  /* line 434, ../sass/components/_calendar.scss */
+  /* line 451, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container {
     border-radius: 12px;
     border: 1px solid #e2e8f0;
     overflow: hidden;
   }
 }
-/* line 443, ../sass/components/_calendar.scss */
+/* line 460, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container table {
   width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
   table-layout: fixed;
 }
-/* line 450, ../sass/components/_calendar.scss */
+/* line 467, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container th {
   text-align: center;
   color: #64748b;
@@ -15814,30 +15819,30 @@ body.is-mobile {
   font-family: "Poppins", sans-serif;
 }
 @media (max-width: 768px) {
-  /* line 450, ../sass/components/_calendar.scss */
+  /* line 467, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container th {
     padding: 8px 0;
     font-size: 10px;
     border-bottom: 1px solid #e2e8f0;
   }
 }
-/* line 466, ../sass/components/_calendar.scss */
+/* line 483, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container td {
   border: 1px solid #f1f5f9;
   transition: background-color 0.3s ease;
   vertical-align: top;
 }
 @media (max-width: 768px) {
-  /* line 466, ../sass/components/_calendar.scss */
+  /* line 483, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container td {
     padding: 1px !important;
   }
 }
-/* line 474, ../sass/components/_calendar.scss */
+/* line 491, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container td.fc-day:hover {
   background-color: #f8fafc;
 }
-/* line 478, ../sass/components/_calendar.scss */
+/* line 495, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day-number {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
@@ -15852,13 +15857,13 @@ body.is-mobile {
   text-align: center;
   transition: transform 0.2s ease;
 }
-/* line 492, ../sass/components/_calendar.scss */
+/* line 509, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day-number:hover {
   transform: scale(1.2) rotate(-10deg);
   background-color: #e2e8f0;
 }
 @media (max-width: 768px) {
-  /* line 478, ../sass/components/_calendar.scss */
+  /* line 495, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-day-number {
     width: 20px;
     height: 20px;
@@ -15868,13 +15873,13 @@ body.is-mobile {
     margin: 2px;
   }
 }
-/* line 506, ../sass/components/_calendar.scss */
+/* line 523, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-today .fc-day-number {
   background-color: #ffb443;
   color: white;
   box-shadow: 0 4px 10px rgba(255, 180, 67, 0.4);
 }
-/* line 512, ../sass/components/_calendar.scss */
+/* line 529, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a {
   font-family: "Poppins", sans-serif;
   display: block;
@@ -15893,7 +15898,7 @@ body.is-mobile {
   height: auto !important;
 }
 @media (max-width: 768px) {
-  /* line 512, ../sass/components/_calendar.scss */
+  /* line 529, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a {
     padding: 4px 2px;
     margin: 2px 1px;
@@ -15903,7 +15908,7 @@ body.is-mobile {
     text-align: center;
   }
 }
-/* line 538, ../sass/components/_calendar.scss */
+/* line 555, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a .fc-content {
   display: flex;
   align-items: flex-start;
@@ -15911,14 +15916,14 @@ body.is-mobile {
   line-height: 1.4;
 }
 @media (max-width: 768px) {
-  /* line 538, ../sass/components/_calendar.scss */
+  /* line 555, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a .fc-content {
     gap: 0;
     flex-direction: column;
     align-items: center;
   }
 }
-/* line 550, ../sass/components/_calendar.scss */
+/* line 567, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a .fc-content::before {
   content: "★";
   font-size: 14px;
@@ -15927,19 +15932,19 @@ body.is-mobile {
   color: #ffffff !important;
 }
 @media (max-width: 768px) {
-  /* line 550, ../sass/components/_calendar.scss */
+  /* line 567, ../sass/components/_calendar.scss */
   .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a .fc-content::before {
     display: none;
   }
 }
-/* line 561, ../sass/components/_calendar.scss */
+/* line 578, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a .fc-content .fc-title {
   white-space: normal !important;
   display: inline-block;
   width: 100%;
   color: #ffffff !important;
 }
-/* line 569, ../sass/components/_calendar.scss */
+/* line 586, ../sass/components/_calendar.scss */
 .page-calendar #page #main-content .content-center .views-element-container .js-drupal-fullcalendar .fc-view-container .fc-event-container a:hover {
   animation: wiggleEvent 0.4s ease-in-out forwards;
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
@@ -15947,7 +15952,7 @@ body.is-mobile {
   position: relative;
 }
 
-/* line 584, ../sass/components/_calendar.scss */
+/* line 601, ../sass/components/_calendar.scss */
 [id^="htmlElement_window_"] {
   border-radius: 24px !important;
   border: 4px solid #ffffff !important;
@@ -15962,12 +15967,12 @@ body.is-mobile {
   transform-origin: center center !important;
   animation: popupBounceDesktop 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards !important;
 }
-/* line 601, ../sass/components/_calendar.scss */
+/* line 618, ../sass/components/_calendar.scss */
 [id^="htmlElement_window_"].popup-closing {
   animation: popupCloseDesktop 0.3s ease-in forwards !important;
 }
 @media (max-width: 768px) {
-  /* line 584, ../sass/components/_calendar.scss */
+  /* line 601, ../sass/components/_calendar.scss */
   [id^="htmlElement_window_"] {
     position: fixed !important;
     top: 50% !important;
@@ -15977,13 +15982,13 @@ body.is-mobile {
     margin: 0 !important;
     animation: popupBounceMobile 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards !important;
   }
-  /* line 615, ../sass/components/_calendar.scss */
+  /* line 632, ../sass/components/_calendar.scss */
   [id^="htmlElement_window_"].popup-closing {
     animation: popupCloseMobile 0.3s ease-in forwards !important;
   }
 }
 
-/* line 621, ../sass/components/_calendar.scss */
+/* line 638, ../sass/components/_calendar.scss */
 .jsframe-titlebar-focused {
   background: linear-gradient(135deg, #4a90e2, #3b82f6) !important;
   border-bottom: none !important;
@@ -15995,7 +16000,7 @@ body.is-mobile {
   font-family: "Poppins", sans-serif !important;
   width: 100% !important;
 }
-/* line 632, ../sass/components/_calendar.scss */
+/* line 649, ../sass/components/_calendar.scss */
 .jsframe-titlebar-focused span[id$="_titleBarText"] {
   position: static !important;
   color: #ffffff !important;
@@ -16011,7 +16016,7 @@ body.is-mobile {
   line-height: normal !important;
 }
 
-/* line 648, ../sass/components/_calendar.scss */
+/* line 665, ../sass/components/_calendar.scss */
 [id$="_canvas"] {
   top: 54px !important;
   height: calc(100% - 54px) !important;
@@ -16019,12 +16024,12 @@ body.is-mobile {
   left: 0 !important;
 }
 
-/* line 655, ../sass/components/_calendar.scss */
+/* line 672, ../sass/components/_calendar.scss */
 [id$="_canvas"] > span {
   display: none !important;
 }
 
-/* line 659, ../sass/components/_calendar.scss */
+/* line 676, ../sass/components/_calendar.scss */
 [id$="_canvas"] > div[style*="visibility: visible"] {
   width: 100% !important;
   height: 100% !important;
@@ -16036,7 +16041,7 @@ body.is-mobile {
   overflow: hidden !important;
 }
 
-/* line 670, ../sass/components/_calendar.scss */
+/* line 687, ../sass/components/_calendar.scss */
 [id$="_canvas"] div[style*="cursor: pointer"] {
   position: absolute !important;
   width: 40px !important;
@@ -16054,7 +16059,7 @@ body.is-mobile {
   font-family: "Poppins", sans-serif !important;
 }
 @media (max-width: 768px) {
-  /* line 670, ../sass/components/_calendar.scss */
+  /* line 687, ../sass/components/_calendar.scss */
   [id$="_canvas"] div[style*="cursor: pointer"] {
     top: -45px !important;
     right: 10px !important;
@@ -16062,7 +16067,7 @@ body.is-mobile {
     height: 36px !important;
   }
 }
-/* line 693, ../sass/components/_calendar.scss */
+/* line 710, ../sass/components/_calendar.scss */
 [id$="_canvas"] div[style*="cursor: pointer"] span {
   display: flex !important;
   align-items: center !important;
@@ -16075,24 +16080,24 @@ body.is-mobile {
   margin: 0 !important;
 }
 @media (max-width: 768px) {
-  /* line 693, ../sass/components/_calendar.scss */
+  /* line 710, ../sass/components/_calendar.scss */
   [id$="_canvas"] div[style*="cursor: pointer"] span {
     font-size: 18px !important;
   }
 }
-/* line 709, ../sass/components/_calendar.scss */
+/* line 726, ../sass/components/_calendar.scss */
 [id$="_canvas"] div[style*="cursor: pointer"]:hover {
   background-color: #ef4444 !important;
   transform: rotate(90deg) scale(1.15) !important;
   box-shadow: 0 4px 10px rgba(239, 68, 68, 0.4) !important;
 }
-/* line 713, ../sass/components/_calendar.scss */
+/* line 730, ../sass/components/_calendar.scss */
 [id$="_canvas"] div[style*="cursor: pointer"]:hover span {
   color: #ffffff !important;
   -webkit-text-fill-color: #ffffff !important;
 }
 
-/* line 720, ../sass/components/_calendar.scss */
+/* line 737, ../sass/components/_calendar.scss */
 .evento-popup-container {
   padding: 20px 24px;
   background-color: #ffffff;
@@ -16109,17 +16114,17 @@ body.is-mobile {
   background-size: 20px 20px;
 }
 @media (max-width: 768px) {
-  /* line 720, ../sass/components/_calendar.scss */
+  /* line 737, ../sass/components/_calendar.scss */
   .evento-popup-container {
     padding: 16px;
     min-height: 120px;
   }
 }
-/* line 740, ../sass/components/_calendar.scss */
+/* line 757, ../sass/components/_calendar.scss */
 .evento-popup-container .evento-popup-titulo {
   display: none;
 }
-/* line 743, ../sass/components/_calendar.scss */
+/* line 760, ../sass/components/_calendar.scss */
 .evento-popup-container .evento-popup-cuerpo {
   font-size: 15px;
   color: #475569;
@@ -16134,7 +16139,7 @@ body.is-mobile {
   box-sizing: border-box;
 }
 @media (max-width: 768px) {
-  /* line 743, ../sass/components/_calendar.scss */
+  /* line 760, ../sass/components/_calendar.scss */
   .evento-popup-container .evento-popup-cuerpo {
     font-size: 13px;
     padding: 12px;
